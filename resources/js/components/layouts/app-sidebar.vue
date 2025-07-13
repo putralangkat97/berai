@@ -11,6 +11,7 @@ import {
   Settings2,
   SquareTerminal,
   LayoutDashboard,
+  ClipboardCheck,
 } from "lucide-vue-next";
 import NavMain from "@/components/layouts/nav-main.vue";
 import NavUser from "@/components/layouts/nav-user.vue";
@@ -55,6 +56,12 @@ const data = {
       url: "/project",
       icon: Frame,
       name: "app/project",
+    },
+    {
+      title: "Your Task",
+      url: "/task",
+      icon: ClipboardCheck,
+      name: "app/task",
     },
   ],
 };

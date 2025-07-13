@@ -1,6 +1,9 @@
 <script setup>
 import AppLayout from "@/layouts/app.vue";
-import { Head } from "@inertiajs/vue3";
+import { Head, Link, router } from "@inertiajs/vue3";
+import { watch, reactive } from "vue";
+import debounce from "lodash.debounce";
+
 import {
   Card,
   CardHeader,
@@ -10,63 +13,104 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "@inertiajs/vue3";
+import { Progress } from "@/components/ui/progress";
+import { Input } from "@/components/ui/input";
 
 const breadcrumbs = [{ label: "Project", url: "/project" }];
 
-defineProps({
+const props = defineProps({
   projects: Array,
+  filters: Object,
 });
+
+const filters = reactive({
+  search: props.filters.search || "",
+});
+
+const getProgress = (project) => {
+  if (project.tasks_count === 0) return 0;
+  return (project.completed_tasks_count / project.tasks_count) * 100;
+};
+
+watch(
+  filters,
+  debounce((newFilters) => {
+    router.get(
+      "/project",
+      { search: newFilters.search },
+      {
+        preserveState: true,
+        replace: true,
+      },
+    );
+  }, 500),
+);
 </script>
 
 <template>
-  <Head title="Dashboard" />
+  <Head title="Projects" />
   <AppLayout :breadcrumbs="breadcrumbs">
-    <div class="py-12">
-      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <!-- Grid for Project Cards -->
-        <div
-          v-if="projects.length > 0"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <Card v-for="project in projects" :key="project.id">
-            <CardHeader>
-              <CardTitle>{{ project.name }}</CardTitle>
-              <CardDescription class="line-clamp-2 h-[40px]">
-                {{ project.description || "No description provided." }}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <!-- We can add progress bars here in a future step -->
-              <p class="text-sm text-muted-foreground">
-                (Progress bar will go here)
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button as-child class="w-full">
-                <Link :href="`/project/show/${project.id}`">View Project</Link>
-              </Button>
-            </CardFooter>
-          </Card>
+    <div
+      class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6"
+    >
+      <h2 class="font-semibold text-xl">Projects</h2>
+      <div class="flex space-x-2">
+        <div class="w-full sm:w-auto sm:max-w-xs">
+          <Input
+            v-model="filters.search"
+            type="text"
+            placeholder="Search projects..."
+          />
         </div>
-
-        <!-- State for when no projects exist -->
-        <div v-else>
-          <Card class="text-center">
-            <CardHeader>
-              <CardTitle>No Projects Yet</CardTitle>
-              <CardDescription>
-                Get started by creating your first project.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button as-child>
-                <Link href="/project/create">Create Your First Project</Link>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
+        <Button as-child>
+          <Link href="/project/create">Create Project</Link>
+        </Button>
       </div>
+    </div>
+
+    <!-- Grid for Project Cards -->
+    <div
+      v-if="projects.length > 0"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    >
+      <Card v-for="project in projects" :key="project.id" class="flex flex-col">
+        <CardHeader>
+          <CardTitle>{{ project.name }}</CardTitle>
+        </CardHeader>
+        <CardContent class="flex-grow">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm text-muted-foreground">Progress</span>
+            <span class="text-sm font-medium"
+              >{{ project.completed_tasks_count }} /
+              {{ project.tasks_count }} tasks</span
+            >
+          </div>
+          <Progress :model-value="getProgress(project)" />
+        </CardContent>
+        <CardFooter>
+          <Button as-child variant="secondary" class="w-full">
+            <Link :href="`/project/${project.id}`">View Project</Link>
+          </Button>
+        </CardFooter>
+      </Card>
+    </div>
+
+    <!-- Empty state when no projects exists -->
+    <div v-else>
+      <Card class="text-center py-12">
+        <CardHeader>
+          <CardTitle>No Projects Found</CardTitle>
+          <CardDescription>
+            No projects match your current search, or you haven't created any
+            yet.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Button as-child>
+            <Link href="/project/create">Create Your First Project</Link>
+          </Button>
+        </CardContent>
+      </Card>
     </div>
   </AppLayout>
 </template>

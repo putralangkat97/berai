@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Berai;
 
+use App\Enums\TaskStatus;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Models\Task;
 use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -15,13 +16,26 @@ class DashboardController extends Controller
      */
     public function index(): Response
     {
+        $current_user = Auth::user();
+
         // projects
-        $projects = Auth::user()->projects()
+        $projects = $current_user->projects()
+            ->withCount(['tasks', 'tasks as completed_tasks_count' => function ($query) {
+                $query->where('status', TaskStatus::COMPLETED);
+            }])
             ->latest()
             ->get();
 
+        // open tasks
+        $open_tasks = Task::where('assigned_to_id', $current_user->id)
+            ->where('status', '!=', TaskStatus::COMPLETED)
+            ->with('project:id,name')
+            ->latest('due_date')
+            ->get();
+
         return Inertia::render('app/dashboard', [
-            'projects' => $projects
+            'projects' => $projects,
+            'openTasks' => $open_tasks,
         ]);
     }
 }

@@ -34,7 +34,6 @@ const handleLogout = (e) => {
 };
 
 const page = usePage().props;
-
 const user = computed(() => page.auth.user);
 
 const { isMobile } = useSidebar();

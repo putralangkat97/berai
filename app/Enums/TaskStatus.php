@@ -11,9 +11,22 @@ enum TaskStatus: int
     public function message(): string
     {
         return match ($this) {
-            self::TODO => 'To Do',
+            self::TODO => 'To-Do',
             self::IN_PROGRESS => 'In Progress',
             self::COMPLETED => 'Completed',
         };
+    }
+
+    public static function toArray(): array
+    {
+        $array = [];
+        foreach (self::cases() as $case) {
+            array_push($array, [
+                'value' => $case->value,
+                'label' => $case->message(),
+            ]);
+        }
+
+        return $array;
     }
 }

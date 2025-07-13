@@ -35,7 +35,9 @@ defineProps({
           <Breadcrumb :breadcrumbs="breadcrumbs" />
         </div>
       </header>
-      <slot />
+      <div class="mx-6">
+        <slot />
+      </div>
     </SidebarInset>
   </SidebarProvider>
 </template>

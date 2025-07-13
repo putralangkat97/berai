@@ -19,5 +19,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Anggit Ari Utomo',
             'email' => 'anggit@anggit.com',
         ]);
+
+        User::factory()->create([
+            'name' => 'Pucuk Pisang',
+            'email' => 'pucukpisang35@gmail.com',
+        ]);
     }
 }
