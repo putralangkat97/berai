@@ -1,61 +1,157 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Berai: A Modern Project & Task Management Tool
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://your-logo-url-here.com/logo.svg" alt="Berai Logo" width="120">
 </p>
 
-## About Laravel
+<p align="center">
+  A simple, intuitive, and powerful open-source tool for managing projects and tasks, built with a modern tech stack. Designed for freelancers, small teams, and anyone who needs a clean way to organize their work.
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-getting-started">Getting Started</a> •
+  <a href="#-license">License</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Features
 
-## Learning Laravel
+Berai provides a complete suite of tools to manage your work from start to finish.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Dashboard:** Get a high-level overview of all your projects and a personalized list of your open tasks.
+- **Project Management:** Create and manage projects, each with its own dedicated workspace.
+- **Task Management:**
+  - Create detailed tasks with descriptions, due dates, assignees, and priorities (Low, Medium, High, Urgent).
+  - Switch between a traditional **List View** and an interactive **Kanban Board**.
+  - **Drag-and-drop** tasks to instantly update their status.
+- **Team Collaboration:**
+  - Invite team members to your projects by email.
+  - Assign tasks to specific team members.
+- **Activity Feed:** A real-time log of all significant actions within a project, such as task creation and status updates.
+- **User Profiles:** Personalize your account with a custom name and avatar that appears throughout the application.
+- **Secure & Performant:**
+  - Built-in authorization policies to ensure users can only access their own data.
+  - Debounced searching and filtering for a smooth user experience.
+- **Themed UI:** A clean, modern, and responsive UI built with DaisyUI/shadcn-vue, available in both light and dark modes.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 💻 Tech Stack
 
-## Laravel Sponsors
+This project is built on a modern, full-stack framework that emphasizes developer productivity and user experience.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Backend:** Laravel 12+ (PHP)
+- **Frontend:** Vue.js 3 (with Composition API)
+- **Framework:** Inertia.js (for creating a seamless, single-page app experience)
+- **Database:** PostgreSQL
+- **UI:** Tailwind CSS with the [shadcn-vue](https://www.shadcn-vue.com/) component library.
+- **Authentication:** Custom-built authentication system.
+- **Activity Logging:** `spatie/laravel-activitylog`
+- **Drag & Drop:** `vue-draggable-plus`
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Getting Started
 
-## Contributing
+Follow these instructions to get a local copy of Berai up and running for development and testing purposes.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Prerequisites
 
-## Code of Conduct
+- PHP 8.2+
+- Composer
+- Node.js & npm
+- PostgreSQL
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Installation
 
-## Security Vulnerabilities
+1.  **Clone the repository:**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    ```bash
+    git clone https://github.com/putralangkat97/berai.git
+    cd berai
+    ```
 
-## License
+2.  **Install backend dependencies:**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    ```bash
+    composer install
+    ```
+
+3.  **Install frontend dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Set up your environment file:**
+    Copy the example environment file and generate your application key.
+
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+5.  **Configure your `.env` file:**
+    Open the `.env` file and update your database credentials for PostgreSQL.
+
+    ```dotenv
+    DB_CONNECTION=pgsql
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_DATABASE=your_database
+    DB_USERNAME=your_postgres_user
+    DB_PASSWORD=your_postgres_password
+    ```
+
+6.  **Run database migrations:**
+    This will create all the necessary tables, including the activity log table.
+
+    ```bash
+    php artisan migrate
+    ```
+
+7.  **Create the storage link:**
+    This makes uploaded files (like avatars) publicly accessible.
+
+    ```bash
+    php artisan storage:link
+    ```
+
+8.  **Run the development servers:**
+    You'll need to run both the Vite server (for frontend assets) and the Laravel server.
+    - In one terminal, run:
+      ```bash
+      npm run dev
+      ```
+    - In a second terminal, run:
+      ```bash
+      php artisan serve
+      ```
+
+You can now access the application at `http://localhost:8000`!
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+Don't forget to give the project a star! Thanks again!
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the `LICENSE.md` file for details.

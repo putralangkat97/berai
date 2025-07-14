@@ -6,6 +6,7 @@ use App\Http\Controllers\Berai\DashboardController;
 use App\Http\Controllers\Berai\ProjectController;
 use App\Http\Controllers\Berai\ProjectMemberController;
 use App\Http\Controllers\Berai\TaskController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -49,6 +50,14 @@ Route::middleware('auth')->group(function () {
             Route::post('/{project}', [TaskController::class, 'store'])->name('store');
             Route::patch('/{task}', [TaskController::class, 'update'])->name('update');
             Route::delete('/{task}', [TaskController::class, 'destroy'])->name('destroy');
+        });
+
+    // profile
+    Route::prefix('/profile')
+        ->name('profile.')
+        ->group(function () {
+            Route::get('/', [ProfileController::class, 'edit'])->name('edit');
+            Route::post('/', [ProfileController::class, 'update'])->name('update');
         });
 
     // logout

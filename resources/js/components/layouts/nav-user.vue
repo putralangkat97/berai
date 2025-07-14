@@ -1,12 +1,5 @@
 <script setup>
-import {
-  BadgeCheck,
-  Bell,
-  ChevronsUpDown,
-  CreditCard,
-  LogOut,
-  Sparkles,
-} from "lucide-vue-next";
+import { BadgeCheck, Bell, ChevronsUpDown, CreditCard, LogOut, Sparkles } from "lucide-vue-next";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -23,7 +16,7 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { useForm, usePage } from "@inertiajs/vue3";
+import { useForm, usePage, router } from "@inertiajs/vue3";
 import { computed } from "vue";
 
 const form = useForm();
@@ -33,8 +26,11 @@ const handleLogout = (e) => {
   form.post("/logout");
 };
 
-const page = usePage().props;
-const user = computed(() => page.auth.user);
+const handleRouter = (url) => {
+  router.get(url);
+};
+
+const user = usePage().props.auth.user;
 
 const { isMobile } = useSidebar();
 </script>
@@ -49,13 +45,8 @@ const { isMobile } = useSidebar();
             class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
           >
             <Avatar class="h-8 w-8 rounded-lg">
-              <AvatarImage
-                :src="user.avatar ?? 'https://github.com/unovue.png'"
-                :alt="user.name"
-              />
-              <AvatarFallback class="rounded-lg">{{
-                user.name?.charAt(0) ?? "U"
-              }}</AvatarFallback>
+              <AvatarImage :src="user.avatar ?? 'https://github.com/unovue.png'" :alt="user.name" />
+              <AvatarFallback class="rounded-lg">{{ user.name?.charAt(0) ?? "U" }}</AvatarFallback>
             </Avatar>
             <div class="grid flex-1 text-left text-sm leading-tight">
               <span class="truncate font-semibold">{{ user.name }}</span>
@@ -77,9 +68,9 @@ const { isMobile } = useSidebar();
                   :src="user.avatar ?? 'https://github.com/unovue.png'"
                   :alt="user.name"
                 />
-                <AvatarFallback class="rounded-lg">{{
-                  user.name?.charAt(0) ?? "U"
-                }}</AvatarFallback>
+                <AvatarFallback class="rounded-lg">
+                  {{ user.name?.charAt(0) ?? "U" }}
+                </AvatarFallback>
               </Avatar>
               <div class="grid flex-1 text-left text-sm leading-tight">
                 <span class="truncate font-semibold">{{ user.name }}</span>
@@ -96,7 +87,7 @@ const { isMobile } = useSidebar();
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>
+            <DropdownMenuItem @click="handleRouter('/profile')">
               <BadgeCheck />
               Account
             </DropdownMenuItem>
