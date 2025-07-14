@@ -34,6 +34,8 @@ Route::middleware('auth')->group(function () {
             Route::get('/create', [ProjectController::class, 'create'])->name('create');
             Route::post('/create', [ProjectController::class, 'store'])->name('store');
             Route::get('/{project}', [ProjectController::class, 'show'])->name('show');
+            Route::put('/{project}', [ProjectController::class, 'update'])->name('update');
+            Route::delete('/{project}', [ProjectController::class, 'destroy'])->name('destroy');
 
             // Project Member
             Route::post('/{project}/members', ProjectMemberController::class);
@@ -44,13 +46,9 @@ Route::middleware('auth')->group(function () {
         ->name('task.')
         ->group(function () {
             Route::get('/', [TaskController::class, 'index'])->name('index');
-            Route::post('/{project}/task', [TaskController::class, 'store'])->name('store');
-            Route::patch('/{task}/status', [TaskController::class, 'updateStatus'])->name(
-                'update-status'
-            );
-            Route::patch('/{task}/priority', [TaskController::class, 'updatePriority'])->name(
-                'update-priority'
-            );
+            Route::post('/{project}', [TaskController::class, 'store'])->name('store');
+            Route::patch('/{task}', [TaskController::class, 'update'])->name('update');
+            Route::delete('/{task}', [TaskController::class, 'destroy'])->name('destroy');
         });
 
     // logout

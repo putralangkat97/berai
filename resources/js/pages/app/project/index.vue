@@ -41,26 +41,20 @@ watch(
       {
         preserveState: true,
         replace: true,
-      },
+      }
     );
-  }, 500),
+  }, 500)
 );
 </script>
 
 <template>
   <Head title="Projects" />
   <AppLayout :breadcrumbs="breadcrumbs">
-    <div
-      class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6"
-    >
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
       <h2 class="font-semibold text-xl">Projects</h2>
       <div class="flex space-x-2">
         <div class="w-full sm:w-auto sm:max-w-xs">
-          <Input
-            v-model="filters.search"
-            type="text"
-            placeholder="Search projects..."
-          />
+          <Input v-model="filters.search" type="text" placeholder="Search projects..." />
         </div>
         <Button as-child>
           <Link href="/project/create">Create Project</Link>
@@ -69,10 +63,7 @@ watch(
     </div>
 
     <!-- Grid for Project Cards -->
-    <div
-      v-if="projects.length > 0"
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-    >
+    <div v-if="projects.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <Card v-for="project in projects" :key="project.id" class="flex flex-col">
         <CardHeader>
           <CardTitle>{{ project.name }}</CardTitle>
@@ -81,8 +72,7 @@ watch(
           <div class="flex justify-between items-center mb-2">
             <span class="text-sm text-muted-foreground">Progress</span>
             <span class="text-sm font-medium"
-              >{{ project.completed_tasks_count }} /
-              {{ project.tasks_count }} tasks</span
+              >{{ project.completed_tasks_count }} / {{ project.tasks_count }} tasks</span
             >
           </div>
           <Progress :model-value="getProgress(project)" />
@@ -101,8 +91,7 @@ watch(
         <CardHeader>
           <CardTitle>No Projects Found</CardTitle>
           <CardDescription>
-            No projects match your current search, or you haven't created any
-            yet.
+            No projects match your current search, or you haven't created any yet.
           </CardDescription>
         </CardHeader>
         <CardContent>

@@ -61,7 +61,7 @@ class TaskController extends Controller
 
         return Inertia::render('app/task/index', [
             'tasks' => $tasks,
-            'filters' => $request->only(['search', 'status']),
+            'filters' => $request->only(['search', 'status', 'priority']),
             'taskStatuses' => TaskStatus::toArray(),
             'taskPriorities' => TaskPriority::toArray(),
         ]);
@@ -122,7 +122,7 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\RedirectResponse|null
      */
-    public function updateStatus(Request $request, Task $task): RedirectResponse
+    public function update(Request $request, Task $task): RedirectResponse
     {
         // Check if the allowed user can update the task
         Gate::authorize('update', $task);
@@ -130,11 +130,26 @@ class TaskController extends Controller
         DB::beginTransaction();
         try {
             $validated = $request->validate([
-                'status' => ['required', Rule::enum(TaskStatus::class)],
+                'title' => 'sometimes|string|max:255',
+                'description' => 'nullable|string',
+                'due_date' => 'sometimes|date',
+                'assigned_to_id' => [
+                    'sometimes',
+                    'integer',
+                    Rule::exists('project_user', 'user_id')->where('project_id', $task->project_id),
+                ],
+                'status' => ['sometimes', Rule::enum(TaskStatus::class)],
+                'priority' => ['sometimes', Rule::enum(TaskPriority::class)],
             ]);
 
             if ($validated) {
+                Log::info('before-status', [
+                    'data' => $task->status,
+                ]);
                 $task->update($validated);
+                Log::info('after-status', [
+                    'data' => $validated,
+                ]);
                 DB::commit();
 
                 return redirect()
@@ -142,6 +157,7 @@ class TaskController extends Controller
                     ->with('success', 'Task status updated');
             }
         } catch (\Exception $e) {
+            dd($e->getMessage());
             DB::rollBack();
             Log::error('task-status-update', [
                 'message' => $e->getMessage(),
@@ -156,40 +172,14 @@ class TaskController extends Controller
     }
 
     /**
-     * Update the specific task priority
-     *
-     * @return \Illuminate\Http\RedirectResponse|null
+     * Delete task
      */
-    public function updatePriority(Request $request, Task $task): RedirectResponse
+    public function destroy(Task $task): RedirectResponse
     {
-        // Check if the allowed user can update the task
-        Gate::authorize('update', $task);
+        Gate::authorize('delete', $task);
 
-        DB::beginTransaction();
-        try {
-            $validated = $request->validate([
-                'priority' => ['required', Rule::enum(TaskPriority::class)],
-            ]);
+        $task->delete();
 
-            if ($validated) {
-                $task->update($validated);
-                DB::commit();
-
-                return redirect()
-                    ->route('project.show', $task->project_id)
-                    ->with('success', 'Task priority updated');
-            }
-        } catch (\Exception $e) {
-            DB::rollBack();
-            Log::error('task-priority-update', [
-                'message' => $e->getMessage(),
-                'code' => $e->getCode(),
-            ]);
-
-            return redirect()
-                ->back()
-                ->withInput()
-                ->with('error', 'Failed to update the priority. Please try again.');
-        }
+        return back()->with('success', 'Task has been deleted');
     }
 }

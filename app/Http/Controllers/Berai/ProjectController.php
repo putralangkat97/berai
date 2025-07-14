@@ -10,6 +10,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -138,5 +139,53 @@ class ProjectController extends Controller
             'taskPriorities' => TaskPriority::toArray(),
             'filters' => $request->only(['search', 'status', 'priority']),
         ]);
+    }
+
+    /**
+     * Handle an incoming project update request
+     *
+     * @return \Illuminate\Http\RedirectResponse|null
+     */
+    public function update(Request $request, Project $project): RedirectResponse
+    {
+        Gate::authorize('update', $project);
+
+        DB::beginTransaction();
+        try {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255',
+                'description' => 'nullable|string',
+            ]);
+
+            if ($validated) {
+                $project->update($validated);
+                DB::commit();
+
+                return back()->with('success', 'Project details have been updated.');
+            }
+        } catch (\Exception $e) {
+            DB::rollBack();
+            Log::error('project-update', [
+                'message' => $e->getMessage(),
+                'code' => $e->getCode(),
+            ]);
+
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('error', 'Failed to update project. Please try again.');
+        }
+    }
+
+    /**
+     * Delete project
+     */
+    public function destroy(Project $project): RedirectResponse
+    {
+        Gate::authorize('delete', $project);
+
+        $project->delete();
+
+        return redirect()->route('project.index')->with('success', 'Project has been deleted');
     }
 }
