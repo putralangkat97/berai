@@ -85,7 +85,7 @@ class DashboardController extends Controller
      */
     public function welcome(): Response|RedirectResponse
     {
-        if (!session('new_user')) {
+        if (! session('new_user')) {
             return redirect()->route('dashboard');
         }
 
