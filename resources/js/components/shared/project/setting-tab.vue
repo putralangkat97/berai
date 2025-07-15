@@ -36,14 +36,14 @@ const form = useForm({
 });
 
 const updateProject = () => {
-  form.put(`/projects/${props.project.id}`, {
+  form.put(`/project/${props.project.id}`, {
     preserveScroll: true,
     onSuccess: () => toast.success("Project Updated"),
   });
 };
 
 const deleteProject = () => {
-  router.delete(`/projects/${props.project.id}`);
+  router.delete(`/project/${props.project.id}`);
 };
 </script>
 <template>
