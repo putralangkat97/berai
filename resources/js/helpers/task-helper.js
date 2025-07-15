@@ -10,12 +10,23 @@ const LOW = 1;
 class TaskHelper {
   getStatusLabel(status) {
     switch (status) {
-      case TODO:
+      case COMPLETED:
         return "Completed";
       case IN_PROGRESS:
         return "In Progress";
       default:
         return "To-Do";
+    }
+  }
+
+  getStatusVariant(status) {
+    switch (status) {
+      case COMPLETED:
+        return "outline";
+      case IN_PROGRESS:
+        return "primary";
+      default:
+        return "secondary";
     }
   }
 

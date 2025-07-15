@@ -1,9 +1,10 @@
 <script setup>
 import AppLayout from "@/layouts/app.vue";
-import { Head, Link, router } from "@inertiajs/vue3";
-import { ref, watch, reactive } from "vue";
+import { Head, router } from "@inertiajs/vue3";
+import { watch, reactive } from "vue";
 import { format, parseISO } from "date-fns";
 import debounce from "lodash.debounce";
+import TaskHelper from "@/helpers/task-helper";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -67,11 +68,7 @@ const formatDate = (dateString) => {
   }
 };
 
-const getStatusVariant = (status) => {
-  if (status === "Completed") return "default";
-  if (status === "In Progress") return "secondary";
-  return "outline";
-};
+const taskHelper = new TaskHelper();
 </script>
 
 <template>
@@ -139,8 +136,11 @@ const getStatusVariant = (status) => {
                 @click="router.get(`/project/${task.project.id}`)"
               >
                 <TableCell>
-                  <Badge :variant="getStatusVariant(task.status)">
-                    {{ task.status }}
+                  <Badge
+                    :variant="taskHelper.getStatusVariant(task.status)"
+                    class="berai-font-mono"
+                  >
+                    {{ taskHelper.getStatusLabel(task.status) }}
                   </Badge>
                 </TableCell>
                 <TableCell class="font-medium">{{ task.title }}</TableCell>
@@ -148,7 +148,14 @@ const getStatusVariant = (status) => {
                   {{ task.project.name }}
                 </TableCell>
                 <TableCell>{{ formatDate(task.due_date) }}</TableCell>
-                <TableCell>{{ task.priority }}</TableCell>
+                <TableCell>
+                  <Badge
+                    :variant="taskHelper.getPriorityVariant(task.priority)"
+                    class="berai-font-mono"
+                  >
+                    {{ taskHelper.getPriorityLabel(task.priority) }}
+                  </Badge>
+                </TableCell>
               </TableRow>
             </template>
             <TableRow v-else>

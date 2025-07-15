@@ -3,6 +3,7 @@ import AppLayout from "@/layouts/app.vue";
 import { Head, Link, router } from "@inertiajs/vue3";
 import { watch, reactive } from "vue";
 import debounce from "lodash.debounce";
+import { Plus } from "lucide-vue-next";
 
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

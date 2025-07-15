@@ -132,6 +132,11 @@
 }
 
 @font-face {
+  font-family: "__Berai_Regular";
+  src: url("../fonts/zed-sans-regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "__Berai_Plex_Mono";
   src: url("../fonts/zed-plex-mono-regular.ttf") format("truetype");
   font-weight: normal;
@@ -139,11 +144,24 @@
 }
 
 @font-face {
-  font-family: "__Berai_Regular";
-  src: url("../fonts/zed-sans-regular.ttf") format("truetype");
+  font-family: "__Berai_Plex_Regular";
+  src:
+    url("../fonts/zed-plex-sans-regular.ttf") format("truetype"),
+    url("../fonts/zed-plex-sans-bold.ttf") format("truetype"),
+    url("../fonts/zed-plex-sans-light.ttf") format("truetype"),
+    url("../fonts/zed-plex-sans-medium.ttf") format("truetype"),
+    url("../fonts/zed-plex-sans-semibold.ttf") format("truetype"),
+    url("../fonts/zed-plex-sans-thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .berai-font {
+  font-family: "__Berai_Plex_Regular", "sans-serif";
+  font-weight: "normal";
+}
+
+.berai-font-mono {
   font-family: "__Berai_Plex_Mono", "sans-serif";
   font-weight: "normal";
 }

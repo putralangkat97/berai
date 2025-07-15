@@ -53,9 +53,9 @@ class TaskController extends Controller
                     'title' => $task->title,
                     'due_date' => $task->due_date,
                     'project' => $task->project,
-                    'status' => $task->status->message(),
+                    'status' => $task->status,
                     'assignedUser' => $task->assignedUser,
-                    'priority' => $task->priority->message(),
+                    'priority' => $task->priority,
                 ];
             });
 
