@@ -4,14 +4,7 @@ import { Head, Link, router } from "@inertiajs/vue3";
 import { watch, reactive } from "vue";
 import debounce from "lodash.debounce";
 
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Input } from "@/components/ui/input";
@@ -62,7 +55,7 @@ watch(
       </div>
     </div>
 
-    <!-- Grid for Project Cards -->
+    <!-- Project Cards -->
     <div v-if="projects.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <Card v-for="project in projects" :key="project.id" class="flex flex-col">
         <CardHeader>
@@ -85,21 +78,35 @@ watch(
       </Card>
     </div>
 
-    <!-- Empty state when no projects exists -->
+    <!-- empty state when no projects exists -->
     <div v-else>
-      <Card class="text-center py-12">
-        <CardHeader>
-          <CardTitle>No Projects Found</CardTitle>
-          <CardDescription>
-            No projects match your current search, or you haven't created any yet.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
+      <div class="text-center border-2 border-dashed rounded-lg p-12">
+        <svg
+          class="mx-auto h-12 w-12 text-muted-foreground"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            vector-effect="non-scaling-stroke"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+          />
+        </svg>
+        <h3 class="mt-2 text-sm font-semibold">No projects</h3>
+        <p class="mt-1 text-sm text-muted-foreground">Get started by creating a new project.</p>
+        <div class="mt-6">
           <Button as-child>
-            <Link href="/project/create">Create Your First Project</Link>
+            <Link href="/project/create">
+              <Plus class="mr-2 h-4 w-4" />
+              Create Project
+            </Link>
           </Button>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   </AppLayout>
 </template>

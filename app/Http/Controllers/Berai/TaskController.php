@@ -74,6 +74,8 @@ class TaskController extends Controller
      */
     public function store(Request $request, Project $project): RedirectResponse
     {
+        Gate::authorize('createTask', $project);
+
         DB::beginTransaction();
         try {
             $validated = $request->validate([
@@ -157,7 +159,6 @@ class TaskController extends Controller
                     ->with('success', 'Task status updated');
             }
         } catch (\Exception $e) {
-            dd($e->getMessage());
             DB::rollBack();
             Log::error('task-status-update', [
                 'message' => $e->getMessage(),

@@ -98,6 +98,8 @@ class ProjectController extends Controller
      */
     public function show(Request $request, Project $project): Response
     {
+        Gate::authorize('view', $project);
+
         $project->load([
             'owner',
             'members',

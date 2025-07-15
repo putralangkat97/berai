@@ -1,20 +1,5 @@
 <script setup>
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -53,12 +38,16 @@ const todoTasks = ref([]);
 const inProgressTasks = ref([]);
 const completedTasks = ref([]);
 
+const TODO = 1;
+const IN_PROGRESS = 2;
+const COMPLETED = 3;
+
 watch(
   () => props.tasks,
   (newTasks) => {
-    todoTasks.value = newTasks.filter((t) => t.status === 1);
-    inProgressTasks.value = newTasks.filter((t) => t.status === 2);
-    completedTasks.value = newTasks.filter((t) => t.status === 3);
+    todoTasks.value = newTasks.filter((t) => t.status === TODO);
+    inProgressTasks.value = newTasks.filter((t) => t.status === IN_PROGRESS);
+    completedTasks.value = newTasks.filter((t) => t.status === COMPLETED);
   },
   { immediate: true, deep: true }
 );
@@ -75,7 +64,6 @@ const taskHelper = new TaskHelper();
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <!-- === TO-DO COLUMN === -->
     <div class="bg-muted/50 p-4 rounded-lg">
       <h3 class="font-semibold mb-4 text-sm">To-Do · {{ todoTasks.length }}</h3>
       <VueDraggable
@@ -92,38 +80,41 @@ const taskHelper = new TaskHelper();
           class="cursor-grab group relative"
         >
           <Card class="bg-background shadow-sm hover:shadow-md transition-shadow">
-            <DropdownMenu
-              ><DropdownMenuTrigger as-child
-                ><Button
+            <DropdownMenu>
+              <DropdownMenuTrigger as-child>
+                <Button
                   variant="ghost"
                   size="icon"
                   class="h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
-                  ><MoreHorizontal class="h-4 w-4" /></Button
-              ></DropdownMenuTrigger>
+                >
+                  <MoreHorizontal class="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuContent>
-                  <DropdownMenuItem @click="emit('editTask', element)"
-                    ><Pencil class="mr-2 h-4 w-4" />Edit</DropdownMenuItem
-                  >
-                  <AlertDialog
-                    ><AlertDialogTrigger as-child
-                      ><DropdownMenuItem @select.prevent class="text-destructive"
-                        ><Trash2 class="mr-2 h-4 w-4" />Delete</DropdownMenuItem
-                      ></AlertDialogTrigger
-                    >
-                    <AlertDialogContent
-                      ><AlertDialogHeader
-                        ><AlertDialogTitle>Delete Task?</AlertDialogTitle
-                        ><AlertDialogDescription
-                          >This action cannot be undone.</AlertDialogDescription
-                        ></AlertDialogHeader
-                      ><AlertDialogFooter
-                        ><AlertDialogCancel>Cancel</AlertDialogCancel
-                        ><AlertDialogAction @click="emit('deleteTask', element)"
-                          >Continue</AlertDialogAction
-                        ></AlertDialogFooter
-                      ></AlertDialogContent
-                    >
+                  <DropdownMenuItem @click="emit('editTask', element)">
+                    <Pencil class="mr-2 h-4 w-4" />Edit
+                  </DropdownMenuItem>
+                  <AlertDialog>
+                    <AlertDialogTrigger as-child>
+                      <DropdownMenuItem @select.prevent class="text-destructive">
+                        <Trash2 class="mr-2 h-4 w-4" />Delete
+                      </DropdownMenuItem>
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>Delete Task?</AlertDialogTitle>
+                        <AlertDialogDescription>
+                          This action cannot be undone.
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>Cancel</AlertDialogCancel>
+                        <AlertDialogAction @click="emit('deleteTask', element)">
+                          Continue
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
                   </AlertDialog>
                 </DropdownMenuContent>
               </DropdownMenuPortal>
@@ -131,20 +122,21 @@ const taskHelper = new TaskHelper();
             <CardContent class="p-3">
               <p class="font-semibold text-sm leading-snug">{{ element.title }}</p>
               <div class="flex items-center justify-between mt-3">
-                <Badge :variant="taskHelper.getPriorityVariant(element.priority)">{{
-                  taskHelper.getPriorityLabel(element.priority)
-                }}</Badge>
+                <Badge :variant="taskHelper.getPriorityVariant(element.priority)">
+                  {{ taskHelper.getPriorityLabel(element.priority) }}
+                </Badge>
                 <div class="flex items-center gap-2">
-                  <span class="text-xs text-muted-foreground">{{
-                    dateHelper.formatDate(element.due_date)
-                  }}</span>
-                  <Avatar class="h-6 w-6"
-                    ><AvatarImage
+                  <span class="text-xs text-muted-foreground">
+                    {{ dateHelper.formatDate(element.due_date) }}
+                  </span>
+                  <Avatar class="h-6 w-6">
+                    <AvatarImage
                       :src="element.assigned_user?.avatar ?? 'https://github.com/unovue.png'"
-                    /><AvatarFallback>{{
-                      element.assigned_user?.name.charAt(0) ?? "U"
-                    }}</AvatarFallback></Avatar
-                  >
+                    />
+                    <AvatarFallback>
+                      {{ element.assigned_user?.name.charAt(0) ?? "U" }}
+                    </AvatarFallback>
+                  </Avatar>
                 </div>
               </div>
             </CardContent>
@@ -153,7 +145,6 @@ const taskHelper = new TaskHelper();
       </VueDraggable>
     </div>
 
-    <!-- === IN PROGRESS COLUMN === -->
     <div class="bg-muted/50 p-4 rounded-lg">
       <h3 class="font-semibold mb-4 text-sm">In Progress · {{ inProgressTasks.length }}</h3>
       <VueDraggable
@@ -170,38 +161,41 @@ const taskHelper = new TaskHelper();
           class="cursor-grab group relative"
         >
           <Card class="bg-background shadow-sm hover:shadow-md transition-shadow">
-            <DropdownMenu
-              ><DropdownMenuTrigger as-child
-                ><Button
+            <DropdownMenu>
+              <DropdownMenuTrigger as-child>
+                <Button
                   variant="ghost"
                   size="icon"
                   class="h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
-                  ><MoreHorizontal class="h-4 w-4" /></Button
-              ></DropdownMenuTrigger>
+                >
+                  <MoreHorizontal class="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuContent>
-                  <DropdownMenuItem @click="emit('editTask', element)"
-                    ><Pencil class="mr-2 h-4 w-4" />Edit</DropdownMenuItem
-                  >
-                  <AlertDialog
-                    ><AlertDialogTrigger as-child
-                      ><DropdownMenuItem @select.prevent class="text-destructive"
-                        ><Trash2 class="mr-2 h-4 w-4" />Delete</DropdownMenuItem
-                      ></AlertDialogTrigger
-                    >
-                    <AlertDialogContent
-                      ><AlertDialogHeader
-                        ><AlertDialogTitle>Delete Task?</AlertDialogTitle
-                        ><AlertDialogDescription
-                          >This action cannot be undone.</AlertDialogDescription
-                        ></AlertDialogHeader
-                      ><AlertDialogFooter
-                        ><AlertDialogCancel>Cancel</AlertDialogCancel
-                        ><AlertDialogAction @click="emit('deleteTask', element)"
-                          >Continue</AlertDialogAction
-                        ></AlertDialogFooter
-                      ></AlertDialogContent
-                    >
+                  <DropdownMenuItem @click="emit('editTask', element)">
+                    <Pencil class="mr-2 h-4 w-4" />Edit
+                  </DropdownMenuItem>
+                  <AlertDialog>
+                    <AlertDialogTrigger as-child>
+                      <DropdownMenuItem @select.prevent class="text-destructive">
+                        <Trash2 class="mr-2 h-4 w-4" />Delete
+                      </DropdownMenuItem>
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>Delete Task?</AlertDialogTitle>
+                        <AlertDialogDescription>
+                          This action cannot be undone.
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>Cancel</AlertDialogCancel>
+                        <AlertDialogAction @click="emit('deleteTask', element)">
+                          Continue
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
                   </AlertDialog>
                 </DropdownMenuContent>
               </DropdownMenuPortal>
@@ -209,20 +203,21 @@ const taskHelper = new TaskHelper();
             <CardContent class="p-3">
               <p class="font-semibold text-sm leading-snug">{{ element.title }}</p>
               <div class="flex items-center justify-between mt-3">
-                <Badge :variant="taskHelper.getPriorityVariant(element.priority)">{{
-                  taskHelper.getPriorityLabel(element.priority)
-                }}</Badge>
+                <Badge :variant="taskHelper.getPriorityVariant(element.priority)">
+                  {{ taskHelper.getPriorityLabel(element.priority) }}
+                </Badge>
                 <div class="flex items-center gap-2">
-                  <span class="text-xs text-muted-foreground">{{
-                    dateHelper.formatDate(element.due_date)
-                  }}</span>
-                  <Avatar class="h-6 w-6"
-                    ><AvatarImage
+                  <span class="text-xs text-muted-foreground">
+                    {{ dateHelper.formatDate(element.due_date) }}
+                  </span>
+                  <Avatar class="h-6 w-6">
+                    <AvatarImage
                       :src="element.assigned_user?.avatar ?? 'https://github.com/unovue.png'"
-                    /><AvatarFallback>{{
-                      element.assigned_user?.name.charAt(0) ?? "U"
-                    }}</AvatarFallback></Avatar
-                  >
+                    />
+                    <AvatarFallback>
+                      {{ element.assigned_user?.name.charAt(0) ?? "U" }}
+                    </AvatarFallback>
+                  </Avatar>
                 </div>
               </div>
             </CardContent>
@@ -247,38 +242,41 @@ const taskHelper = new TaskHelper();
           class="cursor-grab group relative"
         >
           <Card class="bg-background shadow-sm opacity-70 hover:shadow-md transition-shadow">
-            <DropdownMenu
-              ><DropdownMenuTrigger as-child
-                ><Button
+            <DropdownMenu>
+              <DropdownMenuTrigger as-child>
+                <Button
                   variant="ghost"
                   size="icon"
                   class="h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
-                  ><MoreHorizontal class="h-4 w-4" /></Button
-              ></DropdownMenuTrigger>
+                >
+                  <MoreHorizontal class="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuContent>
-                  <DropdownMenuItem @click="emit('editTask', element)"
-                    ><Pencil class="mr-2 h-4 w-4" />Edit</DropdownMenuItem
-                  >
-                  <AlertDialog
-                    ><AlertDialogTrigger as-child
-                      ><DropdownMenuItem @select.prevent class="text-destructive"
-                        ><Trash2 class="mr-2 h-4 w-4" />Delete</DropdownMenuItem
-                      ></AlertDialogTrigger
-                    >
-                    <AlertDialogContent
-                      ><AlertDialogHeader
-                        ><AlertDialogTitle>Delete Task?</AlertDialogTitle
-                        ><AlertDialogDescription
-                          >This action cannot be undone.</AlertDialogDescription
-                        ></AlertDialogHeader
-                      ><AlertDialogFooter
-                        ><AlertDialogCancel>Cancel</AlertDialogCancel
-                        ><AlertDialogAction @click="emit('deleteTask', element)"
-                          >Continue</AlertDialogAction
-                        ></AlertDialogFooter
-                      ></AlertDialogContent
-                    >
+                  <DropdownMenuItem @click="emit('editTask', element)">
+                    <Pencil class="mr-2 h-4 w-4" />Edit
+                  </DropdownMenuItem>
+                  <AlertDialog>
+                    <AlertDialogTrigger as-child>
+                      <DropdownMenuItem @select.prevent class="text-destructive">
+                        <Trash2 class="mr-2 h-4 w-4" />Delete
+                      </DropdownMenuItem>
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>Delete Task?</AlertDialogTitle>
+                        <AlertDialogDescription>
+                          This action cannot be undone.
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>Cancel</AlertDialogCancel>
+                        <AlertDialogAction @click="emit('deleteTask', element)">
+                          Continue
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
                   </AlertDialog>
                 </DropdownMenuContent>
               </DropdownMenuPortal>
@@ -286,20 +284,21 @@ const taskHelper = new TaskHelper();
             <CardContent class="p-3">
               <p class="font-semibold text-sm leading-snug line-through">{{ element.title }}</p>
               <div class="flex items-center justify-between mt-3">
-                <Badge :variant="taskHelper.getPriorityVariant(element.priority)">{{
-                  taskHelper.getPriorityLabel(element.priority)
-                }}</Badge>
+                <Badge :variant="taskHelper.getPriorityVariant(element.priority)">
+                  {{ taskHelper.getPriorityLabel(element.priority) }}
+                </Badge>
                 <div class="flex items-center gap-2">
-                  <span class="text-xs text-muted-foreground">{{
-                    dateHelper.formatDate(element.due_date)
-                  }}</span>
-                  <Avatar class="h-6 w-6"
-                    ><AvatarImage
+                  <span class="text-xs text-muted-foreground">
+                    {{ dateHelper.formatDate(element.due_date) }}
+                  </span>
+                  <Avatar class="h-6 w-6">
+                    <AvatarImage
                       :src="element.assigned_user?.avatar ?? 'https://github.com/unovue.png'"
-                    /><AvatarFallback>{{
-                      element.assigned_user?.name.charAt(0) ?? "U"
-                    }}</AvatarFallback></Avatar
-                  >
+                    />
+                    <AvatarFallback>
+                      {{ element.assigned_user?.name.charAt(0) ?? "U" }}
+                    </AvatarFallback>
+                  </Avatar>
                 </div>
               </div>
             </CardContent>

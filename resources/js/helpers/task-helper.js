@@ -1,9 +1,18 @@
+const TODO = 1;
+const IN_PROGRESS = 2;
+const COMPLETED = 3;
+
+const URGENT = 4;
+const HIGH = 3;
+const MEDIUM = 2;
+const LOW = 1;
+
 class TaskHelper {
   getStatusLabel(status) {
     switch (status) {
-      case 3:
+      case TODO:
         return "Completed";
-      case 2:
+      case IN_PROGRESS:
         return "In Progress";
       default:
         return "To-Do";
@@ -12,11 +21,11 @@ class TaskHelper {
 
   getPriorityLabel(priority) {
     switch (priority) {
-      case 4:
+      case URGENT:
         return "Urgent";
-      case 3:
+      case HIGH:
         return "High";
-      case 2:
+      case MEDIUM:
         return "Medium";
       default:
         return "Low";
@@ -25,11 +34,11 @@ class TaskHelper {
 
   getPriorityVariant(priority) {
     switch (priority) {
-      case 4:
+      case URGENT:
         return "destructive";
-      case 3:
+      case HIGH:
         return "destructive";
-      case 2:
+      case MEDIUM:
         return "secondary";
       default:
         return "outline";

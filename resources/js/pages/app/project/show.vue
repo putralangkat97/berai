@@ -4,8 +4,6 @@ import { computed, ref, reactive, watch } from "vue";
 import { Head, router, usePage } from "@inertiajs/vue3";
 import { toast, Toaster } from "vue-sonner";
 import debounce from "lodash.debounce";
-
-// --- ICONS & UI ---
 import { List, Kanban } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,8 +16,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-// --- PARTIALS ---
 import AddMemberDialog from "@/components/shared/project/add-member-dialog.vue";
 import MembersList from "@/components/shared/project/member-list-view.vue";
 import ActivityFeed from "@/components/shared/project/activity-feed.vue";
@@ -29,7 +25,6 @@ import EditTaskDialog from "@/components/shared/task/edit-task-dialog.vue";
 import TaskListView from "@/components/shared/task/task-list-view.vue";
 import TaskBoardView from "@/components/shared/task/task-board-view.vue";
 
-// --- PROPS & PAGE DATA ---
 const props = defineProps({
   project: Object,
   activities: Array,
@@ -42,14 +37,12 @@ const page = usePage();
 const authUser = computed(() => page.props.auth.user);
 const canManageProject = computed(() => authUser.value.id === props.project.owner_id);
 
-// --- COMPONENT STATE ---
 const isAddTaskDialogOpen = ref(false);
 const isAddMemberDialogOpen = ref(false);
 const isEditTaskDialogOpen = ref(false);
 const editingTask = ref(null);
 const viewMode = ref("list");
 
-// --- ACTIONS ---
 const updateTask = (task, data) => {
   router.patch(`/task/${task.id}`, data, {
     preserveScroll: true,
@@ -113,7 +106,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
   <AppLayout :breadcrumbs="breadcrumbs">
     <Toaster position="top-right" richColors />
 
-    <!-- === DIALOGS === -->
+    <!-- dialogs -->
     <CreateTaskDialog
       v-model:open="isAddTaskDialogOpen"
       :project="project"
@@ -133,7 +126,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
       v-if="canManageProject"
     />
 
-    <!-- === HEADER === -->
+    <!-- header -->
     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6">
       <div>
         <h2 class="font-semibold text-2xl">{{ project.name }}</h2>
@@ -149,7 +142,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
       </div>
     </div>
 
-    <!-- === TABS === -->
+    <!-- tabs -->
     <Tabs default-value="tasks" class="w-full">
       <TabsList class="grid w-full" :class="canManageProject ? 'grid-cols-4' : 'grid-cols-3'">
         <TabsTrigger value="tasks">Tasks</TabsTrigger>
@@ -158,7 +151,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
         <TabsTrigger v-if="canManageProject" value="settings">Settings</TabsTrigger>
       </TabsList>
 
-      <!-- === TASKS TAB === -->
+      <!-- tasks tabs -->
       <TabsContent value="tasks" class="mt-4">
         <Card>
           <CardHeader class="flex flex-row items-center justify-between">
@@ -242,7 +235,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
         </Card>
       </TabsContent>
 
-      <!-- === MEMBERS TAB === -->
+      <!-- members tab -->
       <TabsContent value="members" class="mt-4">
         <Card>
           <CardHeader>
@@ -255,7 +248,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
         </Card>
       </TabsContent>
 
-      <!-- === ACTIVITY TAB === -->
+      <!-- activities tab -->
       <TabsContent value="activity" class="mt-4">
         <Card>
           <CardHeader>
@@ -271,7 +264,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
         </Card>
       </TabsContent>
 
-      <!-- === SETTINGS TAB === -->
+      <!-- setting tabs -->
       <TabsContent v-if="canManageProject" value="settings" class="mt-4">
         <SettingsTab :project="project" />
       </TabsContent>

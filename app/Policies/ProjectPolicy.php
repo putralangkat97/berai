@@ -20,7 +20,7 @@ class ProjectPolicy
      */
     public function view(User $user, Project $project): bool
     {
-        return false;
+        return $project->members->contains($user);
     }
 
     /**
@@ -61,5 +61,13 @@ class ProjectPolicy
     public function forceDelete(User $user, Project $project): bool
     {
         return false;
+    }
+
+    /**
+     * Determine whether the user can create task into a project.
+     */
+    public function createTask(User $user, Project $project): bool
+    {
+        return $project->members->contains($user);
     }
 }

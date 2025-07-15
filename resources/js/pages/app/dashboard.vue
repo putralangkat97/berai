@@ -52,12 +52,11 @@ const getProgress = (project) => {
               }}</CardDescription>
             </CardHeader>
             <CardContent class="flex-grow">
-              <!-- REFACTORED: Functional Progress Bar -->
               <div class="flex justify-between items-center mb-2">
                 <span class="text-sm text-muted-foreground">Progress</span>
-                <span class="text-sm font-medium"
-                  >{{ project.completed_tasks_count }} / {{ project.tasks_count }} tasks</span
-                >
+                <span class="text-sm font-medium">
+                  {{ project.completed_tasks_count }} / {{ project.tasks_count }} tasks
+                </span>
               </div>
               <Progress :model-value="getProgress(project)" />
             </CardContent>
@@ -69,14 +68,14 @@ const getProgress = (project) => {
           </Card>
         </div>
         <div v-else>
-          <Card class="text-center py-12">
+          <Card class="text-center">
             <CardHeader>
-              <CardTitle>Welcome to Your Dashboard</CardTitle>
-              <CardDescription>Get started by creating your first project.</CardDescription>
+              <CardTitle>Welcome to Berai!</CardTitle>
+              <CardDescription> Get started by creating your first project. </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button as-child>
-                <Link href="/project/create">Create Your First Project</Link>
+              <Button size="lg" as-child class="mt-1">
+                <Link href="/project/create"> Create Your First Project </Link>
               </Button>
             </CardContent>
           </Card>

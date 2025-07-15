@@ -4,12 +4,13 @@ namespace App\Mail;
 
 use App\Models\Task;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class TaskAssigned extends Mailable
+class TaskAssigned extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -26,9 +27,7 @@ class TaskAssigned extends Mailable
      */
     public function envelope(): Envelope
     {
-        return new Envelope(
-            subject: 'A New Task Has Been Assigned to You',
-        );
+        return new Envelope(subject: 'A New Task Has Been Assigned to You');
     }
 
     /**
@@ -36,9 +35,7 @@ class TaskAssigned extends Mailable
      */
     public function content(): Content
     {
-        return new Content(
-            markdown: 'emails.tasks.assigned',
-        );
+        return new Content(markdown: 'emails.tasks.assigned');
     }
 
     /**
