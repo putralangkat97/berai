@@ -1,17 +1,18 @@
-name: Code Lint
+name: Fix Code Style
 
-on:
-  workflow_call:
+on: [push]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: true
       matrix:
         php: [8.4]
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2

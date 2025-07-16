@@ -1,18 +1,18 @@
-name: Deploy
+name: Deploy App
 
 on:
   push:
-    branches: [staging]
+    branches:
+      - staging
 
 jobs:
-  call-build:
-    uses: ./.github/workflows/build.yml
-
   deploy:
-    needs: call-build
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.0
         with:
@@ -21,14 +21,27 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/stg-berai
+
+            echo "📥 Pulling latest code"
             git pull origin staging
+
+            echo "📦 Installing PHP dependencies"
             composer install --no-dev --optimize-autoloader
+
+            echo "🔧 Fixing permissions"
+            mkdir -p storage/logs
+            chmod -R ug+rwx storage
+            chown -R anggit:www-data storage
+
+            echo "🛠️  Installing Node.js"
             curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-            sudo apt install -y nodejs/nodistro
+            sudo apt install -y nodejs
+
+            echo "🧱 Building assets"
             npm ci
             npm run build
+
+            echo "🚀 Running Laravel cache commands"
             php artisan config:cache
             php artisan route:cache
             php artisan view:cache
-            chmod -R ug+rwx storage
-            chown -R anggit:www-data storage
