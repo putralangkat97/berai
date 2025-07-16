@@ -1,0 +1,29 @@
+name: Deploy App
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: anggit
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/stg-berai
+            git pull origin staging
+            composer install --no-dev --optimize-autoloader
+            npm install && npm run build
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
