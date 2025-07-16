@@ -1,15 +1,11 @@
 <script setup>
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link, useForm } from "@inertiajs/vue3";
+import { Loader } from "lucide-vue-next";
+import { ref } from "vue";
 
 const form = useForm({
   name: "",
@@ -18,8 +14,15 @@ const form = useForm({
   password_confirmation: "",
 });
 
+const loading = ref(false);
+
 const handleRegister = () => {
-  form.post("/register");
+  loading.value = true;
+  form.post("/register", {
+    onSuccess: () => {
+      loading.value = false;
+    },
+  });
 };
 </script>
 
@@ -28,9 +31,7 @@ const handleRegister = () => {
     <Card>
       <CardHeader class="text-center">
         <CardTitle class="text-xl"> Welcome back </CardTitle>
-        <CardDescription>
-          Sign Up with your Apple or Google account
-        </CardDescription>
+        <CardDescription> Sign Up with your Apple or Google account </CardDescription>
       </CardHeader>
       <CardContent>
         <form @submit.prevent="handleRegister">
@@ -58,22 +59,14 @@ const handleRegister = () => {
             <div
               class="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border"
             >
-              <span
-                class="relative z-10 bg-background px-2 text-muted-foreground"
-              >
+              <span class="relative z-10 bg-background px-2 text-muted-foreground">
                 Or continue with
               </span>
             </div>
             <div class="grid gap-6">
               <div class="grid gap-2">
                 <Label html-for="name">Full Name</Label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="John Doe"
-                  v-model="form.name"
-                  required
-                />
+                <Input id="name" type="text" placeholder="John Doe" v-model="form.name" required />
                 <p class="text-xs text-red-600 -mt-1.5" v-if="form.errors.name">
                   {{ form.errors.name }}
                 </p>
@@ -87,25 +80,14 @@ const handleRegister = () => {
                   v-model="form.email"
                   required
                 />
-                <p
-                  class="text-xs text-red-600 -mt-1.5"
-                  v-if="form.errors.email"
-                >
+                <p class="text-xs text-red-600 -mt-1.5" v-if="form.errors.email">
                   {{ form.errors.email }}
                 </p>
               </div>
               <div class="grid gap-2">
                 <Label html-for="password">Password</Label>
-                <Input
-                  id="password"
-                  type="password"
-                  v-model="form.password"
-                  required
-                />
-                <p
-                  class="text-xs text-red-600 -mt-1.5"
-                  v-if="form.errors.password"
-                >
+                <Input id="password" type="password" v-model="form.password" required />
+                <p class="text-xs text-red-600 -mt-1.5" v-if="form.errors.password">
                   {{ form.errors.password }}
                 </p>
               </div>
@@ -117,20 +99,18 @@ const handleRegister = () => {
                   v-model="form.password_confirmation"
                   required
                 />
-                <p
-                  class="text-xs text-red-600 -mt-1.5"
-                  v-if="form.errors.password_confirmation"
-                >
+                <p class="text-xs text-red-600 -mt-1.5" v-if="form.errors.password_confirmation">
                   {{ form.errors.password_confirmation }}
                 </p>
               </div>
-              <Button type="submit" class="w-full"> Register </Button>
+              <Button type="submit" class="w-full" :disabled="loading">
+                <Loader v-if="loading" class="animate-spin" />
+                Register
+              </Button>
             </div>
             <div class="text-center text-sm">
               Already have account?
-              <Link href="/login" class="underline underline-offset-4">
-                Login
-              </Link>
+              <Link href="/login" class="underline underline-offset-4"> Login </Link>
             </div>
           </div>
         </form>
