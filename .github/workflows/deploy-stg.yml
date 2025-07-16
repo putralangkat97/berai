@@ -21,16 +21,27 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/stg-berai
-            sudo chown -R www-data:www-data ./storage ./bootstrap/cache
-            sudo chmod -R 775 ./storage ./bootstrap/cache
+
+            echo "📥 Pulling latest code"
             git pull origin staging
+
+            echo "📦 Installing PHP dependencies"
             composer install --no-dev --optimize-autoloader
+
+            echo "🔧 Fixing permissions"
+            mkdir -p storage/logs bootstrap/cache
+            chmod -R ug+rwx storage bootstrap/cache
+            chown -R anggit:www-data storage bootstrap/cache
+
+            echo "🛠️  Installing Node.js"
             curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
             sudo apt install -y nodejs
-            npm -v
-            node -v
+
+            echo "🧱 Building assets"
             npm ci
             npm run build
+
+            echo "🚀 Running Laravel cache commands"
             php artisan config:cache
             php artisan route:cache
             php artisan view:cache
