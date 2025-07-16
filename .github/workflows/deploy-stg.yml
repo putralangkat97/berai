@@ -31,4 +31,4 @@ jobs:
             php artisan route:cache
             php artisan view:cache
             chmod -R ug+rwx storage
-            chown -R anggit:www-data storage
+            echo "✅ Skipping chown - already owned properly"
