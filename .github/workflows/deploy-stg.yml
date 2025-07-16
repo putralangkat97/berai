@@ -21,11 +21,12 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/stg-berai
-            git pull origin staging
+            git fetch origin
+            git reset --hard origin/staging
             composer install --no-dev --optimize-autoloader
             curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
             sudo apt install -y nodejs/nodistro
-            npm install
+            npm ci
             npm run build
             npm run build:ssr
             php artisan config:cache
