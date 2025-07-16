@@ -22,7 +22,7 @@ const breadcrumbs = [{ label: "Dashboard", url: "/dashboard" }];
 const props = defineProps({
   projects: Array,
   openTasks: Array,
-  analytics: Array,
+  analytics: [Array, Object],
 });
 
 const getProgress = (project) => {
