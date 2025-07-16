@@ -27,8 +27,10 @@ jobs:
             sudo apt install -y nodejs/nodistro
             npm install
             npm run build
+            npm run build:ssr
             php artisan config:cache
             php artisan route:cache
             php artisan view:cache
-            chmod -R ug+rwX storage/framework storage/bootstrap/cache
+            chmod -R ug+rwX storage storage/framework
             echo "✅ Skipping chown - already owned properly"
+            sudo supervisorctl restart stg-inertia-ssr
