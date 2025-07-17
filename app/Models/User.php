@@ -41,17 +41,11 @@ class User extends Authenticatable
         ];
     }
 
-    /**
-     * @return Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
     public function projects(): BelongsToMany
     {
         return $this->belongsToMany(Project::class);
     }
 
-    /**
-     * @return Illuminate\Database\Eloquent\Relations\HasMany
-     */
     public function ownedProjects(): HasMany
     {
         return $this->hasMany(Project::class, 'owner_id');

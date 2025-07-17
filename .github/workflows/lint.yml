@@ -6,7 +6,7 @@ on:
   workflow_call:
 
 jobs:
-  lint:
+  code-lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:

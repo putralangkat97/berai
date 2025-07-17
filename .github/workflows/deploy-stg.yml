@@ -17,10 +17,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.VPS_HOST }}
-          username: anggit
+          username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/stg-berai
+            cd ${{ secrets.STG_PROJECT_DIR }}
             git fetch origin
             git reset --hard origin/staging
             composer install --no-dev --optimize-autoloader

@@ -17,7 +17,6 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { useForm, usePage, router } from "@inertiajs/vue3";
-import { computed } from "vue";
 
 const form = useForm();
 
