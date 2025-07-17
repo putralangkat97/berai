@@ -35,3 +35,4 @@ jobs:
             chmod -R ug+rwX storage storage/framework
             echo "✅ Skipping chown - already owned properly"
             sudo supervisorctl restart stg-inertia-ssr
+            sudo supervisorctl restart stg-octane-frankenphp
