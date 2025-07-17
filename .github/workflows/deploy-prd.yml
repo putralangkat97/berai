@@ -17,10 +17,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.VPS_HOST }}
-          username: anggit
+          username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/berai
+            cd ${{ secrets.PRD_PROJECT_DIR }}
             git fetch origin
             git reset --hard origin/staging
             composer install --no-dev --optimize-autoloader
@@ -31,6 +31,8 @@ jobs:
             php artisan config:cache
             php artisan route:cache
             php artisan view:cache
+            php artisan storage:link
             chmod -R ug+rwX storage storage/framework
             echo "✅ Skipping chown - already owned properly"
             sudo supervisorctl restart inertia-ssr
+            sudo supervisorctl restart octane-frankenphp
