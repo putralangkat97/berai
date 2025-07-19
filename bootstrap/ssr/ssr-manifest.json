@@ -2,6 +2,7 @@
   "\u0000plugin-vue:export-helper": [],
   "resources/js/components/auth/login-form.vue": [],
   "resources/js/components/auth/register-form.vue": [],
+  "resources/js/components/layouts/app-link.vue": [],
   "resources/js/components/layouts/app-sidebar.vue": [],
   "resources/js/components/layouts/breadcrumb.vue": [],
   "resources/js/components/layouts/nav-main.vue": [],

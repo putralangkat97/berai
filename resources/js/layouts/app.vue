@@ -7,11 +7,7 @@ export const containerClass = "w-full h-full";
 <script setup>
 import AppSidebar from "@/components/layouts/app-sidebar.vue";
 import { Separator } from "@/components/ui/separator";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
+import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import Breadcrumb from "@/components/layouts/breadcrumb.vue";
 
 defineProps({

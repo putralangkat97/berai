@@ -132,7 +132,7 @@ const taskHelper = new TaskHelper();
               <TableRow
                 v-for="task in tasks"
                 :key="task.id"
-                class="hover:bg-muted/50 cursor-pointer"
+                class="hover:bg-muted/90 cursor-pointer"
                 @click="router.get(`/project/${task.project.id}`)"
               >
                 <TableCell>
