@@ -16,6 +16,7 @@
   "resources/js/components/shared/task/create-task-dialog.vue": [],
   "resources/js/components/shared/task/edit-task-dialog.vue": [],
   "resources/js/components/shared/task/task-board-view.vue": [],
+  "resources/js/components/shared/task/task-detail-dialog.vue": [],
   "resources/js/components/shared/task/task-list-view.vue": [],
   "resources/js/components/ui/alert-dialog/AlertDialog.vue": [],
   "resources/js/components/ui/alert-dialog/AlertDialogAction.vue": [],

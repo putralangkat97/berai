@@ -64,4 +64,12 @@ class TaskPolicy
     {
         return false;
     }
+
+    /**
+     * Determine whether the user can add the comment in a task
+     */
+    public function addComment(User $user, Task $task): bool
+    {
+        return $task->project->members->contains($user);
+    }
 }

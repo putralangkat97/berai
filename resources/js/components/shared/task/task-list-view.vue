@@ -42,7 +42,7 @@ const props = defineProps({
   taskPriorities: Array,
 });
 
-const emit = defineEmits(["editTask", "deleteTask", "updateTask"]);
+const emit = defineEmits(["editTask", "deleteTask", "updateTask", "viewTask"]);
 
 const dateHelper = new DateHelper();
 const taskHelper = new TaskHelper();
@@ -62,7 +62,7 @@ const taskHelper = new TaskHelper();
     </TableHeader>
     <TableBody>
       <template v-if="tasks.length > 0">
-        <TableRow v-for="task in tasks" :key="task.id">
+        <TableRow v-for="task in tasks" :key="task.id" @click="emit('viewTask', task)">
           <TableCell class="font-medium">{{ task.title }}</TableCell>
           <TableCell class="text-muted-foreground">
             {{ task.assigned_user?.name || "Unassigned" }}
