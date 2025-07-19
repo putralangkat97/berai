@@ -32,7 +32,7 @@ const props = defineProps({
   tasks: Array,
 });
 
-const emit = defineEmits(["taskMoved", "editTask", "deleteTask"]);
+const emit = defineEmits(["taskMoved", "editTask", "deleteTask", "viewTask"]);
 
 const todoTasks = ref([]);
 const inProgressTasks = ref([]);
@@ -64,6 +64,7 @@ const taskHelper = new TaskHelper();
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- to-do -->
     <div class="bg-muted/50 p-4 rounded-lg">
       <h3 class="font-semibold mb-4 text-sm">To-Do · {{ todoTasks.length }}</h3>
       <VueDraggable
@@ -79,7 +80,10 @@ const taskHelper = new TaskHelper();
           :data-task-id="element.id"
           class="cursor-grab group relative"
         >
-          <Card class="bg-background shadow-sm hover:shadow-md transition-shadow">
+          <Card
+            class="bg-background shadow-sm hover:shadow-md transition-shadow"
+            @click="emit('viewTask', element)"
+          >
             <DropdownMenu>
               <DropdownMenuTrigger as-child>
                 <Button
@@ -144,7 +148,9 @@ const taskHelper = new TaskHelper();
         </div>
       </VueDraggable>
     </div>
+    <!-- end to-do -->
 
+    <!-- in progress -->
     <div class="bg-muted/50 p-4 rounded-lg">
       <h3 class="font-semibold mb-4 text-sm">In Progress · {{ inProgressTasks.length }}</h3>
       <VueDraggable
@@ -160,7 +166,10 @@ const taskHelper = new TaskHelper();
           :data-task-id="element.id"
           class="cursor-grab group relative"
         >
-          <Card class="bg-background shadow-sm hover:shadow-md transition-shadow">
+          <Card
+            class="bg-background shadow-sm hover:shadow-md transition-shadow"
+            @click="emit('viewTask', element)"
+          >
             <DropdownMenu>
               <DropdownMenuTrigger as-child>
                 <Button
@@ -225,7 +234,9 @@ const taskHelper = new TaskHelper();
         </div>
       </VueDraggable>
     </div>
+    <!-- end in progress -->
 
+    <!-- done -->
     <div class="bg-muted/50 p-4 rounded-lg">
       <h3 class="font-semibold mb-4 text-sm">Done · {{ completedTasks.length }}</h3>
       <VueDraggable
@@ -241,7 +252,10 @@ const taskHelper = new TaskHelper();
           :data-task-id="element.id"
           class="cursor-grab group relative"
         >
-          <Card class="bg-background shadow-sm opacity-70 hover:shadow-md transition-shadow">
+          <Card
+            class="bg-background shadow-sm opacity-70 hover:shadow-md transition-shadow"
+            @click="emit('viewTask', element)"
+          >
             <DropdownMenu>
               <DropdownMenuTrigger as-child>
                 <Button
@@ -306,5 +320,6 @@ const taskHelper = new TaskHelper();
         </div>
       </VueDraggable>
     </div>
+    <!-- end done -->
   </div>
 </template>

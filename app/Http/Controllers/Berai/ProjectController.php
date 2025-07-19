@@ -6,6 +6,7 @@ use App\Enums\TaskPriority;
 use App\Enums\TaskStatus;
 use App\Http\Controllers\Controller;
 use App\Models\Project;
+use App\Models\Task;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -134,12 +135,18 @@ class ProjectController extends Controller
             ->limit(25)
             ->get();
 
+        $task_with_details = null;
+        if ($request->has('taskId')) {
+            $task_with_details = Task::with('comments.user')->find($request->taskId);
+        }
+
         return Inertia::render('app/project/show', [
             'project' => $project,
             'activities' => $activities,
             'taskStatuses' => TaskStatus::toArray(),
             'taskPriorities' => TaskPriority::toArray(),
             'filters' => $request->only(['search', 'status', 'priority']),
+            'taskWithDetails' => $task_with_details,
         ]);
     }
 

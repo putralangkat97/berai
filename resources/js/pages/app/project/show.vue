@@ -24,6 +24,7 @@ import CreateTaskDialog from "@/components/shared/task/create-task-dialog.vue";
 import EditTaskDialog from "@/components/shared/task/edit-task-dialog.vue";
 import TaskListView from "@/components/shared/task/task-list-view.vue";
 import TaskBoardView from "@/components/shared/task/task-board-view.vue";
+import TaskDetailDialog from "@/components/shared/task/task-detail-dialog.vue";
 
 const props = defineProps({
   project: Object,
@@ -42,6 +43,32 @@ const isAddMemberDialogOpen = ref(false);
 const isEditTaskDialogOpen = ref(false);
 const editingTask = ref(null);
 const viewMode = ref("list");
+const isTaskDetailDialogOpen = ref(false);
+const viewingTask = ref(null);
+
+const openTaskDetailDialog = (task) => {
+  router.reload({
+    only: ["taskWithDetails"],
+    data: { taskId: task.id },
+    onSuccess: (page) => {
+      viewingTask.value = page.props.taskWithDetails;
+      isTaskDetailDialogOpen.value = true;
+    },
+  });
+};
+
+const refreshTaskDetails = () => {
+  if (viewingTask.value) {
+    router.reload({
+      only: ["taskWithDetails"],
+      data: { taskId: viewingTask.value.id },
+      onSuccess: (page) => {
+        viewingTask.value = page.props.taskWithDetails;
+      },
+      preserveState: true,
+    });
+  }
+};
 
 const updateTask = (task, data) => {
   router.patch(`/task/${task.id}`, data, {
@@ -125,6 +152,12 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
       :project="project"
       v-if="canManageProject"
     />
+    <TaskDetailDialog
+      v-model:open="isTaskDetailDialogOpen"
+      :task="viewingTask"
+      @comment-posted="refreshTaskDetails"
+    />
+    <!-- end dialogs -->
 
     <!-- header -->
     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6">
@@ -214,6 +247,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
                 </SelectContent>
               </Select>
             </div>
+            <!-- list view -->
             <TaskListView
               v-if="viewMode === 'list'"
               :tasks="project.tasks"
@@ -222,7 +256,11 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
               @edit-task="openEditTaskDialog"
               @delete-task="deleteTask"
               @update-task="updateTask"
+              @view-task="openTaskDetailDialog"
             />
+            <!-- end list view -->
+
+            <!-- board view -->
             <TaskBoardView
               v-else-if="viewMode === 'board'"
               :tasks="project.tasks"
@@ -230,10 +268,13 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
               @edit-task="openEditTaskDialog"
               @delete-task="deleteTask"
               @task-moved="handleTaskMoved"
+              @view-task="openTaskDetailDialog"
             />
+            <!-- end board view -->
           </CardContent>
         </Card>
       </TabsContent>
+      <!-- end tasks tab -->
 
       <!-- members tab -->
       <TabsContent value="members" class="mt-4">
@@ -247,6 +288,7 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
           </CardContent>
         </Card>
       </TabsContent>
+      <!-- end members tab -->
 
       <!-- activities tab -->
       <TabsContent value="activity" class="mt-4">
@@ -263,11 +305,13 @@ const breadcrumbs = [{ label: "Project", url: "/project", subs: [{ label: "Proje
           </CardContent>
         </Card>
       </TabsContent>
+      <!-- end activities tab -->
 
       <!-- setting tabs -->
       <TabsContent v-if="canManageProject" value="settings" class="mt-4">
         <SettingsTab :project="project" />
       </TabsContent>
+      <!-- end setting tab -->
     </Tabs>
   </AppLayout>
 </template>

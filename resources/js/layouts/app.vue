@@ -31,7 +31,7 @@ defineProps({
           <Breadcrumb :breadcrumbs="breadcrumbs" />
         </div>
       </header>
-      <div class="mx-6">
+      <div class="mx-6 mb-6">
         <slot />
       </div>
     </SidebarInset>

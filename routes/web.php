@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\Berai\CommentController;
 use App\Http\Controllers\Berai\DashboardController;
 use App\Http\Controllers\Berai\ProjectController;
 use App\Http\Controllers\Berai\ProjectMemberController;
@@ -53,6 +54,9 @@ Route::middleware('auth')->group(function () {
             Route::post('/{project}', [TaskController::class, 'store'])->name('store');
             Route::patch('/{task}', [TaskController::class, 'update'])->name('update');
             Route::delete('/{task}', [TaskController::class, 'destroy'])->name('destroy');
+
+            // comment
+            Route::post('/{task}/comments', [CommentController::class, 'store'])->name('comment');
         });
 
     // profile

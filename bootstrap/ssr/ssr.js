@@ -1,6 +1,6 @@
 import { unref, mergeProps, withCtx, renderSlot, useSSRContext, createVNode, createTextVNode, resolveDynamicComponent, createBlock, openBlock, Fragment, toDisplayString, ref, computed, renderList, createCommentVNode, withModifiers, reactive, watch, createSSRApp, h } from "vue";
 import { ssrRenderComponent, ssrRenderSlot, ssrRenderAttrs, ssrRenderClass, ssrGetDynamicModelProps, ssrInterpolate, ssrRenderVNode, ssrRenderList, ssrRenderAttr } from "vue/server-renderer";
-import { X, PanelLeft, ChevronsUpDown, Sparkles, BadgeCheck, CreditCard, Bell, LogOut, Plus, GalleryVerticalEnd, AudioWaveform, Command, LayoutDashboard, Frame, ClipboardCheck, ChevronRight, Check, ChevronDown, ChevronUp, MoreHorizontal, Pencil, Trash2, List, Kanban, Loader } from "lucide-vue-next";
+import { X, PanelLeft, ChevronsUpDown, Sparkles, BadgeCheck, CreditCard, Bell, LogOut, Plus, GalleryVerticalEnd, AudioWaveform, Command, LayoutDashboard, Frame, ClipboardCheck, ChevronRight, Check, ChevronDown, ChevronUp, MoreHorizontal, Pencil, Trash2, Loader, List, Kanban } from "lucide-vue-next";
 import { cva } from "class-variance-authority";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -18,7 +18,7 @@ import { renderToString } from "@vue/server-renderer";
 function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
-const _sfc_main$1N = {
+const _sfc_main$1O = {
   __name: "Sheet",
   __ssrInlineRender: true,
   props: {
@@ -47,13 +47,13 @@ const _sfc_main$1N = {
     };
   }
 };
-const _sfc_setup$1N = _sfc_main$1N.setup;
-_sfc_main$1N.setup = (props, ctx) => {
+const _sfc_setup$1O = _sfc_main$1O.setup;
+_sfc_main$1O.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sheet/Sheet.vue");
-  return _sfc_setup$1N ? _sfc_setup$1N(props, ctx) : void 0;
+  return _sfc_setup$1O ? _sfc_setup$1O(props, ctx) : void 0;
 };
-const _sfc_main$1M = {
+const _sfc_main$1N = {
   __name: "SheetOverlay",
   __ssrInlineRender: true,
   props: {
@@ -87,13 +87,13 @@ const _sfc_main$1M = {
     };
   }
 };
-const _sfc_setup$1M = _sfc_main$1M.setup;
-_sfc_main$1M.setup = (props, ctx) => {
+const _sfc_setup$1N = _sfc_main$1N.setup;
+_sfc_main$1N.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sheet/SheetOverlay.vue");
-  return _sfc_setup$1M ? _sfc_setup$1M(props, ctx) : void 0;
+  return _sfc_setup$1N ? _sfc_setup$1N(props, ctx) : void 0;
 };
-const _sfc_main$1L = /* @__PURE__ */ Object.assign({
+const _sfc_main$1M = /* @__PURE__ */ Object.assign({
   inheritAttrs: false
 }, {
   __name: "SheetContent",
@@ -123,7 +123,7 @@ const _sfc_main$1L = /* @__PURE__ */ Object.assign({
       _push(ssrRenderComponent(unref(DialogPortal), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$1M, null, null, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_sfc_main$1N, null, null, _parent2, _scopeId));
             _push2(ssrRenderComponent(unref(DialogContent), mergeProps({
               "data-slot": "sheet-content",
               class: unref(cn)(
@@ -169,7 +169,7 @@ const _sfc_main$1L = /* @__PURE__ */ Object.assign({
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(_sfc_main$1M),
+              createVNode(_sfc_main$1N),
               createVNode(unref(DialogContent), mergeProps({
                 "data-slot": "sheet-content",
                 class: unref(cn)(
@@ -201,13 +201,13 @@ const _sfc_main$1L = /* @__PURE__ */ Object.assign({
     };
   }
 });
-const _sfc_setup$1L = _sfc_main$1L.setup;
-_sfc_main$1L.setup = (props, ctx) => {
+const _sfc_setup$1M = _sfc_main$1M.setup;
+_sfc_main$1M.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sheet/SheetContent.vue");
-  return _sfc_setup$1L ? _sfc_setup$1L(props, ctx) : void 0;
+  return _sfc_setup$1M ? _sfc_setup$1M(props, ctx) : void 0;
 };
-const _sfc_main$1K = {
+const _sfc_main$1L = {
   __name: "SheetDescription",
   __ssrInlineRender: true,
   props: {
@@ -237,13 +237,13 @@ const _sfc_main$1K = {
     };
   }
 };
-const _sfc_setup$1K = _sfc_main$1K.setup;
-_sfc_main$1K.setup = (props, ctx) => {
+const _sfc_setup$1L = _sfc_main$1L.setup;
+_sfc_main$1L.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sheet/SheetDescription.vue");
-  return _sfc_setup$1K ? _sfc_setup$1K(props, ctx) : void 0;
+  return _sfc_setup$1L ? _sfc_setup$1L(props, ctx) : void 0;
 };
-const _sfc_main$1J = {
+const _sfc_main$1K = {
   __name: "SheetHeader",
   __ssrInlineRender: true,
   props: {
@@ -261,13 +261,13 @@ const _sfc_main$1J = {
     };
   }
 };
-const _sfc_setup$1J = _sfc_main$1J.setup;
-_sfc_main$1J.setup = (props, ctx) => {
+const _sfc_setup$1K = _sfc_main$1K.setup;
+_sfc_main$1K.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sheet/SheetHeader.vue");
-  return _sfc_setup$1J ? _sfc_setup$1J(props, ctx) : void 0;
+  return _sfc_setup$1K ? _sfc_setup$1K(props, ctx) : void 0;
 };
-const _sfc_main$1I = {
+const _sfc_main$1J = {
   __name: "SheetTitle",
   __ssrInlineRender: true,
   props: {
@@ -297,11 +297,11 @@ const _sfc_main$1I = {
     };
   }
 };
-const _sfc_setup$1I = _sfc_main$1I.setup;
-_sfc_main$1I.setup = (props, ctx) => {
+const _sfc_setup$1J = _sfc_main$1J.setup;
+_sfc_main$1J.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sheet/SheetTitle.vue");
-  return _sfc_setup$1I ? _sfc_setup$1I(props, ctx) : void 0;
+  return _sfc_setup$1J ? _sfc_setup$1J(props, ctx) : void 0;
 };
 const SIDEBAR_COOKIE_NAME = "sidebar_state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
@@ -310,7 +310,7 @@ const SIDEBAR_WIDTH_MOBILE = "18rem";
 const SIDEBAR_WIDTH_ICON = "3rem";
 const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 const [useSidebar, provideSidebarContext] = createContext("Sidebar");
-const _sfc_main$1H = /* @__PURE__ */ Object.assign({
+const _sfc_main$1I = /* @__PURE__ */ Object.assign({
   inheritAttrs: false
 }, {
   __name: "Sidebar",
@@ -336,10 +336,10 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
         ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div>`);
       } else if (unref(isMobile)) {
-        _push(ssrRenderComponent(unref(_sfc_main$1N), mergeProps({ open: unref(openMobile) }, _ctx.$attrs, { "onUpdate:open": unref(setOpenMobile) }, _attrs), {
+        _push(ssrRenderComponent(unref(_sfc_main$1O), mergeProps({ open: unref(openMobile) }, _ctx.$attrs, { "onUpdate:open": unref(setOpenMobile) }, _attrs), {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              _push2(ssrRenderComponent(unref(_sfc_main$1L), {
+              _push2(ssrRenderComponent(unref(_sfc_main$1M), {
                 "data-sidebar": "sidebar",
                 "data-slot": "sidebar",
                 "data-mobile": "true",
@@ -351,10 +351,10 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
               }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(_sfc_main$1J, { class: "sr-only" }, {
+                    _push3(ssrRenderComponent(_sfc_main$1K, { class: "sr-only" }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(_sfc_main$1I, null, {
+                          _push4(ssrRenderComponent(_sfc_main$1J, null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 _push5(`Sidebar`);
@@ -366,7 +366,7 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
                             }),
                             _: 1
                           }, _parent4, _scopeId3));
-                          _push4(ssrRenderComponent(_sfc_main$1K, null, {
+                          _push4(ssrRenderComponent(_sfc_main$1L, null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 _push5(`Displays the mobile sidebar.`);
@@ -380,13 +380,13 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(_sfc_main$1I, null, {
+                            createVNode(_sfc_main$1J, null, {
                               default: withCtx(() => [
                                 createTextVNode("Sidebar")
                               ]),
                               _: 1
                             }),
-                            createVNode(_sfc_main$1K, null, {
+                            createVNode(_sfc_main$1L, null, {
                               default: withCtx(() => [
                                 createTextVNode("Displays the mobile sidebar.")
                               ]),
@@ -402,15 +402,15 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
                     _push3(`</div>`);
                   } else {
                     return [
-                      createVNode(_sfc_main$1J, { class: "sr-only" }, {
+                      createVNode(_sfc_main$1K, { class: "sr-only" }, {
                         default: withCtx(() => [
-                          createVNode(_sfc_main$1I, null, {
+                          createVNode(_sfc_main$1J, null, {
                             default: withCtx(() => [
                               createTextVNode("Sidebar")
                             ]),
                             _: 1
                           }),
-                          createVNode(_sfc_main$1K, null, {
+                          createVNode(_sfc_main$1L, null, {
                             default: withCtx(() => [
                               createTextVNode("Displays the mobile sidebar.")
                             ]),
@@ -429,7 +429,7 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
               }, _parent2, _scopeId));
             } else {
               return [
-                createVNode(unref(_sfc_main$1L), {
+                createVNode(unref(_sfc_main$1M), {
                   "data-sidebar": "sidebar",
                   "data-slot": "sidebar",
                   "data-mobile": "true",
@@ -440,15 +440,15 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
                   }
                 }, {
                   default: withCtx(() => [
-                    createVNode(_sfc_main$1J, { class: "sr-only" }, {
+                    createVNode(_sfc_main$1K, { class: "sr-only" }, {
                       default: withCtx(() => [
-                        createVNode(_sfc_main$1I, null, {
+                        createVNode(_sfc_main$1J, null, {
                           default: withCtx(() => [
                             createTextVNode("Sidebar")
                           ]),
                           _: 1
                         }),
-                        createVNode(_sfc_main$1K, null, {
+                        createVNode(_sfc_main$1L, null, {
                           default: withCtx(() => [
                             createTextVNode("Displays the mobile sidebar.")
                           ]),
@@ -498,13 +498,13 @@ const _sfc_main$1H = /* @__PURE__ */ Object.assign({
     };
   }
 });
-const _sfc_setup$1H = _sfc_main$1H.setup;
-_sfc_main$1H.setup = (props, ctx) => {
+const _sfc_setup$1I = _sfc_main$1I.setup;
+_sfc_main$1I.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/Sidebar.vue");
-  return _sfc_setup$1H ? _sfc_setup$1H(props, ctx) : void 0;
+  return _sfc_setup$1I ? _sfc_setup$1I(props, ctx) : void 0;
 };
-const _sfc_main$1G = {
+const _sfc_main$1H = {
   __name: "SidebarContent",
   __ssrInlineRender: true,
   props: {
@@ -526,13 +526,13 @@ const _sfc_main$1G = {
     };
   }
 };
-const _sfc_setup$1G = _sfc_main$1G.setup;
-_sfc_main$1G.setup = (props, ctx) => {
+const _sfc_setup$1H = _sfc_main$1H.setup;
+_sfc_main$1H.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarContent.vue");
-  return _sfc_setup$1G ? _sfc_setup$1G(props, ctx) : void 0;
+  return _sfc_setup$1H ? _sfc_setup$1H(props, ctx) : void 0;
 };
-const _sfc_main$1F = {
+const _sfc_main$1G = {
   __name: "SidebarFooter",
   __ssrInlineRender: true,
   props: {
@@ -551,13 +551,13 @@ const _sfc_main$1F = {
     };
   }
 };
-const _sfc_setup$1F = _sfc_main$1F.setup;
-_sfc_main$1F.setup = (props, ctx) => {
+const _sfc_setup$1G = _sfc_main$1G.setup;
+_sfc_main$1G.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarFooter.vue");
-  return _sfc_setup$1F ? _sfc_setup$1F(props, ctx) : void 0;
+  return _sfc_setup$1G ? _sfc_setup$1G(props, ctx) : void 0;
 };
-const _sfc_main$1E = {
+const _sfc_main$1F = {
   __name: "SidebarGroup",
   __ssrInlineRender: true,
   props: {
@@ -576,13 +576,13 @@ const _sfc_main$1E = {
     };
   }
 };
-const _sfc_setup$1E = _sfc_main$1E.setup;
-_sfc_main$1E.setup = (props, ctx) => {
+const _sfc_setup$1F = _sfc_main$1F.setup;
+_sfc_main$1F.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarGroup.vue");
-  return _sfc_setup$1E ? _sfc_setup$1E(props, ctx) : void 0;
+  return _sfc_setup$1F ? _sfc_setup$1F(props, ctx) : void 0;
 };
-const _sfc_main$1D = {
+const _sfc_main$1E = {
   __name: "SidebarGroupLabel",
   __ssrInlineRender: true,
   props: {
@@ -618,13 +618,13 @@ const _sfc_main$1D = {
     };
   }
 };
-const _sfc_setup$1D = _sfc_main$1D.setup;
-_sfc_main$1D.setup = (props, ctx) => {
+const _sfc_setup$1E = _sfc_main$1E.setup;
+_sfc_main$1E.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarGroupLabel.vue");
-  return _sfc_setup$1D ? _sfc_setup$1D(props, ctx) : void 0;
+  return _sfc_setup$1E ? _sfc_setup$1E(props, ctx) : void 0;
 };
-const _sfc_main$1C = {
+const _sfc_main$1D = {
   __name: "SidebarHeader",
   __ssrInlineRender: true,
   props: {
@@ -643,13 +643,13 @@ const _sfc_main$1C = {
     };
   }
 };
-const _sfc_setup$1C = _sfc_main$1C.setup;
-_sfc_main$1C.setup = (props, ctx) => {
+const _sfc_setup$1D = _sfc_main$1D.setup;
+_sfc_main$1D.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarHeader.vue");
-  return _sfc_setup$1C ? _sfc_setup$1C(props, ctx) : void 0;
+  return _sfc_setup$1D ? _sfc_setup$1D(props, ctx) : void 0;
 };
-const _sfc_main$1B = {
+const _sfc_main$1C = {
   __name: "Input",
   __ssrInlineRender: true,
   props: {
@@ -679,13 +679,13 @@ const _sfc_main$1B = {
     };
   }
 };
-const _sfc_setup$1B = _sfc_main$1B.setup;
-_sfc_main$1B.setup = (props, ctx) => {
+const _sfc_setup$1C = _sfc_main$1C.setup;
+_sfc_main$1C.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/input/Input.vue");
-  return _sfc_setup$1B ? _sfc_setup$1B(props, ctx) : void 0;
+  return _sfc_setup$1C ? _sfc_setup$1C(props, ctx) : void 0;
 };
-const _sfc_main$1A = {
+const _sfc_main$1B = {
   __name: "SidebarInset",
   __ssrInlineRender: true,
   props: {
@@ -707,13 +707,13 @@ const _sfc_main$1A = {
     };
   }
 };
-const _sfc_setup$1A = _sfc_main$1A.setup;
-_sfc_main$1A.setup = (props, ctx) => {
+const _sfc_setup$1B = _sfc_main$1B.setup;
+_sfc_main$1B.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarInset.vue");
-  return _sfc_setup$1A ? _sfc_setup$1A(props, ctx) : void 0;
+  return _sfc_setup$1B ? _sfc_setup$1B(props, ctx) : void 0;
 };
-const _sfc_main$1z = {
+const _sfc_main$1A = {
   __name: "SidebarMenu",
   __ssrInlineRender: true,
   props: {
@@ -732,13 +732,13 @@ const _sfc_main$1z = {
     };
   }
 };
-const _sfc_setup$1z = _sfc_main$1z.setup;
-_sfc_main$1z.setup = (props, ctx) => {
+const _sfc_setup$1A = _sfc_main$1A.setup;
+_sfc_main$1A.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarMenu.vue");
-  return _sfc_setup$1z ? _sfc_setup$1z(props, ctx) : void 0;
+  return _sfc_setup$1A ? _sfc_setup$1A(props, ctx) : void 0;
 };
-const _sfc_main$1y = {
+const _sfc_main$1z = {
   __name: "Tooltip",
   __ssrInlineRender: true,
   props: {
@@ -771,13 +771,13 @@ const _sfc_main$1y = {
     };
   }
 };
-const _sfc_setup$1y = _sfc_main$1y.setup;
-_sfc_main$1y.setup = (props, ctx) => {
+const _sfc_setup$1z = _sfc_main$1z.setup;
+_sfc_main$1z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/tooltip/Tooltip.vue");
-  return _sfc_setup$1y ? _sfc_setup$1y(props, ctx) : void 0;
+  return _sfc_setup$1z ? _sfc_setup$1z(props, ctx) : void 0;
 };
-const _sfc_main$1x = /* @__PURE__ */ Object.assign({
+const _sfc_main$1y = /* @__PURE__ */ Object.assign({
   inheritAttrs: false
 }, {
   __name: "TooltipContent",
@@ -852,13 +852,13 @@ const _sfc_main$1x = /* @__PURE__ */ Object.assign({
     };
   }
 });
-const _sfc_setup$1x = _sfc_main$1x.setup;
-_sfc_main$1x.setup = (props, ctx) => {
+const _sfc_setup$1y = _sfc_main$1y.setup;
+_sfc_main$1y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/tooltip/TooltipContent.vue");
-  return _sfc_setup$1x ? _sfc_setup$1x(props, ctx) : void 0;
+  return _sfc_setup$1y ? _sfc_setup$1y(props, ctx) : void 0;
 };
-const _sfc_main$1w = {
+const _sfc_main$1x = {
   __name: "TooltipTrigger",
   __ssrInlineRender: true,
   props: {
@@ -884,13 +884,13 @@ const _sfc_main$1w = {
     };
   }
 };
-const _sfc_setup$1w = _sfc_main$1w.setup;
-_sfc_main$1w.setup = (props, ctx) => {
+const _sfc_setup$1x = _sfc_main$1x.setup;
+_sfc_main$1x.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/tooltip/TooltipTrigger.vue");
-  return _sfc_setup$1w ? _sfc_setup$1w(props, ctx) : void 0;
+  return _sfc_setup$1x ? _sfc_setup$1x(props, ctx) : void 0;
 };
-const _sfc_main$1v = {
+const _sfc_main$1w = {
   __name: "SidebarMenuButtonChild",
   __ssrInlineRender: true,
   props: {
@@ -927,13 +927,13 @@ const _sfc_main$1v = {
     };
   }
 };
-const _sfc_setup$1v = _sfc_main$1v.setup;
-_sfc_main$1v.setup = (props, ctx) => {
+const _sfc_setup$1w = _sfc_main$1w.setup;
+_sfc_main$1w.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarMenuButtonChild.vue");
-  return _sfc_setup$1v ? _sfc_setup$1v(props, ctx) : void 0;
+  return _sfc_setup$1w ? _sfc_setup$1w(props, ctx) : void 0;
 };
-const _sfc_main$1u = /* @__PURE__ */ Object.assign({
+const _sfc_main$1v = /* @__PURE__ */ Object.assign({
   inheritAttrs: false
 }, {
   __name: "SidebarMenuButton",
@@ -953,7 +953,7 @@ const _sfc_main$1u = /* @__PURE__ */ Object.assign({
     const delegatedProps = reactiveOmit(props, "tooltip");
     return (_ctx, _push, _parent, _attrs) => {
       if (!__props.tooltip) {
-        _push(ssrRenderComponent(_sfc_main$1v, mergeProps({ ...unref(delegatedProps), ..._ctx.$attrs }, _attrs), {
+        _push(ssrRenderComponent(_sfc_main$1w, mergeProps({ ...unref(delegatedProps), ..._ctx.$attrs }, _attrs), {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
               ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
@@ -966,13 +966,13 @@ const _sfc_main$1u = /* @__PURE__ */ Object.assign({
           _: 3
         }, _parent));
       } else {
-        _push(ssrRenderComponent(unref(_sfc_main$1y), _attrs, {
+        _push(ssrRenderComponent(unref(_sfc_main$1z), _attrs, {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              _push2(ssrRenderComponent(unref(_sfc_main$1w), { "as-child": "" }, {
+              _push2(ssrRenderComponent(unref(_sfc_main$1x), { "as-child": "" }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(_sfc_main$1v, { ...unref(delegatedProps), ..._ctx.$attrs }, {
+                    _push3(ssrRenderComponent(_sfc_main$1w, { ...unref(delegatedProps), ..._ctx.$attrs }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
                           ssrRenderSlot(_ctx.$slots, "default", {}, null, _push4, _parent4, _scopeId3);
@@ -986,7 +986,7 @@ const _sfc_main$1u = /* @__PURE__ */ Object.assign({
                     }, _parent3, _scopeId2));
                   } else {
                     return [
-                      createVNode(_sfc_main$1v, { ...unref(delegatedProps), ..._ctx.$attrs }, {
+                      createVNode(_sfc_main$1w, { ...unref(delegatedProps), ..._ctx.$attrs }, {
                         default: withCtx(() => [
                           renderSlot(_ctx.$slots, "default")
                         ]),
@@ -997,7 +997,7 @@ const _sfc_main$1u = /* @__PURE__ */ Object.assign({
                 }),
                 _: 3
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(unref(_sfc_main$1x), {
+              _push2(ssrRenderComponent(unref(_sfc_main$1y), {
                 side: "right",
                 align: "center",
                 hidden: unref(state) !== "collapsed" || unref(isMobile)
@@ -1021,9 +1021,9 @@ const _sfc_main$1u = /* @__PURE__ */ Object.assign({
               }, _parent2, _scopeId));
             } else {
               return [
-                createVNode(unref(_sfc_main$1w), { "as-child": "" }, {
+                createVNode(unref(_sfc_main$1x), { "as-child": "" }, {
                   default: withCtx(() => [
-                    createVNode(_sfc_main$1v, { ...unref(delegatedProps), ..._ctx.$attrs }, {
+                    createVNode(_sfc_main$1w, { ...unref(delegatedProps), ..._ctx.$attrs }, {
                       default: withCtx(() => [
                         renderSlot(_ctx.$slots, "default")
                       ]),
@@ -1032,7 +1032,7 @@ const _sfc_main$1u = /* @__PURE__ */ Object.assign({
                   ]),
                   _: 3
                 }),
-                createVNode(unref(_sfc_main$1x), {
+                createVNode(unref(_sfc_main$1y), {
                   side: "right",
                   align: "center",
                   hidden: unref(state) !== "collapsed" || unref(isMobile)
@@ -1053,13 +1053,13 @@ const _sfc_main$1u = /* @__PURE__ */ Object.assign({
     };
   }
 });
-const _sfc_setup$1u = _sfc_main$1u.setup;
-_sfc_main$1u.setup = (props, ctx) => {
+const _sfc_setup$1v = _sfc_main$1v.setup;
+_sfc_main$1v.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarMenuButton.vue");
-  return _sfc_setup$1u ? _sfc_setup$1u(props, ctx) : void 0;
+  return _sfc_setup$1v ? _sfc_setup$1v(props, ctx) : void 0;
 };
-const _sfc_main$1t = {
+const _sfc_main$1u = {
   __name: "SidebarMenuItem",
   __ssrInlineRender: true,
   props: {
@@ -1078,13 +1078,13 @@ const _sfc_main$1t = {
     };
   }
 };
-const _sfc_setup$1t = _sfc_main$1t.setup;
-_sfc_main$1t.setup = (props, ctx) => {
+const _sfc_setup$1u = _sfc_main$1u.setup;
+_sfc_main$1u.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarMenuItem.vue");
-  return _sfc_setup$1t ? _sfc_setup$1t(props, ctx) : void 0;
+  return _sfc_setup$1u ? _sfc_setup$1u(props, ctx) : void 0;
 };
-const _sfc_main$1s = {
+const _sfc_main$1t = {
   __name: "SidebarProvider",
   __ssrInlineRender: true,
   props: {
@@ -1168,13 +1168,13 @@ const _sfc_main$1s = {
     };
   }
 };
-const _sfc_setup$1s = _sfc_main$1s.setup;
-_sfc_main$1s.setup = (props, ctx) => {
+const _sfc_setup$1t = _sfc_main$1t.setup;
+_sfc_main$1t.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarProvider.vue");
-  return _sfc_setup$1s ? _sfc_setup$1s(props, ctx) : void 0;
+  return _sfc_setup$1t ? _sfc_setup$1t(props, ctx) : void 0;
 };
-const _sfc_main$1r = {
+const _sfc_main$1s = {
   __name: "SidebarRail",
   __ssrInlineRender: true,
   props: {
@@ -1205,13 +1205,13 @@ const _sfc_main$1r = {
     };
   }
 };
-const _sfc_setup$1r = _sfc_main$1r.setup;
-_sfc_main$1r.setup = (props, ctx) => {
+const _sfc_setup$1s = _sfc_main$1s.setup;
+_sfc_main$1s.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarRail.vue");
-  return _sfc_setup$1r ? _sfc_setup$1r(props, ctx) : void 0;
+  return _sfc_setup$1s ? _sfc_setup$1s(props, ctx) : void 0;
 };
-const _sfc_main$1q = {
+const _sfc_main$1r = {
   __name: "Separator",
   __ssrInlineRender: true,
   props: {
@@ -1234,13 +1234,13 @@ const _sfc_main$1q = {
     };
   }
 };
-const _sfc_setup$1q = _sfc_main$1q.setup;
-_sfc_main$1q.setup = (props, ctx) => {
+const _sfc_setup$1r = _sfc_main$1r.setup;
+_sfc_main$1r.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/separator/Separator.vue");
-  return _sfc_setup$1q ? _sfc_setup$1q(props, ctx) : void 0;
+  return _sfc_setup$1r ? _sfc_setup$1r(props, ctx) : void 0;
 };
-const _sfc_main$1p = {
+const _sfc_main$1q = {
   __name: "Button",
   __ssrInlineRender: true,
   props: {
@@ -1273,11 +1273,11 @@ const _sfc_main$1p = {
     };
   }
 };
-const _sfc_setup$1p = _sfc_main$1p.setup;
-_sfc_main$1p.setup = (props, ctx) => {
+const _sfc_setup$1q = _sfc_main$1q.setup;
+_sfc_main$1q.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/button/Button.vue");
-  return _sfc_setup$1p ? _sfc_setup$1p(props, ctx) : void 0;
+  return _sfc_setup$1q ? _sfc_setup$1q(props, ctx) : void 0;
 };
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
@@ -1304,7 +1304,7 @@ const buttonVariants = cva(
     }
   }
 );
-const _sfc_main$1o = {
+const _sfc_main$1p = {
   __name: "SidebarTrigger",
   __ssrInlineRender: true,
   props: {
@@ -1314,7 +1314,7 @@ const _sfc_main$1o = {
     const props = __props;
     const { toggleSidebar } = useSidebar();
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$1p), mergeProps({
+      _push(ssrRenderComponent(unref(_sfc_main$1q), mergeProps({
         "data-sidebar": "trigger",
         "data-slot": "sidebar-trigger",
         variant: "ghost",
@@ -1338,11 +1338,11 @@ const _sfc_main$1o = {
     };
   }
 };
-const _sfc_setup$1o = _sfc_main$1o.setup;
-_sfc_main$1o.setup = (props, ctx) => {
+const _sfc_setup$1p = _sfc_main$1p.setup;
+_sfc_main$1p.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/sidebar/SidebarTrigger.vue");
-  return _sfc_setup$1o ? _sfc_setup$1o(props, ctx) : void 0;
+  return _sfc_setup$1p ? _sfc_setup$1p(props, ctx) : void 0;
 };
 const sidebarMenuButtonVariants = cva(
   "peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm outline-hidden ring-sidebar-ring transition-[width,height,padding] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
@@ -1364,7 +1364,7 @@ const sidebarMenuButtonVariants = cva(
     }
   }
 );
-const _sfc_main$1n = {
+const _sfc_main$1o = {
   __name: "app-link",
   __ssrInlineRender: true,
   props: {
@@ -1397,13 +1397,13 @@ const _sfc_main$1n = {
     };
   }
 };
-const _sfc_setup$1n = _sfc_main$1n.setup;
-_sfc_main$1n.setup = (props, ctx) => {
+const _sfc_setup$1o = _sfc_main$1o.setup;
+_sfc_main$1o.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/layouts/app-link.vue");
-  return _sfc_setup$1n ? _sfc_setup$1n(props, ctx) : void 0;
+  return _sfc_setup$1o ? _sfc_setup$1o(props, ctx) : void 0;
 };
-const _sfc_main$1m = {
+const _sfc_main$1n = {
   __name: "nav-main",
   __ssrInlineRender: true,
   props: {
@@ -1412,10 +1412,10 @@ const _sfc_main$1m = {
   setup(__props) {
     const page = usePage();
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$1E), mergeProps({ class: "group-data-[collapsible=icon]:hidden" }, _attrs), {
+      _push(ssrRenderComponent(unref(_sfc_main$1F), mergeProps({ class: "group-data-[collapsible=icon]:hidden" }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$1D), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$1E), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`Projects`);
@@ -1427,23 +1427,23 @@ const _sfc_main$1m = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$1z), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$1A), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`<!--[-->`);
                   ssrRenderList(__props.items, (item) => {
-                    _push3(ssrRenderComponent(unref(_sfc_main$1t), {
+                    _push3(ssrRenderComponent(unref(_sfc_main$1u), {
                       key: item.name
                     }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$1u), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1v), {
                             "as-child": "",
                             "is-active": unref(page).component.startsWith(item.name)
                           }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(_sfc_main$1n, {
+                                _push5(ssrRenderComponent(_sfc_main$1o, {
                                   href: item.url
                                 }, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
@@ -1461,7 +1461,7 @@ const _sfc_main$1m = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(_sfc_main$1n, {
+                                  createVNode(_sfc_main$1o, {
                                     href: item.url
                                   }, {
                                     default: withCtx(() => [
@@ -1477,12 +1477,12 @@ const _sfc_main$1m = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$1u), {
+                            createVNode(unref(_sfc_main$1v), {
                               "as-child": "",
                               "is-active": unref(page).component.startsWith(item.name)
                             }, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$1n, {
+                                createVNode(_sfc_main$1o, {
                                   href: item.url
                                 }, {
                                   default: withCtx(() => [
@@ -1504,16 +1504,16 @@ const _sfc_main$1m = {
                 } else {
                   return [
                     (openBlock(true), createBlock(Fragment, null, renderList(__props.items, (item) => {
-                      return openBlock(), createBlock(unref(_sfc_main$1t), {
+                      return openBlock(), createBlock(unref(_sfc_main$1u), {
                         key: item.name
                       }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1u), {
+                          createVNode(unref(_sfc_main$1v), {
                             "as-child": "",
                             "is-active": unref(page).component.startsWith(item.name)
                           }, {
                             default: withCtx(() => [
-                              createVNode(_sfc_main$1n, {
+                              createVNode(_sfc_main$1o, {
                                 href: item.url
                               }, {
                                 default: withCtx(() => [
@@ -1536,25 +1536,25 @@ const _sfc_main$1m = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$1D), null, {
+              createVNode(unref(_sfc_main$1E), null, {
                 default: withCtx(() => [
                   createTextVNode("Projects")
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$1z), null, {
+              createVNode(unref(_sfc_main$1A), null, {
                 default: withCtx(() => [
                   (openBlock(true), createBlock(Fragment, null, renderList(__props.items, (item) => {
-                    return openBlock(), createBlock(unref(_sfc_main$1t), {
+                    return openBlock(), createBlock(unref(_sfc_main$1u), {
                       key: item.name
                     }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$1u), {
+                        createVNode(unref(_sfc_main$1v), {
                           "as-child": "",
                           "is-active": unref(page).component.startsWith(item.name)
                         }, {
                           default: withCtx(() => [
-                            createVNode(_sfc_main$1n, {
+                            createVNode(_sfc_main$1o, {
                               href: item.url
                             }, {
                               default: withCtx(() => [
@@ -1581,13 +1581,13 @@ const _sfc_main$1m = {
     };
   }
 };
-const _sfc_setup$1m = _sfc_main$1m.setup;
-_sfc_main$1m.setup = (props, ctx) => {
+const _sfc_setup$1n = _sfc_main$1n.setup;
+_sfc_main$1n.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/layouts/nav-main.vue");
-  return _sfc_setup$1m ? _sfc_setup$1m(props, ctx) : void 0;
+  return _sfc_setup$1n ? _sfc_setup$1n(props, ctx) : void 0;
 };
-const _sfc_main$1l = {
+const _sfc_main$1m = {
   __name: "Avatar",
   __ssrInlineRender: true,
   props: {
@@ -1617,13 +1617,13 @@ const _sfc_main$1l = {
     };
   }
 };
-const _sfc_setup$1l = _sfc_main$1l.setup;
-_sfc_main$1l.setup = (props, ctx) => {
+const _sfc_setup$1m = _sfc_main$1m.setup;
+_sfc_main$1m.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/avatar/Avatar.vue");
-  return _sfc_setup$1l ? _sfc_setup$1l(props, ctx) : void 0;
+  return _sfc_setup$1m ? _sfc_setup$1m(props, ctx) : void 0;
 };
-const _sfc_main$1k = {
+const _sfc_main$1l = {
   __name: "AvatarFallback",
   __ssrInlineRender: true,
   props: {
@@ -1656,13 +1656,13 @@ const _sfc_main$1k = {
     };
   }
 };
-const _sfc_setup$1k = _sfc_main$1k.setup;
-_sfc_main$1k.setup = (props, ctx) => {
+const _sfc_setup$1l = _sfc_main$1l.setup;
+_sfc_main$1l.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/avatar/AvatarFallback.vue");
-  return _sfc_setup$1k ? _sfc_setup$1k(props, ctx) : void 0;
+  return _sfc_setup$1l ? _sfc_setup$1l(props, ctx) : void 0;
 };
-const _sfc_main$1j = {
+const _sfc_main$1k = {
   __name: "AvatarImage",
   __ssrInlineRender: true,
   props: {
@@ -1690,13 +1690,13 @@ const _sfc_main$1j = {
     };
   }
 };
-const _sfc_setup$1j = _sfc_main$1j.setup;
-_sfc_main$1j.setup = (props, ctx) => {
+const _sfc_setup$1k = _sfc_main$1k.setup;
+_sfc_main$1k.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/avatar/AvatarImage.vue");
-  return _sfc_setup$1j ? _sfc_setup$1j(props, ctx) : void 0;
+  return _sfc_setup$1k ? _sfc_setup$1k(props, ctx) : void 0;
 };
-const _sfc_main$1i = {
+const _sfc_main$1j = {
   __name: "DropdownMenu",
   __ssrInlineRender: true,
   props: {
@@ -1726,13 +1726,13 @@ const _sfc_main$1i = {
     };
   }
 };
-const _sfc_setup$1i = _sfc_main$1i.setup;
-_sfc_main$1i.setup = (props, ctx) => {
+const _sfc_setup$1j = _sfc_main$1j.setup;
+_sfc_main$1j.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenu.vue");
-  return _sfc_setup$1i ? _sfc_setup$1i(props, ctx) : void 0;
+  return _sfc_setup$1j ? _sfc_setup$1j(props, ctx) : void 0;
 };
-const _sfc_main$1h = {
+const _sfc_main$1i = {
   __name: "DropdownMenuContent",
   __ssrInlineRender: true,
   props: {
@@ -1811,13 +1811,13 @@ const _sfc_main$1h = {
     };
   }
 };
-const _sfc_setup$1h = _sfc_main$1h.setup;
-_sfc_main$1h.setup = (props, ctx) => {
+const _sfc_setup$1i = _sfc_main$1i.setup;
+_sfc_main$1i.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenuContent.vue");
-  return _sfc_setup$1h ? _sfc_setup$1h(props, ctx) : void 0;
+  return _sfc_setup$1i ? _sfc_setup$1i(props, ctx) : void 0;
 };
-const _sfc_main$1g = {
+const _sfc_main$1h = {
   __name: "DropdownMenuGroup",
   __ssrInlineRender: true,
   props: {
@@ -1842,13 +1842,13 @@ const _sfc_main$1g = {
     };
   }
 };
-const _sfc_setup$1g = _sfc_main$1g.setup;
-_sfc_main$1g.setup = (props, ctx) => {
+const _sfc_setup$1h = _sfc_main$1h.setup;
+_sfc_main$1h.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenuGroup.vue");
-  return _sfc_setup$1g ? _sfc_setup$1g(props, ctx) : void 0;
+  return _sfc_setup$1h ? _sfc_setup$1h(props, ctx) : void 0;
 };
-const _sfc_main$1f = {
+const _sfc_main$1g = {
   __name: "DropdownMenuItem",
   __ssrInlineRender: true,
   props: {
@@ -1889,13 +1889,13 @@ const _sfc_main$1f = {
     };
   }
 };
-const _sfc_setup$1f = _sfc_main$1f.setup;
-_sfc_main$1f.setup = (props, ctx) => {
+const _sfc_setup$1g = _sfc_main$1g.setup;
+_sfc_main$1g.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenuItem.vue");
-  return _sfc_setup$1f ? _sfc_setup$1f(props, ctx) : void 0;
+  return _sfc_setup$1g ? _sfc_setup$1g(props, ctx) : void 0;
 };
-const _sfc_main$1e = {
+const _sfc_main$1f = {
   __name: "DropdownMenuLabel",
   __ssrInlineRender: true,
   props: {
@@ -1929,13 +1929,13 @@ const _sfc_main$1e = {
     };
   }
 };
-const _sfc_setup$1e = _sfc_main$1e.setup;
-_sfc_main$1e.setup = (props, ctx) => {
+const _sfc_setup$1f = _sfc_main$1f.setup;
+_sfc_main$1f.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenuLabel.vue");
-  return _sfc_setup$1e ? _sfc_setup$1e(props, ctx) : void 0;
+  return _sfc_setup$1f ? _sfc_setup$1f(props, ctx) : void 0;
 };
-const _sfc_main$1d = {
+const _sfc_main$1e = {
   __name: "DropdownMenuSeparator",
   __ssrInlineRender: true,
   props: {
@@ -1953,13 +1953,13 @@ const _sfc_main$1d = {
     };
   }
 };
-const _sfc_setup$1d = _sfc_main$1d.setup;
-_sfc_main$1d.setup = (props, ctx) => {
+const _sfc_setup$1e = _sfc_main$1e.setup;
+_sfc_main$1e.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenuSeparator.vue");
-  return _sfc_setup$1d ? _sfc_setup$1d(props, ctx) : void 0;
+  return _sfc_setup$1e ? _sfc_setup$1e(props, ctx) : void 0;
 };
-const _sfc_main$1c = {
+const _sfc_main$1d = {
   __name: "DropdownMenuShortcut",
   __ssrInlineRender: true,
   props: {
@@ -1977,13 +1977,13 @@ const _sfc_main$1c = {
     };
   }
 };
-const _sfc_setup$1c = _sfc_main$1c.setup;
-_sfc_main$1c.setup = (props, ctx) => {
+const _sfc_setup$1d = _sfc_main$1d.setup;
+_sfc_main$1d.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenuShortcut.vue");
-  return _sfc_setup$1c ? _sfc_setup$1c(props, ctx) : void 0;
+  return _sfc_setup$1d ? _sfc_setup$1d(props, ctx) : void 0;
 };
-const _sfc_main$1b = {
+const _sfc_main$1c = {
   __name: "DropdownMenuTrigger",
   __ssrInlineRender: true,
   props: {
@@ -2010,13 +2010,13 @@ const _sfc_main$1b = {
     };
   }
 };
-const _sfc_setup$1b = _sfc_main$1b.setup;
-_sfc_main$1b.setup = (props, ctx) => {
+const _sfc_setup$1c = _sfc_main$1c.setup;
+_sfc_main$1c.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dropdown-menu/DropdownMenuTrigger.vue");
-  return _sfc_setup$1b ? _sfc_setup$1b(props, ctx) : void 0;
+  return _sfc_setup$1c ? _sfc_setup$1c(props, ctx) : void 0;
 };
-const _sfc_main$1a = {
+const _sfc_main$1b = {
   __name: "nav-user",
   __ssrInlineRender: true,
   setup(__props) {
@@ -2031,32 +2031,32 @@ const _sfc_main$1a = {
     const user = usePage().props.auth.user;
     const { isMobile } = useSidebar();
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$1z), _attrs, {
+      _push(ssrRenderComponent(unref(_sfc_main$1A), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$1t), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$1u), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$1i), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1j), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$1b), { "as-child": "" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1c), { "as-child": "" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$1u), {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1v), {
                                 size: "lg",
                                 class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                               }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
-                                          _push7(ssrRenderComponent(unref(_sfc_main$1j), {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$1k), {
                                             src: unref(user).avatar ?? "https://github.com/unovue.png",
                                             alt: unref(user).name
                                           }, null, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               var _a, _b;
                                               if (_push8) {
@@ -2071,11 +2071,11 @@ const _sfc_main$1a = {
                                           }, _parent7, _scopeId6));
                                         } else {
                                           return [
-                                            createVNode(unref(_sfc_main$1j), {
+                                            createVNode(unref(_sfc_main$1k), {
                                               src: unref(user).avatar ?? "https://github.com/unovue.png",
                                               alt: unref(user).name
                                             }, null, 8, ["src", "alt"]),
-                                            createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                            createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                               default: withCtx(() => {
                                                 var _a;
                                                 return [
@@ -2093,13 +2093,13 @@ const _sfc_main$1a = {
                                     _push6(ssrRenderComponent(unref(ChevronsUpDown), { class: "ml-auto size-4" }, null, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                      createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1j), {
+                                          createVNode(unref(_sfc_main$1k), {
                                             src: unref(user).avatar ?? "https://github.com/unovue.png",
                                             alt: unref(user).name
                                           }, null, 8, ["src", "alt"]),
-                                          createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                          createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                             default: withCtx(() => {
                                               var _a;
                                               return [
@@ -2123,18 +2123,18 @@ const _sfc_main$1a = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$1u), {
+                                createVNode(unref(_sfc_main$1v), {
                                   size: "lg",
                                   class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                                 }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                    createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$1j), {
+                                        createVNode(unref(_sfc_main$1k), {
                                           src: unref(user).avatar ?? "https://github.com/unovue.png",
                                           alt: unref(user).name
                                         }, null, 8, ["src", "alt"]),
-                                        createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                        createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                           default: withCtx(() => {
                                             var _a;
                                             return [
@@ -2159,7 +2159,7 @@ const _sfc_main$1a = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$1h), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1i), {
                           class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                           side: unref(isMobile) ? "bottom" : "right",
                           align: "end",
@@ -2167,18 +2167,18 @@ const _sfc_main$1a = {
                         }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$1e), { class: "p-0 font-normal" }, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1f), { class: "p-0 font-normal" }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(`<div class="flex items-center gap-2 px-1 py-1.5 text-left text-sm"${_scopeId5}>`);
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
-                                          _push7(ssrRenderComponent(unref(_sfc_main$1j), {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$1k), {
                                             src: unref(user).avatar ?? "https://github.com/unovue.png",
                                             alt: unref(user).name
                                           }, null, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               var _a, _b;
                                               if (_push8) {
@@ -2193,11 +2193,11 @@ const _sfc_main$1a = {
                                           }, _parent7, _scopeId6));
                                         } else {
                                           return [
-                                            createVNode(unref(_sfc_main$1j), {
+                                            createVNode(unref(_sfc_main$1k), {
                                               src: unref(user).avatar ?? "https://github.com/unovue.png",
                                               alt: unref(user).name
                                             }, null, 8, ["src", "alt"]),
-                                            createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                            createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                               default: withCtx(() => {
                                                 var _a;
                                                 return [
@@ -2215,13 +2215,13 @@ const _sfc_main$1a = {
                                   } else {
                                     return [
                                       createVNode("div", { class: "flex items-center gap-2 px-1 py-1.5 text-left text-sm" }, [
-                                        createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                        createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$1j), {
+                                            createVNode(unref(_sfc_main$1k), {
                                               src: unref(user).avatar ?? "https://github.com/unovue.png",
                                               alt: unref(user).name
                                             }, null, 8, ["src", "alt"]),
-                                            createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                            createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                               default: withCtx(() => {
                                                 var _a;
                                                 return [
@@ -2243,11 +2243,11 @@ const _sfc_main$1a = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$1d), null, null, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$1g), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1e), null, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$1h), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1f), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1g), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(ssrRenderComponent(unref(Sparkles), null, null, _parent7, _scopeId6));
@@ -2263,7 +2263,7 @@ const _sfc_main$1a = {
                                     }, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$1f), null, {
+                                      createVNode(unref(_sfc_main$1g), null, {
                                         default: withCtx(() => [
                                           createVNode(unref(Sparkles)),
                                           createTextVNode(" Upgrade to Pro ")
@@ -2275,11 +2275,11 @@ const _sfc_main$1a = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$1d), null, null, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$1g), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1e), null, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$1h), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1f), {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1g), {
                                       onClick: ($event) => handleRouter("/profile")
                                     }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
@@ -2295,7 +2295,7 @@ const _sfc_main$1a = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1f), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1g), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(ssrRenderComponent(unref(CreditCard), null, null, _parent7, _scopeId6));
@@ -2309,7 +2309,7 @@ const _sfc_main$1a = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1f), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1g), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(ssrRenderComponent(unref(Bell), null, null, _parent7, _scopeId6));
@@ -2325,7 +2325,7 @@ const _sfc_main$1a = {
                                     }, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$1f), {
+                                      createVNode(unref(_sfc_main$1g), {
                                         onClick: ($event) => handleRouter("/profile")
                                       }, {
                                         default: withCtx(() => [
@@ -2334,14 +2334,14 @@ const _sfc_main$1a = {
                                         ]),
                                         _: 1
                                       }, 8, ["onClick"]),
-                                      createVNode(unref(_sfc_main$1f), null, {
+                                      createVNode(unref(_sfc_main$1g), null, {
                                         default: withCtx(() => [
                                           createVNode(unref(CreditCard)),
                                           createTextVNode(" Billing ")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$1f), null, {
+                                      createVNode(unref(_sfc_main$1g), null, {
                                         default: withCtx(() => [
                                           createVNode(unref(Bell)),
                                           createTextVNode(" Notifications ")
@@ -2353,8 +2353,8 @@ const _sfc_main$1a = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$1d), null, null, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$1f), { onClick: handleLogout }, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1e), null, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$1g), { onClick: handleLogout }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(ssrRenderComponent(unref(LogOut), null, null, _parent6, _scopeId5));
@@ -2370,16 +2370,16 @@ const _sfc_main$1a = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$1e), { class: "p-0 font-normal" }, {
+                                createVNode(unref(_sfc_main$1f), { class: "p-0 font-normal" }, {
                                   default: withCtx(() => [
                                     createVNode("div", { class: "flex items-center gap-2 px-1 py-1.5 text-left text-sm" }, [
-                                      createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                      createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1j), {
+                                          createVNode(unref(_sfc_main$1k), {
                                             src: unref(user).avatar ?? "https://github.com/unovue.png",
                                             alt: unref(user).name
                                           }, null, 8, ["src", "alt"]),
-                                          createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                          createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                             default: withCtx(() => {
                                               var _a;
                                               return [
@@ -2399,10 +2399,10 @@ const _sfc_main$1a = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$1d)),
-                                createVNode(unref(_sfc_main$1g), null, {
+                                createVNode(unref(_sfc_main$1e)),
+                                createVNode(unref(_sfc_main$1h), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1f), null, {
+                                    createVNode(unref(_sfc_main$1g), null, {
                                       default: withCtx(() => [
                                         createVNode(unref(Sparkles)),
                                         createTextVNode(" Upgrade to Pro ")
@@ -2412,10 +2412,10 @@ const _sfc_main$1a = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$1d)),
-                                createVNode(unref(_sfc_main$1g), null, {
+                                createVNode(unref(_sfc_main$1e)),
+                                createVNode(unref(_sfc_main$1h), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1f), {
+                                    createVNode(unref(_sfc_main$1g), {
                                       onClick: ($event) => handleRouter("/profile")
                                     }, {
                                       default: withCtx(() => [
@@ -2424,14 +2424,14 @@ const _sfc_main$1a = {
                                       ]),
                                       _: 1
                                     }, 8, ["onClick"]),
-                                    createVNode(unref(_sfc_main$1f), null, {
+                                    createVNode(unref(_sfc_main$1g), null, {
                                       default: withCtx(() => [
                                         createVNode(unref(CreditCard)),
                                         createTextVNode(" Billing ")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$1f), null, {
+                                    createVNode(unref(_sfc_main$1g), null, {
                                       default: withCtx(() => [
                                         createVNode(unref(Bell)),
                                         createTextVNode(" Notifications ")
@@ -2441,8 +2441,8 @@ const _sfc_main$1a = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$1d)),
-                                createVNode(unref(_sfc_main$1f), { onClick: handleLogout }, {
+                                createVNode(unref(_sfc_main$1e)),
+                                createVNode(unref(_sfc_main$1g), { onClick: handleLogout }, {
                                   default: withCtx(() => [
                                     createVNode(unref(LogOut)),
                                     createTextVNode(" Log out ")
@@ -2456,20 +2456,20 @@ const _sfc_main$1a = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1u), {
+                              createVNode(unref(_sfc_main$1v), {
                                 size: "lg",
                                 class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                               }, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                  createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1j), {
+                                      createVNode(unref(_sfc_main$1k), {
                                         src: unref(user).avatar ?? "https://github.com/unovue.png",
                                         alt: unref(user).name
                                       }, null, 8, ["src", "alt"]),
-                                      createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                      createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                         default: withCtx(() => {
                                           var _a;
                                           return [
@@ -2492,23 +2492,23 @@ const _sfc_main$1a = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1h), {
+                          createVNode(unref(_sfc_main$1i), {
                             class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                             side: unref(isMobile) ? "bottom" : "right",
                             align: "end",
                             "side-offset": 4
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1e), { class: "p-0 font-normal" }, {
+                              createVNode(unref(_sfc_main$1f), { class: "p-0 font-normal" }, {
                                 default: withCtx(() => [
                                   createVNode("div", { class: "flex items-center gap-2 px-1 py-1.5 text-left text-sm" }, [
-                                    createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                    createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$1j), {
+                                        createVNode(unref(_sfc_main$1k), {
                                           src: unref(user).avatar ?? "https://github.com/unovue.png",
                                           alt: unref(user).name
                                         }, null, 8, ["src", "alt"]),
-                                        createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                        createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                           default: withCtx(() => {
                                             var _a;
                                             return [
@@ -2528,10 +2528,10 @@ const _sfc_main$1a = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$1d)),
-                              createVNode(unref(_sfc_main$1g), null, {
+                              createVNode(unref(_sfc_main$1e)),
+                              createVNode(unref(_sfc_main$1h), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), null, {
+                                  createVNode(unref(_sfc_main$1g), null, {
                                     default: withCtx(() => [
                                       createVNode(unref(Sparkles)),
                                       createTextVNode(" Upgrade to Pro ")
@@ -2541,10 +2541,10 @@ const _sfc_main$1a = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$1d)),
-                              createVNode(unref(_sfc_main$1g), null, {
+                              createVNode(unref(_sfc_main$1e)),
+                              createVNode(unref(_sfc_main$1h), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), {
+                                  createVNode(unref(_sfc_main$1g), {
                                     onClick: ($event) => handleRouter("/profile")
                                   }, {
                                     default: withCtx(() => [
@@ -2553,14 +2553,14 @@ const _sfc_main$1a = {
                                     ]),
                                     _: 1
                                   }, 8, ["onClick"]),
-                                  createVNode(unref(_sfc_main$1f), null, {
+                                  createVNode(unref(_sfc_main$1g), null, {
                                     default: withCtx(() => [
                                       createVNode(unref(CreditCard)),
                                       createTextVNode(" Billing ")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$1f), null, {
+                                  createVNode(unref(_sfc_main$1g), null, {
                                     default: withCtx(() => [
                                       createVNode(unref(Bell)),
                                       createTextVNode(" Notifications ")
@@ -2570,8 +2570,8 @@ const _sfc_main$1a = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$1d)),
-                              createVNode(unref(_sfc_main$1f), { onClick: handleLogout }, {
+                              createVNode(unref(_sfc_main$1e)),
+                              createVNode(unref(_sfc_main$1g), { onClick: handleLogout }, {
                                 default: withCtx(() => [
                                   createVNode(unref(LogOut)),
                                   createTextVNode(" Log out ")
@@ -2588,22 +2588,22 @@ const _sfc_main$1a = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$1i), null, {
+                    createVNode(unref(_sfc_main$1j), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                        createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1u), {
+                            createVNode(unref(_sfc_main$1v), {
                               size: "lg",
                               class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                             }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: unref(user).avatar ?? "https://github.com/unovue.png",
                                       alt: unref(user).name
                                     }, null, 8, ["src", "alt"]),
-                                    createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                    createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                       default: withCtx(() => {
                                         var _a;
                                         return [
@@ -2626,23 +2626,23 @@ const _sfc_main$1a = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1h), {
+                        createVNode(unref(_sfc_main$1i), {
                           class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                           side: unref(isMobile) ? "bottom" : "right",
                           align: "end",
                           "side-offset": 4
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1e), { class: "p-0 font-normal" }, {
+                            createVNode(unref(_sfc_main$1f), { class: "p-0 font-normal" }, {
                               default: withCtx(() => [
                                 createVNode("div", { class: "flex items-center gap-2 px-1 py-1.5 text-left text-sm" }, [
-                                  createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                  createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1j), {
+                                      createVNode(unref(_sfc_main$1k), {
                                         src: unref(user).avatar ?? "https://github.com/unovue.png",
                                         alt: unref(user).name
                                       }, null, 8, ["src", "alt"]),
-                                      createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                      createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                         default: withCtx(() => {
                                           var _a;
                                           return [
@@ -2662,10 +2662,10 @@ const _sfc_main$1a = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1d)),
-                            createVNode(unref(_sfc_main$1g), null, {
+                            createVNode(unref(_sfc_main$1e)),
+                            createVNode(unref(_sfc_main$1h), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1f), null, {
+                                createVNode(unref(_sfc_main$1g), null, {
                                   default: withCtx(() => [
                                     createVNode(unref(Sparkles)),
                                     createTextVNode(" Upgrade to Pro ")
@@ -2675,10 +2675,10 @@ const _sfc_main$1a = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1d)),
-                            createVNode(unref(_sfc_main$1g), null, {
+                            createVNode(unref(_sfc_main$1e)),
+                            createVNode(unref(_sfc_main$1h), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1f), {
+                                createVNode(unref(_sfc_main$1g), {
                                   onClick: ($event) => handleRouter("/profile")
                                 }, {
                                   default: withCtx(() => [
@@ -2687,14 +2687,14 @@ const _sfc_main$1a = {
                                   ]),
                                   _: 1
                                 }, 8, ["onClick"]),
-                                createVNode(unref(_sfc_main$1f), null, {
+                                createVNode(unref(_sfc_main$1g), null, {
                                   default: withCtx(() => [
                                     createVNode(unref(CreditCard)),
                                     createTextVNode(" Billing ")
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$1f), null, {
+                                createVNode(unref(_sfc_main$1g), null, {
                                   default: withCtx(() => [
                                     createVNode(unref(Bell)),
                                     createTextVNode(" Notifications ")
@@ -2704,8 +2704,8 @@ const _sfc_main$1a = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1d)),
-                            createVNode(unref(_sfc_main$1f), { onClick: handleLogout }, {
+                            createVNode(unref(_sfc_main$1e)),
+                            createVNode(unref(_sfc_main$1g), { onClick: handleLogout }, {
                               default: withCtx(() => [
                                 createVNode(unref(LogOut)),
                                 createTextVNode(" Log out ")
@@ -2725,24 +2725,24 @@ const _sfc_main$1a = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$1t), null, {
+              createVNode(unref(_sfc_main$1u), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$1i), null, {
+                  createVNode(unref(_sfc_main$1j), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                      createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1u), {
+                          createVNode(unref(_sfc_main$1v), {
                             size: "lg",
                             class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                              createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1j), {
+                                  createVNode(unref(_sfc_main$1k), {
                                     src: unref(user).avatar ?? "https://github.com/unovue.png",
                                     alt: unref(user).name
                                   }, null, 8, ["src", "alt"]),
-                                  createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                  createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                     default: withCtx(() => {
                                       var _a;
                                       return [
@@ -2765,23 +2765,23 @@ const _sfc_main$1a = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$1h), {
+                      createVNode(unref(_sfc_main$1i), {
                         class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                         side: unref(isMobile) ? "bottom" : "right",
                         align: "end",
                         "side-offset": 4
                       }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1e), { class: "p-0 font-normal" }, {
+                          createVNode(unref(_sfc_main$1f), { class: "p-0 font-normal" }, {
                             default: withCtx(() => [
                               createVNode("div", { class: "flex items-center gap-2 px-1 py-1.5 text-left text-sm" }, [
-                                createVNode(unref(_sfc_main$1l), { class: "h-8 w-8 rounded-lg" }, {
+                                createVNode(unref(_sfc_main$1m), { class: "h-8 w-8 rounded-lg" }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: unref(user).avatar ?? "https://github.com/unovue.png",
                                       alt: unref(user).name
                                     }, null, 8, ["src", "alt"]),
-                                    createVNode(unref(_sfc_main$1k), { class: "rounded-lg" }, {
+                                    createVNode(unref(_sfc_main$1l), { class: "rounded-lg" }, {
                                       default: withCtx(() => {
                                         var _a;
                                         return [
@@ -2801,10 +2801,10 @@ const _sfc_main$1a = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1d)),
-                          createVNode(unref(_sfc_main$1g), null, {
+                          createVNode(unref(_sfc_main$1e)),
+                          createVNode(unref(_sfc_main$1h), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1f), null, {
+                              createVNode(unref(_sfc_main$1g), null, {
                                 default: withCtx(() => [
                                   createVNode(unref(Sparkles)),
                                   createTextVNode(" Upgrade to Pro ")
@@ -2814,10 +2814,10 @@ const _sfc_main$1a = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1d)),
-                          createVNode(unref(_sfc_main$1g), null, {
+                          createVNode(unref(_sfc_main$1e)),
+                          createVNode(unref(_sfc_main$1h), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1f), {
+                              createVNode(unref(_sfc_main$1g), {
                                 onClick: ($event) => handleRouter("/profile")
                               }, {
                                 default: withCtx(() => [
@@ -2826,14 +2826,14 @@ const _sfc_main$1a = {
                                 ]),
                                 _: 1
                               }, 8, ["onClick"]),
-                              createVNode(unref(_sfc_main$1f), null, {
+                              createVNode(unref(_sfc_main$1g), null, {
                                 default: withCtx(() => [
                                   createVNode(unref(CreditCard)),
                                   createTextVNode(" Billing ")
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$1f), null, {
+                              createVNode(unref(_sfc_main$1g), null, {
                                 default: withCtx(() => [
                                   createVNode(unref(Bell)),
                                   createTextVNode(" Notifications ")
@@ -2843,8 +2843,8 @@ const _sfc_main$1a = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1d)),
-                          createVNode(unref(_sfc_main$1f), { onClick: handleLogout }, {
+                          createVNode(unref(_sfc_main$1e)),
+                          createVNode(unref(_sfc_main$1g), { onClick: handleLogout }, {
                             default: withCtx(() => [
                               createVNode(unref(LogOut)),
                               createTextVNode(" Log out ")
@@ -2868,13 +2868,13 @@ const _sfc_main$1a = {
     };
   }
 };
-const _sfc_setup$1a = _sfc_main$1a.setup;
-_sfc_main$1a.setup = (props, ctx) => {
+const _sfc_setup$1b = _sfc_main$1b.setup;
+_sfc_main$1b.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/layouts/nav-user.vue");
-  return _sfc_setup$1a ? _sfc_setup$1a(props, ctx) : void 0;
+  return _sfc_setup$1b ? _sfc_setup$1b(props, ctx) : void 0;
 };
-const _sfc_main$19 = {
+const _sfc_main$1a = {
   __name: "team-switcher",
   __ssrInlineRender: true,
   props: {
@@ -2885,19 +2885,19 @@ const _sfc_main$19 = {
     const { isMobile } = useSidebar();
     const activeTeam = ref(props.teams[0]);
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$1z), _attrs, {
+      _push(ssrRenderComponent(unref(_sfc_main$1A), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$1t), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$1u), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$1i), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1j), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$1b), { "as-child": "" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1c), { "as-child": "" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$1u), {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1v), {
                                 size: "lg",
                                 class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                               }, {
@@ -2924,7 +2924,7 @@ const _sfc_main$19 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$1u), {
+                                createVNode(unref(_sfc_main$1v), {
                                   size: "lg",
                                   class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                                 }, {
@@ -2945,7 +2945,7 @@ const _sfc_main$19 = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$1h), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1i), {
                           class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                           align: "start",
                           side: unref(isMobile) ? "bottom" : "right",
@@ -2953,7 +2953,7 @@ const _sfc_main$19 = {
                         }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$1e), { class: "text-xs text-muted-foreground" }, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1f), { class: "text-xs text-muted-foreground" }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(` Teams `);
@@ -2967,7 +2967,7 @@ const _sfc_main$19 = {
                               }, _parent5, _scopeId4));
                               _push5(`<!--[-->`);
                               ssrRenderList(__props.teams, (team, index) => {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1f), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1g), {
                                   key: team.name,
                                   class: "gap-2 p-2",
                                   onClick: ($event) => activeTeam.value = team
@@ -2977,7 +2977,7 @@ const _sfc_main$19 = {
                                       _push6(`<div class="flex size-6 items-center justify-center rounded-sm border"${_scopeId5}>`);
                                       ssrRenderVNode(_push6, createVNode(resolveDynamicComponent(team.logo), { class: "size-4 shrink-0" }, null), _parent6, _scopeId5);
                                       _push6(`</div> ${ssrInterpolate(team.name)} `);
-                                      _push6(ssrRenderComponent(unref(_sfc_main$1c), null, {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$1d), null, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                           if (_push7) {
                                             _push7(`⌘${ssrInterpolate(index + 1)}`);
@@ -2995,7 +2995,7 @@ const _sfc_main$19 = {
                                           (openBlock(), createBlock(resolveDynamicComponent(team.logo), { class: "size-4 shrink-0" }))
                                         ]),
                                         createTextVNode(" " + toDisplayString(team.name) + " ", 1),
-                                        createVNode(unref(_sfc_main$1c), null, {
+                                        createVNode(unref(_sfc_main$1d), null, {
                                           default: withCtx(() => [
                                             createTextVNode("⌘" + toDisplayString(index + 1), 1)
                                           ]),
@@ -3008,8 +3008,8 @@ const _sfc_main$19 = {
                                 }, _parent5, _scopeId4));
                               });
                               _push5(`<!--]-->`);
-                              _push5(ssrRenderComponent(unref(_sfc_main$1d), null, null, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$1f), { class: "gap-2 p-2" }, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1e), null, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$1g), { class: "gap-2 p-2" }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(`<div class="flex size-6 items-center justify-center rounded-md border bg-background"${_scopeId5}>`);
@@ -3028,14 +3028,14 @@ const _sfc_main$19 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$1e), { class: "text-xs text-muted-foreground" }, {
+                                createVNode(unref(_sfc_main$1f), { class: "text-xs text-muted-foreground" }, {
                                   default: withCtx(() => [
                                     createTextVNode(" Teams ")
                                   ]),
                                   _: 1
                                 }),
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.teams, (team, index) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$1f), {
+                                  return openBlock(), createBlock(unref(_sfc_main$1g), {
                                     key: team.name,
                                     class: "gap-2 p-2",
                                     onClick: ($event) => activeTeam.value = team
@@ -3045,7 +3045,7 @@ const _sfc_main$19 = {
                                         (openBlock(), createBlock(resolveDynamicComponent(team.logo), { class: "size-4 shrink-0" }))
                                       ]),
                                       createTextVNode(" " + toDisplayString(team.name) + " ", 1),
-                                      createVNode(unref(_sfc_main$1c), null, {
+                                      createVNode(unref(_sfc_main$1d), null, {
                                         default: withCtx(() => [
                                           createTextVNode("⌘" + toDisplayString(index + 1), 1)
                                         ]),
@@ -3055,8 +3055,8 @@ const _sfc_main$19 = {
                                     _: 2
                                   }, 1032, ["onClick"]);
                                 }), 128)),
-                                createVNode(unref(_sfc_main$1d)),
-                                createVNode(unref(_sfc_main$1f), { class: "gap-2 p-2" }, {
+                                createVNode(unref(_sfc_main$1e)),
+                                createVNode(unref(_sfc_main$1g), { class: "gap-2 p-2" }, {
                                   default: withCtx(() => [
                                     createVNode("div", { class: "flex size-6 items-center justify-center rounded-md border bg-background" }, [
                                       createVNode(unref(Plus), { class: "size-4" })
@@ -3072,9 +3072,9 @@ const _sfc_main$19 = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1u), {
+                              createVNode(unref(_sfc_main$1v), {
                                 size: "lg",
                                 class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                               }, {
@@ -3093,21 +3093,21 @@ const _sfc_main$19 = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1h), {
+                          createVNode(unref(_sfc_main$1i), {
                             class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                             align: "start",
                             side: unref(isMobile) ? "bottom" : "right",
                             "side-offset": 4
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1e), { class: "text-xs text-muted-foreground" }, {
+                              createVNode(unref(_sfc_main$1f), { class: "text-xs text-muted-foreground" }, {
                                 default: withCtx(() => [
                                   createTextVNode(" Teams ")
                                 ]),
                                 _: 1
                               }),
                               (openBlock(true), createBlock(Fragment, null, renderList(__props.teams, (team, index) => {
-                                return openBlock(), createBlock(unref(_sfc_main$1f), {
+                                return openBlock(), createBlock(unref(_sfc_main$1g), {
                                   key: team.name,
                                   class: "gap-2 p-2",
                                   onClick: ($event) => activeTeam.value = team
@@ -3117,7 +3117,7 @@ const _sfc_main$19 = {
                                       (openBlock(), createBlock(resolveDynamicComponent(team.logo), { class: "size-4 shrink-0" }))
                                     ]),
                                     createTextVNode(" " + toDisplayString(team.name) + " ", 1),
-                                    createVNode(unref(_sfc_main$1c), null, {
+                                    createVNode(unref(_sfc_main$1d), null, {
                                       default: withCtx(() => [
                                         createTextVNode("⌘" + toDisplayString(index + 1), 1)
                                       ]),
@@ -3127,8 +3127,8 @@ const _sfc_main$19 = {
                                   _: 2
                                 }, 1032, ["onClick"]);
                               }), 128)),
-                              createVNode(unref(_sfc_main$1d)),
-                              createVNode(unref(_sfc_main$1f), { class: "gap-2 p-2" }, {
+                              createVNode(unref(_sfc_main$1e)),
+                              createVNode(unref(_sfc_main$1g), { class: "gap-2 p-2" }, {
                                 default: withCtx(() => [
                                   createVNode("div", { class: "flex size-6 items-center justify-center rounded-md border bg-background" }, [
                                     createVNode(unref(Plus), { class: "size-4" })
@@ -3147,11 +3147,11 @@ const _sfc_main$19 = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$1i), null, {
+                    createVNode(unref(_sfc_main$1j), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                        createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1u), {
+                            createVNode(unref(_sfc_main$1v), {
                               size: "lg",
                               class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                             }, {
@@ -3170,21 +3170,21 @@ const _sfc_main$19 = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1h), {
+                        createVNode(unref(_sfc_main$1i), {
                           class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                           align: "start",
                           side: unref(isMobile) ? "bottom" : "right",
                           "side-offset": 4
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1e), { class: "text-xs text-muted-foreground" }, {
+                            createVNode(unref(_sfc_main$1f), { class: "text-xs text-muted-foreground" }, {
                               default: withCtx(() => [
                                 createTextVNode(" Teams ")
                               ]),
                               _: 1
                             }),
                             (openBlock(true), createBlock(Fragment, null, renderList(__props.teams, (team, index) => {
-                              return openBlock(), createBlock(unref(_sfc_main$1f), {
+                              return openBlock(), createBlock(unref(_sfc_main$1g), {
                                 key: team.name,
                                 class: "gap-2 p-2",
                                 onClick: ($event) => activeTeam.value = team
@@ -3194,7 +3194,7 @@ const _sfc_main$19 = {
                                     (openBlock(), createBlock(resolveDynamicComponent(team.logo), { class: "size-4 shrink-0" }))
                                   ]),
                                   createTextVNode(" " + toDisplayString(team.name) + " ", 1),
-                                  createVNode(unref(_sfc_main$1c), null, {
+                                  createVNode(unref(_sfc_main$1d), null, {
                                     default: withCtx(() => [
                                       createTextVNode("⌘" + toDisplayString(index + 1), 1)
                                     ]),
@@ -3204,8 +3204,8 @@ const _sfc_main$19 = {
                                 _: 2
                               }, 1032, ["onClick"]);
                             }), 128)),
-                            createVNode(unref(_sfc_main$1d)),
-                            createVNode(unref(_sfc_main$1f), { class: "gap-2 p-2" }, {
+                            createVNode(unref(_sfc_main$1e)),
+                            createVNode(unref(_sfc_main$1g), { class: "gap-2 p-2" }, {
                               default: withCtx(() => [
                                 createVNode("div", { class: "flex size-6 items-center justify-center rounded-md border bg-background" }, [
                                   createVNode(unref(Plus), { class: "size-4" })
@@ -3227,13 +3227,13 @@ const _sfc_main$19 = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$1t), null, {
+              createVNode(unref(_sfc_main$1u), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$1i), null, {
+                  createVNode(unref(_sfc_main$1j), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                      createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1u), {
+                          createVNode(unref(_sfc_main$1v), {
                             size: "lg",
                             class: "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                           }, {
@@ -3252,21 +3252,21 @@ const _sfc_main$19 = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$1h), {
+                      createVNode(unref(_sfc_main$1i), {
                         class: "w-[--reka-dropdown-menu-trigger-width] min-w-56 rounded-lg",
                         align: "start",
                         side: unref(isMobile) ? "bottom" : "right",
                         "side-offset": 4
                       }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1e), { class: "text-xs text-muted-foreground" }, {
+                          createVNode(unref(_sfc_main$1f), { class: "text-xs text-muted-foreground" }, {
                             default: withCtx(() => [
                               createTextVNode(" Teams ")
                             ]),
                             _: 1
                           }),
                           (openBlock(true), createBlock(Fragment, null, renderList(__props.teams, (team, index) => {
-                            return openBlock(), createBlock(unref(_sfc_main$1f), {
+                            return openBlock(), createBlock(unref(_sfc_main$1g), {
                               key: team.name,
                               class: "gap-2 p-2",
                               onClick: ($event) => activeTeam.value = team
@@ -3276,7 +3276,7 @@ const _sfc_main$19 = {
                                   (openBlock(), createBlock(resolveDynamicComponent(team.logo), { class: "size-4 shrink-0" }))
                                 ]),
                                 createTextVNode(" " + toDisplayString(team.name) + " ", 1),
-                                createVNode(unref(_sfc_main$1c), null, {
+                                createVNode(unref(_sfc_main$1d), null, {
                                   default: withCtx(() => [
                                     createTextVNode("⌘" + toDisplayString(index + 1), 1)
                                   ]),
@@ -3286,8 +3286,8 @@ const _sfc_main$19 = {
                               _: 2
                             }, 1032, ["onClick"]);
                           }), 128)),
-                          createVNode(unref(_sfc_main$1d)),
-                          createVNode(unref(_sfc_main$1f), { class: "gap-2 p-2" }, {
+                          createVNode(unref(_sfc_main$1e)),
+                          createVNode(unref(_sfc_main$1g), { class: "gap-2 p-2" }, {
                             default: withCtx(() => [
                               createVNode("div", { class: "flex size-6 items-center justify-center rounded-md border bg-background" }, [
                                 createVNode(unref(Plus), { class: "size-4" })
@@ -3313,13 +3313,13 @@ const _sfc_main$19 = {
     };
   }
 };
-const _sfc_setup$19 = _sfc_main$19.setup;
-_sfc_main$19.setup = (props, ctx) => {
+const _sfc_setup$1a = _sfc_main$1a.setup;
+_sfc_main$1a.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/layouts/team-switcher.vue");
-  return _sfc_setup$19 ? _sfc_setup$19(props, ctx) : void 0;
+  return _sfc_setup$1a ? _sfc_setup$1a(props, ctx) : void 0;
 };
-const _sfc_main$18 = {
+const _sfc_main$19 = {
   __name: "app-sidebar",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3364,20 +3364,36 @@ const _sfc_main$18 = {
     };
     const props = __props;
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$1H), mergeProps(props, _attrs), {
+      _push(ssrRenderComponent(unref(_sfc_main$1I), mergeProps(props, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$1C), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$1D), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(_sfc_main$19, {
+                  _push3(ssrRenderComponent(_sfc_main$1a, {
                     teams: data.teams
                   }, null, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(_sfc_main$19, {
+                    createVNode(_sfc_main$1a, {
                       teams: data.teams
                     }, null, 8, ["teams"])
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(ssrRenderComponent(unref(_sfc_main$1H), null, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(ssrRenderComponent(_sfc_main$1n, {
+                    items: data.items
+                  }, null, _parent3, _scopeId2));
+                } else {
+                  return [
+                    createVNode(_sfc_main$1n, {
+                      items: data.items
+                    }, null, 8, ["items"])
                   ];
                 }
               }),
@@ -3386,57 +3402,41 @@ const _sfc_main$18 = {
             _push2(ssrRenderComponent(unref(_sfc_main$1G), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(_sfc_main$1m, {
-                    items: data.items
-                  }, null, _parent3, _scopeId2));
+                  _push3(ssrRenderComponent(_sfc_main$1b, null, null, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(_sfc_main$1m, {
-                      items: data.items
-                    }, null, 8, ["items"])
+                    createVNode(_sfc_main$1b)
                   ];
                 }
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$1F), null, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(ssrRenderComponent(_sfc_main$1a, null, null, _parent3, _scopeId2));
-                } else {
-                  return [
-                    createVNode(_sfc_main$1a)
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$1r), null, null, _parent2, _scopeId));
+            _push2(ssrRenderComponent(unref(_sfc_main$1s), null, null, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$1C), null, {
+              createVNode(unref(_sfc_main$1D), null, {
                 default: withCtx(() => [
-                  createVNode(_sfc_main$19, {
+                  createVNode(_sfc_main$1a, {
                     teams: data.teams
                   }, null, 8, ["teams"])
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$1G), null, {
+              createVNode(unref(_sfc_main$1H), null, {
                 default: withCtx(() => [
-                  createVNode(_sfc_main$1m, {
+                  createVNode(_sfc_main$1n, {
                     items: data.items
                   }, null, 8, ["items"])
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$1F), null, {
+              createVNode(unref(_sfc_main$1G), null, {
                 default: withCtx(() => [
-                  createVNode(_sfc_main$1a)
+                  createVNode(_sfc_main$1b)
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$1r))
+              createVNode(unref(_sfc_main$1s))
             ];
           }
         }),
@@ -3445,13 +3445,13 @@ const _sfc_main$18 = {
     };
   }
 };
-const _sfc_setup$18 = _sfc_main$18.setup;
-_sfc_main$18.setup = (props, ctx) => {
+const _sfc_setup$19 = _sfc_main$19.setup;
+_sfc_main$19.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/layouts/app-sidebar.vue");
-  return _sfc_setup$18 ? _sfc_setup$18(props, ctx) : void 0;
+  return _sfc_setup$19 ? _sfc_setup$19(props, ctx) : void 0;
 };
-const _sfc_main$17 = {
+const _sfc_main$18 = {
   __name: "Breadcrumb",
   __ssrInlineRender: true,
   props: {
@@ -3470,13 +3470,13 @@ const _sfc_main$17 = {
     };
   }
 };
-const _sfc_setup$17 = _sfc_main$17.setup;
-_sfc_main$17.setup = (props, ctx) => {
+const _sfc_setup$18 = _sfc_main$18.setup;
+_sfc_main$18.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/breadcrumb/Breadcrumb.vue");
-  return _sfc_setup$17 ? _sfc_setup$17(props, ctx) : void 0;
+  return _sfc_setup$18 ? _sfc_setup$18(props, ctx) : void 0;
 };
-const _sfc_main$16 = {
+const _sfc_main$17 = {
   __name: "BreadcrumbItem",
   __ssrInlineRender: true,
   props: {
@@ -3494,13 +3494,13 @@ const _sfc_main$16 = {
     };
   }
 };
-const _sfc_setup$16 = _sfc_main$16.setup;
-_sfc_main$16.setup = (props, ctx) => {
+const _sfc_setup$17 = _sfc_main$17.setup;
+_sfc_main$17.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/breadcrumb/BreadcrumbItem.vue");
-  return _sfc_setup$16 ? _sfc_setup$16(props, ctx) : void 0;
+  return _sfc_setup$17 ? _sfc_setup$17(props, ctx) : void 0;
 };
-const _sfc_main$15 = {
+const _sfc_main$16 = {
   __name: "BreadcrumbLink",
   __ssrInlineRender: true,
   props: {
@@ -3531,13 +3531,13 @@ const _sfc_main$15 = {
     };
   }
 };
-const _sfc_setup$15 = _sfc_main$15.setup;
-_sfc_main$15.setup = (props, ctx) => {
+const _sfc_setup$16 = _sfc_main$16.setup;
+_sfc_main$16.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/breadcrumb/BreadcrumbLink.vue");
-  return _sfc_setup$15 ? _sfc_setup$15(props, ctx) : void 0;
+  return _sfc_setup$16 ? _sfc_setup$16(props, ctx) : void 0;
 };
-const _sfc_main$14 = {
+const _sfc_main$15 = {
   __name: "BreadcrumbList",
   __ssrInlineRender: true,
   props: {
@@ -3558,13 +3558,13 @@ const _sfc_main$14 = {
     };
   }
 };
-const _sfc_setup$14 = _sfc_main$14.setup;
-_sfc_main$14.setup = (props, ctx) => {
+const _sfc_setup$15 = _sfc_main$15.setup;
+_sfc_main$15.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/breadcrumb/BreadcrumbList.vue");
-  return _sfc_setup$14 ? _sfc_setup$14(props, ctx) : void 0;
+  return _sfc_setup$15 ? _sfc_setup$15(props, ctx) : void 0;
 };
-const _sfc_main$13 = {
+const _sfc_main$14 = {
   __name: "BreadcrumbPage",
   __ssrInlineRender: true,
   props: {
@@ -3585,13 +3585,13 @@ const _sfc_main$13 = {
     };
   }
 };
-const _sfc_setup$13 = _sfc_main$13.setup;
-_sfc_main$13.setup = (props, ctx) => {
+const _sfc_setup$14 = _sfc_main$14.setup;
+_sfc_main$14.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/breadcrumb/BreadcrumbPage.vue");
-  return _sfc_setup$13 ? _sfc_setup$13(props, ctx) : void 0;
+  return _sfc_setup$14 ? _sfc_setup$14(props, ctx) : void 0;
 };
-const _sfc_main$12 = {
+const _sfc_main$13 = {
   __name: "BreadcrumbSeparator",
   __ssrInlineRender: true,
   props: {
@@ -3613,13 +3613,13 @@ const _sfc_main$12 = {
     };
   }
 };
-const _sfc_setup$12 = _sfc_main$12.setup;
-_sfc_main$12.setup = (props, ctx) => {
+const _sfc_setup$13 = _sfc_main$13.setup;
+_sfc_main$13.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/breadcrumb/BreadcrumbSeparator.vue");
-  return _sfc_setup$12 ? _sfc_setup$12(props, ctx) : void 0;
+  return _sfc_setup$13 ? _sfc_setup$13(props, ctx) : void 0;
 };
-const _sfc_main$11 = {
+const _sfc_main$12 = {
   __name: "breadcrumb",
   __ssrInlineRender: true,
   props: {
@@ -3630,20 +3630,20 @@ const _sfc_main$11 = {
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$17), _attrs, {
+      _push(ssrRenderComponent(unref(_sfc_main$18), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<!--[-->`);
             ssrRenderList(__props.breadcrumbs, (item) => {
-              _push2(ssrRenderComponent(unref(_sfc_main$14), {
+              _push2(ssrRenderComponent(unref(_sfc_main$15), {
                 key: item.label
               }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(unref(_sfc_main$16), { class: "hidden md:block" }, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$17), { class: "hidden md:block" }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$15), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$16), {
                             href: item.url
                           }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
@@ -3659,7 +3659,7 @@ const _sfc_main$11 = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$15), {
+                            createVNode(unref(_sfc_main$16), {
                               href: item.url
                             }, {
                               default: withCtx(() => [
@@ -3674,15 +3674,15 @@ const _sfc_main$11 = {
                     }, _parent3, _scopeId2));
                     if (item.subs) {
                       _push3(`<!--[-->`);
-                      _push3(ssrRenderComponent(unref(_sfc_main$12), { class: "hidden md:block" }, null, _parent3, _scopeId2));
+                      _push3(ssrRenderComponent(unref(_sfc_main$13), { class: "hidden md:block" }, null, _parent3, _scopeId2));
                       _push3(`<!--[-->`);
                       ssrRenderList(item.subs, (sub) => {
-                        _push3(ssrRenderComponent(unref(_sfc_main$16), {
+                        _push3(ssrRenderComponent(unref(_sfc_main$17), {
                           key: sub.label
                         }, {
                           default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                             if (_push4) {
-                              _push4(ssrRenderComponent(unref(_sfc_main$13), null, {
+                              _push4(ssrRenderComponent(unref(_sfc_main$14), null, {
                                 default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                   if (_push5) {
                                     _push5(`${ssrInterpolate(sub.label)}`);
@@ -3696,7 +3696,7 @@ const _sfc_main$11 = {
                               }, _parent4, _scopeId3));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$13), null, {
+                                createVNode(unref(_sfc_main$14), null, {
                                   default: withCtx(() => [
                                     createTextVNode(toDisplayString(sub.label), 1)
                                   ]),
@@ -3714,9 +3714,9 @@ const _sfc_main$11 = {
                     }
                   } else {
                     return [
-                      createVNode(unref(_sfc_main$16), { class: "hidden md:block" }, {
+                      createVNode(unref(_sfc_main$17), { class: "hidden md:block" }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$15), {
+                          createVNode(unref(_sfc_main$16), {
                             href: item.url
                           }, {
                             default: withCtx(() => [
@@ -3728,13 +3728,13 @@ const _sfc_main$11 = {
                         _: 2
                       }, 1024),
                       item.subs ? (openBlock(), createBlock(Fragment, { key: 0 }, [
-                        createVNode(unref(_sfc_main$12), { class: "hidden md:block" }),
+                        createVNode(unref(_sfc_main$13), { class: "hidden md:block" }),
                         (openBlock(true), createBlock(Fragment, null, renderList(item.subs, (sub) => {
-                          return openBlock(), createBlock(unref(_sfc_main$16), {
+                          return openBlock(), createBlock(unref(_sfc_main$17), {
                             key: sub.label
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$13), null, {
+                              createVNode(unref(_sfc_main$14), null, {
                                 default: withCtx(() => [
                                   createTextVNode(toDisplayString(sub.label), 1)
                                 ]),
@@ -3755,13 +3755,13 @@ const _sfc_main$11 = {
           } else {
             return [
               (openBlock(true), createBlock(Fragment, null, renderList(__props.breadcrumbs, (item) => {
-                return openBlock(), createBlock(unref(_sfc_main$14), {
+                return openBlock(), createBlock(unref(_sfc_main$15), {
                   key: item.label
                 }, {
                   default: withCtx(() => [
-                    createVNode(unref(_sfc_main$16), { class: "hidden md:block" }, {
+                    createVNode(unref(_sfc_main$17), { class: "hidden md:block" }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$15), {
+                        createVNode(unref(_sfc_main$16), {
                           href: item.url
                         }, {
                           default: withCtx(() => [
@@ -3773,13 +3773,13 @@ const _sfc_main$11 = {
                       _: 2
                     }, 1024),
                     item.subs ? (openBlock(), createBlock(Fragment, { key: 0 }, [
-                      createVNode(unref(_sfc_main$12), { class: "hidden md:block" }),
+                      createVNode(unref(_sfc_main$13), { class: "hidden md:block" }),
                       (openBlock(true), createBlock(Fragment, null, renderList(item.subs, (sub) => {
-                        return openBlock(), createBlock(unref(_sfc_main$16), {
+                        return openBlock(), createBlock(unref(_sfc_main$17), {
                           key: sub.label
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$13), null, {
+                            createVNode(unref(_sfc_main$14), null, {
                               default: withCtx(() => [
                                 createTextVNode(toDisplayString(sub.label), 1)
                               ]),
@@ -3802,13 +3802,13 @@ const _sfc_main$11 = {
     };
   }
 };
-const _sfc_setup$11 = _sfc_main$11.setup;
-_sfc_main$11.setup = (props, ctx) => {
+const _sfc_setup$12 = _sfc_main$12.setup;
+_sfc_main$12.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/layouts/breadcrumb.vue");
-  return _sfc_setup$11 ? _sfc_setup$11(props, ctx) : void 0;
+  return _sfc_setup$12 ? _sfc_setup$12(props, ctx) : void 0;
 };
-const _sfc_main$10 = {
+const _sfc_main$11 = {
   __name: "app",
   __ssrInlineRender: true,
   props: {
@@ -3819,36 +3819,36 @@ const _sfc_main$10 = {
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$1s), _attrs, {
+      _push(ssrRenderComponent(unref(_sfc_main$1t), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$18, null, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$1A), null, {
+            _push2(ssrRenderComponent(_sfc_main$19, null, null, _parent2, _scopeId));
+            _push2(ssrRenderComponent(unref(_sfc_main$1B), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`<header class="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12"${_scopeId2}><div class="flex items-center gap-2 px-4"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1o), { class: "-ml-1" }, null, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1p), { class: "-ml-1" }, null, _parent3, _scopeId2));
+                  _push3(ssrRenderComponent(unref(_sfc_main$1r), {
                     orientation: "vertical",
                     class: "mr-2 h-4"
                   }, null, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(_sfc_main$11, { breadcrumbs: __props.breadcrumbs }, null, _parent3, _scopeId2));
-                  _push3(`</div></header><div class="mx-6"${_scopeId2}>`);
+                  _push3(ssrRenderComponent(_sfc_main$12, { breadcrumbs: __props.breadcrumbs }, null, _parent3, _scopeId2));
+                  _push3(`</div></header><div class="mx-6 mb-6"${_scopeId2}>`);
                   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push3, _parent3, _scopeId2);
                   _push3(`</div>`);
                 } else {
                   return [
                     createVNode("header", { class: "flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12" }, [
                       createVNode("div", { class: "flex items-center gap-2 px-4" }, [
-                        createVNode(unref(_sfc_main$1o), { class: "-ml-1" }),
-                        createVNode(unref(_sfc_main$1q), {
+                        createVNode(unref(_sfc_main$1p), { class: "-ml-1" }),
+                        createVNode(unref(_sfc_main$1r), {
                           orientation: "vertical",
                           class: "mr-2 h-4"
                         }),
-                        createVNode(_sfc_main$11, { breadcrumbs: __props.breadcrumbs }, null, 8, ["breadcrumbs"])
+                        createVNode(_sfc_main$12, { breadcrumbs: __props.breadcrumbs }, null, 8, ["breadcrumbs"])
                       ])
                     ]),
-                    createVNode("div", { class: "mx-6" }, [
+                    createVNode("div", { class: "mx-6 mb-6" }, [
                       renderSlot(_ctx.$slots, "default")
                     ])
                   ];
@@ -3858,20 +3858,20 @@ const _sfc_main$10 = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(_sfc_main$18),
-              createVNode(unref(_sfc_main$1A), null, {
+              createVNode(_sfc_main$19),
+              createVNode(unref(_sfc_main$1B), null, {
                 default: withCtx(() => [
                   createVNode("header", { class: "flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12" }, [
                     createVNode("div", { class: "flex items-center gap-2 px-4" }, [
-                      createVNode(unref(_sfc_main$1o), { class: "-ml-1" }),
-                      createVNode(unref(_sfc_main$1q), {
+                      createVNode(unref(_sfc_main$1p), { class: "-ml-1" }),
+                      createVNode(unref(_sfc_main$1r), {
                         orientation: "vertical",
                         class: "mr-2 h-4"
                       }),
-                      createVNode(_sfc_main$11, { breadcrumbs: __props.breadcrumbs }, null, 8, ["breadcrumbs"])
+                      createVNode(_sfc_main$12, { breadcrumbs: __props.breadcrumbs }, null, 8, ["breadcrumbs"])
                     ])
                   ]),
-                  createVNode("div", { class: "mx-6" }, [
+                  createVNode("div", { class: "mx-6 mb-6" }, [
                     renderSlot(_ctx.$slots, "default")
                   ])
                 ]),
@@ -3885,13 +3885,13 @@ const _sfc_main$10 = {
     };
   }
 };
-const _sfc_setup$10 = _sfc_main$10.setup;
-_sfc_main$10.setup = (props, ctx) => {
+const _sfc_setup$11 = _sfc_main$11.setup;
+_sfc_main$11.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/layouts/app.vue");
-  return _sfc_setup$10 ? _sfc_setup$10(props, ctx) : void 0;
+  return _sfc_setup$11 ? _sfc_setup$11(props, ctx) : void 0;
 };
-const _sfc_main$$ = {
+const _sfc_main$10 = {
   __name: "doughnut-chart",
   __ssrInlineRender: true,
   props: {
@@ -3917,13 +3917,13 @@ const _sfc_main$$ = {
     };
   }
 };
-const _sfc_setup$$ = _sfc_main$$.setup;
-_sfc_main$$.setup = (props, ctx) => {
+const _sfc_setup$10 = _sfc_main$10.setup;
+_sfc_main$10.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/charts/doughnut-chart.vue");
-  return _sfc_setup$$ ? _sfc_setup$$(props, ctx) : void 0;
+  return _sfc_setup$10 ? _sfc_setup$10(props, ctx) : void 0;
 };
-const _sfc_main$_ = {
+const _sfc_main$$ = {
   __name: "Card",
   __ssrInlineRender: true,
   props: {
@@ -3944,13 +3944,13 @@ const _sfc_main$_ = {
     };
   }
 };
-const _sfc_setup$_ = _sfc_main$_.setup;
-_sfc_main$_.setup = (props, ctx) => {
+const _sfc_setup$$ = _sfc_main$$.setup;
+_sfc_main$$.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/card/Card.vue");
-  return _sfc_setup$_ ? _sfc_setup$_(props, ctx) : void 0;
+  return _sfc_setup$$ ? _sfc_setup$$(props, ctx) : void 0;
 };
-const _sfc_main$Z = {
+const _sfc_main$_ = {
   __name: "CardContent",
   __ssrInlineRender: true,
   props: {
@@ -3968,13 +3968,13 @@ const _sfc_main$Z = {
     };
   }
 };
-const _sfc_setup$Z = _sfc_main$Z.setup;
-_sfc_main$Z.setup = (props, ctx) => {
+const _sfc_setup$_ = _sfc_main$_.setup;
+_sfc_main$_.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/card/CardContent.vue");
-  return _sfc_setup$Z ? _sfc_setup$Z(props, ctx) : void 0;
+  return _sfc_setup$_ ? _sfc_setup$_(props, ctx) : void 0;
 };
-const _sfc_main$Y = {
+const _sfc_main$Z = {
   __name: "CardDescription",
   __ssrInlineRender: true,
   props: {
@@ -3992,13 +3992,13 @@ const _sfc_main$Y = {
     };
   }
 };
-const _sfc_setup$Y = _sfc_main$Y.setup;
-_sfc_main$Y.setup = (props, ctx) => {
+const _sfc_setup$Z = _sfc_main$Z.setup;
+_sfc_main$Z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/card/CardDescription.vue");
-  return _sfc_setup$Y ? _sfc_setup$Y(props, ctx) : void 0;
+  return _sfc_setup$Z ? _sfc_setup$Z(props, ctx) : void 0;
 };
-const _sfc_main$X = {
+const _sfc_main$Y = {
   __name: "CardFooter",
   __ssrInlineRender: true,
   props: {
@@ -4016,13 +4016,13 @@ const _sfc_main$X = {
     };
   }
 };
-const _sfc_setup$X = _sfc_main$X.setup;
-_sfc_main$X.setup = (props, ctx) => {
+const _sfc_setup$Y = _sfc_main$Y.setup;
+_sfc_main$Y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/card/CardFooter.vue");
-  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
+  return _sfc_setup$Y ? _sfc_setup$Y(props, ctx) : void 0;
 };
-const _sfc_main$W = {
+const _sfc_main$X = {
   __name: "CardHeader",
   __ssrInlineRender: true,
   props: {
@@ -4043,13 +4043,13 @@ const _sfc_main$W = {
     };
   }
 };
-const _sfc_setup$W = _sfc_main$W.setup;
-_sfc_main$W.setup = (props, ctx) => {
+const _sfc_setup$X = _sfc_main$X.setup;
+_sfc_main$X.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/card/CardHeader.vue");
-  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
+  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
 };
-const _sfc_main$V = {
+const _sfc_main$W = {
   __name: "CardTitle",
   __ssrInlineRender: true,
   props: {
@@ -4067,13 +4067,13 @@ const _sfc_main$V = {
     };
   }
 };
-const _sfc_setup$V = _sfc_main$V.setup;
-_sfc_main$V.setup = (props, ctx) => {
+const _sfc_setup$W = _sfc_main$W.setup;
+_sfc_main$W.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/card/CardTitle.vue");
-  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
+  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
 };
-const _sfc_main$U = {
+const _sfc_main$V = {
   __name: "Progress",
   __ssrInlineRender: true,
   props: {
@@ -4117,13 +4117,13 @@ const _sfc_main$U = {
     };
   }
 };
-const _sfc_setup$U = _sfc_main$U.setup;
-_sfc_main$U.setup = (props, ctx) => {
+const _sfc_setup$V = _sfc_main$V.setup;
+_sfc_main$V.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/progress/Progress.vue");
-  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
+  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
 };
-const _sfc_main$T = {
+const _sfc_main$U = {
   __name: "Table",
   __ssrInlineRender: true,
   props: {
@@ -4141,13 +4141,13 @@ const _sfc_main$T = {
     };
   }
 };
-const _sfc_setup$T = _sfc_main$T.setup;
-_sfc_main$T.setup = (props, ctx) => {
+const _sfc_setup$U = _sfc_main$U.setup;
+_sfc_main$U.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/table/Table.vue");
-  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
+  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
 };
-const _sfc_main$S = {
+const _sfc_main$T = {
   __name: "TableBody",
   __ssrInlineRender: true,
   props: {
@@ -4165,13 +4165,13 @@ const _sfc_main$S = {
     };
   }
 };
-const _sfc_setup$S = _sfc_main$S.setup;
-_sfc_main$S.setup = (props, ctx) => {
+const _sfc_setup$T = _sfc_main$T.setup;
+_sfc_main$T.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/table/TableBody.vue");
-  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
+  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
 };
-const _sfc_main$R = {
+const _sfc_main$S = {
   __name: "TableCell",
   __ssrInlineRender: true,
   props: {
@@ -4192,13 +4192,13 @@ const _sfc_main$R = {
     };
   }
 };
-const _sfc_setup$R = _sfc_main$R.setup;
-_sfc_main$R.setup = (props, ctx) => {
+const _sfc_setup$S = _sfc_main$S.setup;
+_sfc_main$S.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/table/TableCell.vue");
-  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
 };
-const _sfc_main$Q = {
+const _sfc_main$R = {
   __name: "TableRow",
   __ssrInlineRender: true,
   props: {
@@ -4219,13 +4219,13 @@ const _sfc_main$Q = {
     };
   }
 };
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
+const _sfc_setup$R = _sfc_main$R.setup;
+_sfc_main$R.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/table/TableRow.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
 };
-const _sfc_main$P = {
+const _sfc_main$Q = {
   __name: "TableHead",
   __ssrInlineRender: true,
   props: {
@@ -4246,13 +4246,13 @@ const _sfc_main$P = {
     };
   }
 };
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/table/TableHead.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const _sfc_main$O = {
+const _sfc_main$P = {
   __name: "TableHeader",
   __ssrInlineRender: true,
   props: {
@@ -4270,13 +4270,13 @@ const _sfc_main$O = {
     };
   }
 };
-const _sfc_setup$O = _sfc_main$O.setup;
-_sfc_main$O.setup = (props, ctx) => {
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/table/TableHeader.vue");
-  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
-const _sfc_main$N = {
+const _sfc_main$O = {
   __name: "Badge",
   __ssrInlineRender: true,
   props: {
@@ -4307,11 +4307,11 @@ const _sfc_main$N = {
     };
   }
 };
-const _sfc_setup$N = _sfc_main$N.setup;
-_sfc_main$N.setup = (props, ctx) => {
+const _sfc_setup$O = _sfc_main$O.setup;
+_sfc_main$O.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/badge/Badge.vue");
-  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
+  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
 const badgeVariants = cva(
   "inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
@@ -4329,7 +4329,7 @@ const badgeVariants = cva(
     }
   }
 );
-const _sfc_main$M = {
+const _sfc_main$N = {
   __name: "dashboard",
   __ssrInlineRender: true,
   props: {
@@ -4365,17 +4365,17 @@ const _sfc_main$M = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Dashboard" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$10, { breadcrumbs }, {
+      _push(ssrRenderComponent(_sfc_main$11, { breadcrumbs }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="flex justify-between items-center mb-6"${_scopeId}><h2 class="font-semibold text-xl"${_scopeId}>Dashboard</h2></div><div class="pb-12"${_scopeId}><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6"${_scopeId}>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`My Completion Rate`);
@@ -4389,7 +4389,7 @@ const _sfc_main$M = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("My Completion Rate")
                             ]),
@@ -4400,7 +4400,7 @@ const _sfc_main$M = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`<p class="text-4xl font-bold berai-font-mono"${_scopeId3}>${ssrInterpolate(__props.analytics.completionRate)}%</p>`);
@@ -4414,9 +4414,9 @@ const _sfc_main$M = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("My Completion Rate")
                           ]),
@@ -4425,7 +4425,7 @@ const _sfc_main$M = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), null, {
+                    createVNode(unref(_sfc_main$_), null, {
                       default: withCtx(() => [
                         createVNode("p", { class: "text-4xl font-bold berai-font-mono" }, toDisplayString(__props.analytics.completionRate) + "%", 1)
                       ]),
@@ -4436,13 +4436,13 @@ const _sfc_main$M = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Active Projects`);
@@ -4456,7 +4456,7 @@ const _sfc_main$M = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Active Projects")
                             ]),
@@ -4467,7 +4467,7 @@ const _sfc_main$M = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`<p class="text-4xl font-bold berai-font-mono"${_scopeId3}>${ssrInterpolate(__props.analytics.totalProjects)}</p>`);
@@ -4481,9 +4481,9 @@ const _sfc_main$M = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Active Projects")
                           ]),
@@ -4492,7 +4492,7 @@ const _sfc_main$M = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), null, {
+                    createVNode(unref(_sfc_main$_), null, {
                       default: withCtx(() => [
                         createVNode("p", { class: "text-4xl font-bold berai-font-mono" }, toDisplayString(__props.analytics.totalProjects), 1)
                       ]),
@@ -4503,13 +4503,13 @@ const _sfc_main$M = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Total Assigned Tasks`);
@@ -4523,7 +4523,7 @@ const _sfc_main$M = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Total Assigned Tasks")
                             ]),
@@ -4534,7 +4534,7 @@ const _sfc_main$M = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`<p class="text-4xl font-bold berai-font-mono"${_scopeId3}>${ssrInterpolate(__props.analytics.totalUserTasks)}</p>`);
@@ -4548,9 +4548,9 @@ const _sfc_main$M = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Total Assigned Tasks")
                           ]),
@@ -4559,7 +4559,7 @@ const _sfc_main$M = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), null, {
+                    createVNode(unref(_sfc_main$_), null, {
                       default: withCtx(() => [
                         createVNode("p", { class: "text-4xl font-bold berai-font-mono" }, toDisplayString(__props.analytics.totalUserTasks), 1)
                       ]),
@@ -4574,16 +4574,16 @@ const _sfc_main$M = {
             if (__props.projects.length > 0) {
               _push2(`<div class="grid grid-cols-1 md:grid-cols-2 gap-6"${_scopeId}><!--[-->`);
               ssrRenderList(__props.projects, (project) => {
-                _push2(ssrRenderComponent(unref(_sfc_main$_), {
+                _push2(ssrRenderComponent(unref(_sfc_main$$), {
                   key: project.id,
                   class: "flex flex-col"
                 }, {
                   default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                     if (_push3) {
-                      _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                      _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
-                            _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
                                   _push5(`${ssrInterpolate(project.name)}`);
@@ -4595,7 +4595,7 @@ const _sfc_main$M = {
                               }),
                               _: 2
                             }, _parent4, _scopeId3));
-                            _push4(ssrRenderComponent(unref(_sfc_main$Y), { class: "line-clamp-2 h-[40px]" }, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$Z), { class: "line-clamp-2 h-[40px]" }, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
                                   _push5(`${ssrInterpolate(project.description || "No description provided.")}`);
@@ -4609,13 +4609,13 @@ const _sfc_main$M = {
                             }, _parent4, _scopeId3));
                           } else {
                             return [
-                              createVNode(unref(_sfc_main$V), null, {
+                              createVNode(unref(_sfc_main$W), null, {
                                 default: withCtx(() => [
                                   createTextVNode(toDisplayString(project.name), 1)
                                 ]),
                                 _: 2
                               }, 1024),
-                              createVNode(unref(_sfc_main$Y), { class: "line-clamp-2 h-[40px]" }, {
+                              createVNode(unref(_sfc_main$Z), { class: "line-clamp-2 h-[40px]" }, {
                                 default: withCtx(() => [
                                   createTextVNode(toDisplayString(project.description || "No description provided."), 1)
                                 ]),
@@ -4626,11 +4626,11 @@ const _sfc_main$M = {
                         }),
                         _: 2
                       }, _parent3, _scopeId2));
-                      _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "flex-grow" }, {
+                      _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "flex-grow" }, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
                             _push4(`<div class="flex justify-between items-center mb-2"${_scopeId3}><span class="text-sm text-muted-foreground"${_scopeId3}>Progress</span><span class="text-sm font-medium"${_scopeId3}>${ssrInterpolate(project.completed_tasks_count)} / ${ssrInterpolate(project.tasks_count)} tasks </span></div>`);
-                            _push4(ssrRenderComponent(unref(_sfc_main$U), {
+                            _push4(ssrRenderComponent(unref(_sfc_main$V), {
                               "model-value": getProgress(project)
                             }, null, _parent4, _scopeId3));
                           } else {
@@ -4639,7 +4639,7 @@ const _sfc_main$M = {
                                 createVNode("span", { class: "text-sm text-muted-foreground" }, "Progress"),
                                 createVNode("span", { class: "text-sm font-medium" }, toDisplayString(project.completed_tasks_count) + " / " + toDisplayString(project.tasks_count) + " tasks ", 1)
                               ]),
-                              createVNode(unref(_sfc_main$U), {
+                              createVNode(unref(_sfc_main$V), {
                                 "model-value": getProgress(project)
                               }, null, 8, ["model-value"])
                             ];
@@ -4647,17 +4647,17 @@ const _sfc_main$M = {
                         }),
                         _: 2
                       }, _parent3, _scopeId2));
-                      _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
+                      _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
-                            _push4(ssrRenderComponent(unref(_sfc_main$1p), {
+                            _push4(ssrRenderComponent(unref(_sfc_main$1q), {
                               "as-child": "",
                               variant: "secondary",
                               class: "w-full"
                             }, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
-                                  _push5(ssrRenderComponent(_sfc_main$1n, {
+                                  _push5(ssrRenderComponent(_sfc_main$1o, {
                                     href: `/project/${project.id}`
                                   }, {
                                     default: withCtx((_5, _push6, _parent6, _scopeId5) => {
@@ -4673,7 +4673,7 @@ const _sfc_main$M = {
                                   }, _parent5, _scopeId4));
                                 } else {
                                   return [
-                                    createVNode(_sfc_main$1n, {
+                                    createVNode(_sfc_main$1o, {
                                       href: `/project/${project.id}`
                                     }, {
                                       default: withCtx(() => [
@@ -4688,13 +4688,13 @@ const _sfc_main$M = {
                             }, _parent4, _scopeId3));
                           } else {
                             return [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 "as-child": "",
                                 variant: "secondary",
                                 class: "w-full"
                               }, {
                                 default: withCtx(() => [
-                                  createVNode(_sfc_main$1n, {
+                                  createVNode(_sfc_main$1o, {
                                     href: `/project/${project.id}`
                                   }, {
                                     default: withCtx(() => [
@@ -4712,15 +4712,15 @@ const _sfc_main$M = {
                       }, _parent3, _scopeId2));
                     } else {
                       return [
-                        createVNode(unref(_sfc_main$W), null, {
+                        createVNode(unref(_sfc_main$X), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$V), null, {
+                            createVNode(unref(_sfc_main$W), null, {
                               default: withCtx(() => [
                                 createTextVNode(toDisplayString(project.name), 1)
                               ]),
                               _: 2
                             }, 1024),
-                            createVNode(unref(_sfc_main$Y), { class: "line-clamp-2 h-[40px]" }, {
+                            createVNode(unref(_sfc_main$Z), { class: "line-clamp-2 h-[40px]" }, {
                               default: withCtx(() => [
                                 createTextVNode(toDisplayString(project.description || "No description provided."), 1)
                               ]),
@@ -4729,27 +4729,27 @@ const _sfc_main$M = {
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$Z), { class: "flex-grow" }, {
+                        createVNode(unref(_sfc_main$_), { class: "flex-grow" }, {
                           default: withCtx(() => [
                             createVNode("div", { class: "flex justify-between items-center mb-2" }, [
                               createVNode("span", { class: "text-sm text-muted-foreground" }, "Progress"),
                               createVNode("span", { class: "text-sm font-medium" }, toDisplayString(project.completed_tasks_count) + " / " + toDisplayString(project.tasks_count) + " tasks ", 1)
                             ]),
-                            createVNode(unref(_sfc_main$U), {
+                            createVNode(unref(_sfc_main$V), {
                               "model-value": getProgress(project)
                             }, null, 8, ["model-value"])
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$X), null, {
+                        createVNode(unref(_sfc_main$Y), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1p), {
+                            createVNode(unref(_sfc_main$1q), {
                               "as-child": "",
                               variant: "secondary",
                               class: "w-full"
                             }, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$1n, {
+                                createVNode(_sfc_main$1o, {
                                   href: `/project/${project.id}`
                                 }, {
                                   default: withCtx(() => [
@@ -4772,13 +4772,13 @@ const _sfc_main$M = {
               _push2(`<!--]--></div>`);
             } else {
               _push2(`<div${_scopeId}>`);
-              _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "text-center" }, {
+              _push2(ssrRenderComponent(unref(_sfc_main$$), { class: "text-center" }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 _push5(`Welcome to Berai!`);
@@ -4790,7 +4790,7 @@ const _sfc_main$M = {
                             }),
                             _: 1
                           }, _parent4, _scopeId3));
-                          _push4(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$Z), null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 _push5(` Get started by creating your first project. `);
@@ -4804,13 +4804,13 @@ const _sfc_main$M = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$V), null, {
+                            createVNode(unref(_sfc_main$W), null, {
                               default: withCtx(() => [
                                 createTextVNode("Welcome to Berai!")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$Y), null, {
+                            createVNode(unref(_sfc_main$Z), null, {
                               default: withCtx(() => [
                                 createTextVNode(" Get started by creating your first project. ")
                               ]),
@@ -4821,17 +4821,17 @@ const _sfc_main$M = {
                       }),
                       _: 1
                     }, _parent3, _scopeId2));
-                    _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$_), null, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$1p), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1q), {
                             size: "lg",
                             "as-child": "",
                             class: "mt-1"
                           }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(_sfc_main$1n, { href: "/project/create" }, {
+                                _push5(ssrRenderComponent(_sfc_main$1o, { href: "/project/create" }, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     if (_push6) {
                                       _push6(` Create Your First Project `);
@@ -4845,7 +4845,7 @@ const _sfc_main$M = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                                  createVNode(_sfc_main$1o, { href: "/project/create" }, {
                                     default: withCtx(() => [
                                       createTextVNode(" Create Your First Project ")
                                     ]),
@@ -4858,13 +4858,13 @@ const _sfc_main$M = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$1p), {
+                            createVNode(unref(_sfc_main$1q), {
                               size: "lg",
                               "as-child": "",
                               class: "mt-1"
                             }, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                                createVNode(_sfc_main$1o, { href: "/project/create" }, {
                                   default: withCtx(() => [
                                     createTextVNode(" Create Your First Project ")
                                   ]),
@@ -4880,15 +4880,15 @@ const _sfc_main$M = {
                     }, _parent3, _scopeId2));
                   } else {
                     return [
-                      createVNode(unref(_sfc_main$W), null, {
+                      createVNode(unref(_sfc_main$X), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Welcome to Berai!")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Y), null, {
+                          createVNode(unref(_sfc_main$Z), null, {
                             default: withCtx(() => [
                               createTextVNode(" Get started by creating your first project. ")
                             ]),
@@ -4897,15 +4897,15 @@ const _sfc_main$M = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$Z), null, {
+                      createVNode(unref(_sfc_main$_), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             size: "lg",
                             "as-child": "",
                             class: "mt-1"
                           }, {
                             default: withCtx(() => [
-                              createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                              createVNode(_sfc_main$1o, { href: "/project/create" }, {
                                 default: withCtx(() => [
                                   createTextVNode(" Create Your First Project ")
                                 ]),
@@ -4925,13 +4925,13 @@ const _sfc_main$M = {
               _push2(`</div>`);
             }
             _push2(`</div><div class="lg:col-span-1 space-y-6"${_scopeId}>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Tasks by Status`);
@@ -4943,7 +4943,7 @@ const _sfc_main$M = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Z), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`A breakdown of all tasks in your projects.`);
@@ -4957,13 +4957,13 @@ const _sfc_main$M = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Tasks by Status")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Y), null, {
+                          createVNode(unref(_sfc_main$Z), null, {
                             default: withCtx(() => [
                               createTextVNode("A breakdown of all tasks in your projects.")
                             ]),
@@ -4974,11 +4974,11 @@ const _sfc_main$M = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "h-72 flex justify-center py-4" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "h-72 flex justify-center py-4" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         if (__props.analytics.totalUserTasks > 0) {
-                          _push4(ssrRenderComponent(_sfc_main$$, {
+                          _push4(ssrRenderComponent(_sfc_main$10, {
                             "chart-data": statusChartData.value,
                             "chart-options": chartOptions
                           }, null, _parent4, _scopeId3));
@@ -4987,7 +4987,7 @@ const _sfc_main$M = {
                         }
                       } else {
                         return [
-                          __props.analytics.totalUserTasks > 0 ? (openBlock(), createBlock(_sfc_main$$, {
+                          __props.analytics.totalUserTasks > 0 ? (openBlock(), createBlock(_sfc_main$10, {
                             key: 0,
                             "chart-data": statusChartData.value,
                             "chart-options": chartOptions
@@ -5002,15 +5002,15 @@ const _sfc_main$M = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Tasks by Status")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Y), null, {
+                        createVNode(unref(_sfc_main$Z), null, {
                           default: withCtx(() => [
                             createTextVNode("A breakdown of all tasks in your projects.")
                           ]),
@@ -5019,9 +5019,9 @@ const _sfc_main$M = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), { class: "h-72 flex justify-center py-4" }, {
+                    createVNode(unref(_sfc_main$_), { class: "h-72 flex justify-center py-4" }, {
                       default: withCtx(() => [
-                        __props.analytics.totalUserTasks > 0 ? (openBlock(), createBlock(_sfc_main$$, {
+                        __props.analytics.totalUserTasks > 0 ? (openBlock(), createBlock(_sfc_main$10, {
                           key: 0,
                           "chart-data": statusChartData.value,
                           "chart-options": chartOptions
@@ -5037,13 +5037,13 @@ const _sfc_main$M = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`My Open Tasks`);
@@ -5055,7 +5055,7 @@ const _sfc_main$M = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Z), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Your most urgent tasks across all projects.`);
@@ -5069,13 +5069,13 @@ const _sfc_main$M = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("My Open Tasks")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Y), null, {
+                          createVNode(unref(_sfc_main$Z), null, {
                             default: withCtx(() => [
                               createTextVNode("Your most urgent tasks across all projects.")
                             ]),
@@ -5086,19 +5086,19 @@ const _sfc_main$M = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$T), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$U), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$S), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$T), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     if (__props.openTasks.length > 0) {
                                       _push6(`<!--[-->`);
                                       ssrRenderList(__props.openTasks, (task) => {
-                                        _push6(ssrRenderComponent(_sfc_main$1n, {
+                                        _push6(ssrRenderComponent(_sfc_main$1o, {
                                           key: task.id,
                                           href: `/project/${task.project.id}`,
                                           as: "tr",
@@ -5106,7 +5106,7 @@ const _sfc_main$M = {
                                         }, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
-                                              _push7(ssrRenderComponent(unref(_sfc_main$R), null, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$S), null, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
                                                     _push8(`<div class="font-medium"${_scopeId7}>${ssrInterpolate(task.title)}</div><div class="text-xs text-muted-foreground"${_scopeId7}>${ssrInterpolate(task.project.name)}</div>`);
@@ -5119,10 +5119,10 @@ const _sfc_main$M = {
                                                 }),
                                                 _: 2
                                               }, _parent7, _scopeId6));
-                                              _push7(ssrRenderComponent(unref(_sfc_main$R), { class: "text-right" }, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$S), { class: "text-right" }, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
-                                                    _push8(ssrRenderComponent(unref(_sfc_main$N), { variant: "destructive" }, {
+                                                    _push8(ssrRenderComponent(unref(_sfc_main$O), { variant: "destructive" }, {
                                                       default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                         if (_push9) {
                                                           _push9(`${ssrInterpolate(task.due_date || "No due date")}`);
@@ -5136,7 +5136,7 @@ const _sfc_main$M = {
                                                     }, _parent8, _scopeId7));
                                                   } else {
                                                     return [
-                                                      createVNode(unref(_sfc_main$N), { variant: "destructive" }, {
+                                                      createVNode(unref(_sfc_main$O), { variant: "destructive" }, {
                                                         default: withCtx(() => [
                                                           createTextVNode(toDisplayString(task.due_date || "No due date"), 1)
                                                         ]),
@@ -5149,16 +5149,16 @@ const _sfc_main$M = {
                                               }, _parent7, _scopeId6));
                                             } else {
                                               return [
-                                                createVNode(unref(_sfc_main$R), null, {
+                                                createVNode(unref(_sfc_main$S), null, {
                                                   default: withCtx(() => [
                                                     createVNode("div", { class: "font-medium" }, toDisplayString(task.title), 1),
                                                     createVNode("div", { class: "text-xs text-muted-foreground" }, toDisplayString(task.project.name), 1)
                                                   ]),
                                                   _: 2
                                                 }, 1024),
-                                                createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                                                createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$N), { variant: "destructive" }, {
+                                                    createVNode(unref(_sfc_main$O), { variant: "destructive" }, {
                                                       default: withCtx(() => [
                                                         createTextVNode(toDisplayString(task.due_date || "No due date"), 1)
                                                       ]),
@@ -5175,10 +5175,10 @@ const _sfc_main$M = {
                                       });
                                       _push6(`<!--]-->`);
                                     } else {
-                                      _push6(ssrRenderComponent(unref(_sfc_main$Q), null, {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$R), null, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                           if (_push7) {
-                                            _push7(ssrRenderComponent(unref(_sfc_main$R), { class: "text-center py-12" }, {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$S), { class: "text-center py-12" }, {
                                               default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                 if (_push8) {
                                                   _push8(` You have no open tasks. Great job! `);
@@ -5192,7 +5192,7 @@ const _sfc_main$M = {
                                             }, _parent7, _scopeId6));
                                           } else {
                                             return [
-                                              createVNode(unref(_sfc_main$R), { class: "text-center py-12" }, {
+                                              createVNode(unref(_sfc_main$S), { class: "text-center py-12" }, {
                                                 default: withCtx(() => [
                                                   createTextVNode(" You have no open tasks. Great job! ")
                                                 ]),
@@ -5207,23 +5207,23 @@ const _sfc_main$M = {
                                   } else {
                                     return [
                                       __props.openTasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.openTasks, (task) => {
-                                        return openBlock(), createBlock(_sfc_main$1n, {
+                                        return openBlock(), createBlock(_sfc_main$1o, {
                                           key: task.id,
                                           href: `/project/${task.project.id}`,
                                           as: "tr",
                                           class: "hover:bg-muted/50 cursor-pointer"
                                         }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$R), null, {
+                                            createVNode(unref(_sfc_main$S), null, {
                                               default: withCtx(() => [
                                                 createVNode("div", { class: "font-medium" }, toDisplayString(task.title), 1),
                                                 createVNode("div", { class: "text-xs text-muted-foreground" }, toDisplayString(task.project.name), 1)
                                               ]),
                                               _: 2
                                             }, 1024),
-                                            createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                                            createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$N), { variant: "destructive" }, {
+                                                createVNode(unref(_sfc_main$O), { variant: "destructive" }, {
                                                   default: withCtx(() => [
                                                     createTextVNode(toDisplayString(task.due_date || "No due date"), 1)
                                                   ]),
@@ -5235,9 +5235,9 @@ const _sfc_main$M = {
                                           ]),
                                           _: 2
                                         }, 1032, ["href"]);
-                                      }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                      }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$R), { class: "text-center py-12" }, {
+                                          createVNode(unref(_sfc_main$S), { class: "text-center py-12" }, {
                                             default: withCtx(() => [
                                               createTextVNode(" You have no open tasks. Great job! ")
                                             ]),
@@ -5253,26 +5253,26 @@ const _sfc_main$M = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$S), null, {
+                                createVNode(unref(_sfc_main$T), null, {
                                   default: withCtx(() => [
                                     __props.openTasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.openTasks, (task) => {
-                                      return openBlock(), createBlock(_sfc_main$1n, {
+                                      return openBlock(), createBlock(_sfc_main$1o, {
                                         key: task.id,
                                         href: `/project/${task.project.id}`,
                                         as: "tr",
                                         class: "hover:bg-muted/50 cursor-pointer"
                                       }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$R), null, {
+                                          createVNode(unref(_sfc_main$S), null, {
                                             default: withCtx(() => [
                                               createVNode("div", { class: "font-medium" }, toDisplayString(task.title), 1),
                                               createVNode("div", { class: "text-xs text-muted-foreground" }, toDisplayString(task.project.name), 1)
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                                          createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$N), { variant: "destructive" }, {
+                                              createVNode(unref(_sfc_main$O), { variant: "destructive" }, {
                                                 default: withCtx(() => [
                                                   createTextVNode(toDisplayString(task.due_date || "No due date"), 1)
                                                 ]),
@@ -5284,9 +5284,9 @@ const _sfc_main$M = {
                                         ]),
                                         _: 2
                                       }, 1032, ["href"]);
-                                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$R), { class: "text-center py-12" }, {
+                                        createVNode(unref(_sfc_main$S), { class: "text-center py-12" }, {
                                           default: withCtx(() => [
                                             createTextVNode(" You have no open tasks. Great job! ")
                                           ]),
@@ -5305,28 +5305,28 @@ const _sfc_main$M = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$T), null, {
+                          createVNode(unref(_sfc_main$U), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$S), null, {
+                              createVNode(unref(_sfc_main$T), null, {
                                 default: withCtx(() => [
                                   __props.openTasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.openTasks, (task) => {
-                                    return openBlock(), createBlock(_sfc_main$1n, {
+                                    return openBlock(), createBlock(_sfc_main$1o, {
                                       key: task.id,
                                       href: `/project/${task.project.id}`,
                                       as: "tr",
                                       class: "hover:bg-muted/50 cursor-pointer"
                                     }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$R), null, {
+                                        createVNode(unref(_sfc_main$S), null, {
                                           default: withCtx(() => [
                                             createVNode("div", { class: "font-medium" }, toDisplayString(task.title), 1),
                                             createVNode("div", { class: "text-xs text-muted-foreground" }, toDisplayString(task.project.name), 1)
                                           ]),
                                           _: 2
                                         }, 1024),
-                                        createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                                        createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$N), { variant: "destructive" }, {
+                                            createVNode(unref(_sfc_main$O), { variant: "destructive" }, {
                                               default: withCtx(() => [
                                                 createTextVNode(toDisplayString(task.due_date || "No due date"), 1)
                                               ]),
@@ -5338,9 +5338,9 @@ const _sfc_main$M = {
                                       ]),
                                       _: 2
                                     }, 1032, ["href"]);
-                                  }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                  }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$R), { class: "text-center py-12" }, {
+                                      createVNode(unref(_sfc_main$S), { class: "text-center py-12" }, {
                                         default: withCtx(() => [
                                           createTextVNode(" You have no open tasks. Great job! ")
                                         ]),
@@ -5361,17 +5361,17 @@ const _sfc_main$M = {
                     _: 1
                   }, _parent3, _scopeId2));
                   if (__props.openTasks.length > 0) {
-                    _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$1p), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1q), {
                             "as-child": "",
                             variant: "outline",
                             class: "w-full"
                           }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(_sfc_main$1n, { href: "/task" }, {
+                                _push5(ssrRenderComponent(_sfc_main$1o, { href: "/task" }, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     if (_push6) {
                                       _push6(`View All My Tasks`);
@@ -5385,7 +5385,7 @@ const _sfc_main$M = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(_sfc_main$1n, { href: "/task" }, {
+                                  createVNode(_sfc_main$1o, { href: "/task" }, {
                                     default: withCtx(() => [
                                       createTextVNode("View All My Tasks")
                                     ]),
@@ -5398,13 +5398,13 @@ const _sfc_main$M = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$1p), {
+                            createVNode(unref(_sfc_main$1q), {
                               "as-child": "",
                               variant: "outline",
                               class: "w-full"
                             }, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$1n, { href: "/task" }, {
+                                createVNode(_sfc_main$1o, { href: "/task" }, {
                                   default: withCtx(() => [
                                     createTextVNode("View All My Tasks")
                                   ]),
@@ -5423,15 +5423,15 @@ const _sfc_main$M = {
                   }
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("My Open Tasks")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Y), null, {
+                        createVNode(unref(_sfc_main$Z), null, {
                           default: withCtx(() => [
                             createTextVNode("Your most urgent tasks across all projects.")
                           ]),
@@ -5440,30 +5440,30 @@ const _sfc_main$M = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), null, {
+                    createVNode(unref(_sfc_main$_), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$T), null, {
+                        createVNode(unref(_sfc_main$U), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$S), null, {
+                            createVNode(unref(_sfc_main$T), null, {
                               default: withCtx(() => [
                                 __props.openTasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.openTasks, (task) => {
-                                  return openBlock(), createBlock(_sfc_main$1n, {
+                                  return openBlock(), createBlock(_sfc_main$1o, {
                                     key: task.id,
                                     href: `/project/${task.project.id}`,
                                     as: "tr",
                                     class: "hover:bg-muted/50 cursor-pointer"
                                   }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$R), null, {
+                                      createVNode(unref(_sfc_main$S), null, {
                                         default: withCtx(() => [
                                           createVNode("div", { class: "font-medium" }, toDisplayString(task.title), 1),
                                           createVNode("div", { class: "text-xs text-muted-foreground" }, toDisplayString(task.project.name), 1)
                                         ]),
                                         _: 2
                                       }, 1024),
-                                      createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                                      createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$N), { variant: "destructive" }, {
+                                          createVNode(unref(_sfc_main$O), { variant: "destructive" }, {
                                             default: withCtx(() => [
                                               createTextVNode(toDisplayString(task.due_date || "No due date"), 1)
                                             ]),
@@ -5475,9 +5475,9 @@ const _sfc_main$M = {
                                     ]),
                                     _: 2
                                   }, 1032, ["href"]);
-                                }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$R), { class: "text-center py-12" }, {
+                                    createVNode(unref(_sfc_main$S), { class: "text-center py-12" }, {
                                       default: withCtx(() => [
                                         createTextVNode(" You have no open tasks. Great job! ")
                                       ]),
@@ -5495,15 +5495,15 @@ const _sfc_main$M = {
                       ]),
                       _: 1
                     }),
-                    __props.openTasks.length > 0 ? (openBlock(), createBlock(unref(_sfc_main$X), { key: 0 }, {
+                    __props.openTasks.length > 0 ? (openBlock(), createBlock(unref(_sfc_main$Y), { key: 0 }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           "as-child": "",
                           variant: "outline",
                           class: "w-full"
                         }, {
                           default: withCtx(() => [
-                            createVNode(_sfc_main$1n, { href: "/task" }, {
+                            createVNode(_sfc_main$1o, { href: "/task" }, {
                               default: withCtx(() => [
                                 createTextVNode("View All My Tasks")
                               ]),
@@ -5528,11 +5528,11 @@ const _sfc_main$M = {
               ]),
               createVNode("div", { class: "pb-12" }, [
                 createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-6 mb-6" }, [
-                  createVNode(unref(_sfc_main$_), null, {
+                  createVNode(unref(_sfc_main$$), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$W), null, {
+                      createVNode(unref(_sfc_main$X), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("My Completion Rate")
                             ]),
@@ -5541,7 +5541,7 @@ const _sfc_main$M = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$Z), null, {
+                      createVNode(unref(_sfc_main$_), null, {
                         default: withCtx(() => [
                           createVNode("p", { class: "text-4xl font-bold berai-font-mono" }, toDisplayString(__props.analytics.completionRate) + "%", 1)
                         ]),
@@ -5550,11 +5550,11 @@ const _sfc_main$M = {
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$_), null, {
+                  createVNode(unref(_sfc_main$$), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$W), null, {
+                      createVNode(unref(_sfc_main$X), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Active Projects")
                             ]),
@@ -5563,7 +5563,7 @@ const _sfc_main$M = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$Z), null, {
+                      createVNode(unref(_sfc_main$_), null, {
                         default: withCtx(() => [
                           createVNode("p", { class: "text-4xl font-bold berai-font-mono" }, toDisplayString(__props.analytics.totalProjects), 1)
                         ]),
@@ -5572,11 +5572,11 @@ const _sfc_main$M = {
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$_), null, {
+                  createVNode(unref(_sfc_main$$), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$W), null, {
+                      createVNode(unref(_sfc_main$X), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Total Assigned Tasks")
                             ]),
@@ -5585,7 +5585,7 @@ const _sfc_main$M = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$Z), null, {
+                      createVNode(unref(_sfc_main$_), null, {
                         default: withCtx(() => [
                           createVNode("p", { class: "text-4xl font-bold berai-font-mono" }, toDisplayString(__props.analytics.totalUserTasks), 1)
                         ]),
@@ -5602,20 +5602,20 @@ const _sfc_main$M = {
                       class: "grid grid-cols-1 md:grid-cols-2 gap-6"
                     }, [
                       (openBlock(true), createBlock(Fragment, null, renderList(__props.projects, (project) => {
-                        return openBlock(), createBlock(unref(_sfc_main$_), {
+                        return openBlock(), createBlock(unref(_sfc_main$$), {
                           key: project.id,
                           class: "flex flex-col"
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$W), null, {
+                            createVNode(unref(_sfc_main$X), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$V), null, {
+                                createVNode(unref(_sfc_main$W), null, {
                                   default: withCtx(() => [
                                     createTextVNode(toDisplayString(project.name), 1)
                                   ]),
                                   _: 2
                                 }, 1024),
-                                createVNode(unref(_sfc_main$Y), { class: "line-clamp-2 h-[40px]" }, {
+                                createVNode(unref(_sfc_main$Z), { class: "line-clamp-2 h-[40px]" }, {
                                   default: withCtx(() => [
                                     createTextVNode(toDisplayString(project.description || "No description provided."), 1)
                                   ]),
@@ -5624,27 +5624,27 @@ const _sfc_main$M = {
                               ]),
                               _: 2
                             }, 1024),
-                            createVNode(unref(_sfc_main$Z), { class: "flex-grow" }, {
+                            createVNode(unref(_sfc_main$_), { class: "flex-grow" }, {
                               default: withCtx(() => [
                                 createVNode("div", { class: "flex justify-between items-center mb-2" }, [
                                   createVNode("span", { class: "text-sm text-muted-foreground" }, "Progress"),
                                   createVNode("span", { class: "text-sm font-medium" }, toDisplayString(project.completed_tasks_count) + " / " + toDisplayString(project.tasks_count) + " tasks ", 1)
                                 ]),
-                                createVNode(unref(_sfc_main$U), {
+                                createVNode(unref(_sfc_main$V), {
                                   "model-value": getProgress(project)
                                 }, null, 8, ["model-value"])
                               ]),
                               _: 2
                             }, 1024),
-                            createVNode(unref(_sfc_main$X), null, {
+                            createVNode(unref(_sfc_main$Y), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1p), {
+                                createVNode(unref(_sfc_main$1q), {
                                   "as-child": "",
                                   variant: "secondary",
                                   class: "w-full"
                                 }, {
                                   default: withCtx(() => [
-                                    createVNode(_sfc_main$1n, {
+                                    createVNode(_sfc_main$1o, {
                                       href: `/project/${project.id}`
                                     }, {
                                       default: withCtx(() => [
@@ -5663,17 +5663,17 @@ const _sfc_main$M = {
                         }, 1024);
                       }), 128))
                     ])) : (openBlock(), createBlock("div", { key: 1 }, [
-                      createVNode(unref(_sfc_main$_), { class: "text-center" }, {
+                      createVNode(unref(_sfc_main$$), { class: "text-center" }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$W), null, {
+                          createVNode(unref(_sfc_main$X), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$V), null, {
+                              createVNode(unref(_sfc_main$W), null, {
                                 default: withCtx(() => [
                                   createTextVNode("Welcome to Berai!")
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$Y), null, {
+                              createVNode(unref(_sfc_main$Z), null, {
                                 default: withCtx(() => [
                                   createTextVNode(" Get started by creating your first project. ")
                                 ]),
@@ -5682,15 +5682,15 @@ const _sfc_main$M = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Z), null, {
+                          createVNode(unref(_sfc_main$_), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 size: "lg",
                                 "as-child": "",
                                 class: "mt-1"
                               }, {
                                 default: withCtx(() => [
-                                  createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                                  createVNode(_sfc_main$1o, { href: "/project/create" }, {
                                     default: withCtx(() => [
                                       createTextVNode(" Create Your First Project ")
                                     ]),
@@ -5708,17 +5708,17 @@ const _sfc_main$M = {
                     ]))
                   ]),
                   createVNode("div", { class: "lg:col-span-1 space-y-6" }, [
-                    createVNode(unref(_sfc_main$_), null, {
+                    createVNode(unref(_sfc_main$$), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$W), null, {
+                        createVNode(unref(_sfc_main$X), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$V), null, {
+                            createVNode(unref(_sfc_main$W), null, {
                               default: withCtx(() => [
                                 createTextVNode("Tasks by Status")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$Y), null, {
+                            createVNode(unref(_sfc_main$Z), null, {
                               default: withCtx(() => [
                                 createTextVNode("A breakdown of all tasks in your projects.")
                               ]),
@@ -5727,9 +5727,9 @@ const _sfc_main$M = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Z), { class: "h-72 flex justify-center py-4" }, {
+                        createVNode(unref(_sfc_main$_), { class: "h-72 flex justify-center py-4" }, {
                           default: withCtx(() => [
-                            __props.analytics.totalUserTasks > 0 ? (openBlock(), createBlock(_sfc_main$$, {
+                            __props.analytics.totalUserTasks > 0 ? (openBlock(), createBlock(_sfc_main$10, {
                               key: 0,
                               "chart-data": statusChartData.value,
                               "chart-options": chartOptions
@@ -5743,17 +5743,17 @@ const _sfc_main$M = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$_), null, {
+                    createVNode(unref(_sfc_main$$), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$W), null, {
+                        createVNode(unref(_sfc_main$X), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$V), null, {
+                            createVNode(unref(_sfc_main$W), null, {
                               default: withCtx(() => [
                                 createTextVNode("My Open Tasks")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$Y), null, {
+                            createVNode(unref(_sfc_main$Z), null, {
                               default: withCtx(() => [
                                 createTextVNode("Your most urgent tasks across all projects.")
                               ]),
@@ -5762,30 +5762,30 @@ const _sfc_main$M = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Z), null, {
+                        createVNode(unref(_sfc_main$_), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$T), null, {
+                            createVNode(unref(_sfc_main$U), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$S), null, {
+                                createVNode(unref(_sfc_main$T), null, {
                                   default: withCtx(() => [
                                     __props.openTasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.openTasks, (task) => {
-                                      return openBlock(), createBlock(_sfc_main$1n, {
+                                      return openBlock(), createBlock(_sfc_main$1o, {
                                         key: task.id,
                                         href: `/project/${task.project.id}`,
                                         as: "tr",
                                         class: "hover:bg-muted/50 cursor-pointer"
                                       }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$R), null, {
+                                          createVNode(unref(_sfc_main$S), null, {
                                             default: withCtx(() => [
                                               createVNode("div", { class: "font-medium" }, toDisplayString(task.title), 1),
                                               createVNode("div", { class: "text-xs text-muted-foreground" }, toDisplayString(task.project.name), 1)
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                                          createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$N), { variant: "destructive" }, {
+                                              createVNode(unref(_sfc_main$O), { variant: "destructive" }, {
                                                 default: withCtx(() => [
                                                   createTextVNode(toDisplayString(task.due_date || "No due date"), 1)
                                                 ]),
@@ -5797,9 +5797,9 @@ const _sfc_main$M = {
                                         ]),
                                         _: 2
                                       }, 1032, ["href"]);
-                                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$R), { class: "text-center py-12" }, {
+                                        createVNode(unref(_sfc_main$S), { class: "text-center py-12" }, {
                                           default: withCtx(() => [
                                             createTextVNode(" You have no open tasks. Great job! ")
                                           ]),
@@ -5817,15 +5817,15 @@ const _sfc_main$M = {
                           ]),
                           _: 1
                         }),
-                        __props.openTasks.length > 0 ? (openBlock(), createBlock(unref(_sfc_main$X), { key: 0 }, {
+                        __props.openTasks.length > 0 ? (openBlock(), createBlock(unref(_sfc_main$Y), { key: 0 }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1p), {
+                            createVNode(unref(_sfc_main$1q), {
                               "as-child": "",
                               variant: "outline",
                               class: "w-full"
                             }, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$1n, { href: "/task" }, {
+                                createVNode(_sfc_main$1o, { href: "/task" }, {
                                   default: withCtx(() => [
                                     createTextVNode("View All My Tasks")
                                   ]),
@@ -5852,17 +5852,17 @@ const _sfc_main$M = {
     };
   }
 };
-const _sfc_setup$M = _sfc_main$M.setup;
-_sfc_main$M.setup = (props, ctx) => {
+const _sfc_setup$N = _sfc_main$N.setup;
+_sfc_main$N.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/pages/app/dashboard.vue");
-  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
+  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
 };
 const __vite_glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$M
+  default: _sfc_main$N
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$L = {
+const _sfc_main$M = {
   __name: "Label",
   __ssrInlineRender: true,
   props: {
@@ -5895,13 +5895,13 @@ const _sfc_main$L = {
     };
   }
 };
-const _sfc_setup$L = _sfc_main$L.setup;
-_sfc_main$L.setup = (props, ctx) => {
+const _sfc_setup$M = _sfc_main$M.setup;
+_sfc_main$M.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/label/Label.vue");
-  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
+  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
-const _sfc_main$K = {
+const _sfc_main$L = {
   __name: "edit",
   __ssrInlineRender: true,
   setup(__props) {
@@ -5930,7 +5930,7 @@ const _sfc_main$K = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "My Profile" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$10, null, {
+      _push(ssrRenderComponent(_sfc_main$11, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Toaster), {
@@ -5938,13 +5938,13 @@ const _sfc_main$K = {
               richColors: ""
             }, null, _parent2, _scopeId));
             _push2(`<h2 class="font-semibold text-xl"${_scopeId}>My Profile</h2><div class="max-w-2xl mx-auto py-12"${_scopeId}>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Profile Information`);
@@ -5956,7 +5956,7 @@ const _sfc_main$K = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Z), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Update your account&#39;s profile information.`);
@@ -5970,13 +5970,13 @@ const _sfc_main$K = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Profile Information")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Y), null, {
+                          createVNode(unref(_sfc_main$Z), null, {
                             default: withCtx(() => [
                               createTextVNode("Update your account's profile information.")
                             ]),
@@ -5988,11 +5988,11 @@ const _sfc_main$K = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`<form${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "space-y-6" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "space-y-6" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`<div class="space-y-2"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(unref(_sfc_main$L), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$M), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Avatar`);
@@ -6017,7 +6017,7 @@ const _sfc_main$K = {
                           _push4(`<!---->`);
                         }
                         _push4(`</div><div class="space-y-2"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(unref(_sfc_main$L), { for: "name" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$M), { for: "name" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Name`);
@@ -6029,13 +6029,13 @@ const _sfc_main$K = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$1B), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1C), {
                           id: "name",
                           modelValue: unref(form).name,
                           "onUpdate:modelValue": ($event) => unref(form).name = $event
                         }, null, _parent4, _scopeId3));
                         _push4(`</div><div class="space-y-2"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(unref(_sfc_main$L), { for: "email" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$M), { for: "email" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Email`);
@@ -6047,7 +6047,7 @@ const _sfc_main$K = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$1B), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1C), {
                           id: "email",
                           modelValue: unref(form).email,
                           "onUpdate:modelValue": ($event) => unref(form).email = $event
@@ -6056,7 +6056,7 @@ const _sfc_main$K = {
                       } else {
                         return [
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), null, {
+                            createVNode(unref(_sfc_main$M), null, {
                               default: withCtx(() => [
                                 createTextVNode("Avatar")
                               ]),
@@ -6083,26 +6083,26 @@ const _sfc_main$K = {
                             }, toDisplayString(unref(form).errors.avatar), 1)) : createCommentVNode("", true)
                           ]),
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "name" }, {
+                            createVNode(unref(_sfc_main$M), { for: "name" }, {
                               default: withCtx(() => [
                                 createTextVNode("Name")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "name",
                               modelValue: unref(form).name,
                               "onUpdate:modelValue": ($event) => unref(form).name = $event
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "email" }, {
+                            createVNode(unref(_sfc_main$M), { for: "email" }, {
                               default: withCtx(() => [
                                 createTextVNode("Email")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "email",
                               modelValue: unref(form).email,
                               "onUpdate:modelValue": ($event) => unref(form).email = $event
@@ -6113,10 +6113,10 @@ const _sfc_main$K = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$1p), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1q), {
                           type: "submit",
                           disabled: unref(form).processing,
                           class: "mt-6"
@@ -6134,7 +6134,7 @@ const _sfc_main$K = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             type: "submit",
                             disabled: unref(form).processing,
                             class: "mt-6"
@@ -6152,15 +6152,15 @@ const _sfc_main$K = {
                   _push3(`</form>`);
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Profile Information")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Y), null, {
+                        createVNode(unref(_sfc_main$Z), null, {
                           default: withCtx(() => [
                             createTextVNode("Update your account's profile information.")
                           ]),
@@ -6172,10 +6172,10 @@ const _sfc_main$K = {
                     createVNode("form", {
                       onSubmit: withModifiers(submit, ["prevent"])
                     }, [
-                      createVNode(unref(_sfc_main$Z), { class: "space-y-6" }, {
+                      createVNode(unref(_sfc_main$_), { class: "space-y-6" }, {
                         default: withCtx(() => [
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), null, {
+                            createVNode(unref(_sfc_main$M), null, {
                               default: withCtx(() => [
                                 createTextVNode("Avatar")
                               ]),
@@ -6202,26 +6202,26 @@ const _sfc_main$K = {
                             }, toDisplayString(unref(form).errors.avatar), 1)) : createCommentVNode("", true)
                           ]),
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "name" }, {
+                            createVNode(unref(_sfc_main$M), { for: "name" }, {
                               default: withCtx(() => [
                                 createTextVNode("Name")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "name",
                               modelValue: unref(form).name,
                               "onUpdate:modelValue": ($event) => unref(form).name = $event
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "email" }, {
+                            createVNode(unref(_sfc_main$M), { for: "email" }, {
                               default: withCtx(() => [
                                 createTextVNode("Email")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "email",
                               modelValue: unref(form).email,
                               "onUpdate:modelValue": ($event) => unref(form).email = $event
@@ -6230,9 +6230,9 @@ const _sfc_main$K = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$X), null, {
+                      createVNode(unref(_sfc_main$Y), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             type: "submit",
                             disabled: unref(form).processing,
                             class: "mt-6"
@@ -6260,17 +6260,17 @@ const _sfc_main$K = {
               }),
               createVNode("h2", { class: "font-semibold text-xl" }, "My Profile"),
               createVNode("div", { class: "max-w-2xl mx-auto py-12" }, [
-                createVNode(unref(_sfc_main$_), null, {
+                createVNode(unref(_sfc_main$$), null, {
                   default: withCtx(() => [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Profile Information")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Y), null, {
+                        createVNode(unref(_sfc_main$Z), null, {
                           default: withCtx(() => [
                             createTextVNode("Update your account's profile information.")
                           ]),
@@ -6282,10 +6282,10 @@ const _sfc_main$K = {
                     createVNode("form", {
                       onSubmit: withModifiers(submit, ["prevent"])
                     }, [
-                      createVNode(unref(_sfc_main$Z), { class: "space-y-6" }, {
+                      createVNode(unref(_sfc_main$_), { class: "space-y-6" }, {
                         default: withCtx(() => [
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), null, {
+                            createVNode(unref(_sfc_main$M), null, {
                               default: withCtx(() => [
                                 createTextVNode("Avatar")
                               ]),
@@ -6312,26 +6312,26 @@ const _sfc_main$K = {
                             }, toDisplayString(unref(form).errors.avatar), 1)) : createCommentVNode("", true)
                           ]),
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "name" }, {
+                            createVNode(unref(_sfc_main$M), { for: "name" }, {
                               default: withCtx(() => [
                                 createTextVNode("Name")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "name",
                               modelValue: unref(form).name,
                               "onUpdate:modelValue": ($event) => unref(form).name = $event
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "email" }, {
+                            createVNode(unref(_sfc_main$M), { for: "email" }, {
                               default: withCtx(() => [
                                 createTextVNode("Email")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "email",
                               modelValue: unref(form).email,
                               "onUpdate:modelValue": ($event) => unref(form).email = $event
@@ -6340,9 +6340,9 @@ const _sfc_main$K = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$X), null, {
+                      createVNode(unref(_sfc_main$Y), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             type: "submit",
                             disabled: unref(form).processing,
                             class: "mt-6"
@@ -6369,17 +6369,17 @@ const _sfc_main$K = {
     };
   }
 };
-const _sfc_setup$K = _sfc_main$K.setup;
-_sfc_main$K.setup = (props, ctx) => {
+const _sfc_setup$L = _sfc_main$L.setup;
+_sfc_main$L.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/pages/app/profile/edit.vue");
-  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
+  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
 };
 const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$K
+  default: _sfc_main$L
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$J = {
+const _sfc_main$K = {
   __name: "Textarea",
   __ssrInlineRender: true,
   props: {
@@ -6406,13 +6406,13 @@ const _sfc_main$J = {
     };
   }
 };
-const _sfc_setup$J = _sfc_main$J.setup;
-_sfc_main$J.setup = (props, ctx) => {
+const _sfc_setup$K = _sfc_main$K.setup;
+_sfc_main$K.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/textarea/Textarea.vue");
-  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
+  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
-const _sfc_main$I = {
+const _sfc_main$J = {
   __name: "form",
   __ssrInlineRender: true,
   setup(__props) {
@@ -6426,17 +6426,17 @@ const _sfc_main$I = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Create Project" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$10, null, {
+      _push(ssrRenderComponent(_sfc_main$11, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="max-w-7xl mx-auto sm:px-6 lg:px-8"${_scopeId}><form${_scopeId}>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Project Details`);
@@ -6448,7 +6448,7 @@ const _sfc_main$I = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Z), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(` Give your new project a name and an optional description to get started. `);
@@ -6462,13 +6462,13 @@ const _sfc_main$I = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Project Details")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Y), null, {
+                          createVNode(unref(_sfc_main$Z), null, {
                             default: withCtx(() => [
                               createTextVNode(" Give your new project a name and an optional description to get started. ")
                             ]),
@@ -6479,11 +6479,11 @@ const _sfc_main$I = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "space-y-6" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "space-y-6" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`<div class="space-y-2"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(unref(_sfc_main$L), { for: "name" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$M), { for: "name" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Project Name`);
@@ -6495,7 +6495,7 @@ const _sfc_main$I = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$1B), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1C), {
                           id: "name",
                           modelValue: unref(form).name,
                           "onUpdate:modelValue": ($event) => unref(form).name = $event,
@@ -6509,7 +6509,7 @@ const _sfc_main$I = {
                           _push4(`<!---->`);
                         }
                         _push4(`</div><div class="space-y-2"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(unref(_sfc_main$L), { for: "description" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$M), { for: "description" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Description (Optional)`);
@@ -6521,7 +6521,7 @@ const _sfc_main$I = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$J), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$K), {
                           id: "description",
                           modelValue: unref(form).description,
                           "onUpdate:modelValue": ($event) => unref(form).description = $event,
@@ -6536,13 +6536,13 @@ const _sfc_main$I = {
                       } else {
                         return [
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "name" }, {
+                            createVNode(unref(_sfc_main$M), { for: "name" }, {
                               default: withCtx(() => [
                                 createTextVNode("Project Name")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "name",
                               modelValue: unref(form).name,
                               "onUpdate:modelValue": ($event) => unref(form).name = $event,
@@ -6556,13 +6556,13 @@ const _sfc_main$I = {
                             }, toDisplayString(unref(form).errors.name), 1)) : createCommentVNode("", true)
                           ]),
                           createVNode("div", { class: "space-y-2" }, [
-                            createVNode(unref(_sfc_main$L), { for: "description" }, {
+                            createVNode(unref(_sfc_main$M), { for: "description" }, {
                               default: withCtx(() => [
                                 createTextVNode("Description (Optional)")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$J), {
+                            createVNode(unref(_sfc_main$K), {
                               id: "description",
                               modelValue: unref(form).description,
                               "onUpdate:modelValue": ($event) => unref(form).description = $event,
@@ -6578,10 +6578,10 @@ const _sfc_main$I = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$1p), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1q), {
                           type: "submit",
                           disabled: unref(form).processing
                         }, {
@@ -6598,7 +6598,7 @@ const _sfc_main$I = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             type: "submit",
                             disabled: unref(form).processing
                           }, {
@@ -6614,15 +6614,15 @@ const _sfc_main$I = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Project Details")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Y), null, {
+                        createVNode(unref(_sfc_main$Z), null, {
                           default: withCtx(() => [
                             createTextVNode(" Give your new project a name and an optional description to get started. ")
                           ]),
@@ -6631,16 +6631,16 @@ const _sfc_main$I = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), { class: "space-y-6" }, {
+                    createVNode(unref(_sfc_main$_), { class: "space-y-6" }, {
                       default: withCtx(() => [
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "name" }, {
+                          createVNode(unref(_sfc_main$M), { for: "name" }, {
                             default: withCtx(() => [
                               createTextVNode("Project Name")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "name",
                             modelValue: unref(form).name,
                             "onUpdate:modelValue": ($event) => unref(form).name = $event,
@@ -6654,13 +6654,13 @@ const _sfc_main$I = {
                           }, toDisplayString(unref(form).errors.name), 1)) : createCommentVNode("", true)
                         ]),
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "description" }, {
+                          createVNode(unref(_sfc_main$M), { for: "description" }, {
                             default: withCtx(() => [
                               createTextVNode("Description (Optional)")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$J), {
+                          createVNode(unref(_sfc_main$K), {
                             id: "description",
                             modelValue: unref(form).description,
                             "onUpdate:modelValue": ($event) => unref(form).description = $event,
@@ -6674,9 +6674,9 @@ const _sfc_main$I = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$X), null, {
+                    createVNode(unref(_sfc_main$Y), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           type: "submit",
                           disabled: unref(form).processing
                         }, {
@@ -6701,17 +6701,17 @@ const _sfc_main$I = {
                   createVNode("form", {
                     onSubmit: withModifiers(submit, ["prevent"])
                   }, [
-                    createVNode(unref(_sfc_main$_), null, {
+                    createVNode(unref(_sfc_main$$), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$W), null, {
+                        createVNode(unref(_sfc_main$X), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$V), null, {
+                            createVNode(unref(_sfc_main$W), null, {
                               default: withCtx(() => [
                                 createTextVNode("Project Details")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$Y), null, {
+                            createVNode(unref(_sfc_main$Z), null, {
                               default: withCtx(() => [
                                 createTextVNode(" Give your new project a name and an optional description to get started. ")
                               ]),
@@ -6720,16 +6720,16 @@ const _sfc_main$I = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Z), { class: "space-y-6" }, {
+                        createVNode(unref(_sfc_main$_), { class: "space-y-6" }, {
                           default: withCtx(() => [
                             createVNode("div", { class: "space-y-2" }, [
-                              createVNode(unref(_sfc_main$L), { for: "name" }, {
+                              createVNode(unref(_sfc_main$M), { for: "name" }, {
                                 default: withCtx(() => [
                                   createTextVNode("Project Name")
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$1B), {
+                              createVNode(unref(_sfc_main$1C), {
                                 id: "name",
                                 modelValue: unref(form).name,
                                 "onUpdate:modelValue": ($event) => unref(form).name = $event,
@@ -6743,13 +6743,13 @@ const _sfc_main$I = {
                               }, toDisplayString(unref(form).errors.name), 1)) : createCommentVNode("", true)
                             ]),
                             createVNode("div", { class: "space-y-2" }, [
-                              createVNode(unref(_sfc_main$L), { for: "description" }, {
+                              createVNode(unref(_sfc_main$M), { for: "description" }, {
                                 default: withCtx(() => [
                                   createTextVNode("Description (Optional)")
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$J), {
+                              createVNode(unref(_sfc_main$K), {
                                 id: "description",
                                 modelValue: unref(form).description,
                                 "onUpdate:modelValue": ($event) => unref(form).description = $event,
@@ -6763,9 +6763,9 @@ const _sfc_main$I = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$X), null, {
+                        createVNode(unref(_sfc_main$Y), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1p), {
+                            createVNode(unref(_sfc_main$1q), {
                               type: "submit",
                               disabled: unref(form).processing
                             }, {
@@ -6792,17 +6792,17 @@ const _sfc_main$I = {
     };
   }
 };
-const _sfc_setup$I = _sfc_main$I.setup;
-_sfc_main$I.setup = (props, ctx) => {
+const _sfc_setup$J = _sfc_main$J.setup;
+_sfc_main$J.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/pages/app/project/form.vue");
-  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
+  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
 };
 const __vite_glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$I
+  default: _sfc_main$J
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$H = {
+const _sfc_main$I = {
   __name: "index",
   __ssrInlineRender: true,
   props: {
@@ -6835,21 +6835,21 @@ const _sfc_main$H = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Projects" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$10, { breadcrumbs }, {
+      _push(ssrRenderComponent(_sfc_main$11, { breadcrumbs }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6"${_scopeId}><h2 class="font-semibold text-xl"${_scopeId}>Projects</h2><div class="flex space-x-2"${_scopeId}><div class="w-full sm:w-auto sm:max-w-xs"${_scopeId}>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$1B), {
+            _push2(ssrRenderComponent(unref(_sfc_main$1C), {
               modelValue: filters.search,
               "onUpdate:modelValue": ($event) => filters.search = $event,
               type: "text",
               placeholder: "Search projects..."
             }, null, _parent2, _scopeId));
             _push2(`</div>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$1p), { "as-child": "" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$1q), { "as-child": "" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(_sfc_main$1n, { href: "/project/create" }, {
+                  _push3(ssrRenderComponent(_sfc_main$1o, { href: "/project/create" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Create Project`);
@@ -6863,7 +6863,7 @@ const _sfc_main$H = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                    createVNode(_sfc_main$1o, { href: "/project/create" }, {
                       default: withCtx(() => [
                         createTextVNode("Create Project")
                       ]),
@@ -6878,16 +6878,16 @@ const _sfc_main$H = {
             if (__props.projects.length > 0) {
               _push2(`<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"${_scopeId}><!--[-->`);
               ssrRenderList(__props.projects, (project) => {
-                _push2(ssrRenderComponent(unref(_sfc_main$_), {
+                _push2(ssrRenderComponent(unref(_sfc_main$$), {
                   key: project.id,
                   class: "flex flex-col"
                 }, {
                   default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                     if (_push3) {
-                      _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                      _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
-                            _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
                                   _push5(`${ssrInterpolate(project.name)}`);
@@ -6901,7 +6901,7 @@ const _sfc_main$H = {
                             }, _parent4, _scopeId3));
                           } else {
                             return [
-                              createVNode(unref(_sfc_main$V), null, {
+                              createVNode(unref(_sfc_main$W), null, {
                                 default: withCtx(() => [
                                   createTextVNode(toDisplayString(project.name), 1)
                                 ]),
@@ -6912,11 +6912,11 @@ const _sfc_main$H = {
                         }),
                         _: 2
                       }, _parent3, _scopeId2));
-                      _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "flex-grow" }, {
+                      _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "flex-grow" }, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
                             _push4(`<div class="flex justify-between items-center mb-2"${_scopeId3}><span class="text-sm text-muted-foreground"${_scopeId3}>Progress</span><span class="text-sm font-medium"${_scopeId3}>${ssrInterpolate(project.completed_tasks_count)} / ${ssrInterpolate(project.tasks_count)} tasks</span></div>`);
-                            _push4(ssrRenderComponent(unref(_sfc_main$U), {
+                            _push4(ssrRenderComponent(unref(_sfc_main$V), {
                               "model-value": getProgress(project)
                             }, null, _parent4, _scopeId3));
                           } else {
@@ -6925,7 +6925,7 @@ const _sfc_main$H = {
                                 createVNode("span", { class: "text-sm text-muted-foreground" }, "Progress"),
                                 createVNode("span", { class: "text-sm font-medium" }, toDisplayString(project.completed_tasks_count) + " / " + toDisplayString(project.tasks_count) + " tasks", 1)
                               ]),
-                              createVNode(unref(_sfc_main$U), {
+                              createVNode(unref(_sfc_main$V), {
                                 "model-value": getProgress(project)
                               }, null, 8, ["model-value"])
                             ];
@@ -6933,17 +6933,17 @@ const _sfc_main$H = {
                         }),
                         _: 2
                       }, _parent3, _scopeId2));
-                      _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
+                      _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
-                            _push4(ssrRenderComponent(unref(_sfc_main$1p), {
+                            _push4(ssrRenderComponent(unref(_sfc_main$1q), {
                               "as-child": "",
                               variant: "secondary",
                               class: "w-full"
                             }, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
-                                  _push5(ssrRenderComponent(_sfc_main$1n, {
+                                  _push5(ssrRenderComponent(_sfc_main$1o, {
                                     href: `/project/${project.id}`
                                   }, {
                                     default: withCtx((_5, _push6, _parent6, _scopeId5) => {
@@ -6959,7 +6959,7 @@ const _sfc_main$H = {
                                   }, _parent5, _scopeId4));
                                 } else {
                                   return [
-                                    createVNode(_sfc_main$1n, {
+                                    createVNode(_sfc_main$1o, {
                                       href: `/project/${project.id}`
                                     }, {
                                       default: withCtx(() => [
@@ -6974,13 +6974,13 @@ const _sfc_main$H = {
                             }, _parent4, _scopeId3));
                           } else {
                             return [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 "as-child": "",
                                 variant: "secondary",
                                 class: "w-full"
                               }, {
                                 default: withCtx(() => [
-                                  createVNode(_sfc_main$1n, {
+                                  createVNode(_sfc_main$1o, {
                                     href: `/project/${project.id}`
                                   }, {
                                     default: withCtx(() => [
@@ -6998,9 +6998,9 @@ const _sfc_main$H = {
                       }, _parent3, _scopeId2));
                     } else {
                       return [
-                        createVNode(unref(_sfc_main$W), null, {
+                        createVNode(unref(_sfc_main$X), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$V), null, {
+                            createVNode(unref(_sfc_main$W), null, {
                               default: withCtx(() => [
                                 createTextVNode(toDisplayString(project.name), 1)
                               ]),
@@ -7009,27 +7009,27 @@ const _sfc_main$H = {
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$Z), { class: "flex-grow" }, {
+                        createVNode(unref(_sfc_main$_), { class: "flex-grow" }, {
                           default: withCtx(() => [
                             createVNode("div", { class: "flex justify-between items-center mb-2" }, [
                               createVNode("span", { class: "text-sm text-muted-foreground" }, "Progress"),
                               createVNode("span", { class: "text-sm font-medium" }, toDisplayString(project.completed_tasks_count) + " / " + toDisplayString(project.tasks_count) + " tasks", 1)
                             ]),
-                            createVNode(unref(_sfc_main$U), {
+                            createVNode(unref(_sfc_main$V), {
                               "model-value": getProgress(project)
                             }, null, 8, ["model-value"])
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$X), null, {
+                        createVNode(unref(_sfc_main$Y), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1p), {
+                            createVNode(unref(_sfc_main$1q), {
                               "as-child": "",
                               variant: "secondary",
                               class: "w-full"
                             }, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$1n, {
+                                createVNode(_sfc_main$1o, {
                                   href: `/project/${project.id}`
                                 }, {
                                   default: withCtx(() => [
@@ -7052,10 +7052,10 @@ const _sfc_main$H = {
               _push2(`<!--]--></div>`);
             } else {
               _push2(`<div${_scopeId}><div class="text-center border-2 border-dashed rounded-lg p-12"${_scopeId}><svg class="mx-auto h-12 w-12 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"${_scopeId}><path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"${_scopeId}></path></svg><h3 class="mt-2 text-sm font-semibold"${_scopeId}>No projects</h3><p class="mt-1 text-sm text-muted-foreground"${_scopeId}>Get started by creating a new project.</p><div class="mt-6"${_scopeId}>`);
-              _push2(ssrRenderComponent(unref(_sfc_main$1p), { "as-child": "" }, {
+              _push2(ssrRenderComponent(unref(_sfc_main$1q), { "as-child": "" }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(_sfc_main$1n, { href: "/project/create" }, {
+                    _push3(ssrRenderComponent(_sfc_main$1o, { href: "/project/create" }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
                           _push4(ssrRenderComponent(unref(Plus), { class: "mr-2 h-4 w-4" }, null, _parent4, _scopeId3));
@@ -7071,7 +7071,7 @@ const _sfc_main$H = {
                     }, _parent3, _scopeId2));
                   } else {
                     return [
-                      createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                      createVNode(_sfc_main$1o, { href: "/project/create" }, {
                         default: withCtx(() => [
                           createVNode(unref(Plus), { class: "mr-2 h-4 w-4" }),
                           createTextVNode(" Create Project ")
@@ -7091,16 +7091,16 @@ const _sfc_main$H = {
                 createVNode("h2", { class: "font-semibold text-xl" }, "Projects"),
                 createVNode("div", { class: "flex space-x-2" }, [
                   createVNode("div", { class: "w-full sm:w-auto sm:max-w-xs" }, [
-                    createVNode(unref(_sfc_main$1B), {
+                    createVNode(unref(_sfc_main$1C), {
                       modelValue: filters.search,
                       "onUpdate:modelValue": ($event) => filters.search = $event,
                       type: "text",
                       placeholder: "Search projects..."
                     }, null, 8, ["modelValue", "onUpdate:modelValue"])
                   ]),
-                  createVNode(unref(_sfc_main$1p), { "as-child": "" }, {
+                  createVNode(unref(_sfc_main$1q), { "as-child": "" }, {
                     default: withCtx(() => [
-                      createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                      createVNode(_sfc_main$1o, { href: "/project/create" }, {
                         default: withCtx(() => [
                           createTextVNode("Create Project")
                         ]),
@@ -7116,14 +7116,14 @@ const _sfc_main$H = {
                 class: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               }, [
                 (openBlock(true), createBlock(Fragment, null, renderList(__props.projects, (project) => {
-                  return openBlock(), createBlock(unref(_sfc_main$_), {
+                  return openBlock(), createBlock(unref(_sfc_main$$), {
                     key: project.id,
                     class: "flex flex-col"
                   }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$W), null, {
+                      createVNode(unref(_sfc_main$X), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode(toDisplayString(project.name), 1)
                             ]),
@@ -7132,27 +7132,27 @@ const _sfc_main$H = {
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$Z), { class: "flex-grow" }, {
+                      createVNode(unref(_sfc_main$_), { class: "flex-grow" }, {
                         default: withCtx(() => [
                           createVNode("div", { class: "flex justify-between items-center mb-2" }, [
                             createVNode("span", { class: "text-sm text-muted-foreground" }, "Progress"),
                             createVNode("span", { class: "text-sm font-medium" }, toDisplayString(project.completed_tasks_count) + " / " + toDisplayString(project.tasks_count) + " tasks", 1)
                           ]),
-                          createVNode(unref(_sfc_main$U), {
+                          createVNode(unref(_sfc_main$V), {
                             "model-value": getProgress(project)
                           }, null, 8, ["model-value"])
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$X), null, {
+                      createVNode(unref(_sfc_main$Y), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             "as-child": "",
                             variant: "secondary",
                             class: "w-full"
                           }, {
                             default: withCtx(() => [
-                              createVNode(_sfc_main$1n, {
+                              createVNode(_sfc_main$1o, {
                                 href: `/project/${project.id}`
                               }, {
                                 default: withCtx(() => [
@@ -7190,9 +7190,9 @@ const _sfc_main$H = {
                   createVNode("h3", { class: "mt-2 text-sm font-semibold" }, "No projects"),
                   createVNode("p", { class: "mt-1 text-sm text-muted-foreground" }, "Get started by creating a new project."),
                   createVNode("div", { class: "mt-6" }, [
-                    createVNode(unref(_sfc_main$1p), { "as-child": "" }, {
+                    createVNode(unref(_sfc_main$1q), { "as-child": "" }, {
                       default: withCtx(() => [
-                        createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                        createVNode(_sfc_main$1o, { href: "/project/create" }, {
                           default: withCtx(() => [
                             createVNode(unref(Plus), { class: "mr-2 h-4 w-4" }),
                             createTextVNode(" Create Project ")
@@ -7214,17 +7214,17 @@ const _sfc_main$H = {
     };
   }
 };
-const _sfc_setup$H = _sfc_main$H.setup;
-_sfc_main$H.setup = (props, ctx) => {
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/pages/app/project/index.vue");
-  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
 };
 const __vite_glob_0_3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$H
+  default: _sfc_main$I
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$G = {
+const _sfc_main$H = {
   __name: "Select",
   __ssrInlineRender: true,
   props: {
@@ -7261,13 +7261,13 @@ const _sfc_main$G = {
     };
   }
 };
-const _sfc_setup$G = _sfc_main$G.setup;
-_sfc_main$G.setup = (props, ctx) => {
+const _sfc_setup$H = _sfc_main$H.setup;
+_sfc_main$H.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/select/Select.vue");
-  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
+  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
-const _sfc_main$F = /* @__PURE__ */ Object.assign({
+const _sfc_main$G = /* @__PURE__ */ Object.assign({
   inheritAttrs: false
 }, {
   __name: "SelectContent",
@@ -7318,7 +7318,7 @@ const _sfc_main$F = /* @__PURE__ */ Object.assign({
             }), {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$C), null, null, _parent3, _scopeId2));
+                  _push3(ssrRenderComponent(unref(_sfc_main$D), null, null, _parent3, _scopeId2));
                   _push3(ssrRenderComponent(unref(SelectViewport), {
                     class: unref(cn)(
                       "p-1",
@@ -7336,10 +7336,10 @@ const _sfc_main$F = /* @__PURE__ */ Object.assign({
                     }),
                     _: 3
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$D), null, null, _parent3, _scopeId2));
+                  _push3(ssrRenderComponent(unref(_sfc_main$E), null, null, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$C)),
+                    createVNode(unref(_sfc_main$D)),
                     createVNode(unref(SelectViewport), {
                       class: unref(cn)(
                         "p-1",
@@ -7351,7 +7351,7 @@ const _sfc_main$F = /* @__PURE__ */ Object.assign({
                       ]),
                       _: 3
                     }, 8, ["class"]),
-                    createVNode(unref(_sfc_main$D))
+                    createVNode(unref(_sfc_main$E))
                   ];
                 }
               }),
@@ -7367,7 +7367,7 @@ const _sfc_main$F = /* @__PURE__ */ Object.assign({
                 )
               }), {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$C)),
+                  createVNode(unref(_sfc_main$D)),
                   createVNode(unref(SelectViewport), {
                     class: unref(cn)(
                       "p-1",
@@ -7379,7 +7379,7 @@ const _sfc_main$F = /* @__PURE__ */ Object.assign({
                     ]),
                     _: 3
                   }, 8, ["class"]),
-                  createVNode(unref(_sfc_main$D))
+                  createVNode(unref(_sfc_main$E))
                 ]),
                 _: 3
               }, 16, ["class"])
@@ -7391,13 +7391,13 @@ const _sfc_main$F = /* @__PURE__ */ Object.assign({
     };
   }
 });
-const _sfc_setup$F = _sfc_main$F.setup;
-_sfc_main$F.setup = (props, ctx) => {
+const _sfc_setup$G = _sfc_main$G.setup;
+_sfc_main$G.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/select/SelectContent.vue");
-  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
+  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
 };
-const _sfc_main$E = {
+const _sfc_main$F = {
   __name: "SelectItem",
   __ssrInlineRender: true,
   props: {
@@ -7471,13 +7471,13 @@ const _sfc_main$E = {
     };
   }
 };
-const _sfc_setup$E = _sfc_main$E.setup;
-_sfc_main$E.setup = (props, ctx) => {
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/select/SelectItem.vue");
-  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
-const _sfc_main$D = {
+const _sfc_main$E = {
   __name: "SelectScrollDownButton",
   __ssrInlineRender: true,
   props: {
@@ -7511,13 +7511,13 @@ const _sfc_main$D = {
     };
   }
 };
-const _sfc_setup$D = _sfc_main$D.setup;
-_sfc_main$D.setup = (props, ctx) => {
+const _sfc_setup$E = _sfc_main$E.setup;
+_sfc_main$E.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/select/SelectScrollDownButton.vue");
-  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
+  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
-const _sfc_main$C = {
+const _sfc_main$D = {
   __name: "SelectScrollUpButton",
   __ssrInlineRender: true,
   props: {
@@ -7551,13 +7551,13 @@ const _sfc_main$C = {
     };
   }
 };
-const _sfc_setup$C = _sfc_main$C.setup;
-_sfc_main$C.setup = (props, ctx) => {
+const _sfc_setup$D = _sfc_main$D.setup;
+_sfc_main$D.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/select/SelectScrollUpButton.vue");
-  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const _sfc_main$B = {
+const _sfc_main$C = {
   __name: "SelectTrigger",
   __ssrInlineRender: true,
   props: {
@@ -7614,13 +7614,13 @@ const _sfc_main$B = {
     };
   }
 };
-const _sfc_setup$B = _sfc_main$B.setup;
-_sfc_main$B.setup = (props, ctx) => {
+const _sfc_setup$C = _sfc_main$C.setup;
+_sfc_main$C.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/select/SelectTrigger.vue");
-  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
+  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
-const _sfc_main$A = {
+const _sfc_main$B = {
   __name: "SelectValue",
   __ssrInlineRender: true,
   props: {
@@ -7646,13 +7646,13 @@ const _sfc_main$A = {
     };
   }
 };
-const _sfc_setup$A = _sfc_main$A.setup;
-_sfc_main$A.setup = (props, ctx) => {
+const _sfc_setup$B = _sfc_main$B.setup;
+_sfc_main$B.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/select/SelectValue.vue");
-  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
-const _sfc_main$z = {
+const _sfc_main$A = {
   __name: "Tabs",
   __ssrInlineRender: true,
   props: {
@@ -7690,13 +7690,13 @@ const _sfc_main$z = {
     };
   }
 };
-const _sfc_setup$z = _sfc_main$z.setup;
-_sfc_main$z.setup = (props, ctx) => {
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/tabs/Tabs.vue");
-  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
-const _sfc_main$y = {
+const _sfc_main$z = {
   __name: "TabsContent",
   __ssrInlineRender: true,
   props: {
@@ -7728,13 +7728,13 @@ const _sfc_main$y = {
     };
   }
 };
-const _sfc_setup$y = _sfc_main$y.setup;
-_sfc_main$y.setup = (props, ctx) => {
+const _sfc_setup$z = _sfc_main$z.setup;
+_sfc_main$z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/tabs/TabsContent.vue");
-  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
+  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
-const _sfc_main$x = {
+const _sfc_main$y = {
   __name: "TabsList",
   __ssrInlineRender: true,
   props: {
@@ -7767,13 +7767,13 @@ const _sfc_main$x = {
     };
   }
 };
-const _sfc_setup$x = _sfc_main$x.setup;
-_sfc_main$x.setup = (props, ctx) => {
+const _sfc_setup$y = _sfc_main$y.setup;
+_sfc_main$y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/tabs/TabsList.vue");
-  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
-const _sfc_main$w = {
+const _sfc_main$x = {
   __name: "TabsTrigger",
   __ssrInlineRender: true,
   props: {
@@ -7808,13 +7808,13 @@ const _sfc_main$w = {
     };
   }
 };
-const _sfc_setup$w = _sfc_main$w.setup;
-_sfc_main$w.setup = (props, ctx) => {
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/tabs/TabsTrigger.vue");
-  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
-const _sfc_main$v = {
+const _sfc_main$w = {
   __name: "Dialog",
   __ssrInlineRender: true,
   props: {
@@ -7843,13 +7843,13 @@ const _sfc_main$v = {
     };
   }
 };
-const _sfc_setup$v = _sfc_main$v.setup;
-_sfc_main$v.setup = (props, ctx) => {
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dialog/Dialog.vue");
-  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-const _sfc_main$u = {
+const _sfc_main$v = {
   __name: "DialogOverlay",
   __ssrInlineRender: true,
   props: {
@@ -7882,13 +7882,13 @@ const _sfc_main$u = {
     };
   }
 };
-const _sfc_setup$u = _sfc_main$u.setup;
-_sfc_main$u.setup = (props, ctx) => {
+const _sfc_setup$v = _sfc_main$v.setup;
+_sfc_main$v.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dialog/DialogOverlay.vue");
-  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
 };
-const _sfc_main$t = {
+const _sfc_main$u = {
   __name: "DialogContent",
   __ssrInlineRender: true,
   props: {
@@ -7915,7 +7915,7 @@ const _sfc_main$t = {
       _push(ssrRenderComponent(unref(DialogPortal), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$u, null, null, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_sfc_main$v, null, null, _parent2, _scopeId));
             _push2(ssrRenderComponent(unref(DialogContent), mergeProps({ "data-slot": "dialog-content" }, unref(forwarded), {
               class: unref(cn)(
                 "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg",
@@ -7956,7 +7956,7 @@ const _sfc_main$t = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(_sfc_main$u),
+              createVNode(_sfc_main$v),
               createVNode(unref(DialogContent), mergeProps({ "data-slot": "dialog-content" }, unref(forwarded), {
                 class: unref(cn)(
                   "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg",
@@ -7983,13 +7983,13 @@ const _sfc_main$t = {
     };
   }
 };
-const _sfc_setup$t = _sfc_main$t.setup;
-_sfc_main$t.setup = (props, ctx) => {
+const _sfc_setup$u = _sfc_main$u.setup;
+_sfc_main$u.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dialog/DialogContent.vue");
-  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
+  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
-const _sfc_main$s = {
+const _sfc_main$t = {
   __name: "DialogDescription",
   __ssrInlineRender: true,
   props: {
@@ -8019,13 +8019,13 @@ const _sfc_main$s = {
     };
   }
 };
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
+const _sfc_setup$t = _sfc_main$t.setup;
+_sfc_main$t.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dialog/DialogDescription.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
-const _sfc_main$r = {
+const _sfc_main$s = {
   __name: "DialogHeader",
   __ssrInlineRender: true,
   props: {
@@ -8043,13 +8043,13 @@ const _sfc_main$r = {
     };
   }
 };
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dialog/DialogHeader.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-const _sfc_main$q = {
+const _sfc_main$r = {
   __name: "DialogTitle",
   __ssrInlineRender: true,
   props: {
@@ -8079,13 +8079,13 @@ const _sfc_main$q = {
     };
   }
 };
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/dialog/DialogTitle.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
-const _sfc_main$p = {
+const _sfc_main$q = {
   __name: "add-member-dialog",
   __ssrInlineRender: true,
   props: {
@@ -8109,19 +8109,19 @@ const _sfc_main$p = {
       });
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$v), mergeProps({
+      _push(ssrRenderComponent(unref(_sfc_main$w), mergeProps({
         open: __props.open,
         "onUpdate:open": (value) => emit("update:open", value)
       }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$t), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$u), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$r), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$s), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$q), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$r), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Add New Member`);
@@ -8133,7 +8133,7 @@ const _sfc_main$p = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$s), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$t), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(` Add a registered user by their email address. `);
@@ -8147,13 +8147,13 @@ const _sfc_main$p = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$q), null, {
+                          createVNode(unref(_sfc_main$r), null, {
                             default: withCtx(() => [
                               createTextVNode("Add New Member")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$s), null, {
+                          createVNode(unref(_sfc_main$t), null, {
                             default: withCtx(() => [
                               createTextVNode(" Add a registered user by their email address. ")
                             ]),
@@ -8165,7 +8165,7 @@ const _sfc_main$p = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`<form class="space-y-4 pt-4"${_scopeId2}><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "add-member-email" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "add-member-email" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`User Email`);
@@ -8177,7 +8177,7 @@ const _sfc_main$p = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "add-member-email",
                     modelValue: unref(form).email,
                     "onUpdate:modelValue": ($event) => unref(form).email = $event,
@@ -8190,7 +8190,7 @@ const _sfc_main$p = {
                     _push3(`<!---->`);
                   }
                   _push3(`</div>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     type: "submit",
                     class: "w-full",
                     disabled: unref(form).processing
@@ -8209,15 +8209,15 @@ const _sfc_main$p = {
                   _push3(`</form>`);
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$r), null, {
+                    createVNode(unref(_sfc_main$s), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$q), null, {
+                        createVNode(unref(_sfc_main$r), null, {
                           default: withCtx(() => [
                             createTextVNode("Add New Member")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$s), null, {
+                        createVNode(unref(_sfc_main$t), null, {
                           default: withCtx(() => [
                             createTextVNode(" Add a registered user by their email address. ")
                           ]),
@@ -8231,13 +8231,13 @@ const _sfc_main$p = {
                       class: "space-y-4 pt-4"
                     }, [
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "add-member-email" }, {
+                        createVNode(unref(_sfc_main$M), { for: "add-member-email" }, {
                           default: withCtx(() => [
                             createTextVNode("User Email")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1B), {
+                        createVNode(unref(_sfc_main$1C), {
                           id: "add-member-email",
                           modelValue: unref(form).email,
                           "onUpdate:modelValue": ($event) => unref(form).email = $event,
@@ -8249,7 +8249,7 @@ const _sfc_main$p = {
                           class: "text-sm text-destructive"
                         }, toDisplayString(unref(form).errors.email), 1)) : createCommentVNode("", true)
                       ]),
-                      createVNode(unref(_sfc_main$1p), {
+                      createVNode(unref(_sfc_main$1q), {
                         type: "submit",
                         class: "w-full",
                         disabled: unref(form).processing
@@ -8267,17 +8267,17 @@ const _sfc_main$p = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$t), null, {
+              createVNode(unref(_sfc_main$u), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$r), null, {
+                  createVNode(unref(_sfc_main$s), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$q), null, {
+                      createVNode(unref(_sfc_main$r), null, {
                         default: withCtx(() => [
                           createTextVNode("Add New Member")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$s), null, {
+                      createVNode(unref(_sfc_main$t), null, {
                         default: withCtx(() => [
                           createTextVNode(" Add a registered user by their email address. ")
                         ]),
@@ -8291,13 +8291,13 @@ const _sfc_main$p = {
                     class: "space-y-4 pt-4"
                   }, [
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "add-member-email" }, {
+                      createVNode(unref(_sfc_main$M), { for: "add-member-email" }, {
                         default: withCtx(() => [
                           createTextVNode("User Email")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$1B), {
+                      createVNode(unref(_sfc_main$1C), {
                         id: "add-member-email",
                         modelValue: unref(form).email,
                         "onUpdate:modelValue": ($event) => unref(form).email = $event,
@@ -8309,7 +8309,7 @@ const _sfc_main$p = {
                         class: "text-sm text-destructive"
                       }, toDisplayString(unref(form).errors.email), 1)) : createCommentVNode("", true)
                     ]),
-                    createVNode(unref(_sfc_main$1p), {
+                    createVNode(unref(_sfc_main$1q), {
                       type: "submit",
                       class: "w-full",
                       disabled: unref(form).processing
@@ -8331,13 +8331,13 @@ const _sfc_main$p = {
     };
   }
 };
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/project/add-member-dialog.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
 };
-const _sfc_main$o = {
+const _sfc_main$p = {
   __name: "member-list-view",
   __ssrInlineRender: true,
   props: {
@@ -8346,16 +8346,16 @@ const _sfc_main$o = {
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$T), _attrs, {
+      _push(ssrRenderComponent(unref(_sfc_main$U), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$O), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$P), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$Q), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$R), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Name`);
@@ -8367,7 +8367,7 @@ const _sfc_main$o = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Email`);
@@ -8379,7 +8379,7 @@ const _sfc_main$o = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Role`);
@@ -8393,19 +8393,19 @@ const _sfc_main$o = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Name")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Email")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Role")
                             ]),
@@ -8418,21 +8418,21 @@ const _sfc_main$o = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$Q), null, {
+                    createVNode(unref(_sfc_main$R), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Name")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Email")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Role")
                           ]),
@@ -8446,17 +8446,17 @@ const _sfc_main$o = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$S), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$T), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`<!--[-->`);
                   ssrRenderList(__props.members, (member) => {
-                    _push3(ssrRenderComponent(unref(_sfc_main$Q), {
+                    _push3(ssrRenderComponent(unref(_sfc_main$R), {
                       key: member.id
                     }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$R), { class: "font-medium" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$S), { class: "font-medium" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 _push5(`${ssrInterpolate(member.name)}`);
@@ -8468,7 +8468,7 @@ const _sfc_main$o = {
                             }),
                             _: 2
                           }, _parent4, _scopeId3));
-                          _push4(ssrRenderComponent(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 _push5(`${ssrInterpolate(member.email)}`);
@@ -8480,11 +8480,11 @@ const _sfc_main$o = {
                             }),
                             _: 2
                           }, _parent4, _scopeId3));
-                          _push4(ssrRenderComponent(unref(_sfc_main$R), null, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$S), null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 if (member.id === __props.ownerId) {
-                                  _push5(ssrRenderComponent(unref(_sfc_main$N), null, {
+                                  _push5(ssrRenderComponent(unref(_sfc_main$O), null, {
                                     default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                       if (_push6) {
                                         _push6(`Owner`);
@@ -8497,7 +8497,7 @@ const _sfc_main$o = {
                                     _: 2
                                   }, _parent5, _scopeId4));
                                 } else {
-                                  _push5(ssrRenderComponent(unref(_sfc_main$N), { variant: "outline" }, {
+                                  _push5(ssrRenderComponent(unref(_sfc_main$O), { variant: "outline" }, {
                                     default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                       if (_push6) {
                                         _push6(`Member`);
@@ -8512,12 +8512,12 @@ const _sfc_main$o = {
                                 }
                               } else {
                                 return [
-                                  member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$N), { key: 0 }, {
+                                  member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$O), { key: 0 }, {
                                     default: withCtx(() => [
                                       createTextVNode("Owner")
                                     ]),
                                     _: 1
-                                  })) : (openBlock(), createBlock(unref(_sfc_main$N), {
+                                  })) : (openBlock(), createBlock(unref(_sfc_main$O), {
                                     key: 1,
                                     variant: "outline"
                                   }, {
@@ -8533,26 +8533,26 @@ const _sfc_main$o = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                            createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                               default: withCtx(() => [
                                 createTextVNode(toDisplayString(member.name), 1)
                               ]),
                               _: 2
                             }, 1024),
-                            createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                            createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                               default: withCtx(() => [
                                 createTextVNode(toDisplayString(member.email), 1)
                               ]),
                               _: 2
                             }, 1024),
-                            createVNode(unref(_sfc_main$R), null, {
+                            createVNode(unref(_sfc_main$S), null, {
                               default: withCtx(() => [
-                                member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$N), { key: 0 }, {
+                                member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$O), { key: 0 }, {
                                   default: withCtx(() => [
                                     createTextVNode("Owner")
                                   ]),
                                   _: 1
-                                })) : (openBlock(), createBlock(unref(_sfc_main$N), {
+                                })) : (openBlock(), createBlock(unref(_sfc_main$O), {
                                   key: 1,
                                   variant: "outline"
                                 }, {
@@ -8574,30 +8574,30 @@ const _sfc_main$o = {
                 } else {
                   return [
                     (openBlock(true), createBlock(Fragment, null, renderList(__props.members, (member) => {
-                      return openBlock(), createBlock(unref(_sfc_main$Q), {
+                      return openBlock(), createBlock(unref(_sfc_main$R), {
                         key: member.id
                       }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                          createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                             default: withCtx(() => [
                               createTextVNode(toDisplayString(member.name), 1)
                             ]),
                             _: 2
                           }, 1024),
-                          createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                          createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                             default: withCtx(() => [
                               createTextVNode(toDisplayString(member.email), 1)
                             ]),
                             _: 2
                           }, 1024),
-                          createVNode(unref(_sfc_main$R), null, {
+                          createVNode(unref(_sfc_main$S), null, {
                             default: withCtx(() => [
-                              member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$N), { key: 0 }, {
+                              member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$O), { key: 0 }, {
                                 default: withCtx(() => [
                                   createTextVNode("Owner")
                                 ]),
                                 _: 1
-                              })) : (openBlock(), createBlock(unref(_sfc_main$N), {
+                              })) : (openBlock(), createBlock(unref(_sfc_main$O), {
                                 key: 1,
                                 variant: "outline"
                               }, {
@@ -8620,23 +8620,23 @@ const _sfc_main$o = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$O), null, {
+              createVNode(unref(_sfc_main$P), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$Q), null, {
+                  createVNode(unref(_sfc_main$R), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Name")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Email")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Role")
                         ]),
@@ -8648,33 +8648,33 @@ const _sfc_main$o = {
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$S), null, {
+              createVNode(unref(_sfc_main$T), null, {
                 default: withCtx(() => [
                   (openBlock(true), createBlock(Fragment, null, renderList(__props.members, (member) => {
-                    return openBlock(), createBlock(unref(_sfc_main$Q), {
+                    return openBlock(), createBlock(unref(_sfc_main$R), {
                       key: member.id
                     }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                        createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                           default: withCtx(() => [
                             createTextVNode(toDisplayString(member.name), 1)
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                        createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                           default: withCtx(() => [
                             createTextVNode(toDisplayString(member.email), 1)
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$R), null, {
+                        createVNode(unref(_sfc_main$S), null, {
                           default: withCtx(() => [
-                            member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$N), { key: 0 }, {
+                            member.id === __props.ownerId ? (openBlock(), createBlock(unref(_sfc_main$O), { key: 0 }, {
                               default: withCtx(() => [
                                 createTextVNode("Owner")
                               ]),
                               _: 1
-                            })) : (openBlock(), createBlock(unref(_sfc_main$N), {
+                            })) : (openBlock(), createBlock(unref(_sfc_main$O), {
                               key: 1,
                               variant: "outline"
                             }, {
@@ -8701,13 +8701,13 @@ const _sfc_main$o = {
     };
   }
 };
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/project/member-list-view.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
-const _sfc_main$n = {
+const _sfc_main$o = {
   __name: "activity-feed",
   __ssrInlineRender: true,
   props: {
@@ -8721,14 +8721,14 @@ const _sfc_main$n = {
       ssrRenderList(__props.activities, (activity) => {
         var _a, _b, _c, _d, _e, _f, _g;
         _push(`<li class="flex items-start space-x-3">`);
-        _push(ssrRenderComponent(unref(_sfc_main$1l), { class: "h-8 w-8" }, {
+        _push(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-8 w-8" }, {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             var _a2, _b2;
             if (_push2) {
-              _push2(ssrRenderComponent(unref(_sfc_main$1j), {
+              _push2(ssrRenderComponent(unref(_sfc_main$1k), {
                 src: ((_a2 = activity.causer) == null ? void 0 : _a2.avatar) ?? "https://github.com/unovue.png"
               }, null, _parent2, _scopeId));
-              _push2(ssrRenderComponent(unref(_sfc_main$1k), null, {
+              _push2(ssrRenderComponent(unref(_sfc_main$1l), null, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   var _a3, _b3;
                   if (_push3) {
@@ -8743,10 +8743,10 @@ const _sfc_main$n = {
               }, _parent2, _scopeId));
             } else {
               return [
-                createVNode(unref(_sfc_main$1j), {
+                createVNode(unref(_sfc_main$1k), {
                   src: ((_b2 = activity.causer) == null ? void 0 : _b2.avatar) ?? "https://github.com/unovue.png"
                 }, null, 8, ["src"]),
-                createVNode(unref(_sfc_main$1k), null, {
+                createVNode(unref(_sfc_main$1l), null, {
                   default: withCtx(() => {
                     var _a3;
                     return [
@@ -8807,13 +8807,13 @@ const _sfc_main$n = {
     };
   }
 };
-const _sfc_setup$n = _sfc_main$n.setup;
-_sfc_main$n.setup = (props, ctx) => {
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/project/activity-feed.vue");
-  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-const _sfc_main$m = {
+const _sfc_main$n = {
   __name: "AlertDialog",
   __ssrInlineRender: true,
   props: {
@@ -8841,13 +8841,13 @@ const _sfc_main$m = {
     };
   }
 };
-const _sfc_setup$m = _sfc_main$m.setup;
-_sfc_main$m.setup = (props, ctx) => {
+const _sfc_setup$n = _sfc_main$n.setup;
+_sfc_main$n.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialog.vue");
-  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
-const _sfc_main$l = {
+const _sfc_main$m = {
   __name: "AlertDialogAction",
   __ssrInlineRender: true,
   props: {
@@ -8876,13 +8876,13 @@ const _sfc_main$l = {
     };
   }
 };
-const _sfc_setup$l = _sfc_main$l.setup;
-_sfc_main$l.setup = (props, ctx) => {
+const _sfc_setup$m = _sfc_main$m.setup;
+_sfc_main$m.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogAction.vue");
-  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
+  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
-const _sfc_main$k = {
+const _sfc_main$l = {
   __name: "AlertDialogCancel",
   __ssrInlineRender: true,
   props: {
@@ -8911,13 +8911,13 @@ const _sfc_main$k = {
     };
   }
 };
-const _sfc_setup$k = _sfc_main$k.setup;
-_sfc_main$k.setup = (props, ctx) => {
+const _sfc_setup$l = _sfc_main$l.setup;
+_sfc_main$l.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogCancel.vue");
-  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
+  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
-const _sfc_main$j = {
+const _sfc_main$k = {
   __name: "AlertDialogContent",
   __ssrInlineRender: true,
   props: {
@@ -8990,13 +8990,13 @@ const _sfc_main$j = {
     };
   }
 };
-const _sfc_setup$j = _sfc_main$j.setup;
-_sfc_main$j.setup = (props, ctx) => {
+const _sfc_setup$k = _sfc_main$k.setup;
+_sfc_main$k.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogContent.vue");
-  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
+  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
-const _sfc_main$i = {
+const _sfc_main$j = {
   __name: "AlertDialogDescription",
   __ssrInlineRender: true,
   props: {
@@ -9025,13 +9025,13 @@ const _sfc_main$i = {
     };
   }
 };
-const _sfc_setup$i = _sfc_main$i.setup;
-_sfc_main$i.setup = (props, ctx) => {
+const _sfc_setup$j = _sfc_main$j.setup;
+_sfc_main$j.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogDescription.vue");
-  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
+  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
-const _sfc_main$h = {
+const _sfc_main$i = {
   __name: "AlertDialogFooter",
   __ssrInlineRender: true,
   props: {
@@ -9049,13 +9049,13 @@ const _sfc_main$h = {
     };
   }
 };
-const _sfc_setup$h = _sfc_main$h.setup;
-_sfc_main$h.setup = (props, ctx) => {
+const _sfc_setup$i = _sfc_main$i.setup;
+_sfc_main$i.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogFooter.vue");
-  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
+  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
-const _sfc_main$g = {
+const _sfc_main$h = {
   __name: "AlertDialogHeader",
   __ssrInlineRender: true,
   props: {
@@ -9073,13 +9073,13 @@ const _sfc_main$g = {
     };
   }
 };
-const _sfc_setup$g = _sfc_main$g.setup;
-_sfc_main$g.setup = (props, ctx) => {
+const _sfc_setup$h = _sfc_main$h.setup;
+_sfc_main$h.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogHeader.vue");
-  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
+  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
-const _sfc_main$f = {
+const _sfc_main$g = {
   __name: "AlertDialogTitle",
   __ssrInlineRender: true,
   props: {
@@ -9108,13 +9108,13 @@ const _sfc_main$f = {
     };
   }
 };
-const _sfc_setup$f = _sfc_main$f.setup;
-_sfc_main$f.setup = (props, ctx) => {
+const _sfc_setup$g = _sfc_main$g.setup;
+_sfc_main$g.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogTitle.vue");
-  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
+  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
 };
-const _sfc_main$e = {
+const _sfc_main$f = {
   __name: "AlertDialogTrigger",
   __ssrInlineRender: true,
   props: {
@@ -9139,13 +9139,13 @@ const _sfc_main$e = {
     };
   }
 };
-const _sfc_setup$e = _sfc_main$e.setup;
-_sfc_main$e.setup = (props, ctx) => {
+const _sfc_setup$f = _sfc_main$f.setup;
+_sfc_main$f.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ui/alert-dialog/AlertDialogTrigger.vue");
-  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
+  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
-const _sfc_main$d = {
+const _sfc_main$e = {
   __name: "setting-tab",
   __ssrInlineRender: true,
   props: {
@@ -9168,13 +9168,13 @@ const _sfc_main$d = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(unref(_sfc_main$_), null, {
+      _push(ssrRenderComponent(unref(_sfc_main$$), null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$W), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$X), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$V), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Project Settings`);
@@ -9186,7 +9186,7 @@ const _sfc_main$d = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Update your project&#39;s name and description.`);
@@ -9200,13 +9200,13 @@ const _sfc_main$d = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$V), null, {
+                    createVNode(unref(_sfc_main$W), null, {
                       default: withCtx(() => [
                         createTextVNode("Project Settings")
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Y), null, {
+                    createVNode(unref(_sfc_main$Z), null, {
                       default: withCtx(() => [
                         createTextVNode("Update your project's name and description.")
                       ]),
@@ -9218,11 +9218,11 @@ const _sfc_main$d = {
               _: 1
             }, _parent2, _scopeId));
             _push2(`<form${_scopeId}>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$Z), { class: "space-y-4 pt-4" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "space-y-4 pt-4" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`<div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "project-name" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "project-name" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Project Name`);
@@ -9234,7 +9234,7 @@ const _sfc_main$d = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "project-name",
                     modelValue: unref(form).name,
                     "onUpdate:modelValue": ($event) => unref(form).name = $event,
@@ -9242,7 +9242,7 @@ const _sfc_main$d = {
                     required: ""
                   }, null, _parent3, _scopeId2));
                   _push3(`</div><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "project-description" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "project-description" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Description`);
@@ -9254,7 +9254,7 @@ const _sfc_main$d = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$J), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$K), {
                     id: "project-description",
                     modelValue: unref(form).description,
                     "onUpdate:modelValue": ($event) => unref(form).description = $event
@@ -9263,13 +9263,13 @@ const _sfc_main$d = {
                 } else {
                   return [
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "project-name" }, {
+                      createVNode(unref(_sfc_main$M), { for: "project-name" }, {
                         default: withCtx(() => [
                           createTextVNode("Project Name")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$1B), {
+                      createVNode(unref(_sfc_main$1C), {
                         id: "project-name",
                         modelValue: unref(form).name,
                         "onUpdate:modelValue": ($event) => unref(form).name = $event,
@@ -9278,13 +9278,13 @@ const _sfc_main$d = {
                       }, null, 8, ["modelValue", "onUpdate:modelValue"])
                     ]),
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "project-description" }, {
+                      createVNode(unref(_sfc_main$M), { for: "project-description" }, {
                         default: withCtx(() => [
                           createTextVNode("Description")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$J), {
+                      createVNode(unref(_sfc_main$K), {
                         id: "project-description",
                         modelValue: unref(form).description,
                         "onUpdate:modelValue": ($event) => unref(form).description = $event
@@ -9295,10 +9295,10 @@ const _sfc_main$d = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$X), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$Y), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     type: "submit",
                     disabled: unref(form).processing,
                     class: "mt-6"
@@ -9316,7 +9316,7 @@ const _sfc_main$d = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$1p), {
+                    createVNode(unref(_sfc_main$1q), {
                       type: "submit",
                       disabled: unref(form).processing,
                       class: "mt-6"
@@ -9334,15 +9334,15 @@ const _sfc_main$d = {
             _push2(`</form>`);
           } else {
             return [
-              createVNode(unref(_sfc_main$W), null, {
+              createVNode(unref(_sfc_main$X), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$V), null, {
+                  createVNode(unref(_sfc_main$W), null, {
                     default: withCtx(() => [
                       createTextVNode("Project Settings")
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$Y), null, {
+                  createVNode(unref(_sfc_main$Z), null, {
                     default: withCtx(() => [
                       createTextVNode("Update your project's name and description.")
                     ]),
@@ -9354,16 +9354,16 @@ const _sfc_main$d = {
               createVNode("form", {
                 onSubmit: withModifiers(updateProject, ["prevent"])
               }, [
-                createVNode(unref(_sfc_main$Z), { class: "space-y-4 pt-4" }, {
+                createVNode(unref(_sfc_main$_), { class: "space-y-4 pt-4" }, {
                   default: withCtx(() => [
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "project-name" }, {
+                      createVNode(unref(_sfc_main$M), { for: "project-name" }, {
                         default: withCtx(() => [
                           createTextVNode("Project Name")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$1B), {
+                      createVNode(unref(_sfc_main$1C), {
                         id: "project-name",
                         modelValue: unref(form).name,
                         "onUpdate:modelValue": ($event) => unref(form).name = $event,
@@ -9372,13 +9372,13 @@ const _sfc_main$d = {
                       }, null, 8, ["modelValue", "onUpdate:modelValue"])
                     ]),
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "project-description" }, {
+                      createVNode(unref(_sfc_main$M), { for: "project-description" }, {
                         default: withCtx(() => [
                           createTextVNode("Description")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$J), {
+                      createVNode(unref(_sfc_main$K), {
                         id: "project-description",
                         modelValue: unref(form).description,
                         "onUpdate:modelValue": ($event) => unref(form).description = $event
@@ -9387,9 +9387,9 @@ const _sfc_main$d = {
                   ]),
                   _: 1
                 }),
-                createVNode(unref(_sfc_main$X), null, {
+                createVNode(unref(_sfc_main$Y), null, {
                   default: withCtx(() => [
-                    createVNode(unref(_sfc_main$1p), {
+                    createVNode(unref(_sfc_main$1q), {
                       type: "submit",
                       disabled: unref(form).processing,
                       class: "mt-6"
@@ -9408,13 +9408,13 @@ const _sfc_main$d = {
         }),
         _: 1
       }, _parent));
-      _push(ssrRenderComponent(unref(_sfc_main$_), { class: "border-destructive" }, {
+      _push(ssrRenderComponent(unref(_sfc_main$$), { class: "border-destructive" }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$W), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$X), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$V), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Danger Zone`);
@@ -9426,7 +9426,7 @@ const _sfc_main$d = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(` Deleting your project is a permanent action. `);
@@ -9440,13 +9440,13 @@ const _sfc_main$d = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$V), null, {
+                    createVNode(unref(_sfc_main$W), null, {
                       default: withCtx(() => [
                         createTextVNode("Danger Zone")
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Y), null, {
+                    createVNode(unref(_sfc_main$Z), null, {
                       default: withCtx(() => [
                         createTextVNode(" Deleting your project is a permanent action. ")
                       ]),
@@ -9457,16 +9457,16 @@ const _sfc_main$d = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$Z), { class: "pt-6" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "pt-6" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$m), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$n), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$e), { "as-child": "" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$f), { "as-child": "" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$1p), { variant: "destructive" }, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$1q), { variant: "destructive" }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(`Delete Project`);
@@ -9480,7 +9480,7 @@ const _sfc_main$d = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$1p), { variant: "destructive" }, {
+                                createVNode(unref(_sfc_main$1q), { variant: "destructive" }, {
                                   default: withCtx(() => [
                                     createTextVNode("Delete Project")
                                   ]),
@@ -9491,13 +9491,13 @@ const _sfc_main$d = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$j), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$k), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$g), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$h), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$f), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$g), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`Are you absolutely sure?`);
@@ -9509,7 +9509,7 @@ const _sfc_main$d = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$i), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$j), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(` This action cannot be undone. This will permanently delete this project and all of its tasks, members, and activities. `);
@@ -9523,13 +9523,13 @@ const _sfc_main$d = {
                                     }, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$f), null, {
+                                      createVNode(unref(_sfc_main$g), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Are you absolutely sure?")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$i), null, {
+                                      createVNode(unref(_sfc_main$j), null, {
                                         default: withCtx(() => [
                                           createTextVNode(" This action cannot be undone. This will permanently delete this project and all of its tasks, members, and activities. ")
                                         ]),
@@ -9540,10 +9540,10 @@ const _sfc_main$d = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$h), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$i), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$k), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$l), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`Cancel`);
@@ -9555,7 +9555,7 @@ const _sfc_main$d = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$l), { onClick: deleteProject }, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$m), { onClick: deleteProject }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(` Continue &amp; Delete `);
@@ -9569,13 +9569,13 @@ const _sfc_main$d = {
                                     }, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$k), null, {
+                                      createVNode(unref(_sfc_main$l), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Cancel")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$l), { onClick: deleteProject }, {
+                                      createVNode(unref(_sfc_main$m), { onClick: deleteProject }, {
                                         default: withCtx(() => [
                                           createTextVNode(" Continue & Delete ")
                                         ]),
@@ -9588,15 +9588,15 @@ const _sfc_main$d = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$g), null, {
+                                createVNode(unref(_sfc_main$h), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$f), null, {
+                                    createVNode(unref(_sfc_main$g), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Are you absolutely sure?")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$i), null, {
+                                    createVNode(unref(_sfc_main$j), null, {
                                       default: withCtx(() => [
                                         createTextVNode(" This action cannot be undone. This will permanently delete this project and all of its tasks, members, and activities. ")
                                       ]),
@@ -9605,15 +9605,15 @@ const _sfc_main$d = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$h), null, {
+                                createVNode(unref(_sfc_main$i), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$k), null, {
+                                    createVNode(unref(_sfc_main$l), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Cancel")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$l), { onClick: deleteProject }, {
+                                    createVNode(unref(_sfc_main$m), { onClick: deleteProject }, {
                                       default: withCtx(() => [
                                         createTextVNode(" Continue & Delete ")
                                       ]),
@@ -9629,9 +9629,9 @@ const _sfc_main$d = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), { variant: "destructive" }, {
+                              createVNode(unref(_sfc_main$1q), { variant: "destructive" }, {
                                 default: withCtx(() => [
                                   createTextVNode("Delete Project")
                                 ]),
@@ -9640,17 +9640,17 @@ const _sfc_main$d = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$j), null, {
+                          createVNode(unref(_sfc_main$k), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$g), null, {
+                              createVNode(unref(_sfc_main$h), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$f), null, {
+                                  createVNode(unref(_sfc_main$g), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Are you absolutely sure?")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$i), null, {
+                                  createVNode(unref(_sfc_main$j), null, {
                                     default: withCtx(() => [
                                       createTextVNode(" This action cannot be undone. This will permanently delete this project and all of its tasks, members, and activities. ")
                                     ]),
@@ -9659,15 +9659,15 @@ const _sfc_main$d = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$h), null, {
+                              createVNode(unref(_sfc_main$i), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$k), null, {
+                                  createVNode(unref(_sfc_main$l), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Cancel")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$l), { onClick: deleteProject }, {
+                                  createVNode(unref(_sfc_main$m), { onClick: deleteProject }, {
                                     default: withCtx(() => [
                                       createTextVNode(" Continue & Delete ")
                                     ]),
@@ -9686,11 +9686,11 @@ const _sfc_main$d = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$m), null, {
+                    createVNode(unref(_sfc_main$n), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                        createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1p), { variant: "destructive" }, {
+                            createVNode(unref(_sfc_main$1q), { variant: "destructive" }, {
                               default: withCtx(() => [
                                 createTextVNode("Delete Project")
                               ]),
@@ -9699,17 +9699,17 @@ const _sfc_main$d = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$j), null, {
+                        createVNode(unref(_sfc_main$k), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$g), null, {
+                            createVNode(unref(_sfc_main$h), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$f), null, {
+                                createVNode(unref(_sfc_main$g), null, {
                                   default: withCtx(() => [
                                     createTextVNode("Are you absolutely sure?")
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$i), null, {
+                                createVNode(unref(_sfc_main$j), null, {
                                   default: withCtx(() => [
                                     createTextVNode(" This action cannot be undone. This will permanently delete this project and all of its tasks, members, and activities. ")
                                   ]),
@@ -9718,15 +9718,15 @@ const _sfc_main$d = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$h), null, {
+                            createVNode(unref(_sfc_main$i), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$k), null, {
+                                createVNode(unref(_sfc_main$l), null, {
                                   default: withCtx(() => [
                                     createTextVNode("Cancel")
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$l), { onClick: deleteProject }, {
+                                createVNode(unref(_sfc_main$m), { onClick: deleteProject }, {
                                   default: withCtx(() => [
                                     createTextVNode(" Continue & Delete ")
                                   ]),
@@ -9748,15 +9748,15 @@ const _sfc_main$d = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$W), null, {
+              createVNode(unref(_sfc_main$X), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$V), null, {
+                  createVNode(unref(_sfc_main$W), null, {
                     default: withCtx(() => [
                       createTextVNode("Danger Zone")
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$Y), null, {
+                  createVNode(unref(_sfc_main$Z), null, {
                     default: withCtx(() => [
                       createTextVNode(" Deleting your project is a permanent action. ")
                     ]),
@@ -9765,13 +9765,13 @@ const _sfc_main$d = {
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$Z), { class: "pt-6" }, {
+              createVNode(unref(_sfc_main$_), { class: "pt-6" }, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$m), null, {
+                  createVNode(unref(_sfc_main$n), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1p), { variant: "destructive" }, {
+                          createVNode(unref(_sfc_main$1q), { variant: "destructive" }, {
                             default: withCtx(() => [
                               createTextVNode("Delete Project")
                             ]),
@@ -9780,17 +9780,17 @@ const _sfc_main$d = {
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$j), null, {
+                      createVNode(unref(_sfc_main$k), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$g), null, {
+                          createVNode(unref(_sfc_main$h), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$f), null, {
+                              createVNode(unref(_sfc_main$g), null, {
                                 default: withCtx(() => [
                                   createTextVNode("Are you absolutely sure?")
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$i), null, {
+                              createVNode(unref(_sfc_main$j), null, {
                                 default: withCtx(() => [
                                   createTextVNode(" This action cannot be undone. This will permanently delete this project and all of its tasks, members, and activities. ")
                                 ]),
@@ -9799,15 +9799,15 @@ const _sfc_main$d = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$h), null, {
+                          createVNode(unref(_sfc_main$i), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$k), null, {
+                              createVNode(unref(_sfc_main$l), null, {
                                 default: withCtx(() => [
                                   createTextVNode("Cancel")
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$l), { onClick: deleteProject }, {
+                              createVNode(unref(_sfc_main$m), { onClick: deleteProject }, {
                                 default: withCtx(() => [
                                   createTextVNode(" Continue & Delete ")
                                 ]),
@@ -9834,13 +9834,13 @@ const _sfc_main$d = {
     };
   }
 };
-const _sfc_setup$d = _sfc_main$d.setup;
-_sfc_main$d.setup = (props, ctx) => {
+const _sfc_setup$e = _sfc_main$e.setup;
+_sfc_main$e.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/project/setting-tab.vue");
-  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
+  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
 };
-const _sfc_main$c = {
+const _sfc_main$d = {
   __name: "create-task-dialog",
   __ssrInlineRender: true,
   props: {
@@ -9872,19 +9872,19 @@ const _sfc_main$c = {
       });
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$v), mergeProps({
+      _push(ssrRenderComponent(unref(_sfc_main$w), mergeProps({
         open: __props.open,
         "onUpdate:open": (value) => emit("update:open", value)
       }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$t), { class: "sm:max-w-[625px]" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$u), { class: "sm:max-w-[625px]" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$r), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$s), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$q), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$r), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Create New Task`);
@@ -9898,7 +9898,7 @@ const _sfc_main$c = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$q), null, {
+                          createVNode(unref(_sfc_main$r), null, {
                             default: withCtx(() => [
                               createTextVNode("Create New Task")
                             ]),
@@ -9910,7 +9910,7 @@ const _sfc_main$c = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`<form class="space-y-4 pt-4"${_scopeId2}><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "title" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "title" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Task Title`);
@@ -9922,7 +9922,7 @@ const _sfc_main$c = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "title",
                     modelValue: unref(form).title,
                     "onUpdate:modelValue": ($event) => unref(form).title = $event,
@@ -9934,7 +9934,7 @@ const _sfc_main$c = {
                     _push3(`<!---->`);
                   }
                   _push3(`</div><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "description" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "description" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Description`);
@@ -9946,14 +9946,14 @@ const _sfc_main$c = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$J), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$K), {
                     id: "description",
                     modelValue: unref(form).description,
                     "onUpdate:modelValue": ($event) => unref(form).description = $event,
                     placeholder: "Add more details about the task..."
                   }, null, _parent3, _scopeId2));
                   _push3(`</div><div class="grid grid-cols-2 gap-4"${_scopeId2}><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "due_date" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "due_date" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Due Date`);
@@ -9965,14 +9965,14 @@ const _sfc_main$c = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "due_date",
                     modelValue: unref(form).due_date,
                     "onUpdate:modelValue": ($event) => unref(form).due_date = $event,
                     type: "date"
                   }, null, _parent3, _scopeId2));
                   _push3(`</div><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "assigned_to_id" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "assigned_to_id" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Assign To`);
@@ -9984,30 +9984,30 @@ const _sfc_main$c = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$G), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$H), {
                     modelValue: unref(form).assigned_to_id,
                     "onUpdate:modelValue": ($event) => unref(form).assigned_to_id = $event
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$B), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$C), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Select a member" }, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Select a member" }, null, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                               ];
                             }
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$F), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$G), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`<!--[-->`);
                               ssrRenderList(__props.project.members, (member) => {
-                                _push5(ssrRenderComponent(unref(_sfc_main$E), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$F), {
                                   key: member.id,
                                   value: member.id
                                 }, {
@@ -10027,7 +10027,7 @@ const _sfc_main$c = {
                             } else {
                               return [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.project.members, (member) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: member.id,
                                     value: member.id
                                   }, {
@@ -10044,16 +10044,16 @@ const _sfc_main$c = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$B), null, {
+                          createVNode(unref(_sfc_main$C), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                              createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$F), null, {
+                          createVNode(unref(_sfc_main$G), null, {
                             default: withCtx(() => [
                               (openBlock(true), createBlock(Fragment, null, renderList(__props.project.members, (member) => {
-                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                   key: member.id,
                                   value: member.id
                                 }, {
@@ -10077,7 +10077,7 @@ const _sfc_main$c = {
                     _push3(`<!---->`);
                   }
                   _push3(`</div><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "priority" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "priority" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Priority`);
@@ -10089,30 +10089,30 @@ const _sfc_main$c = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$G), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$H), {
                     modelValue: unref(form).priority,
                     "onUpdate:modelValue": ($event) => unref(form).priority = $event
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$B), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$C), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Select priority" }, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Select priority" }, null, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                               ];
                             }
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$F), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$G), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`<!--[-->`);
                               ssrRenderList(__props.taskPriorities, (priority) => {
-                                _push5(ssrRenderComponent(unref(_sfc_main$E), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$F), {
                                   key: priority.value,
                                   value: priority.value
                                 }, {
@@ -10132,7 +10132,7 @@ const _sfc_main$c = {
                             } else {
                               return [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: priority.value,
                                     value: priority.value
                                   }, {
@@ -10149,16 +10149,16 @@ const _sfc_main$c = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$B), null, {
+                          createVNode(unref(_sfc_main$C), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                              createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$F), null, {
+                          createVNode(unref(_sfc_main$G), null, {
                             default: withCtx(() => [
                               (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                   key: priority.value,
                                   value: priority.value
                                 }, {
@@ -10177,7 +10177,7 @@ const _sfc_main$c = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`</div></div>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     type: "submit",
                     disabled: unref(form).processing
                   }, {
@@ -10195,9 +10195,9 @@ const _sfc_main$c = {
                   _push3(`</form>`);
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$r), null, {
+                    createVNode(unref(_sfc_main$s), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$q), null, {
+                        createVNode(unref(_sfc_main$r), null, {
                           default: withCtx(() => [
                             createTextVNode("Create New Task")
                           ]),
@@ -10211,13 +10211,13 @@ const _sfc_main$c = {
                       class: "space-y-4 pt-4"
                     }, [
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "title" }, {
+                        createVNode(unref(_sfc_main$M), { for: "title" }, {
                           default: withCtx(() => [
                             createTextVNode("Task Title")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1B), {
+                        createVNode(unref(_sfc_main$1C), {
                           id: "title",
                           modelValue: unref(form).title,
                           "onUpdate:modelValue": ($event) => unref(form).title = $event,
@@ -10229,13 +10229,13 @@ const _sfc_main$c = {
                         }, toDisplayString(unref(form).errors.title), 1)) : createCommentVNode("", true)
                       ]),
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "description" }, {
+                        createVNode(unref(_sfc_main$M), { for: "description" }, {
                           default: withCtx(() => [
                             createTextVNode("Description")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$J), {
+                        createVNode(unref(_sfc_main$K), {
                           id: "description",
                           modelValue: unref(form).description,
                           "onUpdate:modelValue": ($event) => unref(form).description = $event,
@@ -10244,13 +10244,13 @@ const _sfc_main$c = {
                       ]),
                       createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "due_date" }, {
+                          createVNode(unref(_sfc_main$M), { for: "due_date" }, {
                             default: withCtx(() => [
                               createTextVNode("Due Date")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "due_date",
                             modelValue: unref(form).due_date,
                             "onUpdate:modelValue": ($event) => unref(form).due_date = $event,
@@ -10258,27 +10258,27 @@ const _sfc_main$c = {
                           }, null, 8, ["modelValue", "onUpdate:modelValue"])
                         ]),
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "assigned_to_id" }, {
+                          createVNode(unref(_sfc_main$M), { for: "assigned_to_id" }, {
                             default: withCtx(() => [
                               createTextVNode("Assign To")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$G), {
+                          createVNode(unref(_sfc_main$H), {
                             modelValue: unref(form).assigned_to_id,
                             "onUpdate:modelValue": ($event) => unref(form).assigned_to_id = $event
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$B), null, {
+                              createVNode(unref(_sfc_main$C), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                                  createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$F), null, {
+                              createVNode(unref(_sfc_main$G), null, {
                                 default: withCtx(() => [
                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.project.members, (member) => {
-                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                       key: member.id,
                                       value: member.id
                                     }, {
@@ -10300,27 +10300,27 @@ const _sfc_main$c = {
                           }, toDisplayString(unref(form).errors.assigned_to_id), 1)) : createCommentVNode("", true)
                         ]),
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "priority" }, {
+                          createVNode(unref(_sfc_main$M), { for: "priority" }, {
                             default: withCtx(() => [
                               createTextVNode("Priority")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$G), {
+                          createVNode(unref(_sfc_main$H), {
                             modelValue: unref(form).priority,
                             "onUpdate:modelValue": ($event) => unref(form).priority = $event
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$B), null, {
+                              createVNode(unref(_sfc_main$C), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                                  createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$F), null, {
+                              createVNode(unref(_sfc_main$G), null, {
                                 default: withCtx(() => [
                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                       key: priority.value,
                                       value: priority.value
                                     }, {
@@ -10338,7 +10338,7 @@ const _sfc_main$c = {
                           }, 8, ["modelValue", "onUpdate:modelValue"])
                         ])
                       ]),
-                      createVNode(unref(_sfc_main$1p), {
+                      createVNode(unref(_sfc_main$1q), {
                         type: "submit",
                         disabled: unref(form).processing
                       }, {
@@ -10355,11 +10355,11 @@ const _sfc_main$c = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$t), { class: "sm:max-w-[625px]" }, {
+              createVNode(unref(_sfc_main$u), { class: "sm:max-w-[625px]" }, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$r), null, {
+                  createVNode(unref(_sfc_main$s), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$q), null, {
+                      createVNode(unref(_sfc_main$r), null, {
                         default: withCtx(() => [
                           createTextVNode("Create New Task")
                         ]),
@@ -10373,13 +10373,13 @@ const _sfc_main$c = {
                     class: "space-y-4 pt-4"
                   }, [
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "title" }, {
+                      createVNode(unref(_sfc_main$M), { for: "title" }, {
                         default: withCtx(() => [
                           createTextVNode("Task Title")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$1B), {
+                      createVNode(unref(_sfc_main$1C), {
                         id: "title",
                         modelValue: unref(form).title,
                         "onUpdate:modelValue": ($event) => unref(form).title = $event,
@@ -10391,13 +10391,13 @@ const _sfc_main$c = {
                       }, toDisplayString(unref(form).errors.title), 1)) : createCommentVNode("", true)
                     ]),
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "description" }, {
+                      createVNode(unref(_sfc_main$M), { for: "description" }, {
                         default: withCtx(() => [
                           createTextVNode("Description")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$J), {
+                      createVNode(unref(_sfc_main$K), {
                         id: "description",
                         modelValue: unref(form).description,
                         "onUpdate:modelValue": ($event) => unref(form).description = $event,
@@ -10406,13 +10406,13 @@ const _sfc_main$c = {
                     ]),
                     createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "due_date" }, {
+                        createVNode(unref(_sfc_main$M), { for: "due_date" }, {
                           default: withCtx(() => [
                             createTextVNode("Due Date")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1B), {
+                        createVNode(unref(_sfc_main$1C), {
                           id: "due_date",
                           modelValue: unref(form).due_date,
                           "onUpdate:modelValue": ($event) => unref(form).due_date = $event,
@@ -10420,27 +10420,27 @@ const _sfc_main$c = {
                         }, null, 8, ["modelValue", "onUpdate:modelValue"])
                       ]),
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "assigned_to_id" }, {
+                        createVNode(unref(_sfc_main$M), { for: "assigned_to_id" }, {
                           default: withCtx(() => [
                             createTextVNode("Assign To")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$G), {
+                        createVNode(unref(_sfc_main$H), {
                           modelValue: unref(form).assigned_to_id,
                           "onUpdate:modelValue": ($event) => unref(form).assigned_to_id = $event
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$B), null, {
+                            createVNode(unref(_sfc_main$C), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$F), null, {
+                            createVNode(unref(_sfc_main$G), null, {
                               default: withCtx(() => [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.project.members, (member) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: member.id,
                                     value: member.id
                                   }, {
@@ -10462,27 +10462,27 @@ const _sfc_main$c = {
                         }, toDisplayString(unref(form).errors.assigned_to_id), 1)) : createCommentVNode("", true)
                       ]),
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "priority" }, {
+                        createVNode(unref(_sfc_main$M), { for: "priority" }, {
                           default: withCtx(() => [
                             createTextVNode("Priority")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$G), {
+                        createVNode(unref(_sfc_main$H), {
                           modelValue: unref(form).priority,
                           "onUpdate:modelValue": ($event) => unref(form).priority = $event
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$B), null, {
+                            createVNode(unref(_sfc_main$C), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$F), null, {
+                            createVNode(unref(_sfc_main$G), null, {
                               default: withCtx(() => [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: priority.value,
                                     value: priority.value
                                   }, {
@@ -10500,7 +10500,7 @@ const _sfc_main$c = {
                         }, 8, ["modelValue", "onUpdate:modelValue"])
                       ])
                     ]),
-                    createVNode(unref(_sfc_main$1p), {
+                    createVNode(unref(_sfc_main$1q), {
                       type: "submit",
                       disabled: unref(form).processing
                     }, {
@@ -10521,13 +10521,13 @@ const _sfc_main$c = {
     };
   }
 };
-const _sfc_setup$c = _sfc_main$c.setup;
-_sfc_main$c.setup = (props, ctx) => {
+const _sfc_setup$d = _sfc_main$d.setup;
+_sfc_main$d.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/task/create-task-dialog.vue");
-  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
+  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
 };
-const _sfc_main$b = {
+const _sfc_main$c = {
   __name: "edit-task-dialog",
   __ssrInlineRender: true,
   props: {
@@ -10565,19 +10565,19 @@ const _sfc_main$b = {
       emit("submit", form);
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$v), mergeProps({
+      _push(ssrRenderComponent(unref(_sfc_main$w), mergeProps({
         open: __props.modelValue,
         "onUpdate:open": (value) => emit("update:modelValue", value)
       }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$t), { class: "sm:max-w-[625px]" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$u), { class: "sm:max-w-[625px]" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$r), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$s), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$q), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$r), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Edit Task`);
@@ -10591,7 +10591,7 @@ const _sfc_main$b = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$q), null, {
+                          createVNode(unref(_sfc_main$r), null, {
                             default: withCtx(() => [
                               createTextVNode("Edit Task")
                             ]),
@@ -10603,7 +10603,7 @@ const _sfc_main$b = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`<form class="space-y-4 pt-4"${_scopeId2}><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "edit-title" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "edit-title" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Task Title`);
@@ -10615,13 +10615,13 @@ const _sfc_main$b = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "edit-title",
                     modelValue: unref(form).title,
                     "onUpdate:modelValue": ($event) => unref(form).title = $event
                   }, null, _parent3, _scopeId2));
                   _push3(`</div><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "edit-description" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "edit-description" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Description`);
@@ -10633,13 +10633,13 @@ const _sfc_main$b = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$J), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$K), {
                     id: "edit-description",
                     modelValue: unref(form).description,
                     "onUpdate:modelValue": ($event) => unref(form).description = $event
                   }, null, _parent3, _scopeId2));
                   _push3(`</div><div class="grid grid-cols-2 gap-4"${_scopeId2}><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "edit-due_date" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "edit-due_date" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Due Date`);
@@ -10651,14 +10651,14 @@ const _sfc_main$b = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "edit-due_date",
                     modelValue: unref(form).due_date,
                     "onUpdate:modelValue": ($event) => unref(form).due_date = $event,
                     type: "date"
                   }, null, _parent3, _scopeId2));
                   _push3(`</div><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "edit-assigned_to_id" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "edit-assigned_to_id" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Assign To`);
@@ -10670,30 +10670,30 @@ const _sfc_main$b = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$G), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$H), {
                     modelValue: unref(form).assigned_to_id,
                     "onUpdate:modelValue": ($event) => unref(form).assigned_to_id = $event
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$B), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$C), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Select a member" }, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Select a member" }, null, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                               ];
                             }
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$F), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$G), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`<!--[-->`);
                               ssrRenderList(__props.members, (member) => {
-                                _push5(ssrRenderComponent(unref(_sfc_main$E), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$F), {
                                   key: member.id,
                                   value: member.id
                                 }, {
@@ -10713,7 +10713,7 @@ const _sfc_main$b = {
                             } else {
                               return [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.members, (member) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: member.id,
                                     value: member.id
                                   }, {
@@ -10730,16 +10730,16 @@ const _sfc_main$b = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$B), null, {
+                          createVNode(unref(_sfc_main$C), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                              createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$F), null, {
+                          createVNode(unref(_sfc_main$G), null, {
                             default: withCtx(() => [
                               (openBlock(true), createBlock(Fragment, null, renderList(__props.members, (member) => {
-                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                   key: member.id,
                                   value: member.id
                                 }, {
@@ -10758,7 +10758,7 @@ const _sfc_main$b = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`</div><div class="space-y-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { for: "edit-priority" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { for: "edit-priority" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Priority`);
@@ -10770,30 +10770,30 @@ const _sfc_main$b = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$G), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$H), {
                     modelValue: unref(form).priority,
                     "onUpdate:modelValue": ($event) => unref(form).priority = $event
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$B), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$C), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Select priority" }, null, _parent5, _scopeId4));
+                              _push5(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Select priority" }, null, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                               ];
                             }
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$F), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$G), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`<!--[-->`);
                               ssrRenderList(__props.taskPriorities, (priority) => {
-                                _push5(ssrRenderComponent(unref(_sfc_main$E), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$F), {
                                   key: priority.value,
                                   value: priority.value
                                 }, {
@@ -10813,7 +10813,7 @@ const _sfc_main$b = {
                             } else {
                               return [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: priority.value,
                                     value: priority.value
                                   }, {
@@ -10830,16 +10830,16 @@ const _sfc_main$b = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$B), null, {
+                          createVNode(unref(_sfc_main$C), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                              createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$F), null, {
+                          createVNode(unref(_sfc_main$G), null, {
                             default: withCtx(() => [
                               (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                   key: priority.value,
                                   value: priority.value
                                 }, {
@@ -10858,7 +10858,7 @@ const _sfc_main$b = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`</div></div>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     type: "submit",
                     disabled: unref(form).processing
                   }, {
@@ -10876,9 +10876,9 @@ const _sfc_main$b = {
                   _push3(`</form>`);
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$r), null, {
+                    createVNode(unref(_sfc_main$s), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$q), null, {
+                        createVNode(unref(_sfc_main$r), null, {
                           default: withCtx(() => [
                             createTextVNode("Edit Task")
                           ]),
@@ -10892,26 +10892,26 @@ const _sfc_main$b = {
                       class: "space-y-4 pt-4"
                     }, [
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "edit-title" }, {
+                        createVNode(unref(_sfc_main$M), { for: "edit-title" }, {
                           default: withCtx(() => [
                             createTextVNode("Task Title")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1B), {
+                        createVNode(unref(_sfc_main$1C), {
                           id: "edit-title",
                           modelValue: unref(form).title,
                           "onUpdate:modelValue": ($event) => unref(form).title = $event
                         }, null, 8, ["modelValue", "onUpdate:modelValue"])
                       ]),
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "edit-description" }, {
+                        createVNode(unref(_sfc_main$M), { for: "edit-description" }, {
                           default: withCtx(() => [
                             createTextVNode("Description")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$J), {
+                        createVNode(unref(_sfc_main$K), {
                           id: "edit-description",
                           modelValue: unref(form).description,
                           "onUpdate:modelValue": ($event) => unref(form).description = $event
@@ -10919,13 +10919,13 @@ const _sfc_main$b = {
                       ]),
                       createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "edit-due_date" }, {
+                          createVNode(unref(_sfc_main$M), { for: "edit-due_date" }, {
                             default: withCtx(() => [
                               createTextVNode("Due Date")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "edit-due_date",
                             modelValue: unref(form).due_date,
                             "onUpdate:modelValue": ($event) => unref(form).due_date = $event,
@@ -10933,27 +10933,27 @@ const _sfc_main$b = {
                           }, null, 8, ["modelValue", "onUpdate:modelValue"])
                         ]),
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "edit-assigned_to_id" }, {
+                          createVNode(unref(_sfc_main$M), { for: "edit-assigned_to_id" }, {
                             default: withCtx(() => [
                               createTextVNode("Assign To")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$G), {
+                          createVNode(unref(_sfc_main$H), {
                             modelValue: unref(form).assigned_to_id,
                             "onUpdate:modelValue": ($event) => unref(form).assigned_to_id = $event
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$B), null, {
+                              createVNode(unref(_sfc_main$C), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                                  createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$F), null, {
+                              createVNode(unref(_sfc_main$G), null, {
                                 default: withCtx(() => [
                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.members, (member) => {
-                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                       key: member.id,
                                       value: member.id
                                     }, {
@@ -10971,27 +10971,27 @@ const _sfc_main$b = {
                           }, 8, ["modelValue", "onUpdate:modelValue"])
                         ]),
                         createVNode("div", { class: "space-y-2" }, [
-                          createVNode(unref(_sfc_main$L), { for: "edit-priority" }, {
+                          createVNode(unref(_sfc_main$M), { for: "edit-priority" }, {
                             default: withCtx(() => [
                               createTextVNode("Priority")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$G), {
+                          createVNode(unref(_sfc_main$H), {
                             modelValue: unref(form).priority,
                             "onUpdate:modelValue": ($event) => unref(form).priority = $event
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$B), null, {
+                              createVNode(unref(_sfc_main$C), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                                  createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$F), null, {
+                              createVNode(unref(_sfc_main$G), null, {
                                 default: withCtx(() => [
                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                       key: priority.value,
                                       value: priority.value
                                     }, {
@@ -11009,7 +11009,7 @@ const _sfc_main$b = {
                           }, 8, ["modelValue", "onUpdate:modelValue"])
                         ])
                       ]),
-                      createVNode(unref(_sfc_main$1p), {
+                      createVNode(unref(_sfc_main$1q), {
                         type: "submit",
                         disabled: unref(form).processing
                       }, {
@@ -11026,11 +11026,11 @@ const _sfc_main$b = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$t), { class: "sm:max-w-[625px]" }, {
+              createVNode(unref(_sfc_main$u), { class: "sm:max-w-[625px]" }, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$r), null, {
+                  createVNode(unref(_sfc_main$s), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$q), null, {
+                      createVNode(unref(_sfc_main$r), null, {
                         default: withCtx(() => [
                           createTextVNode("Edit Task")
                         ]),
@@ -11044,26 +11044,26 @@ const _sfc_main$b = {
                     class: "space-y-4 pt-4"
                   }, [
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "edit-title" }, {
+                      createVNode(unref(_sfc_main$M), { for: "edit-title" }, {
                         default: withCtx(() => [
                           createTextVNode("Task Title")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$1B), {
+                      createVNode(unref(_sfc_main$1C), {
                         id: "edit-title",
                         modelValue: unref(form).title,
                         "onUpdate:modelValue": ($event) => unref(form).title = $event
                       }, null, 8, ["modelValue", "onUpdate:modelValue"])
                     ]),
                     createVNode("div", { class: "space-y-2" }, [
-                      createVNode(unref(_sfc_main$L), { for: "edit-description" }, {
+                      createVNode(unref(_sfc_main$M), { for: "edit-description" }, {
                         default: withCtx(() => [
                           createTextVNode("Description")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$J), {
+                      createVNode(unref(_sfc_main$K), {
                         id: "edit-description",
                         modelValue: unref(form).description,
                         "onUpdate:modelValue": ($event) => unref(form).description = $event
@@ -11071,13 +11071,13 @@ const _sfc_main$b = {
                     ]),
                     createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "edit-due_date" }, {
+                        createVNode(unref(_sfc_main$M), { for: "edit-due_date" }, {
                           default: withCtx(() => [
                             createTextVNode("Due Date")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1B), {
+                        createVNode(unref(_sfc_main$1C), {
                           id: "edit-due_date",
                           modelValue: unref(form).due_date,
                           "onUpdate:modelValue": ($event) => unref(form).due_date = $event,
@@ -11085,27 +11085,27 @@ const _sfc_main$b = {
                         }, null, 8, ["modelValue", "onUpdate:modelValue"])
                       ]),
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "edit-assigned_to_id" }, {
+                        createVNode(unref(_sfc_main$M), { for: "edit-assigned_to_id" }, {
                           default: withCtx(() => [
                             createTextVNode("Assign To")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$G), {
+                        createVNode(unref(_sfc_main$H), {
                           modelValue: unref(form).assigned_to_id,
                           "onUpdate:modelValue": ($event) => unref(form).assigned_to_id = $event
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$B), null, {
+                            createVNode(unref(_sfc_main$C), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select a member" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select a member" })
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$F), null, {
+                            createVNode(unref(_sfc_main$G), null, {
                               default: withCtx(() => [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.members, (member) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: member.id,
                                     value: member.id
                                   }, {
@@ -11123,27 +11123,27 @@ const _sfc_main$b = {
                         }, 8, ["modelValue", "onUpdate:modelValue"])
                       ]),
                       createVNode("div", { class: "space-y-2" }, [
-                        createVNode(unref(_sfc_main$L), { for: "edit-priority" }, {
+                        createVNode(unref(_sfc_main$M), { for: "edit-priority" }, {
                           default: withCtx(() => [
                             createTextVNode("Priority")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$G), {
+                        createVNode(unref(_sfc_main$H), {
                           modelValue: unref(form).priority,
                           "onUpdate:modelValue": ($event) => unref(form).priority = $event
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$B), null, {
+                            createVNode(unref(_sfc_main$C), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Select priority" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Select priority" })
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$F), null, {
+                            createVNode(unref(_sfc_main$G), null, {
                               default: withCtx(() => [
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: priority.value,
                                     value: priority.value
                                   }, {
@@ -11161,7 +11161,7 @@ const _sfc_main$b = {
                         }, 8, ["modelValue", "onUpdate:modelValue"])
                       ])
                     ]),
-                    createVNode(unref(_sfc_main$1p), {
+                    createVNode(unref(_sfc_main$1q), {
                       type: "submit",
                       disabled: unref(form).processing
                     }, {
@@ -11182,17 +11182,25 @@ const _sfc_main$b = {
     };
   }
 };
-const _sfc_setup$b = _sfc_main$b.setup;
-_sfc_main$b.setup = (props, ctx) => {
+const _sfc_setup$c = _sfc_main$c.setup;
+_sfc_main$c.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/task/edit-task-dialog.vue");
-  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
+  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
 class DateHelper {
-  formatDate(dateString) {
+  formatDate(dateString, dateFormat = "MMM d") {
     if (!dateString) return "N/A";
     try {
-      return format(parseISO(dateString), "MMM d");
+      return format(parseISO(dateString), dateFormat);
+    } catch (e) {
+      return dateString;
+    }
+  }
+  relativeTime(dateString, suffix = true) {
+    if (!dateString) return "N/A";
+    try {
+      return formatDistanceToNow(parseISO(dateString), { addSuffix: suffix });
     } catch (e) {
       return dateString;
     }
@@ -11249,7 +11257,7 @@ class TaskHelper {
     }
   }
 }
-const _sfc_main$a = {
+const _sfc_main$b = {
   __name: "task-list-view",
   __ssrInlineRender: true,
   props: {
@@ -11257,22 +11265,22 @@ const _sfc_main$a = {
     taskStatuses: Array,
     taskPriorities: Array
   },
-  emits: ["editTask", "deleteTask", "updateTask"],
+  emits: ["editTask", "deleteTask", "updateTask", "viewTask"],
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     const dateHelper = new DateHelper();
     const taskHelper = new TaskHelper();
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(_sfc_main$T), _attrs, {
+      _push(ssrRenderComponent(unref(_sfc_main$U), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$O), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$P), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$Q), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$R), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Task`);
@@ -11284,7 +11292,7 @@ const _sfc_main$a = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Assigned To`);
@@ -11296,7 +11304,7 @@ const _sfc_main$a = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Due Date`);
@@ -11308,7 +11316,7 @@ const _sfc_main$a = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Status`);
@@ -11320,7 +11328,7 @@ const _sfc_main$a = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Priority`);
@@ -11332,7 +11340,7 @@ const _sfc_main$a = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$P), { class: "text-right" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Q), { class: "text-right" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Actions`);
@@ -11346,37 +11354,37 @@ const _sfc_main$a = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Task")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Assigned To")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Due Date")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Status")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$P), null, {
+                          createVNode(unref(_sfc_main$Q), null, {
                             default: withCtx(() => [
                               createTextVNode("Priority")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$P), { class: "text-right" }, {
+                          createVNode(unref(_sfc_main$Q), { class: "text-right" }, {
                             default: withCtx(() => [
                               createTextVNode("Actions")
                             ]),
@@ -11389,39 +11397,39 @@ const _sfc_main$a = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$Q), null, {
+                    createVNode(unref(_sfc_main$R), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Task")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Assigned To")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Due Date")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Status")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$P), null, {
+                        createVNode(unref(_sfc_main$Q), null, {
                           default: withCtx(() => [
                             createTextVNode("Priority")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$P), { class: "text-right" }, {
+                        createVNode(unref(_sfc_main$Q), { class: "text-right" }, {
                           default: withCtx(() => [
                             createTextVNode("Actions")
                           ]),
@@ -11435,18 +11443,19 @@ const _sfc_main$a = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$S), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$T), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   if (__props.tasks.length > 0) {
                     _push3(`<!--[-->`);
                     ssrRenderList(__props.tasks, (task) => {
-                      _push3(ssrRenderComponent(unref(_sfc_main$Q), {
-                        key: task.id
+                      _push3(ssrRenderComponent(unref(_sfc_main$R), {
+                        key: task.id,
+                        onClick: ($event) => emit("viewTask", task)
                       }, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
-                            _push4(ssrRenderComponent(unref(_sfc_main$R), { class: "font-medium" }, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$S), { class: "font-medium" }, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
                                   _push5(`${ssrInterpolate(task.title)}`);
@@ -11458,7 +11467,7 @@ const _sfc_main$a = {
                               }),
                               _: 2
                             }, _parent4, _scopeId3));
-                            _push4(ssrRenderComponent(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 var _a, _b;
                                 if (_push5) {
@@ -11471,7 +11480,7 @@ const _sfc_main$a = {
                               }),
                               _: 2
                             }, _parent4, _scopeId3));
-                            _push4(ssrRenderComponent(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
                                   _push5(`${ssrInterpolate(unref(dateHelper).formatDate(task.due_date))}`);
@@ -11483,24 +11492,24 @@ const _sfc_main$a = {
                               }),
                               _: 2
                             }, _parent4, _scopeId3));
-                            _push4(ssrRenderComponent(unref(_sfc_main$R), null, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$S), null, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
-                                  _push5(ssrRenderComponent(unref(_sfc_main$G), {
+                                  _push5(ssrRenderComponent(unref(_sfc_main$H), {
                                     "model-value": task.status.value,
                                     "onUpdate:modelValue": (newStatus) => emit("updateTask", task, { status: newStatus })
                                   }, {
                                     default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                       if (_push6) {
-                                        _push6(ssrRenderComponent(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                        _push6(ssrRenderComponent(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
-                                              _push7(ssrRenderComponent(unref(_sfc_main$A), {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$B), {
                                                 placeholder: unref(taskHelper).getStatusLabel(task.status)
                                               }, null, _parent7, _scopeId6));
                                             } else {
                                               return [
-                                                createVNode(unref(_sfc_main$A), {
+                                                createVNode(unref(_sfc_main$B), {
                                                   placeholder: unref(taskHelper).getStatusLabel(task.status)
                                                 }, null, 8, ["placeholder"])
                                               ];
@@ -11508,12 +11517,12 @@ const _sfc_main$a = {
                                           }),
                                           _: 2
                                         }, _parent6, _scopeId5));
-                                        _push6(ssrRenderComponent(unref(_sfc_main$F), null, {
+                                        _push6(ssrRenderComponent(unref(_sfc_main$G), null, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
                                               _push7(`<!--[-->`);
                                               ssrRenderList(__props.taskStatuses, (status) => {
-                                                _push7(ssrRenderComponent(unref(_sfc_main$E), {
+                                                _push7(ssrRenderComponent(unref(_sfc_main$F), {
                                                   key: status.value,
                                                   value: status.value
                                                 }, {
@@ -11533,7 +11542,7 @@ const _sfc_main$a = {
                                             } else {
                                               return [
                                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                                     key: status.value,
                                                     value: status.value
                                                   }, {
@@ -11550,18 +11559,18 @@ const _sfc_main$a = {
                                         }, _parent6, _scopeId5));
                                       } else {
                                         return [
-                                          createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                          createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$A), {
+                                              createVNode(unref(_sfc_main$B), {
                                                 placeholder: unref(taskHelper).getStatusLabel(task.status)
                                               }, null, 8, ["placeholder"])
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$F), null, {
+                                          createVNode(unref(_sfc_main$G), null, {
                                             default: withCtx(() => [
                                               (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                                   key: status.value,
                                                   value: status.value
                                                 }, {
@@ -11581,23 +11590,23 @@ const _sfc_main$a = {
                                   }, _parent5, _scopeId4));
                                 } else {
                                   return [
-                                    createVNode(unref(_sfc_main$G), {
+                                    createVNode(unref(_sfc_main$H), {
                                       "model-value": task.status.value,
                                       "onUpdate:modelValue": (newStatus) => emit("updateTask", task, { status: newStatus })
                                     }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                        createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$A), {
+                                            createVNode(unref(_sfc_main$B), {
                                               placeholder: unref(taskHelper).getStatusLabel(task.status)
                                             }, null, 8, ["placeholder"])
                                           ]),
                                           _: 2
                                         }, 1024),
-                                        createVNode(unref(_sfc_main$F), null, {
+                                        createVNode(unref(_sfc_main$G), null, {
                                           default: withCtx(() => [
                                             (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                              return openBlock(), createBlock(unref(_sfc_main$E), {
+                                              return openBlock(), createBlock(unref(_sfc_main$F), {
                                                 key: status.value,
                                                 value: status.value
                                               }, {
@@ -11618,24 +11627,24 @@ const _sfc_main$a = {
                               }),
                               _: 2
                             }, _parent4, _scopeId3));
-                            _push4(ssrRenderComponent(unref(_sfc_main$R), null, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$S), null, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
-                                  _push5(ssrRenderComponent(unref(_sfc_main$G), {
+                                  _push5(ssrRenderComponent(unref(_sfc_main$H), {
                                     "model-value": task.priority.value,
                                     "onUpdate:modelValue": (newPriority) => emit("updateTask", task, { priority: newPriority })
                                   }, {
                                     default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                       if (_push6) {
-                                        _push6(ssrRenderComponent(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                        _push6(ssrRenderComponent(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
-                                              _push7(ssrRenderComponent(unref(_sfc_main$A), {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$B), {
                                                 placeholder: unref(taskHelper).getPriorityLabel(task.priority)
                                               }, null, _parent7, _scopeId6));
                                             } else {
                                               return [
-                                                createVNode(unref(_sfc_main$A), {
+                                                createVNode(unref(_sfc_main$B), {
                                                   placeholder: unref(taskHelper).getPriorityLabel(task.priority)
                                                 }, null, 8, ["placeholder"])
                                               ];
@@ -11643,12 +11652,12 @@ const _sfc_main$a = {
                                           }),
                                           _: 2
                                         }, _parent6, _scopeId5));
-                                        _push6(ssrRenderComponent(unref(_sfc_main$F), null, {
+                                        _push6(ssrRenderComponent(unref(_sfc_main$G), null, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
                                               _push7(`<!--[-->`);
                                               ssrRenderList(__props.taskPriorities, (priority) => {
-                                                _push7(ssrRenderComponent(unref(_sfc_main$E), {
+                                                _push7(ssrRenderComponent(unref(_sfc_main$F), {
                                                   key: priority.value,
                                                   value: priority.value
                                                 }, {
@@ -11668,7 +11677,7 @@ const _sfc_main$a = {
                                             } else {
                                               return [
                                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                                     key: priority.value,
                                                     value: priority.value
                                                   }, {
@@ -11685,18 +11694,18 @@ const _sfc_main$a = {
                                         }, _parent6, _scopeId5));
                                       } else {
                                         return [
-                                          createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                          createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$A), {
+                                              createVNode(unref(_sfc_main$B), {
                                                 placeholder: unref(taskHelper).getPriorityLabel(task.priority)
                                               }, null, 8, ["placeholder"])
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$F), null, {
+                                          createVNode(unref(_sfc_main$G), null, {
                                             default: withCtx(() => [
                                               (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                                   key: priority.value,
                                                   value: priority.value
                                                 }, {
@@ -11716,23 +11725,23 @@ const _sfc_main$a = {
                                   }, _parent5, _scopeId4));
                                 } else {
                                   return [
-                                    createVNode(unref(_sfc_main$G), {
+                                    createVNode(unref(_sfc_main$H), {
                                       "model-value": task.priority.value,
                                       "onUpdate:modelValue": (newPriority) => emit("updateTask", task, { priority: newPriority })
                                     }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                        createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$A), {
+                                            createVNode(unref(_sfc_main$B), {
                                               placeholder: unref(taskHelper).getPriorityLabel(task.priority)
                                             }, null, 8, ["placeholder"])
                                           ]),
                                           _: 2
                                         }, 1024),
-                                        createVNode(unref(_sfc_main$F), null, {
+                                        createVNode(unref(_sfc_main$G), null, {
                                           default: withCtx(() => [
                                             (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                              return openBlock(), createBlock(unref(_sfc_main$E), {
+                                              return openBlock(), createBlock(unref(_sfc_main$F), {
                                                 key: priority.value,
                                                 value: priority.value
                                               }, {
@@ -11753,16 +11762,16 @@ const _sfc_main$a = {
                               }),
                               _: 2
                             }, _parent4, _scopeId3));
-                            _push4(ssrRenderComponent(unref(_sfc_main$R), { class: "text-right" }, {
+                            _push4(ssrRenderComponent(unref(_sfc_main$S), { class: "text-right" }, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
-                                  _push5(ssrRenderComponent(unref(_sfc_main$1i), null, {
+                                  _push5(ssrRenderComponent(unref(_sfc_main$1j), null, {
                                     default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                       if (_push6) {
-                                        _push6(ssrRenderComponent(unref(_sfc_main$1b), { "as-child": "" }, {
+                                        _push6(ssrRenderComponent(unref(_sfc_main$1c), { "as-child": "" }, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
-                                              _push7(ssrRenderComponent(unref(_sfc_main$1p), {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$1q), {
                                                 variant: "ghost",
                                                 size: "icon",
                                                 class: "h-8 w-8"
@@ -11780,7 +11789,7 @@ const _sfc_main$a = {
                                               }, _parent7, _scopeId6));
                                             } else {
                                               return [
-                                                createVNode(unref(_sfc_main$1p), {
+                                                createVNode(unref(_sfc_main$1q), {
                                                   variant: "ghost",
                                                   size: "icon",
                                                   class: "h-8 w-8"
@@ -11795,10 +11804,10 @@ const _sfc_main$a = {
                                           }),
                                           _: 2
                                         }, _parent6, _scopeId5));
-                                        _push6(ssrRenderComponent(unref(_sfc_main$1h), null, {
+                                        _push6(ssrRenderComponent(unref(_sfc_main$1i), null, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
-                                              _push7(ssrRenderComponent(unref(_sfc_main$1f), {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$1g), {
                                                 onClick: ($event) => emit("editTask", task)
                                               }, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
@@ -11814,13 +11823,13 @@ const _sfc_main$a = {
                                                 }),
                                                 _: 2
                                               }, _parent7, _scopeId6));
-                                              _push7(ssrRenderComponent(unref(_sfc_main$m), null, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$n), null, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
-                                                    _push8(ssrRenderComponent(unref(_sfc_main$e), { "as-child": "" }, {
+                                                    _push8(ssrRenderComponent(unref(_sfc_main$f), { "as-child": "" }, {
                                                       default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                         if (_push9) {
-                                                          _push9(ssrRenderComponent(unref(_sfc_main$1f), {
+                                                          _push9(ssrRenderComponent(unref(_sfc_main$1g), {
                                                             onSelect: () => {
                                                             },
                                                             class: "text-destructive"
@@ -11840,7 +11849,7 @@ const _sfc_main$a = {
                                                           }, _parent9, _scopeId8));
                                                         } else {
                                                           return [
-                                                            createVNode(unref(_sfc_main$1f), {
+                                                            createVNode(unref(_sfc_main$1g), {
                                                               onSelect: withModifiers(() => {
                                                               }, ["prevent"]),
                                                               class: "text-destructive"
@@ -11856,13 +11865,13 @@ const _sfc_main$a = {
                                                       }),
                                                       _: 2
                                                     }, _parent8, _scopeId7));
-                                                    _push8(ssrRenderComponent(unref(_sfc_main$j), null, {
+                                                    _push8(ssrRenderComponent(unref(_sfc_main$k), null, {
                                                       default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                         if (_push9) {
-                                                          _push9(ssrRenderComponent(unref(_sfc_main$g), null, {
+                                                          _push9(ssrRenderComponent(unref(_sfc_main$h), null, {
                                                             default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                               if (_push10) {
-                                                                _push10(ssrRenderComponent(unref(_sfc_main$f), null, {
+                                                                _push10(ssrRenderComponent(unref(_sfc_main$g), null, {
                                                                   default: withCtx((_10, _push11, _parent11, _scopeId10) => {
                                                                     if (_push11) {
                                                                       _push11(`Delete Task?`);
@@ -11874,7 +11883,7 @@ const _sfc_main$a = {
                                                                   }),
                                                                   _: 2
                                                                 }, _parent10, _scopeId9));
-                                                                _push10(ssrRenderComponent(unref(_sfc_main$i), null, {
+                                                                _push10(ssrRenderComponent(unref(_sfc_main$j), null, {
                                                                   default: withCtx((_10, _push11, _parent11, _scopeId10) => {
                                                                     if (_push11) {
                                                                       _push11(` This action cannot be undone. `);
@@ -11888,13 +11897,13 @@ const _sfc_main$a = {
                                                                 }, _parent10, _scopeId9));
                                                               } else {
                                                                 return [
-                                                                  createVNode(unref(_sfc_main$f), null, {
+                                                                  createVNode(unref(_sfc_main$g), null, {
                                                                     default: withCtx(() => [
                                                                       createTextVNode("Delete Task?")
                                                                     ]),
                                                                     _: 1
                                                                   }),
-                                                                  createVNode(unref(_sfc_main$i), null, {
+                                                                  createVNode(unref(_sfc_main$j), null, {
                                                                     default: withCtx(() => [
                                                                       createTextVNode(" This action cannot be undone. ")
                                                                     ]),
@@ -11905,10 +11914,10 @@ const _sfc_main$a = {
                                                             }),
                                                             _: 2
                                                           }, _parent9, _scopeId8));
-                                                          _push9(ssrRenderComponent(unref(_sfc_main$h), null, {
+                                                          _push9(ssrRenderComponent(unref(_sfc_main$i), null, {
                                                             default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                               if (_push10) {
-                                                                _push10(ssrRenderComponent(unref(_sfc_main$k), null, {
+                                                                _push10(ssrRenderComponent(unref(_sfc_main$l), null, {
                                                                   default: withCtx((_10, _push11, _parent11, _scopeId10) => {
                                                                     if (_push11) {
                                                                       _push11(`Cancel`);
@@ -11920,7 +11929,7 @@ const _sfc_main$a = {
                                                                   }),
                                                                   _: 2
                                                                 }, _parent10, _scopeId9));
-                                                                _push10(ssrRenderComponent(unref(_sfc_main$l), {
+                                                                _push10(ssrRenderComponent(unref(_sfc_main$m), {
                                                                   onClick: ($event) => emit("deleteTask", task)
                                                                 }, {
                                                                   default: withCtx((_10, _push11, _parent11, _scopeId10) => {
@@ -11936,13 +11945,13 @@ const _sfc_main$a = {
                                                                 }, _parent10, _scopeId9));
                                                               } else {
                                                                 return [
-                                                                  createVNode(unref(_sfc_main$k), null, {
+                                                                  createVNode(unref(_sfc_main$l), null, {
                                                                     default: withCtx(() => [
                                                                       createTextVNode("Cancel")
                                                                     ]),
                                                                     _: 1
                                                                   }),
-                                                                  createVNode(unref(_sfc_main$l), {
+                                                                  createVNode(unref(_sfc_main$m), {
                                                                     onClick: ($event) => emit("deleteTask", task)
                                                                   }, {
                                                                     default: withCtx(() => [
@@ -11957,15 +11966,15 @@ const _sfc_main$a = {
                                                           }, _parent9, _scopeId8));
                                                         } else {
                                                           return [
-                                                            createVNode(unref(_sfc_main$g), null, {
+                                                            createVNode(unref(_sfc_main$h), null, {
                                                               default: withCtx(() => [
-                                                                createVNode(unref(_sfc_main$f), null, {
+                                                                createVNode(unref(_sfc_main$g), null, {
                                                                   default: withCtx(() => [
                                                                     createTextVNode("Delete Task?")
                                                                   ]),
                                                                   _: 1
                                                                 }),
-                                                                createVNode(unref(_sfc_main$i), null, {
+                                                                createVNode(unref(_sfc_main$j), null, {
                                                                   default: withCtx(() => [
                                                                     createTextVNode(" This action cannot be undone. ")
                                                                   ]),
@@ -11974,15 +11983,15 @@ const _sfc_main$a = {
                                                               ]),
                                                               _: 1
                                                             }),
-                                                            createVNode(unref(_sfc_main$h), null, {
+                                                            createVNode(unref(_sfc_main$i), null, {
                                                               default: withCtx(() => [
-                                                                createVNode(unref(_sfc_main$k), null, {
+                                                                createVNode(unref(_sfc_main$l), null, {
                                                                   default: withCtx(() => [
                                                                     createTextVNode("Cancel")
                                                                   ]),
                                                                   _: 1
                                                                 }),
-                                                                createVNode(unref(_sfc_main$l), {
+                                                                createVNode(unref(_sfc_main$m), {
                                                                   onClick: ($event) => emit("deleteTask", task)
                                                                 }, {
                                                                   default: withCtx(() => [
@@ -12000,9 +12009,9 @@ const _sfc_main$a = {
                                                     }, _parent8, _scopeId7));
                                                   } else {
                                                     return [
-                                                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                         default: withCtx(() => [
-                                                          createVNode(unref(_sfc_main$1f), {
+                                                          createVNode(unref(_sfc_main$1g), {
                                                             onSelect: withModifiers(() => {
                                                             }, ["prevent"]),
                                                             class: "text-destructive"
@@ -12016,17 +12025,17 @@ const _sfc_main$a = {
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$j), null, {
+                                                      createVNode(unref(_sfc_main$k), null, {
                                                         default: withCtx(() => [
-                                                          createVNode(unref(_sfc_main$g), null, {
+                                                          createVNode(unref(_sfc_main$h), null, {
                                                             default: withCtx(() => [
-                                                              createVNode(unref(_sfc_main$f), null, {
+                                                              createVNode(unref(_sfc_main$g), null, {
                                                                 default: withCtx(() => [
                                                                   createTextVNode("Delete Task?")
                                                                 ]),
                                                                 _: 1
                                                               }),
-                                                              createVNode(unref(_sfc_main$i), null, {
+                                                              createVNode(unref(_sfc_main$j), null, {
                                                                 default: withCtx(() => [
                                                                   createTextVNode(" This action cannot be undone. ")
                                                                 ]),
@@ -12035,15 +12044,15 @@ const _sfc_main$a = {
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$h), null, {
+                                                          createVNode(unref(_sfc_main$i), null, {
                                                             default: withCtx(() => [
-                                                              createVNode(unref(_sfc_main$k), null, {
+                                                              createVNode(unref(_sfc_main$l), null, {
                                                                 default: withCtx(() => [
                                                                   createTextVNode("Cancel")
                                                                 ]),
                                                                 _: 1
                                                               }),
-                                                              createVNode(unref(_sfc_main$l), {
+                                                              createVNode(unref(_sfc_main$m), {
                                                                 onClick: ($event) => emit("deleteTask", task)
                                                               }, {
                                                                 default: withCtx(() => [
@@ -12064,7 +12073,7 @@ const _sfc_main$a = {
                                               }, _parent7, _scopeId6));
                                             } else {
                                               return [
-                                                createVNode(unref(_sfc_main$1f), {
+                                                createVNode(unref(_sfc_main$1g), {
                                                   onClick: ($event) => emit("editTask", task)
                                                 }, {
                                                   default: withCtx(() => [
@@ -12073,11 +12082,11 @@ const _sfc_main$a = {
                                                   ]),
                                                   _: 2
                                                 }, 1032, ["onClick"]),
-                                                createVNode(unref(_sfc_main$m), null, {
+                                                createVNode(unref(_sfc_main$n), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                                    createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$1f), {
+                                                        createVNode(unref(_sfc_main$1g), {
                                                           onSelect: withModifiers(() => {
                                                           }, ["prevent"]),
                                                           class: "text-destructive"
@@ -12091,17 +12100,17 @@ const _sfc_main$a = {
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$j), null, {
+                                                    createVNode(unref(_sfc_main$k), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$g), null, {
+                                                        createVNode(unref(_sfc_main$h), null, {
                                                           default: withCtx(() => [
-                                                            createVNode(unref(_sfc_main$f), null, {
+                                                            createVNode(unref(_sfc_main$g), null, {
                                                               default: withCtx(() => [
                                                                 createTextVNode("Delete Task?")
                                                               ]),
                                                               _: 1
                                                             }),
-                                                            createVNode(unref(_sfc_main$i), null, {
+                                                            createVNode(unref(_sfc_main$j), null, {
                                                               default: withCtx(() => [
                                                                 createTextVNode(" This action cannot be undone. ")
                                                               ]),
@@ -12110,15 +12119,15 @@ const _sfc_main$a = {
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$h), null, {
+                                                        createVNode(unref(_sfc_main$i), null, {
                                                           default: withCtx(() => [
-                                                            createVNode(unref(_sfc_main$k), null, {
+                                                            createVNode(unref(_sfc_main$l), null, {
                                                               default: withCtx(() => [
                                                                 createTextVNode("Cancel")
                                                               ]),
                                                               _: 1
                                                             }),
-                                                            createVNode(unref(_sfc_main$l), {
+                                                            createVNode(unref(_sfc_main$m), {
                                                               onClick: ($event) => emit("deleteTask", task)
                                                             }, {
                                                               default: withCtx(() => [
@@ -12142,9 +12151,9 @@ const _sfc_main$a = {
                                         }, _parent6, _scopeId5));
                                       } else {
                                         return [
-                                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$1p), {
+                                              createVNode(unref(_sfc_main$1q), {
                                                 variant: "ghost",
                                                 size: "icon",
                                                 class: "h-8 w-8"
@@ -12157,9 +12166,9 @@ const _sfc_main$a = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$1h), null, {
+                                          createVNode(unref(_sfc_main$1i), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$1f), {
+                                              createVNode(unref(_sfc_main$1g), {
                                                 onClick: ($event) => emit("editTask", task)
                                               }, {
                                                 default: withCtx(() => [
@@ -12168,11 +12177,11 @@ const _sfc_main$a = {
                                                 ]),
                                                 _: 2
                                               }, 1032, ["onClick"]),
-                                              createVNode(unref(_sfc_main$m), null, {
+                                              createVNode(unref(_sfc_main$n), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                                  createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$1f), {
+                                                      createVNode(unref(_sfc_main$1g), {
                                                         onSelect: withModifiers(() => {
                                                         }, ["prevent"]),
                                                         class: "text-destructive"
@@ -12186,17 +12195,17 @@ const _sfc_main$a = {
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$j), null, {
+                                                  createVNode(unref(_sfc_main$k), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$g), null, {
+                                                      createVNode(unref(_sfc_main$h), null, {
                                                         default: withCtx(() => [
-                                                          createVNode(unref(_sfc_main$f), null, {
+                                                          createVNode(unref(_sfc_main$g), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Delete Task?")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$i), null, {
+                                                          createVNode(unref(_sfc_main$j), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode(" This action cannot be undone. ")
                                                             ]),
@@ -12205,15 +12214,15 @@ const _sfc_main$a = {
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$h), null, {
+                                                      createVNode(unref(_sfc_main$i), null, {
                                                         default: withCtx(() => [
-                                                          createVNode(unref(_sfc_main$k), null, {
+                                                          createVNode(unref(_sfc_main$l), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Cancel")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$l), {
+                                                          createVNode(unref(_sfc_main$m), {
                                                             onClick: ($event) => emit("deleteTask", task)
                                                           }, {
                                                             default: withCtx(() => [
@@ -12240,11 +12249,11 @@ const _sfc_main$a = {
                                   }, _parent5, _scopeId4));
                                 } else {
                                   return [
-                                    createVNode(unref(_sfc_main$1i), null, {
+                                    createVNode(unref(_sfc_main$1j), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                                        createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$1p), {
+                                            createVNode(unref(_sfc_main$1q), {
                                               variant: "ghost",
                                               size: "icon",
                                               class: "h-8 w-8"
@@ -12257,9 +12266,9 @@ const _sfc_main$a = {
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$1h), null, {
+                                        createVNode(unref(_sfc_main$1i), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$1f), {
+                                            createVNode(unref(_sfc_main$1g), {
                                               onClick: ($event) => emit("editTask", task)
                                             }, {
                                               default: withCtx(() => [
@@ -12268,11 +12277,11 @@ const _sfc_main$a = {
                                               ]),
                                               _: 2
                                             }, 1032, ["onClick"]),
-                                            createVNode(unref(_sfc_main$m), null, {
+                                            createVNode(unref(_sfc_main$n), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                                createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$1f), {
+                                                    createVNode(unref(_sfc_main$1g), {
                                                       onSelect: withModifiers(() => {
                                                       }, ["prevent"]),
                                                       class: "text-destructive"
@@ -12286,17 +12295,17 @@ const _sfc_main$a = {
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$j), null, {
+                                                createVNode(unref(_sfc_main$k), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$g), null, {
+                                                    createVNode(unref(_sfc_main$h), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$f), null, {
+                                                        createVNode(unref(_sfc_main$g), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Delete Task?")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$i), null, {
+                                                        createVNode(unref(_sfc_main$j), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode(" This action cannot be undone. ")
                                                           ]),
@@ -12305,15 +12314,15 @@ const _sfc_main$a = {
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$h), null, {
+                                                    createVNode(unref(_sfc_main$i), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$k), null, {
+                                                        createVNode(unref(_sfc_main$l), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Cancel")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$l), {
+                                                        createVNode(unref(_sfc_main$m), {
                                                           onClick: ($event) => emit("deleteTask", task)
                                                         }, {
                                                           default: withCtx(() => [
@@ -12343,13 +12352,13 @@ const _sfc_main$a = {
                             }, _parent4, _scopeId3));
                           } else {
                             return [
-                              createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                              createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                                 default: withCtx(() => [
                                   createTextVNode(toDisplayString(task.title), 1)
                                 ]),
                                 _: 2
                               }, 1024),
-                              createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                              createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                 default: withCtx(() => {
                                   var _a;
                                   return [
@@ -12358,31 +12367,31 @@ const _sfc_main$a = {
                                 }),
                                 _: 2
                               }, 1024),
-                              createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                              createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                 default: withCtx(() => [
                                   createTextVNode(toDisplayString(unref(dateHelper).formatDate(task.due_date)), 1)
                                 ]),
                                 _: 2
                               }, 1024),
-                              createVNode(unref(_sfc_main$R), null, {
+                              createVNode(unref(_sfc_main$S), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$G), {
+                                  createVNode(unref(_sfc_main$H), {
                                     "model-value": task.status.value,
                                     "onUpdate:modelValue": (newStatus) => emit("updateTask", task, { status: newStatus })
                                   }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                      createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$A), {
+                                          createVNode(unref(_sfc_main$B), {
                                             placeholder: unref(taskHelper).getStatusLabel(task.status)
                                           }, null, 8, ["placeholder"])
                                         ]),
                                         _: 2
                                       }, 1024),
-                                      createVNode(unref(_sfc_main$F), null, {
+                                      createVNode(unref(_sfc_main$G), null, {
                                         default: withCtx(() => [
                                           (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                            return openBlock(), createBlock(unref(_sfc_main$E), {
+                                            return openBlock(), createBlock(unref(_sfc_main$F), {
                                               key: status.value,
                                               value: status.value
                                             }, {
@@ -12401,25 +12410,25 @@ const _sfc_main$a = {
                                 ]),
                                 _: 2
                               }, 1024),
-                              createVNode(unref(_sfc_main$R), null, {
+                              createVNode(unref(_sfc_main$S), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$G), {
+                                  createVNode(unref(_sfc_main$H), {
                                     "model-value": task.priority.value,
                                     "onUpdate:modelValue": (newPriority) => emit("updateTask", task, { priority: newPriority })
                                   }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                      createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$A), {
+                                          createVNode(unref(_sfc_main$B), {
                                             placeholder: unref(taskHelper).getPriorityLabel(task.priority)
                                           }, null, 8, ["placeholder"])
                                         ]),
                                         _: 2
                                       }, 1024),
-                                      createVNode(unref(_sfc_main$F), null, {
+                                      createVNode(unref(_sfc_main$G), null, {
                                         default: withCtx(() => [
                                           (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                            return openBlock(), createBlock(unref(_sfc_main$E), {
+                                            return openBlock(), createBlock(unref(_sfc_main$F), {
                                               key: priority.value,
                                               value: priority.value
                                             }, {
@@ -12438,13 +12447,13 @@ const _sfc_main$a = {
                                 ]),
                                 _: 2
                               }, 1024),
-                              createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                              createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1i), null, {
+                                  createVNode(unref(_sfc_main$1j), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                                      createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1p), {
+                                          createVNode(unref(_sfc_main$1q), {
                                             variant: "ghost",
                                             size: "icon",
                                             class: "h-8 w-8"
@@ -12457,9 +12466,9 @@ const _sfc_main$a = {
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$1h), null, {
+                                      createVNode(unref(_sfc_main$1i), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1f), {
+                                          createVNode(unref(_sfc_main$1g), {
                                             onClick: ($event) => emit("editTask", task)
                                           }, {
                                             default: withCtx(() => [
@@ -12468,11 +12477,11 @@ const _sfc_main$a = {
                                             ]),
                                             _: 2
                                           }, 1032, ["onClick"]),
-                                          createVNode(unref(_sfc_main$m), null, {
+                                          createVNode(unref(_sfc_main$n), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                              createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$1f), {
+                                                  createVNode(unref(_sfc_main$1g), {
                                                     onSelect: withModifiers(() => {
                                                     }, ["prevent"]),
                                                     class: "text-destructive"
@@ -12486,17 +12495,17 @@ const _sfc_main$a = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$j), null, {
+                                              createVNode(unref(_sfc_main$k), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$g), null, {
+                                                  createVNode(unref(_sfc_main$h), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$f), null, {
+                                                      createVNode(unref(_sfc_main$g), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Delete Task?")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$i), null, {
+                                                      createVNode(unref(_sfc_main$j), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode(" This action cannot be undone. ")
                                                         ]),
@@ -12505,15 +12514,15 @@ const _sfc_main$a = {
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$h), null, {
+                                                  createVNode(unref(_sfc_main$i), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$k), null, {
+                                                      createVNode(unref(_sfc_main$l), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Cancel")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$l), {
+                                                      createVNode(unref(_sfc_main$m), {
                                                         onClick: ($event) => emit("deleteTask", task)
                                                       }, {
                                                         default: withCtx(() => [
@@ -12547,10 +12556,10 @@ const _sfc_main$a = {
                     });
                     _push3(`<!--]-->`);
                   } else {
-                    _push3(ssrRenderComponent(unref(_sfc_main$Q), null, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$R), null, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$R), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$S), {
                             colspan: "6",
                             class: "text-center py-12"
                           }, {
@@ -12567,7 +12576,7 @@ const _sfc_main$a = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$R), {
+                            createVNode(unref(_sfc_main$S), {
                               colspan: "6",
                               class: "text-center py-12"
                             }, {
@@ -12585,17 +12594,18 @@ const _sfc_main$a = {
                 } else {
                   return [
                     __props.tasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.tasks, (task) => {
-                      return openBlock(), createBlock(unref(_sfc_main$Q), {
-                        key: task.id
+                      return openBlock(), createBlock(unref(_sfc_main$R), {
+                        key: task.id,
+                        onClick: ($event) => emit("viewTask", task)
                       }, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                          createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                             default: withCtx(() => [
                               createTextVNode(toDisplayString(task.title), 1)
                             ]),
                             _: 2
                           }, 1024),
-                          createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                          createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                             default: withCtx(() => {
                               var _a;
                               return [
@@ -12604,31 +12614,31 @@ const _sfc_main$a = {
                             }),
                             _: 2
                           }, 1024),
-                          createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                          createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                             default: withCtx(() => [
                               createTextVNode(toDisplayString(unref(dateHelper).formatDate(task.due_date)), 1)
                             ]),
                             _: 2
                           }, 1024),
-                          createVNode(unref(_sfc_main$R), null, {
+                          createVNode(unref(_sfc_main$S), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$G), {
+                              createVNode(unref(_sfc_main$H), {
                                 "model-value": task.status.value,
                                 "onUpdate:modelValue": (newStatus) => emit("updateTask", task, { status: newStatus })
                               }, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                  createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$A), {
+                                      createVNode(unref(_sfc_main$B), {
                                         placeholder: unref(taskHelper).getStatusLabel(task.status)
                                       }, null, 8, ["placeholder"])
                                     ]),
                                     _: 2
                                   }, 1024),
-                                  createVNode(unref(_sfc_main$F), null, {
+                                  createVNode(unref(_sfc_main$G), null, {
                                     default: withCtx(() => [
                                       (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                        return openBlock(), createBlock(unref(_sfc_main$E), {
+                                        return openBlock(), createBlock(unref(_sfc_main$F), {
                                           key: status.value,
                                           value: status.value
                                         }, {
@@ -12647,25 +12657,25 @@ const _sfc_main$a = {
                             ]),
                             _: 2
                           }, 1024),
-                          createVNode(unref(_sfc_main$R), null, {
+                          createVNode(unref(_sfc_main$S), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$G), {
+                              createVNode(unref(_sfc_main$H), {
                                 "model-value": task.priority.value,
                                 "onUpdate:modelValue": (newPriority) => emit("updateTask", task, { priority: newPriority })
                               }, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                  createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$A), {
+                                      createVNode(unref(_sfc_main$B), {
                                         placeholder: unref(taskHelper).getPriorityLabel(task.priority)
                                       }, null, 8, ["placeholder"])
                                     ]),
                                     _: 2
                                   }, 1024),
-                                  createVNode(unref(_sfc_main$F), null, {
+                                  createVNode(unref(_sfc_main$G), null, {
                                     default: withCtx(() => [
                                       (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                        return openBlock(), createBlock(unref(_sfc_main$E), {
+                                        return openBlock(), createBlock(unref(_sfc_main$F), {
                                           key: priority.value,
                                           value: priority.value
                                         }, {
@@ -12684,13 +12694,13 @@ const _sfc_main$a = {
                             ]),
                             _: 2
                           }, 1024),
-                          createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                          createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1i), null, {
+                              createVNode(unref(_sfc_main$1j), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                                  createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1p), {
+                                      createVNode(unref(_sfc_main$1q), {
                                         variant: "ghost",
                                         size: "icon",
                                         class: "h-8 w-8"
@@ -12703,9 +12713,9 @@ const _sfc_main$a = {
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$1h), null, {
+                                  createVNode(unref(_sfc_main$1i), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1f), {
+                                      createVNode(unref(_sfc_main$1g), {
                                         onClick: ($event) => emit("editTask", task)
                                       }, {
                                         default: withCtx(() => [
@@ -12714,11 +12724,11 @@ const _sfc_main$a = {
                                         ]),
                                         _: 2
                                       }, 1032, ["onClick"]),
-                                      createVNode(unref(_sfc_main$m), null, {
+                                      createVNode(unref(_sfc_main$n), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                          createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$1f), {
+                                              createVNode(unref(_sfc_main$1g), {
                                                 onSelect: withModifiers(() => {
                                                 }, ["prevent"]),
                                                 class: "text-destructive"
@@ -12732,17 +12742,17 @@ const _sfc_main$a = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$j), null, {
+                                          createVNode(unref(_sfc_main$k), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$g), null, {
+                                              createVNode(unref(_sfc_main$h), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$f), null, {
+                                                  createVNode(unref(_sfc_main$g), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Delete Task?")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$i), null, {
+                                                  createVNode(unref(_sfc_main$j), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode(" This action cannot be undone. ")
                                                     ]),
@@ -12751,15 +12761,15 @@ const _sfc_main$a = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$h), null, {
+                                              createVNode(unref(_sfc_main$i), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$k), null, {
+                                                  createVNode(unref(_sfc_main$l), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Cancel")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$l), {
+                                                  createVNode(unref(_sfc_main$m), {
                                                     onClick: ($event) => emit("deleteTask", task)
                                                   }, {
                                                     default: withCtx(() => [
@@ -12787,10 +12797,10 @@ const _sfc_main$a = {
                           }, 1024)
                         ]),
                         _: 2
-                      }, 1024);
-                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                      }, 1032, ["onClick"]);
+                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$R), {
+                        createVNode(unref(_sfc_main$S), {
                           colspan: "6",
                           class: "text-center py-12"
                         }, {
@@ -12809,41 +12819,41 @@ const _sfc_main$a = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$O), null, {
+              createVNode(unref(_sfc_main$P), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$Q), null, {
+                  createVNode(unref(_sfc_main$R), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Task")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Assigned To")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Due Date")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Status")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$P), null, {
+                      createVNode(unref(_sfc_main$Q), null, {
                         default: withCtx(() => [
                           createTextVNode("Priority")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$P), { class: "text-right" }, {
+                      createVNode(unref(_sfc_main$Q), { class: "text-right" }, {
                         default: withCtx(() => [
                           createTextVNode("Actions")
                         ]),
@@ -12855,20 +12865,21 @@ const _sfc_main$a = {
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$S), null, {
+              createVNode(unref(_sfc_main$T), null, {
                 default: withCtx(() => [
                   __props.tasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.tasks, (task) => {
-                    return openBlock(), createBlock(unref(_sfc_main$Q), {
-                      key: task.id
+                    return openBlock(), createBlock(unref(_sfc_main$R), {
+                      key: task.id,
+                      onClick: ($event) => emit("viewTask", task)
                     }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                        createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                           default: withCtx(() => [
                             createTextVNode(toDisplayString(task.title), 1)
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                        createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                           default: withCtx(() => {
                             var _a;
                             return [
@@ -12877,31 +12888,31 @@ const _sfc_main$a = {
                           }),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                        createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                           default: withCtx(() => [
                             createTextVNode(toDisplayString(unref(dateHelper).formatDate(task.due_date)), 1)
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$R), null, {
+                        createVNode(unref(_sfc_main$S), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$G), {
+                            createVNode(unref(_sfc_main$H), {
                               "model-value": task.status.value,
                               "onUpdate:modelValue": (newStatus) => emit("updateTask", task, { status: newStatus })
                             }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$A), {
+                                    createVNode(unref(_sfc_main$B), {
                                       placeholder: unref(taskHelper).getStatusLabel(task.status)
                                     }, null, 8, ["placeholder"])
                                   ]),
                                   _: 2
                                 }, 1024),
-                                createVNode(unref(_sfc_main$F), null, {
+                                createVNode(unref(_sfc_main$G), null, {
                                   default: withCtx(() => [
                                     (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                      return openBlock(), createBlock(unref(_sfc_main$E), {
+                                      return openBlock(), createBlock(unref(_sfc_main$F), {
                                         key: status.value,
                                         value: status.value
                                       }, {
@@ -12920,25 +12931,25 @@ const _sfc_main$a = {
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$R), null, {
+                        createVNode(unref(_sfc_main$S), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$G), {
+                            createVNode(unref(_sfc_main$H), {
                               "model-value": task.priority.value,
                               "onUpdate:modelValue": (newPriority) => emit("updateTask", task, { priority: newPriority })
                             }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$B), { class: "w-[140px]" }, {
+                                createVNode(unref(_sfc_main$C), { class: "w-[140px]" }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$A), {
+                                    createVNode(unref(_sfc_main$B), {
                                       placeholder: unref(taskHelper).getPriorityLabel(task.priority)
                                     }, null, 8, ["placeholder"])
                                   ]),
                                   _: 2
                                 }, 1024),
-                                createVNode(unref(_sfc_main$F), null, {
+                                createVNode(unref(_sfc_main$G), null, {
                                   default: withCtx(() => [
                                     (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                      return openBlock(), createBlock(unref(_sfc_main$E), {
+                                      return openBlock(), createBlock(unref(_sfc_main$F), {
                                         key: priority.value,
                                         value: priority.value
                                       }, {
@@ -12957,13 +12968,13 @@ const _sfc_main$a = {
                           ]),
                           _: 2
                         }, 1024),
-                        createVNode(unref(_sfc_main$R), { class: "text-right" }, {
+                        createVNode(unref(_sfc_main$S), { class: "text-right" }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$1i), null, {
+                            createVNode(unref(_sfc_main$1j), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                                createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1p), {
+                                    createVNode(unref(_sfc_main$1q), {
                                       variant: "ghost",
                                       size: "icon",
                                       class: "h-8 w-8"
@@ -12976,9 +12987,9 @@ const _sfc_main$a = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$1h), null, {
+                                createVNode(unref(_sfc_main$1i), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1f), {
+                                    createVNode(unref(_sfc_main$1g), {
                                       onClick: ($event) => emit("editTask", task)
                                     }, {
                                       default: withCtx(() => [
@@ -12987,11 +12998,11 @@ const _sfc_main$a = {
                                       ]),
                                       _: 2
                                     }, 1032, ["onClick"]),
-                                    createVNode(unref(_sfc_main$m), null, {
+                                    createVNode(unref(_sfc_main$n), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                        createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$1f), {
+                                            createVNode(unref(_sfc_main$1g), {
                                               onSelect: withModifiers(() => {
                                               }, ["prevent"]),
                                               class: "text-destructive"
@@ -13005,17 +13016,17 @@ const _sfc_main$a = {
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$j), null, {
+                                        createVNode(unref(_sfc_main$k), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$g), null, {
+                                            createVNode(unref(_sfc_main$h), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$f), null, {
+                                                createVNode(unref(_sfc_main$g), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Delete Task?")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$i), null, {
+                                                createVNode(unref(_sfc_main$j), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode(" This action cannot be undone. ")
                                                   ]),
@@ -13024,15 +13035,15 @@ const _sfc_main$a = {
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$h), null, {
+                                            createVNode(unref(_sfc_main$i), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$k), null, {
+                                                createVNode(unref(_sfc_main$l), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Cancel")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$l), {
+                                                createVNode(unref(_sfc_main$m), {
                                                   onClick: ($event) => emit("deleteTask", task)
                                                 }, {
                                                   default: withCtx(() => [
@@ -13060,10 +13071,10 @@ const _sfc_main$a = {
                         }, 1024)
                       ]),
                       _: 2
-                    }, 1024);
-                  }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                    }, 1032, ["onClick"]);
+                  }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$R), {
+                      createVNode(unref(_sfc_main$S), {
                         colspan: "6",
                         class: "text-center py-12"
                       }, {
@@ -13086,22 +13097,22 @@ const _sfc_main$a = {
     };
   }
 };
-const _sfc_setup$a = _sfc_main$a.setup;
-_sfc_main$a.setup = (props, ctx) => {
+const _sfc_setup$b = _sfc_main$b.setup;
+_sfc_main$b.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/task/task-list-view.vue");
-  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
+  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
 const TODO = 1;
 const IN_PROGRESS = 2;
 const COMPLETED = 3;
-const _sfc_main$9 = {
+const _sfc_main$a = {
   __name: "task-board-view",
   __ssrInlineRender: true,
   props: {
     tasks: Array
   },
-  emits: ["taskMoved", "editTask", "deleteTask"],
+  emits: ["taskMoved", "editTask", "deleteTask", "viewTask"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
@@ -13139,16 +13150,19 @@ const _sfc_main$9 = {
             _push2(`<!--[-->`);
             ssrRenderList(todoTasks.value, (element) => {
               _push2(`<div${ssrRenderAttr("data-task-id", element.id)} class="cursor-grab group relative"${_scopeId}>`);
-              _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "bg-background shadow-sm hover:shadow-md transition-shadow" }, {
+              _push2(ssrRenderComponent(unref(_sfc_main$$), {
+                class: "bg-background shadow-sm hover:shadow-md transition-shadow",
+                onClick: ($event) => emit("viewTask", element)
+              }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(unref(_sfc_main$1i), null, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$1j), null, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$1b), { "as-child": "" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1p), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "icon",
                                   class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -13166,7 +13180,7 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1p), {
+                                  createVNode(unref(_sfc_main$1q), {
                                     variant: "ghost",
                                     size: "icon",
                                     class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -13184,10 +13198,10 @@ const _sfc_main$9 = {
                           _push4(ssrRenderComponent(unref(DropdownMenuPortal), null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1h), null, {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1i), null, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     if (_push6) {
-                                      _push6(ssrRenderComponent(unref(_sfc_main$1f), {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$1g), {
                                         onClick: ($event) => emit("editTask", element)
                                       }, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
@@ -13203,13 +13217,13 @@ const _sfc_main$9 = {
                                         }),
                                         _: 2
                                       }, _parent6, _scopeId5));
-                                      _push6(ssrRenderComponent(unref(_sfc_main$m), null, {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$n), null, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                           if (_push7) {
-                                            _push7(ssrRenderComponent(unref(_sfc_main$e), { "as-child": "" }, {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$f), { "as-child": "" }, {
                                               default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                 if (_push8) {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$1f), {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$1g), {
                                                     onSelect: () => {
                                                     },
                                                     class: "text-destructive"
@@ -13229,7 +13243,7 @@ const _sfc_main$9 = {
                                                   }, _parent8, _scopeId7));
                                                 } else {
                                                   return [
-                                                    createVNode(unref(_sfc_main$1f), {
+                                                    createVNode(unref(_sfc_main$1g), {
                                                       onSelect: withModifiers(() => {
                                                       }, ["prevent"]),
                                                       class: "text-destructive"
@@ -13245,13 +13259,13 @@ const _sfc_main$9 = {
                                               }),
                                               _: 2
                                             }, _parent7, _scopeId6));
-                                            _push7(ssrRenderComponent(unref(_sfc_main$j), null, {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$k), null, {
                                               default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                 if (_push8) {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$g), null, {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$h), null, {
                                                     default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                       if (_push9) {
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$f), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$g), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(`Delete Task?`);
@@ -13263,7 +13277,7 @@ const _sfc_main$9 = {
                                                           }),
                                                           _: 2
                                                         }, _parent9, _scopeId8));
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$i), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$j), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(` This action cannot be undone. `);
@@ -13277,13 +13291,13 @@ const _sfc_main$9 = {
                                                         }, _parent9, _scopeId8));
                                                       } else {
                                                         return [
-                                                          createVNode(unref(_sfc_main$f), null, {
+                                                          createVNode(unref(_sfc_main$g), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Delete Task?")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$i), null, {
+                                                          createVNode(unref(_sfc_main$j), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode(" This action cannot be undone. ")
                                                             ]),
@@ -13294,10 +13308,10 @@ const _sfc_main$9 = {
                                                     }),
                                                     _: 2
                                                   }, _parent8, _scopeId7));
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$h), null, {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$i), null, {
                                                     default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                       if (_push9) {
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$k), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$l), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(`Cancel`);
@@ -13309,7 +13323,7 @@ const _sfc_main$9 = {
                                                           }),
                                                           _: 2
                                                         }, _parent9, _scopeId8));
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$l), {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$m), {
                                                           onClick: ($event) => emit("deleteTask", element)
                                                         }, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
@@ -13325,13 +13339,13 @@ const _sfc_main$9 = {
                                                         }, _parent9, _scopeId8));
                                                       } else {
                                                         return [
-                                                          createVNode(unref(_sfc_main$k), null, {
+                                                          createVNode(unref(_sfc_main$l), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Cancel")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$l), {
+                                                          createVNode(unref(_sfc_main$m), {
                                                             onClick: ($event) => emit("deleteTask", element)
                                                           }, {
                                                             default: withCtx(() => [
@@ -13346,15 +13360,15 @@ const _sfc_main$9 = {
                                                   }, _parent8, _scopeId7));
                                                 } else {
                                                   return [
-                                                    createVNode(unref(_sfc_main$g), null, {
+                                                    createVNode(unref(_sfc_main$h), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$f), null, {
+                                                        createVNode(unref(_sfc_main$g), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Delete Task?")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$i), null, {
+                                                        createVNode(unref(_sfc_main$j), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode(" This action cannot be undone. ")
                                                           ]),
@@ -13363,15 +13377,15 @@ const _sfc_main$9 = {
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$h), null, {
+                                                    createVNode(unref(_sfc_main$i), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$k), null, {
+                                                        createVNode(unref(_sfc_main$l), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Cancel")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$l), {
+                                                        createVNode(unref(_sfc_main$m), {
                                                           onClick: ($event) => emit("deleteTask", element)
                                                         }, {
                                                           default: withCtx(() => [
@@ -13389,9 +13403,9 @@ const _sfc_main$9 = {
                                             }, _parent7, _scopeId6));
                                           } else {
                                             return [
-                                              createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                              createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$1f), {
+                                                  createVNode(unref(_sfc_main$1g), {
                                                     onSelect: withModifiers(() => {
                                                     }, ["prevent"]),
                                                     class: "text-destructive"
@@ -13405,17 +13419,17 @@ const _sfc_main$9 = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$j), null, {
+                                              createVNode(unref(_sfc_main$k), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$g), null, {
+                                                  createVNode(unref(_sfc_main$h), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$f), null, {
+                                                      createVNode(unref(_sfc_main$g), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Delete Task?")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$i), null, {
+                                                      createVNode(unref(_sfc_main$j), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode(" This action cannot be undone. ")
                                                         ]),
@@ -13424,15 +13438,15 @@ const _sfc_main$9 = {
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$h), null, {
+                                                  createVNode(unref(_sfc_main$i), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$k), null, {
+                                                      createVNode(unref(_sfc_main$l), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Cancel")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$l), {
+                                                      createVNode(unref(_sfc_main$m), {
                                                         onClick: ($event) => emit("deleteTask", element)
                                                       }, {
                                                         default: withCtx(() => [
@@ -13453,7 +13467,7 @@ const _sfc_main$9 = {
                                       }, _parent6, _scopeId5));
                                     } else {
                                       return [
-                                        createVNode(unref(_sfc_main$1f), {
+                                        createVNode(unref(_sfc_main$1g), {
                                           onClick: ($event) => emit("editTask", element)
                                         }, {
                                           default: withCtx(() => [
@@ -13462,11 +13476,11 @@ const _sfc_main$9 = {
                                           ]),
                                           _: 2
                                         }, 1032, ["onClick"]),
-                                        createVNode(unref(_sfc_main$m), null, {
+                                        createVNode(unref(_sfc_main$n), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                            createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$1f), {
+                                                createVNode(unref(_sfc_main$1g), {
                                                   onSelect: withModifiers(() => {
                                                   }, ["prevent"]),
                                                   class: "text-destructive"
@@ -13480,17 +13494,17 @@ const _sfc_main$9 = {
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$j), null, {
+                                            createVNode(unref(_sfc_main$k), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$g), null, {
+                                                createVNode(unref(_sfc_main$h), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$f), null, {
+                                                    createVNode(unref(_sfc_main$g), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode("Delete Task?")
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$i), null, {
+                                                    createVNode(unref(_sfc_main$j), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode(" This action cannot be undone. ")
                                                       ]),
@@ -13499,15 +13513,15 @@ const _sfc_main$9 = {
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$h), null, {
+                                                createVNode(unref(_sfc_main$i), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$k), null, {
+                                                    createVNode(unref(_sfc_main$l), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode("Cancel")
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$l), {
+                                                    createVNode(unref(_sfc_main$m), {
                                                       onClick: ($event) => emit("deleteTask", element)
                                                     }, {
                                                       default: withCtx(() => [
@@ -13531,9 +13545,9 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1h), null, {
+                                  createVNode(unref(_sfc_main$1i), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1f), {
+                                      createVNode(unref(_sfc_main$1g), {
                                         onClick: ($event) => emit("editTask", element)
                                       }, {
                                         default: withCtx(() => [
@@ -13542,11 +13556,11 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 2
                                       }, 1032, ["onClick"]),
-                                      createVNode(unref(_sfc_main$m), null, {
+                                      createVNode(unref(_sfc_main$n), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                          createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$1f), {
+                                              createVNode(unref(_sfc_main$1g), {
                                                 onSelect: withModifiers(() => {
                                                 }, ["prevent"]),
                                                 class: "text-destructive"
@@ -13560,17 +13574,17 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$j), null, {
+                                          createVNode(unref(_sfc_main$k), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$g), null, {
+                                              createVNode(unref(_sfc_main$h), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$f), null, {
+                                                  createVNode(unref(_sfc_main$g), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Delete Task?")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$i), null, {
+                                                  createVNode(unref(_sfc_main$j), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode(" This action cannot be undone. ")
                                                     ]),
@@ -13579,15 +13593,15 @@ const _sfc_main$9 = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$h), null, {
+                                              createVNode(unref(_sfc_main$i), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$k), null, {
+                                                  createVNode(unref(_sfc_main$l), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Cancel")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$l), {
+                                                  createVNode(unref(_sfc_main$m), {
                                                     onClick: ($event) => emit("deleteTask", element)
                                                   }, {
                                                     default: withCtx(() => [
@@ -13614,9 +13628,9 @@ const _sfc_main$9 = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                            createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1p), {
+                                createVNode(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "icon",
                                   class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -13631,9 +13645,9 @@ const _sfc_main$9 = {
                             }),
                             createVNode(unref(DropdownMenuPortal), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1h), null, {
+                                createVNode(unref(_sfc_main$1i), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1f), {
+                                    createVNode(unref(_sfc_main$1g), {
                                       onClick: ($event) => emit("editTask", element)
                                     }, {
                                       default: withCtx(() => [
@@ -13642,11 +13656,11 @@ const _sfc_main$9 = {
                                       ]),
                                       _: 2
                                     }, 1032, ["onClick"]),
-                                    createVNode(unref(_sfc_main$m), null, {
+                                    createVNode(unref(_sfc_main$n), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                        createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$1f), {
+                                            createVNode(unref(_sfc_main$1g), {
                                               onSelect: withModifiers(() => {
                                               }, ["prevent"]),
                                               class: "text-destructive"
@@ -13660,17 +13674,17 @@ const _sfc_main$9 = {
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$j), null, {
+                                        createVNode(unref(_sfc_main$k), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$g), null, {
+                                            createVNode(unref(_sfc_main$h), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$f), null, {
+                                                createVNode(unref(_sfc_main$g), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Delete Task?")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$i), null, {
+                                                createVNode(unref(_sfc_main$j), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode(" This action cannot be undone. ")
                                                   ]),
@@ -13679,15 +13693,15 @@ const _sfc_main$9 = {
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$h), null, {
+                                            createVNode(unref(_sfc_main$i), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$k), null, {
+                                                createVNode(unref(_sfc_main$l), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Cancel")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$l), {
+                                                createVNode(unref(_sfc_main$m), {
                                                   onClick: ($event) => emit("deleteTask", element)
                                                 }, {
                                                   default: withCtx(() => [
@@ -13715,11 +13729,11 @@ const _sfc_main$9 = {
                       }),
                       _: 2
                     }, _parent3, _scopeId2));
-                    _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "p-3" }, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "p-3" }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
                           _push4(`<p class="font-semibold text-sm leading-snug"${_scopeId3}>${ssrInterpolate(element.title)}</p><div class="flex items-center justify-between mt-3"${_scopeId3}>`);
-                          _push4(ssrRenderComponent(unref(_sfc_main$N), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$O), {
                             variant: unref(taskHelper).getPriorityVariant(element.priority)
                           }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
@@ -13734,14 +13748,14 @@ const _sfc_main$9 = {
                             _: 2
                           }, _parent4, _scopeId3));
                           _push4(`<div class="flex items-center gap-2"${_scopeId3}><span class="text-xs text-muted-foreground"${_scopeId3}>${ssrInterpolate(unref(dateHelper).formatDate(element.due_date))}</span>`);
-                          _push4(ssrRenderComponent(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               var _a, _b;
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1j), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1k), {
                                   src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                 }, null, _parent5, _scopeId4));
-                                _push5(ssrRenderComponent(unref(_sfc_main$1k), null, {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1l), null, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     var _a2, _b2;
                                     if (_push6) {
@@ -13756,10 +13770,10 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1j), {
+                                  createVNode(unref(_sfc_main$1k), {
                                     src: ((_b = element.assigned_user) == null ? void 0 : _b.avatar) ?? "https://github.com/unovue.png"
                                   }, null, 8, ["src"]),
-                                  createVNode(unref(_sfc_main$1k), null, {
+                                  createVNode(unref(_sfc_main$1l), null, {
                                     default: withCtx(() => {
                                       var _a2;
                                       return [
@@ -13778,7 +13792,7 @@ const _sfc_main$9 = {
                           return [
                             createVNode("p", { class: "font-semibold text-sm leading-snug" }, toDisplayString(element.title), 1),
                             createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                              createVNode(unref(_sfc_main$N), {
+                              createVNode(unref(_sfc_main$O), {
                                 variant: unref(taskHelper).getPriorityVariant(element.priority)
                               }, {
                                 default: withCtx(() => [
@@ -13788,14 +13802,14 @@ const _sfc_main$9 = {
                               }, 1032, ["variant"]),
                               createVNode("div", { class: "flex items-center gap-2" }, [
                                 createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                                createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                                createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                   default: withCtx(() => {
                                     var _a;
                                     return [
-                                      createVNode(unref(_sfc_main$1j), {
+                                      createVNode(unref(_sfc_main$1k), {
                                         src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                       }, null, 8, ["src"]),
-                                      createVNode(unref(_sfc_main$1k), null, {
+                                      createVNode(unref(_sfc_main$1l), null, {
                                         default: withCtx(() => {
                                           var _a2;
                                           return [
@@ -13817,11 +13831,11 @@ const _sfc_main$9 = {
                     }, _parent3, _scopeId2));
                   } else {
                     return [
-                      createVNode(unref(_sfc_main$1i), null, {
+                      createVNode(unref(_sfc_main$1j), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 variant: "ghost",
                                 size: "icon",
                                 class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -13836,9 +13850,9 @@ const _sfc_main$9 = {
                           }),
                           createVNode(unref(DropdownMenuPortal), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1h), null, {
+                              createVNode(unref(_sfc_main$1i), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), {
+                                  createVNode(unref(_sfc_main$1g), {
                                     onClick: ($event) => emit("editTask", element)
                                   }, {
                                     default: withCtx(() => [
@@ -13847,11 +13861,11 @@ const _sfc_main$9 = {
                                     ]),
                                     _: 2
                                   }, 1032, ["onClick"]),
-                                  createVNode(unref(_sfc_main$m), null, {
+                                  createVNode(unref(_sfc_main$n), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1f), {
+                                          createVNode(unref(_sfc_main$1g), {
                                             onSelect: withModifiers(() => {
                                             }, ["prevent"]),
                                             class: "text-destructive"
@@ -13865,17 +13879,17 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$j), null, {
+                                      createVNode(unref(_sfc_main$k), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$g), null, {
+                                          createVNode(unref(_sfc_main$h), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$f), null, {
+                                              createVNode(unref(_sfc_main$g), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Delete Task?")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$i), null, {
+                                              createVNode(unref(_sfc_main$j), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode(" This action cannot be undone. ")
                                                 ]),
@@ -13884,15 +13898,15 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$h), null, {
+                                          createVNode(unref(_sfc_main$i), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$k), null, {
+                                              createVNode(unref(_sfc_main$l), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Cancel")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$l), {
+                                              createVNode(unref(_sfc_main$m), {
                                                 onClick: ($event) => emit("deleteTask", element)
                                               }, {
                                                 default: withCtx(() => [
@@ -13918,11 +13932,11 @@ const _sfc_main$9 = {
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$Z), { class: "p-3" }, {
+                      createVNode(unref(_sfc_main$_), { class: "p-3" }, {
                         default: withCtx(() => [
                           createVNode("p", { class: "font-semibold text-sm leading-snug" }, toDisplayString(element.title), 1),
                           createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                            createVNode(unref(_sfc_main$N), {
+                            createVNode(unref(_sfc_main$O), {
                               variant: unref(taskHelper).getPriorityVariant(element.priority)
                             }, {
                               default: withCtx(() => [
@@ -13932,14 +13946,14 @@ const _sfc_main$9 = {
                             }, 1032, ["variant"]),
                             createVNode("div", { class: "flex items-center gap-2" }, [
                               createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                              createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                              createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                 default: withCtx(() => {
                                   var _a;
                                   return [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                     }, null, 8, ["src"]),
-                                    createVNode(unref(_sfc_main$1k), null, {
+                                    createVNode(unref(_sfc_main$1l), null, {
                                       default: withCtx(() => {
                                         var _a2;
                                         return [
@@ -13973,13 +13987,16 @@ const _sfc_main$9 = {
                   "data-task-id": element.id,
                   class: "cursor-grab group relative"
                 }, [
-                  createVNode(unref(_sfc_main$_), { class: "bg-background shadow-sm hover:shadow-md transition-shadow" }, {
+                  createVNode(unref(_sfc_main$$), {
+                    class: "bg-background shadow-sm hover:shadow-md transition-shadow",
+                    onClick: ($event) => emit("viewTask", element)
+                  }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$1i), null, {
+                      createVNode(unref(_sfc_main$1j), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 variant: "ghost",
                                 size: "icon",
                                 class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -13994,9 +14011,9 @@ const _sfc_main$9 = {
                           }),
                           createVNode(unref(DropdownMenuPortal), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1h), null, {
+                              createVNode(unref(_sfc_main$1i), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), {
+                                  createVNode(unref(_sfc_main$1g), {
                                     onClick: ($event) => emit("editTask", element)
                                   }, {
                                     default: withCtx(() => [
@@ -14005,11 +14022,11 @@ const _sfc_main$9 = {
                                     ]),
                                     _: 2
                                   }, 1032, ["onClick"]),
-                                  createVNode(unref(_sfc_main$m), null, {
+                                  createVNode(unref(_sfc_main$n), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1f), {
+                                          createVNode(unref(_sfc_main$1g), {
                                             onSelect: withModifiers(() => {
                                             }, ["prevent"]),
                                             class: "text-destructive"
@@ -14023,17 +14040,17 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$j), null, {
+                                      createVNode(unref(_sfc_main$k), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$g), null, {
+                                          createVNode(unref(_sfc_main$h), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$f), null, {
+                                              createVNode(unref(_sfc_main$g), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Delete Task?")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$i), null, {
+                                              createVNode(unref(_sfc_main$j), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode(" This action cannot be undone. ")
                                                 ]),
@@ -14042,15 +14059,15 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$h), null, {
+                                          createVNode(unref(_sfc_main$i), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$k), null, {
+                                              createVNode(unref(_sfc_main$l), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Cancel")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$l), {
+                                              createVNode(unref(_sfc_main$m), {
                                                 onClick: ($event) => emit("deleteTask", element)
                                               }, {
                                                 default: withCtx(() => [
@@ -14076,11 +14093,11 @@ const _sfc_main$9 = {
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$Z), { class: "p-3" }, {
+                      createVNode(unref(_sfc_main$_), { class: "p-3" }, {
                         default: withCtx(() => [
                           createVNode("p", { class: "font-semibold text-sm leading-snug" }, toDisplayString(element.title), 1),
                           createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                            createVNode(unref(_sfc_main$N), {
+                            createVNode(unref(_sfc_main$O), {
                               variant: unref(taskHelper).getPriorityVariant(element.priority)
                             }, {
                               default: withCtx(() => [
@@ -14090,14 +14107,14 @@ const _sfc_main$9 = {
                             }, 1032, ["variant"]),
                             createVNode("div", { class: "flex items-center gap-2" }, [
                               createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                              createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                              createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                 default: withCtx(() => {
                                   var _a;
                                   return [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                     }, null, 8, ["src"]),
-                                    createVNode(unref(_sfc_main$1k), null, {
+                                    createVNode(unref(_sfc_main$1l), null, {
                                       default: withCtx(() => {
                                         var _a2;
                                         return [
@@ -14117,7 +14134,7 @@ const _sfc_main$9 = {
                       }, 1024)
                     ]),
                     _: 2
-                  }, 1024)
+                  }, 1032, ["onClick"])
                 ], 8, ["data-task-id"]);
               }), 128))
             ];
@@ -14139,16 +14156,19 @@ const _sfc_main$9 = {
             _push2(`<!--[-->`);
             ssrRenderList(inProgressTasks.value, (element) => {
               _push2(`<div${ssrRenderAttr("data-task-id", element.id)} class="cursor-grab group relative"${_scopeId}>`);
-              _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "bg-background shadow-sm hover:shadow-md transition-shadow" }, {
+              _push2(ssrRenderComponent(unref(_sfc_main$$), {
+                class: "bg-background shadow-sm hover:shadow-md transition-shadow",
+                onClick: ($event) => emit("viewTask", element)
+              }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(unref(_sfc_main$1i), null, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$1j), null, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$1b), { "as-child": "" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1p), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "icon",
                                   class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -14166,7 +14186,7 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1p), {
+                                  createVNode(unref(_sfc_main$1q), {
                                     variant: "ghost",
                                     size: "icon",
                                     class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -14184,10 +14204,10 @@ const _sfc_main$9 = {
                           _push4(ssrRenderComponent(unref(DropdownMenuPortal), null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1h), null, {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1i), null, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     if (_push6) {
-                                      _push6(ssrRenderComponent(unref(_sfc_main$1f), {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$1g), {
                                         onClick: ($event) => emit("editTask", element)
                                       }, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
@@ -14203,13 +14223,13 @@ const _sfc_main$9 = {
                                         }),
                                         _: 2
                                       }, _parent6, _scopeId5));
-                                      _push6(ssrRenderComponent(unref(_sfc_main$m), null, {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$n), null, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                           if (_push7) {
-                                            _push7(ssrRenderComponent(unref(_sfc_main$e), { "as-child": "" }, {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$f), { "as-child": "" }, {
                                               default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                 if (_push8) {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$1f), {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$1g), {
                                                     onSelect: () => {
                                                     },
                                                     class: "text-destructive"
@@ -14229,7 +14249,7 @@ const _sfc_main$9 = {
                                                   }, _parent8, _scopeId7));
                                                 } else {
                                                   return [
-                                                    createVNode(unref(_sfc_main$1f), {
+                                                    createVNode(unref(_sfc_main$1g), {
                                                       onSelect: withModifiers(() => {
                                                       }, ["prevent"]),
                                                       class: "text-destructive"
@@ -14245,13 +14265,13 @@ const _sfc_main$9 = {
                                               }),
                                               _: 2
                                             }, _parent7, _scopeId6));
-                                            _push7(ssrRenderComponent(unref(_sfc_main$j), null, {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$k), null, {
                                               default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                 if (_push8) {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$g), null, {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$h), null, {
                                                     default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                       if (_push9) {
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$f), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$g), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(`Delete Task?`);
@@ -14263,7 +14283,7 @@ const _sfc_main$9 = {
                                                           }),
                                                           _: 2
                                                         }, _parent9, _scopeId8));
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$i), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$j), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(` This action cannot be undone. `);
@@ -14277,13 +14297,13 @@ const _sfc_main$9 = {
                                                         }, _parent9, _scopeId8));
                                                       } else {
                                                         return [
-                                                          createVNode(unref(_sfc_main$f), null, {
+                                                          createVNode(unref(_sfc_main$g), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Delete Task?")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$i), null, {
+                                                          createVNode(unref(_sfc_main$j), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode(" This action cannot be undone. ")
                                                             ]),
@@ -14294,10 +14314,10 @@ const _sfc_main$9 = {
                                                     }),
                                                     _: 2
                                                   }, _parent8, _scopeId7));
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$h), null, {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$i), null, {
                                                     default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                       if (_push9) {
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$k), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$l), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(`Cancel`);
@@ -14309,7 +14329,7 @@ const _sfc_main$9 = {
                                                           }),
                                                           _: 2
                                                         }, _parent9, _scopeId8));
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$l), {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$m), {
                                                           onClick: ($event) => emit("deleteTask", element)
                                                         }, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
@@ -14325,13 +14345,13 @@ const _sfc_main$9 = {
                                                         }, _parent9, _scopeId8));
                                                       } else {
                                                         return [
-                                                          createVNode(unref(_sfc_main$k), null, {
+                                                          createVNode(unref(_sfc_main$l), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Cancel")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$l), {
+                                                          createVNode(unref(_sfc_main$m), {
                                                             onClick: ($event) => emit("deleteTask", element)
                                                           }, {
                                                             default: withCtx(() => [
@@ -14346,15 +14366,15 @@ const _sfc_main$9 = {
                                                   }, _parent8, _scopeId7));
                                                 } else {
                                                   return [
-                                                    createVNode(unref(_sfc_main$g), null, {
+                                                    createVNode(unref(_sfc_main$h), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$f), null, {
+                                                        createVNode(unref(_sfc_main$g), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Delete Task?")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$i), null, {
+                                                        createVNode(unref(_sfc_main$j), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode(" This action cannot be undone. ")
                                                           ]),
@@ -14363,15 +14383,15 @@ const _sfc_main$9 = {
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$h), null, {
+                                                    createVNode(unref(_sfc_main$i), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$k), null, {
+                                                        createVNode(unref(_sfc_main$l), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Cancel")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$l), {
+                                                        createVNode(unref(_sfc_main$m), {
                                                           onClick: ($event) => emit("deleteTask", element)
                                                         }, {
                                                           default: withCtx(() => [
@@ -14389,9 +14409,9 @@ const _sfc_main$9 = {
                                             }, _parent7, _scopeId6));
                                           } else {
                                             return [
-                                              createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                              createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$1f), {
+                                                  createVNode(unref(_sfc_main$1g), {
                                                     onSelect: withModifiers(() => {
                                                     }, ["prevent"]),
                                                     class: "text-destructive"
@@ -14405,17 +14425,17 @@ const _sfc_main$9 = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$j), null, {
+                                              createVNode(unref(_sfc_main$k), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$g), null, {
+                                                  createVNode(unref(_sfc_main$h), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$f), null, {
+                                                      createVNode(unref(_sfc_main$g), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Delete Task?")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$i), null, {
+                                                      createVNode(unref(_sfc_main$j), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode(" This action cannot be undone. ")
                                                         ]),
@@ -14424,15 +14444,15 @@ const _sfc_main$9 = {
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$h), null, {
+                                                  createVNode(unref(_sfc_main$i), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$k), null, {
+                                                      createVNode(unref(_sfc_main$l), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Cancel")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$l), {
+                                                      createVNode(unref(_sfc_main$m), {
                                                         onClick: ($event) => emit("deleteTask", element)
                                                       }, {
                                                         default: withCtx(() => [
@@ -14453,7 +14473,7 @@ const _sfc_main$9 = {
                                       }, _parent6, _scopeId5));
                                     } else {
                                       return [
-                                        createVNode(unref(_sfc_main$1f), {
+                                        createVNode(unref(_sfc_main$1g), {
                                           onClick: ($event) => emit("editTask", element)
                                         }, {
                                           default: withCtx(() => [
@@ -14462,11 +14482,11 @@ const _sfc_main$9 = {
                                           ]),
                                           _: 2
                                         }, 1032, ["onClick"]),
-                                        createVNode(unref(_sfc_main$m), null, {
+                                        createVNode(unref(_sfc_main$n), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                            createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$1f), {
+                                                createVNode(unref(_sfc_main$1g), {
                                                   onSelect: withModifiers(() => {
                                                   }, ["prevent"]),
                                                   class: "text-destructive"
@@ -14480,17 +14500,17 @@ const _sfc_main$9 = {
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$j), null, {
+                                            createVNode(unref(_sfc_main$k), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$g), null, {
+                                                createVNode(unref(_sfc_main$h), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$f), null, {
+                                                    createVNode(unref(_sfc_main$g), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode("Delete Task?")
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$i), null, {
+                                                    createVNode(unref(_sfc_main$j), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode(" This action cannot be undone. ")
                                                       ]),
@@ -14499,15 +14519,15 @@ const _sfc_main$9 = {
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$h), null, {
+                                                createVNode(unref(_sfc_main$i), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$k), null, {
+                                                    createVNode(unref(_sfc_main$l), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode("Cancel")
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$l), {
+                                                    createVNode(unref(_sfc_main$m), {
                                                       onClick: ($event) => emit("deleteTask", element)
                                                     }, {
                                                       default: withCtx(() => [
@@ -14531,9 +14551,9 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1h), null, {
+                                  createVNode(unref(_sfc_main$1i), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1f), {
+                                      createVNode(unref(_sfc_main$1g), {
                                         onClick: ($event) => emit("editTask", element)
                                       }, {
                                         default: withCtx(() => [
@@ -14542,11 +14562,11 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 2
                                       }, 1032, ["onClick"]),
-                                      createVNode(unref(_sfc_main$m), null, {
+                                      createVNode(unref(_sfc_main$n), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                          createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$1f), {
+                                              createVNode(unref(_sfc_main$1g), {
                                                 onSelect: withModifiers(() => {
                                                 }, ["prevent"]),
                                                 class: "text-destructive"
@@ -14560,17 +14580,17 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$j), null, {
+                                          createVNode(unref(_sfc_main$k), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$g), null, {
+                                              createVNode(unref(_sfc_main$h), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$f), null, {
+                                                  createVNode(unref(_sfc_main$g), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Delete Task?")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$i), null, {
+                                                  createVNode(unref(_sfc_main$j), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode(" This action cannot be undone. ")
                                                     ]),
@@ -14579,15 +14599,15 @@ const _sfc_main$9 = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$h), null, {
+                                              createVNode(unref(_sfc_main$i), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$k), null, {
+                                                  createVNode(unref(_sfc_main$l), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Cancel")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$l), {
+                                                  createVNode(unref(_sfc_main$m), {
                                                     onClick: ($event) => emit("deleteTask", element)
                                                   }, {
                                                     default: withCtx(() => [
@@ -14614,9 +14634,9 @@ const _sfc_main$9 = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                            createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1p), {
+                                createVNode(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "icon",
                                   class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -14631,9 +14651,9 @@ const _sfc_main$9 = {
                             }),
                             createVNode(unref(DropdownMenuPortal), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1h), null, {
+                                createVNode(unref(_sfc_main$1i), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1f), {
+                                    createVNode(unref(_sfc_main$1g), {
                                       onClick: ($event) => emit("editTask", element)
                                     }, {
                                       default: withCtx(() => [
@@ -14642,11 +14662,11 @@ const _sfc_main$9 = {
                                       ]),
                                       _: 2
                                     }, 1032, ["onClick"]),
-                                    createVNode(unref(_sfc_main$m), null, {
+                                    createVNode(unref(_sfc_main$n), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                        createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$1f), {
+                                            createVNode(unref(_sfc_main$1g), {
                                               onSelect: withModifiers(() => {
                                               }, ["prevent"]),
                                               class: "text-destructive"
@@ -14660,17 +14680,17 @@ const _sfc_main$9 = {
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$j), null, {
+                                        createVNode(unref(_sfc_main$k), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$g), null, {
+                                            createVNode(unref(_sfc_main$h), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$f), null, {
+                                                createVNode(unref(_sfc_main$g), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Delete Task?")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$i), null, {
+                                                createVNode(unref(_sfc_main$j), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode(" This action cannot be undone. ")
                                                   ]),
@@ -14679,15 +14699,15 @@ const _sfc_main$9 = {
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$h), null, {
+                                            createVNode(unref(_sfc_main$i), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$k), null, {
+                                                createVNode(unref(_sfc_main$l), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Cancel")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$l), {
+                                                createVNode(unref(_sfc_main$m), {
                                                   onClick: ($event) => emit("deleteTask", element)
                                                 }, {
                                                   default: withCtx(() => [
@@ -14715,11 +14735,11 @@ const _sfc_main$9 = {
                       }),
                       _: 2
                     }, _parent3, _scopeId2));
-                    _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "p-3" }, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "p-3" }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
                           _push4(`<p class="font-semibold text-sm leading-snug"${_scopeId3}>${ssrInterpolate(element.title)}</p><div class="flex items-center justify-between mt-3"${_scopeId3}>`);
-                          _push4(ssrRenderComponent(unref(_sfc_main$N), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$O), {
                             variant: unref(taskHelper).getPriorityVariant(element.priority)
                           }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
@@ -14734,14 +14754,14 @@ const _sfc_main$9 = {
                             _: 2
                           }, _parent4, _scopeId3));
                           _push4(`<div class="flex items-center gap-2"${_scopeId3}><span class="text-xs text-muted-foreground"${_scopeId3}>${ssrInterpolate(unref(dateHelper).formatDate(element.due_date))}</span>`);
-                          _push4(ssrRenderComponent(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               var _a, _b;
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1j), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1k), {
                                   src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                 }, null, _parent5, _scopeId4));
-                                _push5(ssrRenderComponent(unref(_sfc_main$1k), null, {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1l), null, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     var _a2, _b2;
                                     if (_push6) {
@@ -14756,10 +14776,10 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1j), {
+                                  createVNode(unref(_sfc_main$1k), {
                                     src: ((_b = element.assigned_user) == null ? void 0 : _b.avatar) ?? "https://github.com/unovue.png"
                                   }, null, 8, ["src"]),
-                                  createVNode(unref(_sfc_main$1k), null, {
+                                  createVNode(unref(_sfc_main$1l), null, {
                                     default: withCtx(() => {
                                       var _a2;
                                       return [
@@ -14778,7 +14798,7 @@ const _sfc_main$9 = {
                           return [
                             createVNode("p", { class: "font-semibold text-sm leading-snug" }, toDisplayString(element.title), 1),
                             createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                              createVNode(unref(_sfc_main$N), {
+                              createVNode(unref(_sfc_main$O), {
                                 variant: unref(taskHelper).getPriorityVariant(element.priority)
                               }, {
                                 default: withCtx(() => [
@@ -14788,14 +14808,14 @@ const _sfc_main$9 = {
                               }, 1032, ["variant"]),
                               createVNode("div", { class: "flex items-center gap-2" }, [
                                 createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                                createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                                createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                   default: withCtx(() => {
                                     var _a;
                                     return [
-                                      createVNode(unref(_sfc_main$1j), {
+                                      createVNode(unref(_sfc_main$1k), {
                                         src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                       }, null, 8, ["src"]),
-                                      createVNode(unref(_sfc_main$1k), null, {
+                                      createVNode(unref(_sfc_main$1l), null, {
                                         default: withCtx(() => {
                                           var _a2;
                                           return [
@@ -14817,11 +14837,11 @@ const _sfc_main$9 = {
                     }, _parent3, _scopeId2));
                   } else {
                     return [
-                      createVNode(unref(_sfc_main$1i), null, {
+                      createVNode(unref(_sfc_main$1j), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 variant: "ghost",
                                 size: "icon",
                                 class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -14836,9 +14856,9 @@ const _sfc_main$9 = {
                           }),
                           createVNode(unref(DropdownMenuPortal), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1h), null, {
+                              createVNode(unref(_sfc_main$1i), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), {
+                                  createVNode(unref(_sfc_main$1g), {
                                     onClick: ($event) => emit("editTask", element)
                                   }, {
                                     default: withCtx(() => [
@@ -14847,11 +14867,11 @@ const _sfc_main$9 = {
                                     ]),
                                     _: 2
                                   }, 1032, ["onClick"]),
-                                  createVNode(unref(_sfc_main$m), null, {
+                                  createVNode(unref(_sfc_main$n), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1f), {
+                                          createVNode(unref(_sfc_main$1g), {
                                             onSelect: withModifiers(() => {
                                             }, ["prevent"]),
                                             class: "text-destructive"
@@ -14865,17 +14885,17 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$j), null, {
+                                      createVNode(unref(_sfc_main$k), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$g), null, {
+                                          createVNode(unref(_sfc_main$h), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$f), null, {
+                                              createVNode(unref(_sfc_main$g), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Delete Task?")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$i), null, {
+                                              createVNode(unref(_sfc_main$j), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode(" This action cannot be undone. ")
                                                 ]),
@@ -14884,15 +14904,15 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$h), null, {
+                                          createVNode(unref(_sfc_main$i), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$k), null, {
+                                              createVNode(unref(_sfc_main$l), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Cancel")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$l), {
+                                              createVNode(unref(_sfc_main$m), {
                                                 onClick: ($event) => emit("deleteTask", element)
                                               }, {
                                                 default: withCtx(() => [
@@ -14918,11 +14938,11 @@ const _sfc_main$9 = {
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$Z), { class: "p-3" }, {
+                      createVNode(unref(_sfc_main$_), { class: "p-3" }, {
                         default: withCtx(() => [
                           createVNode("p", { class: "font-semibold text-sm leading-snug" }, toDisplayString(element.title), 1),
                           createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                            createVNode(unref(_sfc_main$N), {
+                            createVNode(unref(_sfc_main$O), {
                               variant: unref(taskHelper).getPriorityVariant(element.priority)
                             }, {
                               default: withCtx(() => [
@@ -14932,14 +14952,14 @@ const _sfc_main$9 = {
                             }, 1032, ["variant"]),
                             createVNode("div", { class: "flex items-center gap-2" }, [
                               createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                              createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                              createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                 default: withCtx(() => {
                                   var _a;
                                   return [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                     }, null, 8, ["src"]),
-                                    createVNode(unref(_sfc_main$1k), null, {
+                                    createVNode(unref(_sfc_main$1l), null, {
                                       default: withCtx(() => {
                                         var _a2;
                                         return [
@@ -14973,13 +14993,16 @@ const _sfc_main$9 = {
                   "data-task-id": element.id,
                   class: "cursor-grab group relative"
                 }, [
-                  createVNode(unref(_sfc_main$_), { class: "bg-background shadow-sm hover:shadow-md transition-shadow" }, {
+                  createVNode(unref(_sfc_main$$), {
+                    class: "bg-background shadow-sm hover:shadow-md transition-shadow",
+                    onClick: ($event) => emit("viewTask", element)
+                  }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$1i), null, {
+                      createVNode(unref(_sfc_main$1j), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 variant: "ghost",
                                 size: "icon",
                                 class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -14994,9 +15017,9 @@ const _sfc_main$9 = {
                           }),
                           createVNode(unref(DropdownMenuPortal), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1h), null, {
+                              createVNode(unref(_sfc_main$1i), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), {
+                                  createVNode(unref(_sfc_main$1g), {
                                     onClick: ($event) => emit("editTask", element)
                                   }, {
                                     default: withCtx(() => [
@@ -15005,11 +15028,11 @@ const _sfc_main$9 = {
                                     ]),
                                     _: 2
                                   }, 1032, ["onClick"]),
-                                  createVNode(unref(_sfc_main$m), null, {
+                                  createVNode(unref(_sfc_main$n), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1f), {
+                                          createVNode(unref(_sfc_main$1g), {
                                             onSelect: withModifiers(() => {
                                             }, ["prevent"]),
                                             class: "text-destructive"
@@ -15023,17 +15046,17 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$j), null, {
+                                      createVNode(unref(_sfc_main$k), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$g), null, {
+                                          createVNode(unref(_sfc_main$h), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$f), null, {
+                                              createVNode(unref(_sfc_main$g), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Delete Task?")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$i), null, {
+                                              createVNode(unref(_sfc_main$j), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode(" This action cannot be undone. ")
                                                 ]),
@@ -15042,15 +15065,15 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$h), null, {
+                                          createVNode(unref(_sfc_main$i), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$k), null, {
+                                              createVNode(unref(_sfc_main$l), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Cancel")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$l), {
+                                              createVNode(unref(_sfc_main$m), {
                                                 onClick: ($event) => emit("deleteTask", element)
                                               }, {
                                                 default: withCtx(() => [
@@ -15076,11 +15099,11 @@ const _sfc_main$9 = {
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$Z), { class: "p-3" }, {
+                      createVNode(unref(_sfc_main$_), { class: "p-3" }, {
                         default: withCtx(() => [
                           createVNode("p", { class: "font-semibold text-sm leading-snug" }, toDisplayString(element.title), 1),
                           createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                            createVNode(unref(_sfc_main$N), {
+                            createVNode(unref(_sfc_main$O), {
                               variant: unref(taskHelper).getPriorityVariant(element.priority)
                             }, {
                               default: withCtx(() => [
@@ -15090,14 +15113,14 @@ const _sfc_main$9 = {
                             }, 1032, ["variant"]),
                             createVNode("div", { class: "flex items-center gap-2" }, [
                               createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                              createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                              createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                 default: withCtx(() => {
                                   var _a;
                                   return [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                     }, null, 8, ["src"]),
-                                    createVNode(unref(_sfc_main$1k), null, {
+                                    createVNode(unref(_sfc_main$1l), null, {
                                       default: withCtx(() => {
                                         var _a2;
                                         return [
@@ -15117,7 +15140,7 @@ const _sfc_main$9 = {
                       }, 1024)
                     ]),
                     _: 2
-                  }, 1024)
+                  }, 1032, ["onClick"])
                 ], 8, ["data-task-id"]);
               }), 128))
             ];
@@ -15139,16 +15162,19 @@ const _sfc_main$9 = {
             _push2(`<!--[-->`);
             ssrRenderList(completedTasks.value, (element) => {
               _push2(`<div${ssrRenderAttr("data-task-id", element.id)} class="cursor-grab group relative"${_scopeId}>`);
-              _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "bg-background shadow-sm opacity-70 hover:shadow-md transition-shadow" }, {
+              _push2(ssrRenderComponent(unref(_sfc_main$$), {
+                class: "bg-background shadow-sm opacity-70 hover:shadow-md transition-shadow",
+                onClick: ($event) => emit("viewTask", element)
+              }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(ssrRenderComponent(unref(_sfc_main$1i), null, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$1j), null, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$1b), { "as-child": "" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1p), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "icon",
                                   class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -15166,7 +15192,7 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1p), {
+                                  createVNode(unref(_sfc_main$1q), {
                                     variant: "ghost",
                                     size: "icon",
                                     class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -15184,10 +15210,10 @@ const _sfc_main$9 = {
                           _push4(ssrRenderComponent(unref(DropdownMenuPortal), null, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1h), null, {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1i), null, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     if (_push6) {
-                                      _push6(ssrRenderComponent(unref(_sfc_main$1f), {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$1g), {
                                         onClick: ($event) => emit("editTask", element)
                                       }, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
@@ -15203,13 +15229,13 @@ const _sfc_main$9 = {
                                         }),
                                         _: 2
                                       }, _parent6, _scopeId5));
-                                      _push6(ssrRenderComponent(unref(_sfc_main$m), null, {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$n), null, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                           if (_push7) {
-                                            _push7(ssrRenderComponent(unref(_sfc_main$e), { "as-child": "" }, {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$f), { "as-child": "" }, {
                                               default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                 if (_push8) {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$1f), {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$1g), {
                                                     onSelect: () => {
                                                     },
                                                     class: "text-destructive"
@@ -15229,7 +15255,7 @@ const _sfc_main$9 = {
                                                   }, _parent8, _scopeId7));
                                                 } else {
                                                   return [
-                                                    createVNode(unref(_sfc_main$1f), {
+                                                    createVNode(unref(_sfc_main$1g), {
                                                       onSelect: withModifiers(() => {
                                                       }, ["prevent"]),
                                                       class: "text-destructive"
@@ -15245,13 +15271,13 @@ const _sfc_main$9 = {
                                               }),
                                               _: 2
                                             }, _parent7, _scopeId6));
-                                            _push7(ssrRenderComponent(unref(_sfc_main$j), null, {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$k), null, {
                                               default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                 if (_push8) {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$g), null, {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$h), null, {
                                                     default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                       if (_push9) {
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$f), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$g), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(`Delete Task?`);
@@ -15263,7 +15289,7 @@ const _sfc_main$9 = {
                                                           }),
                                                           _: 2
                                                         }, _parent9, _scopeId8));
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$i), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$j), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(` This action cannot be undone. `);
@@ -15277,13 +15303,13 @@ const _sfc_main$9 = {
                                                         }, _parent9, _scopeId8));
                                                       } else {
                                                         return [
-                                                          createVNode(unref(_sfc_main$f), null, {
+                                                          createVNode(unref(_sfc_main$g), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Delete Task?")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$i), null, {
+                                                          createVNode(unref(_sfc_main$j), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode(" This action cannot be undone. ")
                                                             ]),
@@ -15294,10 +15320,10 @@ const _sfc_main$9 = {
                                                     }),
                                                     _: 2
                                                   }, _parent8, _scopeId7));
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$h), null, {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$i), null, {
                                                     default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                       if (_push9) {
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$k), null, {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$l), null, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
                                                             if (_push10) {
                                                               _push10(`Cancel`);
@@ -15309,7 +15335,7 @@ const _sfc_main$9 = {
                                                           }),
                                                           _: 2
                                                         }, _parent9, _scopeId8));
-                                                        _push9(ssrRenderComponent(unref(_sfc_main$l), {
+                                                        _push9(ssrRenderComponent(unref(_sfc_main$m), {
                                                           onClick: ($event) => emit("deleteTask", element)
                                                         }, {
                                                           default: withCtx((_9, _push10, _parent10, _scopeId9) => {
@@ -15325,13 +15351,13 @@ const _sfc_main$9 = {
                                                         }, _parent9, _scopeId8));
                                                       } else {
                                                         return [
-                                                          createVNode(unref(_sfc_main$k), null, {
+                                                          createVNode(unref(_sfc_main$l), null, {
                                                             default: withCtx(() => [
                                                               createTextVNode("Cancel")
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          createVNode(unref(_sfc_main$l), {
+                                                          createVNode(unref(_sfc_main$m), {
                                                             onClick: ($event) => emit("deleteTask", element)
                                                           }, {
                                                             default: withCtx(() => [
@@ -15346,15 +15372,15 @@ const _sfc_main$9 = {
                                                   }, _parent8, _scopeId7));
                                                 } else {
                                                   return [
-                                                    createVNode(unref(_sfc_main$g), null, {
+                                                    createVNode(unref(_sfc_main$h), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$f), null, {
+                                                        createVNode(unref(_sfc_main$g), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Delete Task?")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$i), null, {
+                                                        createVNode(unref(_sfc_main$j), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode(" This action cannot be undone. ")
                                                           ]),
@@ -15363,15 +15389,15 @@ const _sfc_main$9 = {
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$h), null, {
+                                                    createVNode(unref(_sfc_main$i), null, {
                                                       default: withCtx(() => [
-                                                        createVNode(unref(_sfc_main$k), null, {
+                                                        createVNode(unref(_sfc_main$l), null, {
                                                           default: withCtx(() => [
                                                             createTextVNode("Cancel")
                                                           ]),
                                                           _: 1
                                                         }),
-                                                        createVNode(unref(_sfc_main$l), {
+                                                        createVNode(unref(_sfc_main$m), {
                                                           onClick: ($event) => emit("deleteTask", element)
                                                         }, {
                                                           default: withCtx(() => [
@@ -15389,9 +15415,9 @@ const _sfc_main$9 = {
                                             }, _parent7, _scopeId6));
                                           } else {
                                             return [
-                                              createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                              createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$1f), {
+                                                  createVNode(unref(_sfc_main$1g), {
                                                     onSelect: withModifiers(() => {
                                                     }, ["prevent"]),
                                                     class: "text-destructive"
@@ -15405,17 +15431,17 @@ const _sfc_main$9 = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$j), null, {
+                                              createVNode(unref(_sfc_main$k), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$g), null, {
+                                                  createVNode(unref(_sfc_main$h), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$f), null, {
+                                                      createVNode(unref(_sfc_main$g), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Delete Task?")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$i), null, {
+                                                      createVNode(unref(_sfc_main$j), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode(" This action cannot be undone. ")
                                                         ]),
@@ -15424,15 +15450,15 @@ const _sfc_main$9 = {
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$h), null, {
+                                                  createVNode(unref(_sfc_main$i), null, {
                                                     default: withCtx(() => [
-                                                      createVNode(unref(_sfc_main$k), null, {
+                                                      createVNode(unref(_sfc_main$l), null, {
                                                         default: withCtx(() => [
                                                           createTextVNode("Cancel")
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      createVNode(unref(_sfc_main$l), {
+                                                      createVNode(unref(_sfc_main$m), {
                                                         onClick: ($event) => emit("deleteTask", element)
                                                       }, {
                                                         default: withCtx(() => [
@@ -15453,7 +15479,7 @@ const _sfc_main$9 = {
                                       }, _parent6, _scopeId5));
                                     } else {
                                       return [
-                                        createVNode(unref(_sfc_main$1f), {
+                                        createVNode(unref(_sfc_main$1g), {
                                           onClick: ($event) => emit("editTask", element)
                                         }, {
                                           default: withCtx(() => [
@@ -15462,11 +15488,11 @@ const _sfc_main$9 = {
                                           ]),
                                           _: 2
                                         }, 1032, ["onClick"]),
-                                        createVNode(unref(_sfc_main$m), null, {
+                                        createVNode(unref(_sfc_main$n), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                            createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$1f), {
+                                                createVNode(unref(_sfc_main$1g), {
                                                   onSelect: withModifiers(() => {
                                                   }, ["prevent"]),
                                                   class: "text-destructive"
@@ -15480,17 +15506,17 @@ const _sfc_main$9 = {
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$j), null, {
+                                            createVNode(unref(_sfc_main$k), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$g), null, {
+                                                createVNode(unref(_sfc_main$h), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$f), null, {
+                                                    createVNode(unref(_sfc_main$g), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode("Delete Task?")
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$i), null, {
+                                                    createVNode(unref(_sfc_main$j), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode(" This action cannot be undone. ")
                                                       ]),
@@ -15499,15 +15525,15 @@ const _sfc_main$9 = {
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$h), null, {
+                                                createVNode(unref(_sfc_main$i), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$k), null, {
+                                                    createVNode(unref(_sfc_main$l), null, {
                                                       default: withCtx(() => [
                                                         createTextVNode("Cancel")
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    createVNode(unref(_sfc_main$l), {
+                                                    createVNode(unref(_sfc_main$m), {
                                                       onClick: ($event) => emit("deleteTask", element)
                                                     }, {
                                                       default: withCtx(() => [
@@ -15531,9 +15557,9 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1h), null, {
+                                  createVNode(unref(_sfc_main$1i), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$1f), {
+                                      createVNode(unref(_sfc_main$1g), {
                                         onClick: ($event) => emit("editTask", element)
                                       }, {
                                         default: withCtx(() => [
@@ -15542,11 +15568,11 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 2
                                       }, 1032, ["onClick"]),
-                                      createVNode(unref(_sfc_main$m), null, {
+                                      createVNode(unref(_sfc_main$n), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                          createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$1f), {
+                                              createVNode(unref(_sfc_main$1g), {
                                                 onSelect: withModifiers(() => {
                                                 }, ["prevent"]),
                                                 class: "text-destructive"
@@ -15560,17 +15586,17 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$j), null, {
+                                          createVNode(unref(_sfc_main$k), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$g), null, {
+                                              createVNode(unref(_sfc_main$h), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$f), null, {
+                                                  createVNode(unref(_sfc_main$g), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Delete Task?")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$i), null, {
+                                                  createVNode(unref(_sfc_main$j), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode(" This action cannot be undone. ")
                                                     ]),
@@ -15579,15 +15605,15 @@ const _sfc_main$9 = {
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$h), null, {
+                                              createVNode(unref(_sfc_main$i), null, {
                                                 default: withCtx(() => [
-                                                  createVNode(unref(_sfc_main$k), null, {
+                                                  createVNode(unref(_sfc_main$l), null, {
                                                     default: withCtx(() => [
                                                       createTextVNode("Cancel")
                                                     ]),
                                                     _: 1
                                                   }),
-                                                  createVNode(unref(_sfc_main$l), {
+                                                  createVNode(unref(_sfc_main$m), {
                                                     onClick: ($event) => emit("deleteTask", element)
                                                   }, {
                                                     default: withCtx(() => [
@@ -15614,9 +15640,9 @@ const _sfc_main$9 = {
                           }, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                            createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1p), {
+                                createVNode(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "icon",
                                   class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -15631,9 +15657,9 @@ const _sfc_main$9 = {
                             }),
                             createVNode(unref(DropdownMenuPortal), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$1h), null, {
+                                createVNode(unref(_sfc_main$1i), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$1f), {
+                                    createVNode(unref(_sfc_main$1g), {
                                       onClick: ($event) => emit("editTask", element)
                                     }, {
                                       default: withCtx(() => [
@@ -15642,11 +15668,11 @@ const _sfc_main$9 = {
                                       ]),
                                       _: 2
                                     }, 1032, ["onClick"]),
-                                    createVNode(unref(_sfc_main$m), null, {
+                                    createVNode(unref(_sfc_main$n), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                        createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$1f), {
+                                            createVNode(unref(_sfc_main$1g), {
                                               onSelect: withModifiers(() => {
                                               }, ["prevent"]),
                                               class: "text-destructive"
@@ -15660,17 +15686,17 @@ const _sfc_main$9 = {
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$j), null, {
+                                        createVNode(unref(_sfc_main$k), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$g), null, {
+                                            createVNode(unref(_sfc_main$h), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$f), null, {
+                                                createVNode(unref(_sfc_main$g), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Delete Task?")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$i), null, {
+                                                createVNode(unref(_sfc_main$j), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode(" This action cannot be undone. ")
                                                   ]),
@@ -15679,15 +15705,15 @@ const _sfc_main$9 = {
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$h), null, {
+                                            createVNode(unref(_sfc_main$i), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$k), null, {
+                                                createVNode(unref(_sfc_main$l), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode("Cancel")
                                                   ]),
                                                   _: 1
                                                 }),
-                                                createVNode(unref(_sfc_main$l), {
+                                                createVNode(unref(_sfc_main$m), {
                                                   onClick: ($event) => emit("deleteTask", element)
                                                 }, {
                                                   default: withCtx(() => [
@@ -15715,11 +15741,11 @@ const _sfc_main$9 = {
                       }),
                       _: 2
                     }, _parent3, _scopeId2));
-                    _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "p-3" }, {
+                    _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "p-3" }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
                           _push4(`<p class="font-semibold text-sm leading-snug line-through"${_scopeId3}>${ssrInterpolate(element.title)}</p><div class="flex items-center justify-between mt-3"${_scopeId3}>`);
-                          _push4(ssrRenderComponent(unref(_sfc_main$N), {
+                          _push4(ssrRenderComponent(unref(_sfc_main$O), {
                             variant: unref(taskHelper).getPriorityVariant(element.priority)
                           }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
@@ -15734,14 +15760,14 @@ const _sfc_main$9 = {
                             _: 2
                           }, _parent4, _scopeId3));
                           _push4(`<div class="flex items-center gap-2"${_scopeId3}><span class="text-xs text-muted-foreground"${_scopeId3}>${ssrInterpolate(unref(dateHelper).formatDate(element.due_date))}</span>`);
-                          _push4(ssrRenderComponent(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               var _a, _b;
                               if (_push5) {
-                                _push5(ssrRenderComponent(unref(_sfc_main$1j), {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1k), {
                                   src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                 }, null, _parent5, _scopeId4));
-                                _push5(ssrRenderComponent(unref(_sfc_main$1k), null, {
+                                _push5(ssrRenderComponent(unref(_sfc_main$1l), null, {
                                   default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                     var _a2, _b2;
                                     if (_push6) {
@@ -15756,10 +15782,10 @@ const _sfc_main$9 = {
                                 }, _parent5, _scopeId4));
                               } else {
                                 return [
-                                  createVNode(unref(_sfc_main$1j), {
+                                  createVNode(unref(_sfc_main$1k), {
                                     src: ((_b = element.assigned_user) == null ? void 0 : _b.avatar) ?? "https://github.com/unovue.png"
                                   }, null, 8, ["src"]),
-                                  createVNode(unref(_sfc_main$1k), null, {
+                                  createVNode(unref(_sfc_main$1l), null, {
                                     default: withCtx(() => {
                                       var _a2;
                                       return [
@@ -15778,7 +15804,7 @@ const _sfc_main$9 = {
                           return [
                             createVNode("p", { class: "font-semibold text-sm leading-snug line-through" }, toDisplayString(element.title), 1),
                             createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                              createVNode(unref(_sfc_main$N), {
+                              createVNode(unref(_sfc_main$O), {
                                 variant: unref(taskHelper).getPriorityVariant(element.priority)
                               }, {
                                 default: withCtx(() => [
@@ -15788,14 +15814,14 @@ const _sfc_main$9 = {
                               }, 1032, ["variant"]),
                               createVNode("div", { class: "flex items-center gap-2" }, [
                                 createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                                createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                                createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                   default: withCtx(() => {
                                     var _a;
                                     return [
-                                      createVNode(unref(_sfc_main$1j), {
+                                      createVNode(unref(_sfc_main$1k), {
                                         src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                       }, null, 8, ["src"]),
-                                      createVNode(unref(_sfc_main$1k), null, {
+                                      createVNode(unref(_sfc_main$1l), null, {
                                         default: withCtx(() => {
                                           var _a2;
                                           return [
@@ -15817,11 +15843,11 @@ const _sfc_main$9 = {
                     }, _parent3, _scopeId2));
                   } else {
                     return [
-                      createVNode(unref(_sfc_main$1i), null, {
+                      createVNode(unref(_sfc_main$1j), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 variant: "ghost",
                                 size: "icon",
                                 class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -15836,9 +15862,9 @@ const _sfc_main$9 = {
                           }),
                           createVNode(unref(DropdownMenuPortal), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1h), null, {
+                              createVNode(unref(_sfc_main$1i), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), {
+                                  createVNode(unref(_sfc_main$1g), {
                                     onClick: ($event) => emit("editTask", element)
                                   }, {
                                     default: withCtx(() => [
@@ -15847,11 +15873,11 @@ const _sfc_main$9 = {
                                     ]),
                                     _: 2
                                   }, 1032, ["onClick"]),
-                                  createVNode(unref(_sfc_main$m), null, {
+                                  createVNode(unref(_sfc_main$n), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1f), {
+                                          createVNode(unref(_sfc_main$1g), {
                                             onSelect: withModifiers(() => {
                                             }, ["prevent"]),
                                             class: "text-destructive"
@@ -15865,17 +15891,17 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$j), null, {
+                                      createVNode(unref(_sfc_main$k), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$g), null, {
+                                          createVNode(unref(_sfc_main$h), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$f), null, {
+                                              createVNode(unref(_sfc_main$g), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Delete Task?")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$i), null, {
+                                              createVNode(unref(_sfc_main$j), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode(" This action cannot be undone. ")
                                                 ]),
@@ -15884,15 +15910,15 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$h), null, {
+                                          createVNode(unref(_sfc_main$i), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$k), null, {
+                                              createVNode(unref(_sfc_main$l), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Cancel")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$l), {
+                                              createVNode(unref(_sfc_main$m), {
                                                 onClick: ($event) => emit("deleteTask", element)
                                               }, {
                                                 default: withCtx(() => [
@@ -15918,11 +15944,11 @@ const _sfc_main$9 = {
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$Z), { class: "p-3" }, {
+                      createVNode(unref(_sfc_main$_), { class: "p-3" }, {
                         default: withCtx(() => [
                           createVNode("p", { class: "font-semibold text-sm leading-snug line-through" }, toDisplayString(element.title), 1),
                           createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                            createVNode(unref(_sfc_main$N), {
+                            createVNode(unref(_sfc_main$O), {
                               variant: unref(taskHelper).getPriorityVariant(element.priority)
                             }, {
                               default: withCtx(() => [
@@ -15932,14 +15958,14 @@ const _sfc_main$9 = {
                             }, 1032, ["variant"]),
                             createVNode("div", { class: "flex items-center gap-2" }, [
                               createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                              createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                              createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                 default: withCtx(() => {
                                   var _a;
                                   return [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                     }, null, 8, ["src"]),
-                                    createVNode(unref(_sfc_main$1k), null, {
+                                    createVNode(unref(_sfc_main$1l), null, {
                                       default: withCtx(() => {
                                         var _a2;
                                         return [
@@ -15973,13 +15999,16 @@ const _sfc_main$9 = {
                   "data-task-id": element.id,
                   class: "cursor-grab group relative"
                 }, [
-                  createVNode(unref(_sfc_main$_), { class: "bg-background shadow-sm opacity-70 hover:shadow-md transition-shadow" }, {
+                  createVNode(unref(_sfc_main$$), {
+                    class: "bg-background shadow-sm opacity-70 hover:shadow-md transition-shadow",
+                    onClick: ($event) => emit("viewTask", element)
+                  }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$1i), null, {
+                      createVNode(unref(_sfc_main$1j), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$1b), { "as-child": "" }, {
+                          createVNode(unref(_sfc_main$1c), { "as-child": "" }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1p), {
+                              createVNode(unref(_sfc_main$1q), {
                                 variant: "ghost",
                                 size: "icon",
                                 class: "h-6 w-6 absolute top-1 right-1 hidden group-hover:inline-flex"
@@ -15994,9 +16023,9 @@ const _sfc_main$9 = {
                           }),
                           createVNode(unref(DropdownMenuPortal), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$1h), null, {
+                              createVNode(unref(_sfc_main$1i), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$1f), {
+                                  createVNode(unref(_sfc_main$1g), {
                                     onClick: ($event) => emit("editTask", element)
                                   }, {
                                     default: withCtx(() => [
@@ -16005,11 +16034,11 @@ const _sfc_main$9 = {
                                     ]),
                                     _: 2
                                   }, 1032, ["onClick"]),
-                                  createVNode(unref(_sfc_main$m), null, {
+                                  createVNode(unref(_sfc_main$n), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$e), { "as-child": "" }, {
+                                      createVNode(unref(_sfc_main$f), { "as-child": "" }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$1f), {
+                                          createVNode(unref(_sfc_main$1g), {
                                             onSelect: withModifiers(() => {
                                             }, ["prevent"]),
                                             class: "text-destructive"
@@ -16023,17 +16052,17 @@ const _sfc_main$9 = {
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$j), null, {
+                                      createVNode(unref(_sfc_main$k), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$g), null, {
+                                          createVNode(unref(_sfc_main$h), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$f), null, {
+                                              createVNode(unref(_sfc_main$g), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Delete Task?")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$i), null, {
+                                              createVNode(unref(_sfc_main$j), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode(" This action cannot be undone. ")
                                                 ]),
@@ -16042,15 +16071,15 @@ const _sfc_main$9 = {
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$h), null, {
+                                          createVNode(unref(_sfc_main$i), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$k), null, {
+                                              createVNode(unref(_sfc_main$l), null, {
                                                 default: withCtx(() => [
                                                   createTextVNode("Cancel")
                                                 ]),
                                                 _: 1
                                               }),
-                                              createVNode(unref(_sfc_main$l), {
+                                              createVNode(unref(_sfc_main$m), {
                                                 onClick: ($event) => emit("deleteTask", element)
                                               }, {
                                                 default: withCtx(() => [
@@ -16076,11 +16105,11 @@ const _sfc_main$9 = {
                         ]),
                         _: 2
                       }, 1024),
-                      createVNode(unref(_sfc_main$Z), { class: "p-3" }, {
+                      createVNode(unref(_sfc_main$_), { class: "p-3" }, {
                         default: withCtx(() => [
                           createVNode("p", { class: "font-semibold text-sm leading-snug line-through" }, toDisplayString(element.title), 1),
                           createVNode("div", { class: "flex items-center justify-between mt-3" }, [
-                            createVNode(unref(_sfc_main$N), {
+                            createVNode(unref(_sfc_main$O), {
                               variant: unref(taskHelper).getPriorityVariant(element.priority)
                             }, {
                               default: withCtx(() => [
@@ -16090,14 +16119,14 @@ const _sfc_main$9 = {
                             }, 1032, ["variant"]),
                             createVNode("div", { class: "flex items-center gap-2" }, [
                               createVNode("span", { class: "text-xs text-muted-foreground" }, toDisplayString(unref(dateHelper).formatDate(element.due_date)), 1),
-                              createVNode(unref(_sfc_main$1l), { class: "h-6 w-6" }, {
+                              createVNode(unref(_sfc_main$1m), { class: "h-6 w-6" }, {
                                 default: withCtx(() => {
                                   var _a;
                                   return [
-                                    createVNode(unref(_sfc_main$1j), {
+                                    createVNode(unref(_sfc_main$1k), {
                                       src: ((_a = element.assigned_user) == null ? void 0 : _a.avatar) ?? "https://github.com/unovue.png"
                                     }, null, 8, ["src"]),
-                                    createVNode(unref(_sfc_main$1k), null, {
+                                    createVNode(unref(_sfc_main$1l), null, {
                                       default: withCtx(() => {
                                         var _a2;
                                         return [
@@ -16117,7 +16146,7 @@ const _sfc_main$9 = {
                       }, 1024)
                     ]),
                     _: 2
-                  }, 1024)
+                  }, 1032, ["onClick"])
                 ], 8, ["data-task-id"]);
               }), 128))
             ];
@@ -16129,10 +16158,566 @@ const _sfc_main$9 = {
     };
   }
 };
+const _sfc_setup$a = _sfc_main$a.setup;
+_sfc_main$a.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/task/task-board-view.vue");
+  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
+};
+const _sfc_main$9 = {
+  __name: "task-detail-dialog",
+  __ssrInlineRender: true,
+  props: {
+    modelValue: Boolean,
+    task: Object
+  },
+  emits: ["update:modelValue", "comment-posted"],
+  setup(__props, { emit: __emit }) {
+    const props = __props;
+    const emit = __emit;
+    const commentForm = useForm({
+      body: ""
+    });
+    const submitComment = () => {
+      if (!props.task) return;
+      commentForm.post(`/task/${props.task.id}/comments`, {
+        preserveScroll: true,
+        onSuccess: () => {
+          commentForm.reset();
+          toast.success("Comment posted");
+          emit("comment-posted");
+        },
+        onError: () => toast.error("Failed to post comment.")
+      });
+    };
+    const user = usePage().props.auth.user;
+    const taskHelper = new TaskHelper();
+    const dateHelper = new DateHelper();
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(ssrRenderComponent(unref(_sfc_main$w), mergeProps({
+        open: __props.modelValue,
+        "onUpdate:open": (value) => emit("update:modelValue", value)
+      }, _attrs), {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(ssrRenderComponent(unref(_sfc_main$u), { class: "sm:max-w-2xl" }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  if (__props.task) {
+                    _push3(`<!--[-->`);
+                    _push3(ssrRenderComponent(unref(_sfc_main$s), null, {
+                      default: withCtx((_3, _push4, _parent4, _scopeId3) => {
+                        if (_push4) {
+                          _push4(ssrRenderComponent(unref(_sfc_main$r), null, {
+                            default: withCtx((_4, _push5, _parent5, _scopeId4) => {
+                              if (_push5) {
+                                _push5(`${ssrInterpolate(__props.task.title)}`);
+                              } else {
+                                return [
+                                  createTextVNode(toDisplayString(__props.task.title), 1)
+                                ];
+                              }
+                            }),
+                            _: 1
+                          }, _parent4, _scopeId3));
+                          _push4(ssrRenderComponent(unref(_sfc_main$t), null, {
+                            default: withCtx((_4, _push5, _parent5, _scopeId4) => {
+                              if (_push5) {
+                                _push5(`${ssrInterpolate(__props.task.description || "No description.")}`);
+                              } else {
+                                return [
+                                  createTextVNode(toDisplayString(__props.task.description || "No description."), 1)
+                                ];
+                              }
+                            }),
+                            _: 1
+                          }, _parent4, _scopeId3));
+                        } else {
+                          return [
+                            createVNode(unref(_sfc_main$r), null, {
+                              default: withCtx(() => [
+                                createTextVNode(toDisplayString(__props.task.title), 1)
+                              ]),
+                              _: 1
+                            }),
+                            createVNode(unref(_sfc_main$t), null, {
+                              default: withCtx(() => [
+                                createTextVNode(toDisplayString(__props.task.description || "No description."), 1)
+                              ]),
+                              _: 1
+                            })
+                          ];
+                        }
+                      }),
+                      _: 1
+                    }, _parent3, _scopeId2));
+                    _push3(`<div class="py-4 space-y-6"${_scopeId2}><div class="grid grid-cols-3 gap-4 text-sm"${_scopeId2}><div${_scopeId2}><span class="font-semibold mr-2"${_scopeId2}>Status:</span>`);
+                    _push3(ssrRenderComponent(unref(_sfc_main$O), {
+                      variant: unref(taskHelper).getStatusVariant(__props.task.status)
+                    }, {
+                      default: withCtx((_3, _push4, _parent4, _scopeId3) => {
+                        if (_push4) {
+                          _push4(`${ssrInterpolate(unref(taskHelper).getStatusLabel(__props.task.status))}`);
+                        } else {
+                          return [
+                            createTextVNode(toDisplayString(unref(taskHelper).getStatusLabel(__props.task.status)), 1)
+                          ];
+                        }
+                      }),
+                      _: 1
+                    }, _parent3, _scopeId2));
+                    _push3(`</div><div${_scopeId2}><span class="font-semibold mr-2"${_scopeId2}>Priority:</span>`);
+                    _push3(ssrRenderComponent(unref(_sfc_main$O), {
+                      variant: unref(taskHelper).getPriorityVariant(__props.task.priority)
+                    }, {
+                      default: withCtx((_3, _push4, _parent4, _scopeId3) => {
+                        if (_push4) {
+                          _push4(`${ssrInterpolate(unref(taskHelper).getPriorityLabel(__props.task.priority))}`);
+                        } else {
+                          return [
+                            createTextVNode(toDisplayString(unref(taskHelper).getPriorityLabel(__props.task.priority)), 1)
+                          ];
+                        }
+                      }),
+                      _: 1
+                    }, _parent3, _scopeId2));
+                    _push3(`</div><div${_scopeId2}><span class="font-semibold"${_scopeId2}>Due Date:</span> ${ssrInterpolate(unref(dateHelper).formatDate(__props.task.due_date, "MMM d, yyyy") || "N/A")}</div></div><div class="border-t"${_scopeId2}></div><h3 class="font-semibold"${_scopeId2}>Comments</h3><div class="space-y-4"${_scopeId2}><!--[-->`);
+                    ssrRenderList(__props.task.comments, (comment) => {
+                      var _a;
+                      _push3(`<div class="flex items-start space-x-3"${_scopeId2}>`);
+                      _push3(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-8 w-8" }, {
+                        default: withCtx((_3, _push4, _parent4, _scopeId3) => {
+                          var _a2, _b;
+                          if (_push4) {
+                            _push4(ssrRenderComponent(unref(_sfc_main$1k), {
+                              src: ((_a2 = comment == null ? void 0 : comment.user) == null ? void 0 : _a2.avatar) ?? "https://github.com/unovue.png"
+                            }, null, _parent4, _scopeId3));
+                            _push4(ssrRenderComponent(unref(_sfc_main$1l), null, {
+                              default: withCtx((_4, _push5, _parent5, _scopeId4) => {
+                                var _a3, _b2, _c, _d;
+                                if (_push5) {
+                                  _push5(`${ssrInterpolate((_b2 = (_a3 = comment == null ? void 0 : comment.user) == null ? void 0 : _a3.name) == null ? void 0 : _b2.charAt(0))}`);
+                                } else {
+                                  return [
+                                    createTextVNode(toDisplayString((_d = (_c = comment == null ? void 0 : comment.user) == null ? void 0 : _c.name) == null ? void 0 : _d.charAt(0)), 1)
+                                  ];
+                                }
+                              }),
+                              _: 2
+                            }, _parent4, _scopeId3));
+                          } else {
+                            return [
+                              createVNode(unref(_sfc_main$1k), {
+                                src: ((_b = comment == null ? void 0 : comment.user) == null ? void 0 : _b.avatar) ?? "https://github.com/unovue.png"
+                              }, null, 8, ["src"]),
+                              createVNode(unref(_sfc_main$1l), null, {
+                                default: withCtx(() => {
+                                  var _a3, _b2;
+                                  return [
+                                    createTextVNode(toDisplayString((_b2 = (_a3 = comment == null ? void 0 : comment.user) == null ? void 0 : _a3.name) == null ? void 0 : _b2.charAt(0)), 1)
+                                  ];
+                                }),
+                                _: 2
+                              }, 1024)
+                            ];
+                          }
+                        }),
+                        _: 2
+                      }, _parent3, _scopeId2));
+                      _push3(`<div class="flex-1"${_scopeId2}><div class="flex justify-between"${_scopeId2}><div${_scopeId2}><p class="text-sm font-semibold"${_scopeId2}>${ssrInterpolate((_a = comment == null ? void 0 : comment.user) == null ? void 0 : _a.name)}</p><p class="text-sm text-muted-foreground"${_scopeId2}>${ssrInterpolate(comment == null ? void 0 : comment.body)}</p></div><div${_scopeId2}><p class="text-sm text-muted-foreground/70"${_scopeId2}>${ssrInterpolate(unref(dateHelper).relativeTime(comment == null ? void 0 : comment.created_at))}</p></div></div></div></div>`);
+                    });
+                    _push3(`<!--]-->`);
+                    if (!__props.task.comments || __props.task.comments.length === 0) {
+                      _push3(`<div class="text-sm text-center text-muted-foreground py-4"${_scopeId2}> Be the first to leave a comment. </div>`);
+                    } else {
+                      _push3(`<!---->`);
+                    }
+                    _push3(`</div><form class="flex items-start space-x-3"${_scopeId2}>`);
+                    _push3(ssrRenderComponent(unref(_sfc_main$1m), { class: "h-8 w-8" }, {
+                      default: withCtx((_3, _push4, _parent4, _scopeId3) => {
+                        if (_push4) {
+                          _push4(ssrRenderComponent(unref(_sfc_main$1k), {
+                            src: unref(user).avatar ?? "https://github.com/unovue.png"
+                          }, null, _parent4, _scopeId3));
+                          _push4(ssrRenderComponent(unref(_sfc_main$1l), null, {
+                            default: withCtx((_4, _push5, _parent5, _scopeId4) => {
+                              var _a, _b;
+                              if (_push5) {
+                                _push5(`${ssrInterpolate((_a = unref(user).name) == null ? void 0 : _a.charAt(0))}`);
+                              } else {
+                                return [
+                                  createTextVNode(toDisplayString((_b = unref(user).name) == null ? void 0 : _b.charAt(0)), 1)
+                                ];
+                              }
+                            }),
+                            _: 1
+                          }, _parent4, _scopeId3));
+                        } else {
+                          return [
+                            createVNode(unref(_sfc_main$1k), {
+                              src: unref(user).avatar ?? "https://github.com/unovue.png"
+                            }, null, 8, ["src"]),
+                            createVNode(unref(_sfc_main$1l), null, {
+                              default: withCtx(() => {
+                                var _a;
+                                return [
+                                  createTextVNode(toDisplayString((_a = unref(user).name) == null ? void 0 : _a.charAt(0)), 1)
+                                ];
+                              }),
+                              _: 1
+                            })
+                          ];
+                        }
+                      }),
+                      _: 1
+                    }, _parent3, _scopeId2));
+                    _push3(ssrRenderComponent(unref(_sfc_main$K), {
+                      modelValue: unref(commentForm).body,
+                      "onUpdate:modelValue": ($event) => unref(commentForm).body = $event,
+                      placeholder: "Write a comment...",
+                      rows: "2"
+                    }, null, _parent3, _scopeId2));
+                    if (unref(commentForm).errors.body) {
+                      _push3(`<p class="text-sm text-destructive"${_scopeId2}>${ssrInterpolate(unref(commentForm).errors.body)}</p>`);
+                    } else {
+                      _push3(`<!---->`);
+                    }
+                    _push3(ssrRenderComponent(unref(_sfc_main$1q), {
+                      type: "submit",
+                      disabled: unref(commentForm).processing
+                    }, {
+                      default: withCtx((_3, _push4, _parent4, _scopeId3) => {
+                        if (_push4) {
+                          if (unref(commentForm).processing) {
+                            _push4(ssrRenderComponent(unref(Loader), { class: "animate-spin" }, null, _parent4, _scopeId3));
+                          } else {
+                            _push4(`<!---->`);
+                          }
+                          _push4(` Post `);
+                        } else {
+                          return [
+                            unref(commentForm).processing ? (openBlock(), createBlock(unref(Loader), {
+                              key: 0,
+                              class: "animate-spin"
+                            })) : createCommentVNode("", true),
+                            createTextVNode(" Post ")
+                          ];
+                        }
+                      }),
+                      _: 1
+                    }, _parent3, _scopeId2));
+                    _push3(`</form></div><!--]-->`);
+                  } else {
+                    _push3(`<!---->`);
+                  }
+                } else {
+                  return [
+                    __props.task ? (openBlock(), createBlock(Fragment, { key: 0 }, [
+                      createVNode(unref(_sfc_main$s), null, {
+                        default: withCtx(() => [
+                          createVNode(unref(_sfc_main$r), null, {
+                            default: withCtx(() => [
+                              createTextVNode(toDisplayString(__props.task.title), 1)
+                            ]),
+                            _: 1
+                          }),
+                          createVNode(unref(_sfc_main$t), null, {
+                            default: withCtx(() => [
+                              createTextVNode(toDisplayString(__props.task.description || "No description."), 1)
+                            ]),
+                            _: 1
+                          })
+                        ]),
+                        _: 1
+                      }),
+                      createVNode("div", { class: "py-4 space-y-6" }, [
+                        createVNode("div", { class: "grid grid-cols-3 gap-4 text-sm" }, [
+                          createVNode("div", null, [
+                            createVNode("span", { class: "font-semibold mr-2" }, "Status:"),
+                            createVNode(unref(_sfc_main$O), {
+                              variant: unref(taskHelper).getStatusVariant(__props.task.status)
+                            }, {
+                              default: withCtx(() => [
+                                createTextVNode(toDisplayString(unref(taskHelper).getStatusLabel(__props.task.status)), 1)
+                              ]),
+                              _: 1
+                            }, 8, ["variant"])
+                          ]),
+                          createVNode("div", null, [
+                            createVNode("span", { class: "font-semibold mr-2" }, "Priority:"),
+                            createVNode(unref(_sfc_main$O), {
+                              variant: unref(taskHelper).getPriorityVariant(__props.task.priority)
+                            }, {
+                              default: withCtx(() => [
+                                createTextVNode(toDisplayString(unref(taskHelper).getPriorityLabel(__props.task.priority)), 1)
+                              ]),
+                              _: 1
+                            }, 8, ["variant"])
+                          ]),
+                          createVNode("div", null, [
+                            createVNode("span", { class: "font-semibold" }, "Due Date:"),
+                            createTextVNode(" " + toDisplayString(unref(dateHelper).formatDate(__props.task.due_date, "MMM d, yyyy") || "N/A"), 1)
+                          ])
+                        ]),
+                        createVNode("div", { class: "border-t" }),
+                        createVNode("h3", { class: "font-semibold" }, "Comments"),
+                        createVNode("div", { class: "space-y-4" }, [
+                          (openBlock(true), createBlock(Fragment, null, renderList(__props.task.comments, (comment) => {
+                            var _a;
+                            return openBlock(), createBlock("div", {
+                              key: comment.id,
+                              class: "flex items-start space-x-3"
+                            }, [
+                              createVNode(unref(_sfc_main$1m), { class: "h-8 w-8" }, {
+                                default: withCtx(() => {
+                                  var _a2;
+                                  return [
+                                    createVNode(unref(_sfc_main$1k), {
+                                      src: ((_a2 = comment == null ? void 0 : comment.user) == null ? void 0 : _a2.avatar) ?? "https://github.com/unovue.png"
+                                    }, null, 8, ["src"]),
+                                    createVNode(unref(_sfc_main$1l), null, {
+                                      default: withCtx(() => {
+                                        var _a3, _b;
+                                        return [
+                                          createTextVNode(toDisplayString((_b = (_a3 = comment == null ? void 0 : comment.user) == null ? void 0 : _a3.name) == null ? void 0 : _b.charAt(0)), 1)
+                                        ];
+                                      }),
+                                      _: 2
+                                    }, 1024)
+                                  ];
+                                }),
+                                _: 2
+                              }, 1024),
+                              createVNode("div", { class: "flex-1" }, [
+                                createVNode("div", { class: "flex justify-between" }, [
+                                  createVNode("div", null, [
+                                    createVNode("p", { class: "text-sm font-semibold" }, toDisplayString((_a = comment == null ? void 0 : comment.user) == null ? void 0 : _a.name), 1),
+                                    createVNode("p", { class: "text-sm text-muted-foreground" }, toDisplayString(comment == null ? void 0 : comment.body), 1)
+                                  ]),
+                                  createVNode("div", null, [
+                                    createVNode("p", { class: "text-sm text-muted-foreground/70" }, toDisplayString(unref(dateHelper).relativeTime(comment == null ? void 0 : comment.created_at)), 1)
+                                  ])
+                                ])
+                              ])
+                            ]);
+                          }), 128)),
+                          !__props.task.comments || __props.task.comments.length === 0 ? (openBlock(), createBlock("div", {
+                            key: 0,
+                            class: "text-sm text-center text-muted-foreground py-4"
+                          }, " Be the first to leave a comment. ")) : createCommentVNode("", true)
+                        ]),
+                        createVNode("form", {
+                          onSubmit: withModifiers(submitComment, ["prevent"]),
+                          class: "flex items-start space-x-3"
+                        }, [
+                          createVNode(unref(_sfc_main$1m), { class: "h-8 w-8" }, {
+                            default: withCtx(() => [
+                              createVNode(unref(_sfc_main$1k), {
+                                src: unref(user).avatar ?? "https://github.com/unovue.png"
+                              }, null, 8, ["src"]),
+                              createVNode(unref(_sfc_main$1l), null, {
+                                default: withCtx(() => {
+                                  var _a;
+                                  return [
+                                    createTextVNode(toDisplayString((_a = unref(user).name) == null ? void 0 : _a.charAt(0)), 1)
+                                  ];
+                                }),
+                                _: 1
+                              })
+                            ]),
+                            _: 1
+                          }),
+                          createVNode(unref(_sfc_main$K), {
+                            modelValue: unref(commentForm).body,
+                            "onUpdate:modelValue": ($event) => unref(commentForm).body = $event,
+                            placeholder: "Write a comment...",
+                            rows: "2"
+                          }, null, 8, ["modelValue", "onUpdate:modelValue"]),
+                          unref(commentForm).errors.body ? (openBlock(), createBlock("p", {
+                            key: 0,
+                            class: "text-sm text-destructive"
+                          }, toDisplayString(unref(commentForm).errors.body), 1)) : createCommentVNode("", true),
+                          createVNode(unref(_sfc_main$1q), {
+                            type: "submit",
+                            disabled: unref(commentForm).processing
+                          }, {
+                            default: withCtx(() => [
+                              unref(commentForm).processing ? (openBlock(), createBlock(unref(Loader), {
+                                key: 0,
+                                class: "animate-spin"
+                              })) : createCommentVNode("", true),
+                              createTextVNode(" Post ")
+                            ]),
+                            _: 1
+                          }, 8, ["disabled"])
+                        ], 32)
+                      ])
+                    ], 64)) : createCommentVNode("", true)
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+          } else {
+            return [
+              createVNode(unref(_sfc_main$u), { class: "sm:max-w-2xl" }, {
+                default: withCtx(() => [
+                  __props.task ? (openBlock(), createBlock(Fragment, { key: 0 }, [
+                    createVNode(unref(_sfc_main$s), null, {
+                      default: withCtx(() => [
+                        createVNode(unref(_sfc_main$r), null, {
+                          default: withCtx(() => [
+                            createTextVNode(toDisplayString(__props.task.title), 1)
+                          ]),
+                          _: 1
+                        }),
+                        createVNode(unref(_sfc_main$t), null, {
+                          default: withCtx(() => [
+                            createTextVNode(toDisplayString(__props.task.description || "No description."), 1)
+                          ]),
+                          _: 1
+                        })
+                      ]),
+                      _: 1
+                    }),
+                    createVNode("div", { class: "py-4 space-y-6" }, [
+                      createVNode("div", { class: "grid grid-cols-3 gap-4 text-sm" }, [
+                        createVNode("div", null, [
+                          createVNode("span", { class: "font-semibold mr-2" }, "Status:"),
+                          createVNode(unref(_sfc_main$O), {
+                            variant: unref(taskHelper).getStatusVariant(__props.task.status)
+                          }, {
+                            default: withCtx(() => [
+                              createTextVNode(toDisplayString(unref(taskHelper).getStatusLabel(__props.task.status)), 1)
+                            ]),
+                            _: 1
+                          }, 8, ["variant"])
+                        ]),
+                        createVNode("div", null, [
+                          createVNode("span", { class: "font-semibold mr-2" }, "Priority:"),
+                          createVNode(unref(_sfc_main$O), {
+                            variant: unref(taskHelper).getPriorityVariant(__props.task.priority)
+                          }, {
+                            default: withCtx(() => [
+                              createTextVNode(toDisplayString(unref(taskHelper).getPriorityLabel(__props.task.priority)), 1)
+                            ]),
+                            _: 1
+                          }, 8, ["variant"])
+                        ]),
+                        createVNode("div", null, [
+                          createVNode("span", { class: "font-semibold" }, "Due Date:"),
+                          createTextVNode(" " + toDisplayString(unref(dateHelper).formatDate(__props.task.due_date, "MMM d, yyyy") || "N/A"), 1)
+                        ])
+                      ]),
+                      createVNode("div", { class: "border-t" }),
+                      createVNode("h3", { class: "font-semibold" }, "Comments"),
+                      createVNode("div", { class: "space-y-4" }, [
+                        (openBlock(true), createBlock(Fragment, null, renderList(__props.task.comments, (comment) => {
+                          var _a;
+                          return openBlock(), createBlock("div", {
+                            key: comment.id,
+                            class: "flex items-start space-x-3"
+                          }, [
+                            createVNode(unref(_sfc_main$1m), { class: "h-8 w-8" }, {
+                              default: withCtx(() => {
+                                var _a2;
+                                return [
+                                  createVNode(unref(_sfc_main$1k), {
+                                    src: ((_a2 = comment == null ? void 0 : comment.user) == null ? void 0 : _a2.avatar) ?? "https://github.com/unovue.png"
+                                  }, null, 8, ["src"]),
+                                  createVNode(unref(_sfc_main$1l), null, {
+                                    default: withCtx(() => {
+                                      var _a3, _b;
+                                      return [
+                                        createTextVNode(toDisplayString((_b = (_a3 = comment == null ? void 0 : comment.user) == null ? void 0 : _a3.name) == null ? void 0 : _b.charAt(0)), 1)
+                                      ];
+                                    }),
+                                    _: 2
+                                  }, 1024)
+                                ];
+                              }),
+                              _: 2
+                            }, 1024),
+                            createVNode("div", { class: "flex-1" }, [
+                              createVNode("div", { class: "flex justify-between" }, [
+                                createVNode("div", null, [
+                                  createVNode("p", { class: "text-sm font-semibold" }, toDisplayString((_a = comment == null ? void 0 : comment.user) == null ? void 0 : _a.name), 1),
+                                  createVNode("p", { class: "text-sm text-muted-foreground" }, toDisplayString(comment == null ? void 0 : comment.body), 1)
+                                ]),
+                                createVNode("div", null, [
+                                  createVNode("p", { class: "text-sm text-muted-foreground/70" }, toDisplayString(unref(dateHelper).relativeTime(comment == null ? void 0 : comment.created_at)), 1)
+                                ])
+                              ])
+                            ])
+                          ]);
+                        }), 128)),
+                        !__props.task.comments || __props.task.comments.length === 0 ? (openBlock(), createBlock("div", {
+                          key: 0,
+                          class: "text-sm text-center text-muted-foreground py-4"
+                        }, " Be the first to leave a comment. ")) : createCommentVNode("", true)
+                      ]),
+                      createVNode("form", {
+                        onSubmit: withModifiers(submitComment, ["prevent"]),
+                        class: "flex items-start space-x-3"
+                      }, [
+                        createVNode(unref(_sfc_main$1m), { class: "h-8 w-8" }, {
+                          default: withCtx(() => [
+                            createVNode(unref(_sfc_main$1k), {
+                              src: unref(user).avatar ?? "https://github.com/unovue.png"
+                            }, null, 8, ["src"]),
+                            createVNode(unref(_sfc_main$1l), null, {
+                              default: withCtx(() => {
+                                var _a;
+                                return [
+                                  createTextVNode(toDisplayString((_a = unref(user).name) == null ? void 0 : _a.charAt(0)), 1)
+                                ];
+                              }),
+                              _: 1
+                            })
+                          ]),
+                          _: 1
+                        }),
+                        createVNode(unref(_sfc_main$K), {
+                          modelValue: unref(commentForm).body,
+                          "onUpdate:modelValue": ($event) => unref(commentForm).body = $event,
+                          placeholder: "Write a comment...",
+                          rows: "2"
+                        }, null, 8, ["modelValue", "onUpdate:modelValue"]),
+                        unref(commentForm).errors.body ? (openBlock(), createBlock("p", {
+                          key: 0,
+                          class: "text-sm text-destructive"
+                        }, toDisplayString(unref(commentForm).errors.body), 1)) : createCommentVNode("", true),
+                        createVNode(unref(_sfc_main$1q), {
+                          type: "submit",
+                          disabled: unref(commentForm).processing
+                        }, {
+                          default: withCtx(() => [
+                            unref(commentForm).processing ? (openBlock(), createBlock(unref(Loader), {
+                              key: 0,
+                              class: "animate-spin"
+                            })) : createCommentVNode("", true),
+                            createTextVNode(" Post ")
+                          ]),
+                          _: 1
+                        }, 8, ["disabled"])
+                      ], 32)
+                    ])
+                  ], 64)) : createCommentVNode("", true)
+                ]),
+                _: 1
+              })
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+    };
+  }
+};
 const _sfc_setup$9 = _sfc_main$9.setup;
 _sfc_main$9.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/task/task-board-view.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/shared/task/task-detail-dialog.vue");
   return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
 };
 const _sfc_main$8 = {
@@ -16155,6 +16740,30 @@ const _sfc_main$8 = {
     const isEditTaskDialogOpen = ref(false);
     const editingTask = ref(null);
     const viewMode = ref("list");
+    const isTaskDetailDialogOpen = ref(false);
+    const viewingTask = ref(null);
+    const openTaskDetailDialog = (task) => {
+      router.reload({
+        only: ["taskWithDetails"],
+        data: { taskId: task.id },
+        onSuccess: (page2) => {
+          viewingTask.value = page2.props.taskWithDetails;
+          isTaskDetailDialogOpen.value = true;
+        }
+      });
+    };
+    const refreshTaskDetails = () => {
+      if (viewingTask.value) {
+        router.reload({
+          only: ["taskWithDetails"],
+          data: { taskId: viewingTask.value.id },
+          onSuccess: (page2) => {
+            viewingTask.value = page2.props.taskWithDetails;
+          },
+          preserveState: true
+        });
+      }
+    };
     const updateTask = (task, data) => {
       router.patch(`/task/${task.id}`, data, {
         preserveScroll: true,
@@ -16201,21 +16810,21 @@ const _sfc_main$8 = {
       _push(ssrRenderComponent(unref(Head), {
         title: __props.project.name
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$10, { breadcrumbs }, {
+      _push(ssrRenderComponent(_sfc_main$11, { breadcrumbs }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Toaster), {
               position: "top-right",
               richColors: ""
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$c, {
+            _push2(ssrRenderComponent(_sfc_main$d, {
               open: isAddTaskDialogOpen.value,
               "onUpdate:open": ($event) => isAddTaskDialogOpen.value = $event,
               project: __props.project,
               members: __props.project.members,
               "task-priorities": __props.taskPriorities
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$b, {
+            _push2(ssrRenderComponent(_sfc_main$c, {
               modelValue: isEditTaskDialogOpen.value,
               "onUpdate:modelValue": ($event) => isEditTaskDialogOpen.value = $event,
               task: editingTask.value,
@@ -16224,7 +16833,7 @@ const _sfc_main$8 = {
               onSubmit: (form) => updateTask(editingTask.value, form.data())
             }, null, _parent2, _scopeId));
             if (canManageProject.value) {
-              _push2(ssrRenderComponent(_sfc_main$p, {
+              _push2(ssrRenderComponent(_sfc_main$q, {
                 open: isAddMemberDialogOpen.value,
                 "onUpdate:open": ($event) => isAddMemberDialogOpen.value = $event,
                 project: __props.project
@@ -16232,9 +16841,15 @@ const _sfc_main$8 = {
             } else {
               _push2(`<!---->`);
             }
+            _push2(ssrRenderComponent(_sfc_main$9, {
+              open: isTaskDetailDialogOpen.value,
+              "onUpdate:open": ($event) => isTaskDetailDialogOpen.value = $event,
+              task: viewingTask.value,
+              onCommentPosted: refreshTaskDetails
+            }, null, _parent2, _scopeId));
             _push2(`<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6"${_scopeId}><div${_scopeId}><h2 class="font-semibold text-2xl"${_scopeId}>${ssrInterpolate(__props.project.name)}</h2><p class="text-muted-foreground mt-1"${_scopeId}>${ssrInterpolate(__props.project.description || "No description provided.")}</p></div><div class="flex items-center space-x-2 self-start sm:self-center"${_scopeId}>`);
             if (canManageProject.value) {
-              _push2(ssrRenderComponent(unref(_sfc_main$1p), {
+              _push2(ssrRenderComponent(unref(_sfc_main$1q), {
                 variant: "outline",
                 onClick: ($event) => isAddMemberDialogOpen.value = true
               }, {
@@ -16252,7 +16867,7 @@ const _sfc_main$8 = {
             } else {
               _push2(`<!---->`);
             }
-            _push2(ssrRenderComponent(unref(_sfc_main$1p), {
+            _push2(ssrRenderComponent(unref(_sfc_main$1q), {
               onClick: ($event) => isAddTaskDialogOpen.value = true
             }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
@@ -16267,18 +16882,18 @@ const _sfc_main$8 = {
               _: 1
             }, _parent2, _scopeId));
             _push2(`</div></div>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$z), {
+            _push2(ssrRenderComponent(unref(_sfc_main$A), {
               "default-value": "tasks",
               class: "w-full"
             }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$x), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$y), {
                     class: ["grid w-full", canManageProject.value ? "grid-cols-4" : "grid-cols-3"]
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$w), { value: "tasks" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$x), { value: "tasks" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Tasks`);
@@ -16290,7 +16905,7 @@ const _sfc_main$8 = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$w), { value: "members" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$x), { value: "members" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Members`);
@@ -16302,7 +16917,7 @@ const _sfc_main$8 = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$w), { value: "activity" }, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$x), { value: "activity" }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Activity`);
@@ -16315,7 +16930,7 @@ const _sfc_main$8 = {
                           _: 1
                         }, _parent4, _scopeId3));
                         if (canManageProject.value) {
-                          _push4(ssrRenderComponent(unref(_sfc_main$w), { value: "settings" }, {
+                          _push4(ssrRenderComponent(unref(_sfc_main$x), { value: "settings" }, {
                             default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                               if (_push5) {
                                 _push5(`Settings`);
@@ -16332,25 +16947,25 @@ const _sfc_main$8 = {
                         }
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$w), { value: "tasks" }, {
+                          createVNode(unref(_sfc_main$x), { value: "tasks" }, {
                             default: withCtx(() => [
                               createTextVNode("Tasks")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$w), { value: "members" }, {
+                          createVNode(unref(_sfc_main$x), { value: "members" }, {
                             default: withCtx(() => [
                               createTextVNode("Members")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$w), { value: "activity" }, {
+                          createVNode(unref(_sfc_main$x), { value: "activity" }, {
                             default: withCtx(() => [
                               createTextVNode("Activity")
                             ]),
                             _: 1
                           }),
-                          canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$w), {
+                          canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$x), {
                             key: 0,
                             value: "settings"
                           }, {
@@ -16364,20 +16979,20 @@ const _sfc_main$8 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$y), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$z), {
                     value: "tasks",
                     class: "mt-4"
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$_), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$$), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$W), { class: "flex flex-row items-center justify-between" }, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$X), { class: "flex flex-row items-center justify-between" }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(`<div${_scopeId5}>`);
-                                    _push6(ssrRenderComponent(unref(_sfc_main$V), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$W), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`Project Tasks`);
@@ -16389,7 +17004,7 @@ const _sfc_main$8 = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$Z), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`View tasks as a list or a Kanban board.`);
@@ -16402,7 +17017,7 @@ const _sfc_main$8 = {
                                       _: 1
                                     }, _parent6, _scopeId5));
                                     _push6(`</div><div class="flex items-center rounded-md bg-secondary text-secondary-foreground p-1"${_scopeId5}>`);
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1p), {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1q), {
                                       variant: "ghost",
                                       size: "sm",
                                       onClick: ($event) => viewMode.value = "list",
@@ -16419,7 +17034,7 @@ const _sfc_main$8 = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1p), {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1q), {
                                       variant: "ghost",
                                       size: "sm",
                                       onClick: ($event) => viewMode.value = "board",
@@ -16440,13 +17055,13 @@ const _sfc_main$8 = {
                                   } else {
                                     return [
                                       createVNode("div", null, [
-                                        createVNode(unref(_sfc_main$V), null, {
+                                        createVNode(unref(_sfc_main$W), null, {
                                           default: withCtx(() => [
                                             createTextVNode("Project Tasks")
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$Y), null, {
+                                        createVNode(unref(_sfc_main$Z), null, {
                                           default: withCtx(() => [
                                             createTextVNode("View tasks as a list or a Kanban board.")
                                           ]),
@@ -16454,7 +17069,7 @@ const _sfc_main$8 = {
                                         })
                                       ]),
                                       createVNode("div", { class: "flex items-center rounded-md bg-secondary text-secondary-foreground p-1" }, [
-                                        createVNode(unref(_sfc_main$1p), {
+                                        createVNode(unref(_sfc_main$1q), {
                                           variant: "ghost",
                                           size: "sm",
                                           onClick: ($event) => viewMode.value = "list",
@@ -16465,7 +17080,7 @@ const _sfc_main$8 = {
                                           ]),
                                           _: 1
                                         }, 8, ["onClick", "class"]),
-                                        createVNode(unref(_sfc_main$1p), {
+                                        createVNode(unref(_sfc_main$1q), {
                                           variant: "ghost",
                                           size: "sm",
                                           onClick: ($event) => viewMode.value = "board",
@@ -16482,37 +17097,37 @@ const _sfc_main$8 = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$_), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(`<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 border-b pb-6"${_scopeId5}>`);
-                                    _push6(ssrRenderComponent(unref(_sfc_main$1B), {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$1C), {
                                       modelValue: filters.search,
                                       "onUpdate:modelValue": ($event) => filters.search = $event,
                                       placeholder: "Search task titles..."
                                     }, null, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$G), {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$H), {
                                       modelValue: filters.status,
                                       "onUpdate:modelValue": ($event) => filters.status = $event
                                     }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
-                                          _push7(ssrRenderComponent(unref(_sfc_main$B), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$C), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
-                                                _push8(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Filter by status" }, null, _parent8, _scopeId7));
+                                                _push8(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Filter by status" }, null, _parent8, _scopeId7));
                                               } else {
                                                 return [
-                                                  createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                                  createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                                 ];
                                               }
                                             }),
                                             _: 1
                                           }, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$F), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$G), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
-                                                _push8(ssrRenderComponent(unref(_sfc_main$E), { value: "all" }, {
+                                                _push8(ssrRenderComponent(unref(_sfc_main$F), { value: "all" }, {
                                                   default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                     if (_push9) {
                                                       _push9(`All Statuses`);
@@ -16526,7 +17141,7 @@ const _sfc_main$8 = {
                                                 }, _parent8, _scopeId7));
                                                 _push8(`<!--[-->`);
                                                 ssrRenderList(__props.taskStatuses, (status) => {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$E), {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$F), {
                                                     key: status.value,
                                                     value: status.value
                                                   }, {
@@ -16545,14 +17160,14 @@ const _sfc_main$8 = {
                                                 _push8(`<!--]-->`);
                                               } else {
                                                 return [
-                                                  createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                                  createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                     default: withCtx(() => [
                                                       createTextVNode("All Statuses")
                                                     ]),
                                                     _: 1
                                                   }),
                                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                                       key: status.value,
                                                       value: status.value
                                                     }, {
@@ -16569,22 +17184,22 @@ const _sfc_main$8 = {
                                           }, _parent7, _scopeId6));
                                         } else {
                                           return [
-                                            createVNode(unref(_sfc_main$B), null, {
+                                            createVNode(unref(_sfc_main$C), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                                createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$F), null, {
+                                            createVNode(unref(_sfc_main$G), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                                createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                   default: withCtx(() => [
                                                     createTextVNode("All Statuses")
                                                   ]),
                                                   _: 1
                                                 }),
                                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                                     key: status.value,
                                                     value: status.value
                                                   }, {
@@ -16602,28 +17217,28 @@ const _sfc_main$8 = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$G), {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$H), {
                                       modelValue: filters.priority,
                                       "onUpdate:modelValue": ($event) => filters.priority = $event
                                     }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
-                                          _push7(ssrRenderComponent(unref(_sfc_main$B), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$C), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
-                                                _push8(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Filter by priority" }, null, _parent8, _scopeId7));
+                                                _push8(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Filter by priority" }, null, _parent8, _scopeId7));
                                               } else {
                                                 return [
-                                                  createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                                  createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                                 ];
                                               }
                                             }),
                                             _: 1
                                           }, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$F), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$G), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
-                                                _push8(ssrRenderComponent(unref(_sfc_main$E), { value: "all" }, {
+                                                _push8(ssrRenderComponent(unref(_sfc_main$F), { value: "all" }, {
                                                   default: withCtx((_8, _push9, _parent9, _scopeId8) => {
                                                     if (_push9) {
                                                       _push9(`All Priorities`);
@@ -16637,7 +17252,7 @@ const _sfc_main$8 = {
                                                 }, _parent8, _scopeId7));
                                                 _push8(`<!--[-->`);
                                                 ssrRenderList(__props.taskPriorities, (priority) => {
-                                                  _push8(ssrRenderComponent(unref(_sfc_main$E), {
+                                                  _push8(ssrRenderComponent(unref(_sfc_main$F), {
                                                     key: priority.value,
                                                     value: priority.value
                                                   }, {
@@ -16656,14 +17271,14 @@ const _sfc_main$8 = {
                                                 _push8(`<!--]-->`);
                                               } else {
                                                 return [
-                                                  createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                                  createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                     default: withCtx(() => [
                                                       createTextVNode("All Priorities")
                                                     ]),
                                                     _: 1
                                                   }),
                                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                                       key: priority.value,
                                                       value: priority.value
                                                     }, {
@@ -16680,22 +17295,22 @@ const _sfc_main$8 = {
                                           }, _parent7, _scopeId6));
                                         } else {
                                           return [
-                                            createVNode(unref(_sfc_main$B), null, {
+                                            createVNode(unref(_sfc_main$C), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                                createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$F), null, {
+                                            createVNode(unref(_sfc_main$G), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                                createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                   default: withCtx(() => [
                                                     createTextVNode("All Priorities")
                                                   ]),
                                                   _: 1
                                                 }),
                                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                                     key: priority.value,
                                                     value: priority.value
                                                   }, {
@@ -16715,21 +17330,23 @@ const _sfc_main$8 = {
                                     }, _parent6, _scopeId5));
                                     _push6(`</div>`);
                                     if (viewMode.value === "list") {
-                                      _push6(ssrRenderComponent(_sfc_main$a, {
+                                      _push6(ssrRenderComponent(_sfc_main$b, {
                                         tasks: __props.project.tasks,
                                         "task-statuses": __props.taskStatuses,
                                         "task-priorities": __props.taskPriorities,
                                         onEditTask: openEditTaskDialog,
                                         onDeleteTask: deleteTask,
-                                        onUpdateTask: updateTask
+                                        onUpdateTask: updateTask,
+                                        onViewTask: openTaskDetailDialog
                                       }, null, _parent6, _scopeId5));
                                     } else if (viewMode.value === "board") {
-                                      _push6(ssrRenderComponent(_sfc_main$9, {
+                                      _push6(ssrRenderComponent(_sfc_main$a, {
                                         tasks: __props.project.tasks,
                                         "task-priorities": __props.taskPriorities,
                                         onEditTask: openEditTaskDialog,
                                         onDeleteTask: deleteTask,
-                                        onTaskMoved: handleTaskMoved
+                                        onTaskMoved: handleTaskMoved,
+                                        onViewTask: openTaskDetailDialog
                                       }, null, _parent6, _scopeId5));
                                     } else {
                                       _push6(`<!---->`);
@@ -16737,32 +17354,32 @@ const _sfc_main$8 = {
                                   } else {
                                     return [
                                       createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 border-b pb-6" }, [
-                                        createVNode(unref(_sfc_main$1B), {
+                                        createVNode(unref(_sfc_main$1C), {
                                           modelValue: filters.search,
                                           "onUpdate:modelValue": ($event) => filters.search = $event,
                                           placeholder: "Search task titles..."
                                         }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                                        createVNode(unref(_sfc_main$G), {
+                                        createVNode(unref(_sfc_main$H), {
                                           modelValue: filters.status,
                                           "onUpdate:modelValue": ($event) => filters.status = $event
                                         }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$B), null, {
+                                            createVNode(unref(_sfc_main$C), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                                createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$F), null, {
+                                            createVNode(unref(_sfc_main$G), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                                createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                   default: withCtx(() => [
                                                     createTextVNode("All Statuses")
                                                   ]),
                                                   _: 1
                                                 }),
                                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                                     key: status.value,
                                                     value: status.value
                                                   }, {
@@ -16778,27 +17395,27 @@ const _sfc_main$8 = {
                                           ]),
                                           _: 1
                                         }, 8, ["modelValue", "onUpdate:modelValue"]),
-                                        createVNode(unref(_sfc_main$G), {
+                                        createVNode(unref(_sfc_main$H), {
                                           modelValue: filters.priority,
                                           "onUpdate:modelValue": ($event) => filters.priority = $event
                                         }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$B), null, {
+                                            createVNode(unref(_sfc_main$C), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                                createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$F), null, {
+                                            createVNode(unref(_sfc_main$G), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                                createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                   default: withCtx(() => [
                                                     createTextVNode("All Priorities")
                                                   ]),
                                                   _: 1
                                                 }),
                                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                                     key: priority.value,
                                                     value: priority.value
                                                   }, {
@@ -16815,21 +17432,23 @@ const _sfc_main$8 = {
                                           _: 1
                                         }, 8, ["modelValue", "onUpdate:modelValue"])
                                       ]),
-                                      viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$a, {
+                                      viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$b, {
                                         key: 0,
                                         tasks: __props.project.tasks,
                                         "task-statuses": __props.taskStatuses,
                                         "task-priorities": __props.taskPriorities,
                                         onEditTask: openEditTaskDialog,
                                         onDeleteTask: deleteTask,
-                                        onUpdateTask: updateTask
-                                      }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$9, {
+                                        onUpdateTask: updateTask,
+                                        onViewTask: openTaskDetailDialog
+                                      }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$a, {
                                         key: 1,
                                         tasks: __props.project.tasks,
                                         "task-priorities": __props.taskPriorities,
                                         onEditTask: openEditTaskDialog,
                                         onDeleteTask: deleteTask,
-                                        onTaskMoved: handleTaskMoved
+                                        onTaskMoved: handleTaskMoved,
+                                        onViewTask: openTaskDetailDialog
                                       }, null, 8, ["tasks", "task-priorities"])) : createCommentVNode("", true)
                                     ];
                                   }
@@ -16838,16 +17457,16 @@ const _sfc_main$8 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$W), { class: "flex flex-row items-center justify-between" }, {
+                                createVNode(unref(_sfc_main$X), { class: "flex flex-row items-center justify-between" }, {
                                   default: withCtx(() => [
                                     createVNode("div", null, [
-                                      createVNode(unref(_sfc_main$V), null, {
+                                      createVNode(unref(_sfc_main$W), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Project Tasks")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$Y), null, {
+                                      createVNode(unref(_sfc_main$Z), null, {
                                         default: withCtx(() => [
                                           createTextVNode("View tasks as a list or a Kanban board.")
                                         ]),
@@ -16855,7 +17474,7 @@ const _sfc_main$8 = {
                                       })
                                     ]),
                                     createVNode("div", { class: "flex items-center rounded-md bg-secondary text-secondary-foreground p-1" }, [
-                                      createVNode(unref(_sfc_main$1p), {
+                                      createVNode(unref(_sfc_main$1q), {
                                         variant: "ghost",
                                         size: "sm",
                                         onClick: ($event) => viewMode.value = "list",
@@ -16866,7 +17485,7 @@ const _sfc_main$8 = {
                                         ]),
                                         _: 1
                                       }, 8, ["onClick", "class"]),
-                                      createVNode(unref(_sfc_main$1p), {
+                                      createVNode(unref(_sfc_main$1q), {
                                         variant: "ghost",
                                         size: "sm",
                                         onClick: ($event) => viewMode.value = "board",
@@ -16881,35 +17500,35 @@ const _sfc_main$8 = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$Z), null, {
+                                createVNode(unref(_sfc_main$_), null, {
                                   default: withCtx(() => [
                                     createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 border-b pb-6" }, [
-                                      createVNode(unref(_sfc_main$1B), {
+                                      createVNode(unref(_sfc_main$1C), {
                                         modelValue: filters.search,
                                         "onUpdate:modelValue": ($event) => filters.search = $event,
                                         placeholder: "Search task titles..."
                                       }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                                      createVNode(unref(_sfc_main$G), {
+                                      createVNode(unref(_sfc_main$H), {
                                         modelValue: filters.status,
                                         "onUpdate:modelValue": ($event) => filters.status = $event
                                       }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$B), null, {
+                                          createVNode(unref(_sfc_main$C), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                              createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$F), null, {
+                                          createVNode(unref(_sfc_main$G), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                              createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                 default: withCtx(() => [
                                                   createTextVNode("All Statuses")
                                                 ]),
                                                 _: 1
                                               }),
                                               (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                                   key: status.value,
                                                   value: status.value
                                                 }, {
@@ -16925,27 +17544,27 @@ const _sfc_main$8 = {
                                         ]),
                                         _: 1
                                       }, 8, ["modelValue", "onUpdate:modelValue"]),
-                                      createVNode(unref(_sfc_main$G), {
+                                      createVNode(unref(_sfc_main$H), {
                                         modelValue: filters.priority,
                                         "onUpdate:modelValue": ($event) => filters.priority = $event
                                       }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$B), null, {
+                                          createVNode(unref(_sfc_main$C), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                              createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$F), null, {
+                                          createVNode(unref(_sfc_main$G), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                              createVNode(unref(_sfc_main$F), { value: "all" }, {
                                                 default: withCtx(() => [
                                                   createTextVNode("All Priorities")
                                                 ]),
                                                 _: 1
                                               }),
                                               (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                                return openBlock(), createBlock(unref(_sfc_main$E), {
+                                                return openBlock(), createBlock(unref(_sfc_main$F), {
                                                   key: priority.value,
                                                   value: priority.value
                                                 }, {
@@ -16962,21 +17581,23 @@ const _sfc_main$8 = {
                                         _: 1
                                       }, 8, ["modelValue", "onUpdate:modelValue"])
                                     ]),
-                                    viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$a, {
+                                    viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$b, {
                                       key: 0,
                                       tasks: __props.project.tasks,
                                       "task-statuses": __props.taskStatuses,
                                       "task-priorities": __props.taskPriorities,
                                       onEditTask: openEditTaskDialog,
                                       onDeleteTask: deleteTask,
-                                      onUpdateTask: updateTask
-                                    }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$9, {
+                                      onUpdateTask: updateTask,
+                                      onViewTask: openTaskDetailDialog
+                                    }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$a, {
                                       key: 1,
                                       tasks: __props.project.tasks,
                                       "task-priorities": __props.taskPriorities,
                                       onEditTask: openEditTaskDialog,
                                       onDeleteTask: deleteTask,
-                                      onTaskMoved: handleTaskMoved
+                                      onTaskMoved: handleTaskMoved,
+                                      onViewTask: openTaskDetailDialog
                                     }, null, 8, ["tasks", "task-priorities"])) : createCommentVNode("", true)
                                   ]),
                                   _: 1
@@ -16988,18 +17609,18 @@ const _sfc_main$8 = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$_), null, {
+                          createVNode(unref(_sfc_main$$), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$W), { class: "flex flex-row items-center justify-between" }, {
+                              createVNode(unref(_sfc_main$X), { class: "flex flex-row items-center justify-between" }, {
                                 default: withCtx(() => [
                                   createVNode("div", null, [
-                                    createVNode(unref(_sfc_main$V), null, {
+                                    createVNode(unref(_sfc_main$W), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Project Tasks")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$Y), null, {
+                                    createVNode(unref(_sfc_main$Z), null, {
                                       default: withCtx(() => [
                                         createTextVNode("View tasks as a list or a Kanban board.")
                                       ]),
@@ -17007,7 +17628,7 @@ const _sfc_main$8 = {
                                     })
                                   ]),
                                   createVNode("div", { class: "flex items-center rounded-md bg-secondary text-secondary-foreground p-1" }, [
-                                    createVNode(unref(_sfc_main$1p), {
+                                    createVNode(unref(_sfc_main$1q), {
                                       variant: "ghost",
                                       size: "sm",
                                       onClick: ($event) => viewMode.value = "list",
@@ -17018,7 +17639,7 @@ const _sfc_main$8 = {
                                       ]),
                                       _: 1
                                     }, 8, ["onClick", "class"]),
-                                    createVNode(unref(_sfc_main$1p), {
+                                    createVNode(unref(_sfc_main$1q), {
                                       variant: "ghost",
                                       size: "sm",
                                       onClick: ($event) => viewMode.value = "board",
@@ -17033,35 +17654,35 @@ const _sfc_main$8 = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$Z), null, {
+                              createVNode(unref(_sfc_main$_), null, {
                                 default: withCtx(() => [
                                   createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 border-b pb-6" }, [
-                                    createVNode(unref(_sfc_main$1B), {
+                                    createVNode(unref(_sfc_main$1C), {
                                       modelValue: filters.search,
                                       "onUpdate:modelValue": ($event) => filters.search = $event,
                                       placeholder: "Search task titles..."
                                     }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                                    createVNode(unref(_sfc_main$G), {
+                                    createVNode(unref(_sfc_main$H), {
                                       modelValue: filters.status,
                                       "onUpdate:modelValue": ($event) => filters.status = $event
                                     }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$B), null, {
+                                        createVNode(unref(_sfc_main$C), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                            createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$F), null, {
+                                        createVNode(unref(_sfc_main$G), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                            createVNode(unref(_sfc_main$F), { value: "all" }, {
                                               default: withCtx(() => [
                                                 createTextVNode("All Statuses")
                                               ]),
                                               _: 1
                                             }),
                                             (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                              return openBlock(), createBlock(unref(_sfc_main$E), {
+                                              return openBlock(), createBlock(unref(_sfc_main$F), {
                                                 key: status.value,
                                                 value: status.value
                                               }, {
@@ -17077,27 +17698,27 @@ const _sfc_main$8 = {
                                       ]),
                                       _: 1
                                     }, 8, ["modelValue", "onUpdate:modelValue"]),
-                                    createVNode(unref(_sfc_main$G), {
+                                    createVNode(unref(_sfc_main$H), {
                                       modelValue: filters.priority,
                                       "onUpdate:modelValue": ($event) => filters.priority = $event
                                     }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$B), null, {
+                                        createVNode(unref(_sfc_main$C), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                            createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$F), null, {
+                                        createVNode(unref(_sfc_main$G), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                            createVNode(unref(_sfc_main$F), { value: "all" }, {
                                               default: withCtx(() => [
                                                 createTextVNode("All Priorities")
                                               ]),
                                               _: 1
                                             }),
                                             (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                              return openBlock(), createBlock(unref(_sfc_main$E), {
+                                              return openBlock(), createBlock(unref(_sfc_main$F), {
                                                 key: priority.value,
                                                 value: priority.value
                                               }, {
@@ -17114,21 +17735,23 @@ const _sfc_main$8 = {
                                       _: 1
                                     }, 8, ["modelValue", "onUpdate:modelValue"])
                                   ]),
-                                  viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$a, {
+                                  viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$b, {
                                     key: 0,
                                     tasks: __props.project.tasks,
                                     "task-statuses": __props.taskStatuses,
                                     "task-priorities": __props.taskPriorities,
                                     onEditTask: openEditTaskDialog,
                                     onDeleteTask: deleteTask,
-                                    onUpdateTask: updateTask
-                                  }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$9, {
+                                    onUpdateTask: updateTask,
+                                    onViewTask: openTaskDetailDialog
+                                  }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$a, {
                                     key: 1,
                                     tasks: __props.project.tasks,
                                     "task-priorities": __props.taskPriorities,
                                     onEditTask: openEditTaskDialog,
                                     onDeleteTask: deleteTask,
-                                    onTaskMoved: handleTaskMoved
+                                    onTaskMoved: handleTaskMoved,
+                                    onViewTask: openTaskDetailDialog
                                   }, null, 8, ["tasks", "task-priorities"])) : createCommentVNode("", true)
                                 ]),
                                 _: 1
@@ -17141,19 +17764,19 @@ const _sfc_main$8 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$y), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$z), {
                     value: "members",
                     class: "mt-4"
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$_), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$$), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$W), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$X), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$V), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$W), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`Project Members`);
@@ -17165,7 +17788,7 @@ const _sfc_main$8 = {
                                       }),
                                       _: 1
                                     }, _parent6, _scopeId5));
-                                    _push6(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$Z), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`Users who have access to this project.`);
@@ -17179,13 +17802,13 @@ const _sfc_main$8 = {
                                     }, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$V), null, {
+                                      createVNode(unref(_sfc_main$W), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Project Members")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$Y), null, {
+                                      createVNode(unref(_sfc_main$Z), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Users who have access to this project.")
                                         ]),
@@ -17196,16 +17819,16 @@ const _sfc_main$8 = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$_), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(_sfc_main$o, {
+                                    _push6(ssrRenderComponent(_sfc_main$p, {
                                       members: __props.project.members,
                                       "owner-id": __props.project.owner_id
                                     }, null, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(_sfc_main$o, {
+                                      createVNode(_sfc_main$p, {
                                         members: __props.project.members,
                                         "owner-id": __props.project.owner_id
                                       }, null, 8, ["members", "owner-id"])
@@ -17216,15 +17839,15 @@ const _sfc_main$8 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$W), null, {
+                                createVNode(unref(_sfc_main$X), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$V), null, {
+                                    createVNode(unref(_sfc_main$W), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Project Members")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$Y), null, {
+                                    createVNode(unref(_sfc_main$Z), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Users who have access to this project.")
                                       ]),
@@ -17233,9 +17856,9 @@ const _sfc_main$8 = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$Z), null, {
+                                createVNode(unref(_sfc_main$_), null, {
                                   default: withCtx(() => [
-                                    createVNode(_sfc_main$o, {
+                                    createVNode(_sfc_main$p, {
                                       members: __props.project.members,
                                       "owner-id": __props.project.owner_id
                                     }, null, 8, ["members", "owner-id"])
@@ -17249,17 +17872,17 @@ const _sfc_main$8 = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$_), null, {
+                          createVNode(unref(_sfc_main$$), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$W), null, {
+                              createVNode(unref(_sfc_main$X), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$V), null, {
+                                  createVNode(unref(_sfc_main$W), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Project Members")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$Y), null, {
+                                  createVNode(unref(_sfc_main$Z), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Users who have access to this project.")
                                     ]),
@@ -17268,9 +17891,9 @@ const _sfc_main$8 = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$Z), null, {
+                              createVNode(unref(_sfc_main$_), null, {
                                 default: withCtx(() => [
-                                  createVNode(_sfc_main$o, {
+                                  createVNode(_sfc_main$p, {
                                     members: __props.project.members,
                                     "owner-id": __props.project.owner_id
                                   }, null, 8, ["members", "owner-id"])
@@ -17285,19 +17908,19 @@ const _sfc_main$8 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$y), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$z), {
                     value: "activity",
                     class: "mt-4"
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$_), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$$), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$W), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$X), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$V), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$W), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`Recent Activity`);
@@ -17311,7 +17934,7 @@ const _sfc_main$8 = {
                                     }, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$V), null, {
+                                      createVNode(unref(_sfc_main$W), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Recent Activity")
                                         ]),
@@ -17322,17 +17945,17 @@ const _sfc_main$8 = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$_), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(_sfc_main$n, {
+                                    _push6(ssrRenderComponent(_sfc_main$o, {
                                       activities: __props.activities,
                                       "task-statuses": __props.taskStatuses,
                                       "task-priorities": __props.taskPriorities
                                     }, null, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(_sfc_main$n, {
+                                      createVNode(_sfc_main$o, {
                                         activities: __props.activities,
                                         "task-statuses": __props.taskStatuses,
                                         "task-priorities": __props.taskPriorities
@@ -17344,9 +17967,9 @@ const _sfc_main$8 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$W), null, {
+                                createVNode(unref(_sfc_main$X), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$V), null, {
+                                    createVNode(unref(_sfc_main$W), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Recent Activity")
                                       ]),
@@ -17355,9 +17978,9 @@ const _sfc_main$8 = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$Z), null, {
+                                createVNode(unref(_sfc_main$_), null, {
                                   default: withCtx(() => [
-                                    createVNode(_sfc_main$n, {
+                                    createVNode(_sfc_main$o, {
                                       activities: __props.activities,
                                       "task-statuses": __props.taskStatuses,
                                       "task-priorities": __props.taskPriorities
@@ -17372,11 +17995,11 @@ const _sfc_main$8 = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$_), null, {
+                          createVNode(unref(_sfc_main$$), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$W), null, {
+                              createVNode(unref(_sfc_main$X), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$V), null, {
+                                  createVNode(unref(_sfc_main$W), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Recent Activity")
                                     ]),
@@ -17385,9 +18008,9 @@ const _sfc_main$8 = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$Z), null, {
+                              createVNode(unref(_sfc_main$_), null, {
                                 default: withCtx(() => [
-                                  createVNode(_sfc_main$n, {
+                                  createVNode(_sfc_main$o, {
                                     activities: __props.activities,
                                     "task-statuses": __props.taskStatuses,
                                     "task-priorities": __props.taskPriorities
@@ -17404,16 +18027,16 @@ const _sfc_main$8 = {
                     _: 1
                   }, _parent3, _scopeId2));
                   if (canManageProject.value) {
-                    _push3(ssrRenderComponent(unref(_sfc_main$y), {
+                    _push3(ssrRenderComponent(unref(_sfc_main$z), {
                       value: "settings",
                       class: "mt-4"
                     }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
-                          _push4(ssrRenderComponent(_sfc_main$d, { project: __props.project }, null, _parent4, _scopeId3));
+                          _push4(ssrRenderComponent(_sfc_main$e, { project: __props.project }, null, _parent4, _scopeId3));
                         } else {
                           return [
-                            createVNode(_sfc_main$d, { project: __props.project }, null, 8, ["project"])
+                            createVNode(_sfc_main$e, { project: __props.project }, null, 8, ["project"])
                           ];
                         }
                       }),
@@ -17424,29 +18047,29 @@ const _sfc_main$8 = {
                   }
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$x), {
+                    createVNode(unref(_sfc_main$y), {
                       class: ["grid w-full", canManageProject.value ? "grid-cols-4" : "grid-cols-3"]
                     }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$w), { value: "tasks" }, {
+                        createVNode(unref(_sfc_main$x), { value: "tasks" }, {
                           default: withCtx(() => [
                             createTextVNode("Tasks")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$w), { value: "members" }, {
+                        createVNode(unref(_sfc_main$x), { value: "members" }, {
                           default: withCtx(() => [
                             createTextVNode("Members")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$w), { value: "activity" }, {
+                        createVNode(unref(_sfc_main$x), { value: "activity" }, {
                           default: withCtx(() => [
                             createTextVNode("Activity")
                           ]),
                           _: 1
                         }),
-                        canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$w), {
+                        canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$x), {
                           key: 0,
                           value: "settings"
                         }, {
@@ -17458,23 +18081,23 @@ const _sfc_main$8 = {
                       ]),
                       _: 1
                     }, 8, ["class"]),
-                    createVNode(unref(_sfc_main$y), {
+                    createVNode(unref(_sfc_main$z), {
                       value: "tasks",
                       class: "mt-4"
                     }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$_), null, {
+                        createVNode(unref(_sfc_main$$), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$W), { class: "flex flex-row items-center justify-between" }, {
+                            createVNode(unref(_sfc_main$X), { class: "flex flex-row items-center justify-between" }, {
                               default: withCtx(() => [
                                 createVNode("div", null, [
-                                  createVNode(unref(_sfc_main$V), null, {
+                                  createVNode(unref(_sfc_main$W), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Project Tasks")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$Y), null, {
+                                  createVNode(unref(_sfc_main$Z), null, {
                                     default: withCtx(() => [
                                       createTextVNode("View tasks as a list or a Kanban board.")
                                     ]),
@@ -17482,7 +18105,7 @@ const _sfc_main$8 = {
                                   })
                                 ]),
                                 createVNode("div", { class: "flex items-center rounded-md bg-secondary text-secondary-foreground p-1" }, [
-                                  createVNode(unref(_sfc_main$1p), {
+                                  createVNode(unref(_sfc_main$1q), {
                                     variant: "ghost",
                                     size: "sm",
                                     onClick: ($event) => viewMode.value = "list",
@@ -17493,7 +18116,7 @@ const _sfc_main$8 = {
                                     ]),
                                     _: 1
                                   }, 8, ["onClick", "class"]),
-                                  createVNode(unref(_sfc_main$1p), {
+                                  createVNode(unref(_sfc_main$1q), {
                                     variant: "ghost",
                                     size: "sm",
                                     onClick: ($event) => viewMode.value = "board",
@@ -17508,35 +18131,35 @@ const _sfc_main$8 = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$Z), null, {
+                            createVNode(unref(_sfc_main$_), null, {
                               default: withCtx(() => [
                                 createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 border-b pb-6" }, [
-                                  createVNode(unref(_sfc_main$1B), {
+                                  createVNode(unref(_sfc_main$1C), {
                                     modelValue: filters.search,
                                     "onUpdate:modelValue": ($event) => filters.search = $event,
                                     placeholder: "Search task titles..."
                                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                                  createVNode(unref(_sfc_main$G), {
+                                  createVNode(unref(_sfc_main$H), {
                                     modelValue: filters.status,
                                     "onUpdate:modelValue": ($event) => filters.status = $event
                                   }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$B), null, {
+                                      createVNode(unref(_sfc_main$C), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                          createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$F), null, {
+                                      createVNode(unref(_sfc_main$G), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                          createVNode(unref(_sfc_main$F), { value: "all" }, {
                                             default: withCtx(() => [
                                               createTextVNode("All Statuses")
                                             ]),
                                             _: 1
                                           }),
                                           (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                            return openBlock(), createBlock(unref(_sfc_main$E), {
+                                            return openBlock(), createBlock(unref(_sfc_main$F), {
                                               key: status.value,
                                               value: status.value
                                             }, {
@@ -17552,27 +18175,27 @@ const _sfc_main$8 = {
                                     ]),
                                     _: 1
                                   }, 8, ["modelValue", "onUpdate:modelValue"]),
-                                  createVNode(unref(_sfc_main$G), {
+                                  createVNode(unref(_sfc_main$H), {
                                     modelValue: filters.priority,
                                     "onUpdate:modelValue": ($event) => filters.priority = $event
                                   }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$B), null, {
+                                      createVNode(unref(_sfc_main$C), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                          createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$F), null, {
+                                      createVNode(unref(_sfc_main$G), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                          createVNode(unref(_sfc_main$F), { value: "all" }, {
                                             default: withCtx(() => [
                                               createTextVNode("All Priorities")
                                             ]),
                                             _: 1
                                           }),
                                           (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                            return openBlock(), createBlock(unref(_sfc_main$E), {
+                                            return openBlock(), createBlock(unref(_sfc_main$F), {
                                               key: priority.value,
                                               value: priority.value
                                             }, {
@@ -17589,21 +18212,23 @@ const _sfc_main$8 = {
                                     _: 1
                                   }, 8, ["modelValue", "onUpdate:modelValue"])
                                 ]),
-                                viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$a, {
+                                viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$b, {
                                   key: 0,
                                   tasks: __props.project.tasks,
                                   "task-statuses": __props.taskStatuses,
                                   "task-priorities": __props.taskPriorities,
                                   onEditTask: openEditTaskDialog,
                                   onDeleteTask: deleteTask,
-                                  onUpdateTask: updateTask
-                                }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$9, {
+                                  onUpdateTask: updateTask,
+                                  onViewTask: openTaskDetailDialog
+                                }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$a, {
                                   key: 1,
                                   tasks: __props.project.tasks,
                                   "task-priorities": __props.taskPriorities,
                                   onEditTask: openEditTaskDialog,
                                   onDeleteTask: deleteTask,
-                                  onTaskMoved: handleTaskMoved
+                                  onTaskMoved: handleTaskMoved,
+                                  onViewTask: openTaskDetailDialog
                                 }, null, 8, ["tasks", "task-priorities"])) : createCommentVNode("", true)
                               ]),
                               _: 1
@@ -17614,22 +18239,22 @@ const _sfc_main$8 = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$y), {
+                    createVNode(unref(_sfc_main$z), {
                       value: "members",
                       class: "mt-4"
                     }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$_), null, {
+                        createVNode(unref(_sfc_main$$), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$W), null, {
+                            createVNode(unref(_sfc_main$X), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$V), null, {
+                                createVNode(unref(_sfc_main$W), null, {
                                   default: withCtx(() => [
                                     createTextVNode("Project Members")
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$Y), null, {
+                                createVNode(unref(_sfc_main$Z), null, {
                                   default: withCtx(() => [
                                     createTextVNode("Users who have access to this project.")
                                   ]),
@@ -17638,9 +18263,9 @@ const _sfc_main$8 = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$Z), null, {
+                            createVNode(unref(_sfc_main$_), null, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$o, {
+                                createVNode(_sfc_main$p, {
                                   members: __props.project.members,
                                   "owner-id": __props.project.owner_id
                                 }, null, 8, ["members", "owner-id"])
@@ -17653,16 +18278,16 @@ const _sfc_main$8 = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$y), {
+                    createVNode(unref(_sfc_main$z), {
                       value: "activity",
                       class: "mt-4"
                     }, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$_), null, {
+                        createVNode(unref(_sfc_main$$), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$W), null, {
+                            createVNode(unref(_sfc_main$X), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$V), null, {
+                                createVNode(unref(_sfc_main$W), null, {
                                   default: withCtx(() => [
                                     createTextVNode("Recent Activity")
                                   ]),
@@ -17671,9 +18296,9 @@ const _sfc_main$8 = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$Z), null, {
+                            createVNode(unref(_sfc_main$_), null, {
                               default: withCtx(() => [
-                                createVNode(_sfc_main$n, {
+                                createVNode(_sfc_main$o, {
                                   activities: __props.activities,
                                   "task-statuses": __props.taskStatuses,
                                   "task-priorities": __props.taskPriorities
@@ -17687,13 +18312,13 @@ const _sfc_main$8 = {
                       ]),
                       _: 1
                     }),
-                    canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$y), {
+                    canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$z), {
                       key: 0,
                       value: "settings",
                       class: "mt-4"
                     }, {
                       default: withCtx(() => [
-                        createVNode(_sfc_main$d, { project: __props.project }, null, 8, ["project"])
+                        createVNode(_sfc_main$e, { project: __props.project }, null, 8, ["project"])
                       ]),
                       _: 1
                     })) : createCommentVNode("", true)
@@ -17708,14 +18333,14 @@ const _sfc_main$8 = {
                 position: "top-right",
                 richColors: ""
               }),
-              createVNode(_sfc_main$c, {
+              createVNode(_sfc_main$d, {
                 open: isAddTaskDialogOpen.value,
                 "onUpdate:open": ($event) => isAddTaskDialogOpen.value = $event,
                 project: __props.project,
                 members: __props.project.members,
                 "task-priorities": __props.taskPriorities
               }, null, 8, ["open", "onUpdate:open", "project", "members", "task-priorities"]),
-              createVNode(_sfc_main$b, {
+              createVNode(_sfc_main$c, {
                 modelValue: isEditTaskDialogOpen.value,
                 "onUpdate:modelValue": ($event) => isEditTaskDialogOpen.value = $event,
                 task: editingTask.value,
@@ -17723,19 +18348,25 @@ const _sfc_main$8 = {
                 "task-priorities": __props.taskPriorities,
                 onSubmit: (form) => updateTask(editingTask.value, form.data())
               }, null, 8, ["modelValue", "onUpdate:modelValue", "task", "members", "task-priorities", "onSubmit"]),
-              canManageProject.value ? (openBlock(), createBlock(_sfc_main$p, {
+              canManageProject.value ? (openBlock(), createBlock(_sfc_main$q, {
                 key: 0,
                 open: isAddMemberDialogOpen.value,
                 "onUpdate:open": ($event) => isAddMemberDialogOpen.value = $event,
                 project: __props.project
               }, null, 8, ["open", "onUpdate:open", "project"])) : createCommentVNode("", true),
+              createVNode(_sfc_main$9, {
+                open: isTaskDetailDialogOpen.value,
+                "onUpdate:open": ($event) => isTaskDetailDialogOpen.value = $event,
+                task: viewingTask.value,
+                onCommentPosted: refreshTaskDetails
+              }, null, 8, ["open", "onUpdate:open", "task"]),
               createVNode("div", { class: "flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6" }, [
                 createVNode("div", null, [
                   createVNode("h2", { class: "font-semibold text-2xl" }, toDisplayString(__props.project.name), 1),
                   createVNode("p", { class: "text-muted-foreground mt-1" }, toDisplayString(__props.project.description || "No description provided."), 1)
                 ]),
                 createVNode("div", { class: "flex items-center space-x-2 self-start sm:self-center" }, [
-                  canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$1p), {
+                  canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$1q), {
                     key: 0,
                     variant: "outline",
                     onClick: ($event) => isAddMemberDialogOpen.value = true
@@ -17745,7 +18376,7 @@ const _sfc_main$8 = {
                     ]),
                     _: 1
                   }, 8, ["onClick"])) : createCommentVNode("", true),
-                  createVNode(unref(_sfc_main$1p), {
+                  createVNode(unref(_sfc_main$1q), {
                     onClick: ($event) => isAddTaskDialogOpen.value = true
                   }, {
                     default: withCtx(() => [
@@ -17755,34 +18386,34 @@ const _sfc_main$8 = {
                   }, 8, ["onClick"])
                 ])
               ]),
-              createVNode(unref(_sfc_main$z), {
+              createVNode(unref(_sfc_main$A), {
                 "default-value": "tasks",
                 class: "w-full"
               }, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$x), {
+                  createVNode(unref(_sfc_main$y), {
                     class: ["grid w-full", canManageProject.value ? "grid-cols-4" : "grid-cols-3"]
                   }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$w), { value: "tasks" }, {
+                      createVNode(unref(_sfc_main$x), { value: "tasks" }, {
                         default: withCtx(() => [
                           createTextVNode("Tasks")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$w), { value: "members" }, {
+                      createVNode(unref(_sfc_main$x), { value: "members" }, {
                         default: withCtx(() => [
                           createTextVNode("Members")
                         ]),
                         _: 1
                       }),
-                      createVNode(unref(_sfc_main$w), { value: "activity" }, {
+                      createVNode(unref(_sfc_main$x), { value: "activity" }, {
                         default: withCtx(() => [
                           createTextVNode("Activity")
                         ]),
                         _: 1
                       }),
-                      canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$w), {
+                      canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$x), {
                         key: 0,
                         value: "settings"
                       }, {
@@ -17794,23 +18425,23 @@ const _sfc_main$8 = {
                     ]),
                     _: 1
                   }, 8, ["class"]),
-                  createVNode(unref(_sfc_main$y), {
+                  createVNode(unref(_sfc_main$z), {
                     value: "tasks",
                     class: "mt-4"
                   }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$_), null, {
+                      createVNode(unref(_sfc_main$$), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$W), { class: "flex flex-row items-center justify-between" }, {
+                          createVNode(unref(_sfc_main$X), { class: "flex flex-row items-center justify-between" }, {
                             default: withCtx(() => [
                               createVNode("div", null, [
-                                createVNode(unref(_sfc_main$V), null, {
+                                createVNode(unref(_sfc_main$W), null, {
                                   default: withCtx(() => [
                                     createTextVNode("Project Tasks")
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$Y), null, {
+                                createVNode(unref(_sfc_main$Z), null, {
                                   default: withCtx(() => [
                                     createTextVNode("View tasks as a list or a Kanban board.")
                                   ]),
@@ -17818,7 +18449,7 @@ const _sfc_main$8 = {
                                 })
                               ]),
                               createVNode("div", { class: "flex items-center rounded-md bg-secondary text-secondary-foreground p-1" }, [
-                                createVNode(unref(_sfc_main$1p), {
+                                createVNode(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "sm",
                                   onClick: ($event) => viewMode.value = "list",
@@ -17829,7 +18460,7 @@ const _sfc_main$8 = {
                                   ]),
                                   _: 1
                                 }, 8, ["onClick", "class"]),
-                                createVNode(unref(_sfc_main$1p), {
+                                createVNode(unref(_sfc_main$1q), {
                                   variant: "ghost",
                                   size: "sm",
                                   onClick: ($event) => viewMode.value = "board",
@@ -17844,35 +18475,35 @@ const _sfc_main$8 = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Z), null, {
+                          createVNode(unref(_sfc_main$_), null, {
                             default: withCtx(() => [
                               createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 border-b pb-6" }, [
-                                createVNode(unref(_sfc_main$1B), {
+                                createVNode(unref(_sfc_main$1C), {
                                   modelValue: filters.search,
                                   "onUpdate:modelValue": ($event) => filters.search = $event,
                                   placeholder: "Search task titles..."
                                 }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                                createVNode(unref(_sfc_main$G), {
+                                createVNode(unref(_sfc_main$H), {
                                   modelValue: filters.status,
                                   "onUpdate:modelValue": ($event) => filters.status = $event
                                 }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$B), null, {
+                                    createVNode(unref(_sfc_main$C), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                        createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$F), null, {
+                                    createVNode(unref(_sfc_main$G), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                        createVNode(unref(_sfc_main$F), { value: "all" }, {
                                           default: withCtx(() => [
                                             createTextVNode("All Statuses")
                                           ]),
                                           _: 1
                                         }),
                                         (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                          return openBlock(), createBlock(unref(_sfc_main$E), {
+                                          return openBlock(), createBlock(unref(_sfc_main$F), {
                                             key: status.value,
                                             value: status.value
                                           }, {
@@ -17888,27 +18519,27 @@ const _sfc_main$8 = {
                                   ]),
                                   _: 1
                                 }, 8, ["modelValue", "onUpdate:modelValue"]),
-                                createVNode(unref(_sfc_main$G), {
+                                createVNode(unref(_sfc_main$H), {
                                   modelValue: filters.priority,
                                   "onUpdate:modelValue": ($event) => filters.priority = $event
                                 }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$B), null, {
+                                    createVNode(unref(_sfc_main$C), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                        createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$F), null, {
+                                    createVNode(unref(_sfc_main$G), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                        createVNode(unref(_sfc_main$F), { value: "all" }, {
                                           default: withCtx(() => [
                                             createTextVNode("All Priorities")
                                           ]),
                                           _: 1
                                         }),
                                         (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                          return openBlock(), createBlock(unref(_sfc_main$E), {
+                                          return openBlock(), createBlock(unref(_sfc_main$F), {
                                             key: priority.value,
                                             value: priority.value
                                           }, {
@@ -17925,21 +18556,23 @@ const _sfc_main$8 = {
                                   _: 1
                                 }, 8, ["modelValue", "onUpdate:modelValue"])
                               ]),
-                              viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$a, {
+                              viewMode.value === "list" ? (openBlock(), createBlock(_sfc_main$b, {
                                 key: 0,
                                 tasks: __props.project.tasks,
                                 "task-statuses": __props.taskStatuses,
                                 "task-priorities": __props.taskPriorities,
                                 onEditTask: openEditTaskDialog,
                                 onDeleteTask: deleteTask,
-                                onUpdateTask: updateTask
-                              }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$9, {
+                                onUpdateTask: updateTask,
+                                onViewTask: openTaskDetailDialog
+                              }, null, 8, ["tasks", "task-statuses", "task-priorities"])) : viewMode.value === "board" ? (openBlock(), createBlock(_sfc_main$a, {
                                 key: 1,
                                 tasks: __props.project.tasks,
                                 "task-priorities": __props.taskPriorities,
                                 onEditTask: openEditTaskDialog,
                                 onDeleteTask: deleteTask,
-                                onTaskMoved: handleTaskMoved
+                                onTaskMoved: handleTaskMoved,
+                                onViewTask: openTaskDetailDialog
                               }, null, 8, ["tasks", "task-priorities"])) : createCommentVNode("", true)
                             ]),
                             _: 1
@@ -17950,22 +18583,22 @@ const _sfc_main$8 = {
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$y), {
+                  createVNode(unref(_sfc_main$z), {
                     value: "members",
                     class: "mt-4"
                   }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$_), null, {
+                      createVNode(unref(_sfc_main$$), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$W), null, {
+                          createVNode(unref(_sfc_main$X), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$V), null, {
+                              createVNode(unref(_sfc_main$W), null, {
                                 default: withCtx(() => [
                                   createTextVNode("Project Members")
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$Y), null, {
+                              createVNode(unref(_sfc_main$Z), null, {
                                 default: withCtx(() => [
                                   createTextVNode("Users who have access to this project.")
                                 ]),
@@ -17974,9 +18607,9 @@ const _sfc_main$8 = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Z), null, {
+                          createVNode(unref(_sfc_main$_), null, {
                             default: withCtx(() => [
-                              createVNode(_sfc_main$o, {
+                              createVNode(_sfc_main$p, {
                                 members: __props.project.members,
                                 "owner-id": __props.project.owner_id
                               }, null, 8, ["members", "owner-id"])
@@ -17989,16 +18622,16 @@ const _sfc_main$8 = {
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$y), {
+                  createVNode(unref(_sfc_main$z), {
                     value: "activity",
                     class: "mt-4"
                   }, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$_), null, {
+                      createVNode(unref(_sfc_main$$), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$W), null, {
+                          createVNode(unref(_sfc_main$X), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$V), null, {
+                              createVNode(unref(_sfc_main$W), null, {
                                 default: withCtx(() => [
                                   createTextVNode("Recent Activity")
                                 ]),
@@ -18007,9 +18640,9 @@ const _sfc_main$8 = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Z), null, {
+                          createVNode(unref(_sfc_main$_), null, {
                             default: withCtx(() => [
-                              createVNode(_sfc_main$n, {
+                              createVNode(_sfc_main$o, {
                                 activities: __props.activities,
                                 "task-statuses": __props.taskStatuses,
                                 "task-priorities": __props.taskPriorities
@@ -18023,13 +18656,13 @@ const _sfc_main$8 = {
                     ]),
                     _: 1
                   }),
-                  canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$y), {
+                  canManageProject.value ? (openBlock(), createBlock(unref(_sfc_main$z), {
                     key: 0,
                     value: "settings",
                     class: "mt-4"
                   }, {
                     default: withCtx(() => [
-                      createVNode(_sfc_main$d, { project: __props.project }, null, 8, ["project"])
+                      createVNode(_sfc_main$e, { project: __props.project }, null, 8, ["project"])
                     ]),
                     _: 1
                   })) : createCommentVNode("", true)
@@ -18102,44 +18735,44 @@ const _sfc_main$7 = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "My Tasks" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$10, { breadcrumbs }, {
+      _push(ssrRenderComponent(_sfc_main$11, { breadcrumbs }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="flex justify-between items-center mb-6"${_scopeId}><h2 class="font-semibold text-xl"${_scopeId}>My Tasks</h2></div>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "mb-6" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), { class: "mb-6" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), { class: "pt-6" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), { class: "pt-6" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`<div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(unref(_sfc_main$1B), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1C), {
                           modelValue: filters.search,
                           "onUpdate:modelValue": ($event) => filters.search = $event,
                           placeholder: "Search by task title..."
                         }, null, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$G), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$H), {
                           modelValue: filters.status,
                           "onUpdate:modelValue": ($event) => filters.status = $event
                         }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$B), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$C), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Filter by status" }, null, _parent6, _scopeId5));
+                                    _push6(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Filter by status" }, null, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                      createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                     ];
                                   }
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$F), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$G), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$E), { value: "all" }, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$F), { value: "all" }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`All Statuses`);
@@ -18153,7 +18786,7 @@ const _sfc_main$7 = {
                                     }, _parent6, _scopeId5));
                                     _push6(`<!--[-->`);
                                     ssrRenderList(__props.taskStatuses, (status) => {
-                                      _push6(ssrRenderComponent(unref(_sfc_main$E), {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$F), {
                                         key: status.label,
                                         value: status.value
                                       }, {
@@ -18172,14 +18805,14 @@ const _sfc_main$7 = {
                                     _push6(`<!--]-->`);
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                      createVNode(unref(_sfc_main$F), { value: "all" }, {
                                         default: withCtx(() => [
                                           createTextVNode("All Statuses")
                                         ]),
                                         _: 1
                                       }),
                                       (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                        return openBlock(), createBlock(unref(_sfc_main$E), {
+                                        return openBlock(), createBlock(unref(_sfc_main$F), {
                                           key: status.label,
                                           value: status.value
                                         }, {
@@ -18196,22 +18829,22 @@ const _sfc_main$7 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$B), null, {
+                                createVNode(unref(_sfc_main$C), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                    createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$F), null, {
+                                createVNode(unref(_sfc_main$G), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                    createVNode(unref(_sfc_main$F), { value: "all" }, {
                                       default: withCtx(() => [
                                         createTextVNode("All Statuses")
                                       ]),
                                       _: 1
                                     }),
                                     (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                      return openBlock(), createBlock(unref(_sfc_main$E), {
+                                      return openBlock(), createBlock(unref(_sfc_main$F), {
                                         key: status.label,
                                         value: status.value
                                       }, {
@@ -18229,28 +18862,28 @@ const _sfc_main$7 = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$G), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$H), {
                           modelValue: filters.priority,
                           "onUpdate:modelValue": ($event) => filters.priority = $event
                         }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$B), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$C), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$A), { placeholder: "Filter by priority" }, null, _parent6, _scopeId5));
+                                    _push6(ssrRenderComponent(unref(_sfc_main$B), { placeholder: "Filter by priority" }, null, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                      createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                     ];
                                   }
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$F), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$G), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$E), { value: "all" }, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$F), { value: "all" }, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
                                           _push7(`All Priorities`);
@@ -18264,7 +18897,7 @@ const _sfc_main$7 = {
                                     }, _parent6, _scopeId5));
                                     _push6(`<!--[-->`);
                                     ssrRenderList(__props.taskPriorities, (priority) => {
-                                      _push6(ssrRenderComponent(unref(_sfc_main$E), {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$F), {
                                         key: priority.label,
                                         value: priority.value
                                       }, {
@@ -18283,14 +18916,14 @@ const _sfc_main$7 = {
                                     _push6(`<!--]-->`);
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                      createVNode(unref(_sfc_main$F), { value: "all" }, {
                                         default: withCtx(() => [
                                           createTextVNode("All Priorities")
                                         ]),
                                         _: 1
                                       }),
                                       (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                        return openBlock(), createBlock(unref(_sfc_main$E), {
+                                        return openBlock(), createBlock(unref(_sfc_main$F), {
                                           key: priority.label,
                                           value: priority.value
                                         }, {
@@ -18307,22 +18940,22 @@ const _sfc_main$7 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$B), null, {
+                                createVNode(unref(_sfc_main$C), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                    createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$F), null, {
+                                createVNode(unref(_sfc_main$G), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                    createVNode(unref(_sfc_main$F), { value: "all" }, {
                                       default: withCtx(() => [
                                         createTextVNode("All Priorities")
                                       ]),
                                       _: 1
                                     }),
                                     (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                      return openBlock(), createBlock(unref(_sfc_main$E), {
+                                      return openBlock(), createBlock(unref(_sfc_main$F), {
                                         key: priority.label,
                                         value: priority.value
                                       }, {
@@ -18344,32 +18977,32 @@ const _sfc_main$7 = {
                       } else {
                         return [
                           createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4" }, [
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               modelValue: filters.search,
                               "onUpdate:modelValue": ($event) => filters.search = $event,
                               placeholder: "Search by task title..."
                             }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                            createVNode(unref(_sfc_main$G), {
+                            createVNode(unref(_sfc_main$H), {
                               modelValue: filters.status,
                               "onUpdate:modelValue": ($event) => filters.status = $event
                             }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$B), null, {
+                                createVNode(unref(_sfc_main$C), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                    createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$F), null, {
+                                createVNode(unref(_sfc_main$G), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                    createVNode(unref(_sfc_main$F), { value: "all" }, {
                                       default: withCtx(() => [
                                         createTextVNode("All Statuses")
                                       ]),
                                       _: 1
                                     }),
                                     (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                      return openBlock(), createBlock(unref(_sfc_main$E), {
+                                      return openBlock(), createBlock(unref(_sfc_main$F), {
                                         key: status.label,
                                         value: status.value
                                       }, {
@@ -18385,27 +19018,27 @@ const _sfc_main$7 = {
                               ]),
                               _: 1
                             }, 8, ["modelValue", "onUpdate:modelValue"]),
-                            createVNode(unref(_sfc_main$G), {
+                            createVNode(unref(_sfc_main$H), {
                               modelValue: filters.priority,
                               "onUpdate:modelValue": ($event) => filters.priority = $event
                             }, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$B), null, {
+                                createVNode(unref(_sfc_main$C), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                    createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$F), null, {
+                                createVNode(unref(_sfc_main$G), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                    createVNode(unref(_sfc_main$F), { value: "all" }, {
                                       default: withCtx(() => [
                                         createTextVNode("All Priorities")
                                       ]),
                                       _: 1
                                     }),
                                     (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                      return openBlock(), createBlock(unref(_sfc_main$E), {
+                                      return openBlock(), createBlock(unref(_sfc_main$F), {
                                         key: priority.label,
                                         value: priority.value
                                       }, {
@@ -18429,35 +19062,35 @@ const _sfc_main$7 = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$Z), { class: "pt-6" }, {
+                    createVNode(unref(_sfc_main$_), { class: "pt-6" }, {
                       default: withCtx(() => [
                         createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4" }, [
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             modelValue: filters.search,
                             "onUpdate:modelValue": ($event) => filters.search = $event,
                             placeholder: "Search by task title..."
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(unref(_sfc_main$G), {
+                          createVNode(unref(_sfc_main$H), {
                             modelValue: filters.status,
                             "onUpdate:modelValue": ($event) => filters.status = $event
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$B), null, {
+                              createVNode(unref(_sfc_main$C), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                  createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$F), null, {
+                              createVNode(unref(_sfc_main$G), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                  createVNode(unref(_sfc_main$F), { value: "all" }, {
                                     default: withCtx(() => [
                                       createTextVNode("All Statuses")
                                     ]),
                                     _: 1
                                   }),
                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                       key: status.label,
                                       value: status.value
                                     }, {
@@ -18473,27 +19106,27 @@ const _sfc_main$7 = {
                             ]),
                             _: 1
                           }, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(unref(_sfc_main$G), {
+                          createVNode(unref(_sfc_main$H), {
                             modelValue: filters.priority,
                             "onUpdate:modelValue": ($event) => filters.priority = $event
                           }, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$B), null, {
+                              createVNode(unref(_sfc_main$C), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                  createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$F), null, {
+                              createVNode(unref(_sfc_main$G), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                  createVNode(unref(_sfc_main$F), { value: "all" }, {
                                     default: withCtx(() => [
                                       createTextVNode("All Priorities")
                                     ]),
                                     _: 1
                                   }),
                                   (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                    return openBlock(), createBlock(unref(_sfc_main$E), {
+                                    return openBlock(), createBlock(unref(_sfc_main$F), {
                                       key: priority.label,
                                       value: priority.value
                                     }, {
@@ -18518,13 +19151,13 @@ const _sfc_main$7 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`All Assigned Tasks`);
@@ -18538,7 +19171,7 @@ const _sfc_main$7 = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("All Assigned Tasks")
                             ]),
@@ -18549,19 +19182,19 @@ const _sfc_main$7 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$T), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$U), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(unref(_sfc_main$O), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$P), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
-                                    _push6(ssrRenderComponent(unref(_sfc_main$Q), null, {
+                                    _push6(ssrRenderComponent(unref(_sfc_main$R), null, {
                                       default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                         if (_push7) {
-                                          _push7(ssrRenderComponent(unref(_sfc_main$P), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$Q), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
                                                 _push8(`Status`);
@@ -18573,7 +19206,7 @@ const _sfc_main$7 = {
                                             }),
                                             _: 1
                                           }, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$P), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$Q), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
                                                 _push8(`Task`);
@@ -18585,7 +19218,7 @@ const _sfc_main$7 = {
                                             }),
                                             _: 1
                                           }, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$P), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$Q), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
                                                 _push8(`Project`);
@@ -18597,7 +19230,7 @@ const _sfc_main$7 = {
                                             }),
                                             _: 1
                                           }, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$P), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$Q), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
                                                 _push8(`Due Date`);
@@ -18609,7 +19242,7 @@ const _sfc_main$7 = {
                                             }),
                                             _: 1
                                           }, _parent7, _scopeId6));
-                                          _push7(ssrRenderComponent(unref(_sfc_main$P), null, {
+                                          _push7(ssrRenderComponent(unref(_sfc_main$Q), null, {
                                             default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                               if (_push8) {
                                                 _push8(`Priority`);
@@ -18623,31 +19256,31 @@ const _sfc_main$7 = {
                                           }, _parent7, _scopeId6));
                                         } else {
                                           return [
-                                            createVNode(unref(_sfc_main$P), null, {
+                                            createVNode(unref(_sfc_main$Q), null, {
                                               default: withCtx(() => [
                                                 createTextVNode("Status")
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$P), null, {
+                                            createVNode(unref(_sfc_main$Q), null, {
                                               default: withCtx(() => [
                                                 createTextVNode("Task")
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$P), null, {
+                                            createVNode(unref(_sfc_main$Q), null, {
                                               default: withCtx(() => [
                                                 createTextVNode("Project")
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$P), null, {
+                                            createVNode(unref(_sfc_main$Q), null, {
                                               default: withCtx(() => [
                                                 createTextVNode("Due Date")
                                               ]),
                                               _: 1
                                             }),
-                                            createVNode(unref(_sfc_main$P), null, {
+                                            createVNode(unref(_sfc_main$Q), null, {
                                               default: withCtx(() => [
                                                 createTextVNode("Priority")
                                               ]),
@@ -18660,33 +19293,33 @@ const _sfc_main$7 = {
                                     }, _parent6, _scopeId5));
                                   } else {
                                     return [
-                                      createVNode(unref(_sfc_main$Q), null, {
+                                      createVNode(unref(_sfc_main$R), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$P), null, {
+                                          createVNode(unref(_sfc_main$Q), null, {
                                             default: withCtx(() => [
                                               createTextVNode("Status")
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$P), null, {
+                                          createVNode(unref(_sfc_main$Q), null, {
                                             default: withCtx(() => [
                                               createTextVNode("Task")
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$P), null, {
+                                          createVNode(unref(_sfc_main$Q), null, {
                                             default: withCtx(() => [
                                               createTextVNode("Project")
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$P), null, {
+                                          createVNode(unref(_sfc_main$Q), null, {
                                             default: withCtx(() => [
                                               createTextVNode("Due Date")
                                             ]),
                                             _: 1
                                           }),
-                                          createVNode(unref(_sfc_main$P), null, {
+                                          createVNode(unref(_sfc_main$Q), null, {
                                             default: withCtx(() => [
                                               createTextVNode("Priority")
                                             ]),
@@ -18700,23 +19333,23 @@ const _sfc_main$7 = {
                                 }),
                                 _: 1
                               }, _parent5, _scopeId4));
-                              _push5(ssrRenderComponent(unref(_sfc_main$S), null, {
+                              _push5(ssrRenderComponent(unref(_sfc_main$T), null, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     if (__props.tasks.length > 0) {
                                       _push6(`<!--[-->`);
                                       ssrRenderList(__props.tasks, (task) => {
-                                        _push6(ssrRenderComponent(unref(_sfc_main$Q), {
+                                        _push6(ssrRenderComponent(unref(_sfc_main$R), {
                                           key: task.id,
                                           class: "hover:bg-muted/90 cursor-pointer",
                                           onClick: ($event) => unref(router).get(`/project/${task.project.id}`)
                                         }, {
                                           default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                             if (_push7) {
-                                              _push7(ssrRenderComponent(unref(_sfc_main$R), null, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$S), null, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
-                                                    _push8(ssrRenderComponent(unref(_sfc_main$N), {
+                                                    _push8(ssrRenderComponent(unref(_sfc_main$O), {
                                                       variant: unref(taskHelper).getStatusVariant(task.status),
                                                       class: "berai-font-mono"
                                                     }, {
@@ -18733,7 +19366,7 @@ const _sfc_main$7 = {
                                                     }, _parent8, _scopeId7));
                                                   } else {
                                                     return [
-                                                      createVNode(unref(_sfc_main$N), {
+                                                      createVNode(unref(_sfc_main$O), {
                                                         variant: unref(taskHelper).getStatusVariant(task.status),
                                                         class: "berai-font-mono"
                                                       }, {
@@ -18747,7 +19380,7 @@ const _sfc_main$7 = {
                                                 }),
                                                 _: 2
                                               }, _parent7, _scopeId6));
-                                              _push7(ssrRenderComponent(unref(_sfc_main$R), { class: "font-medium" }, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$S), { class: "font-medium" }, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
                                                     _push8(`${ssrInterpolate(task.title)}`);
@@ -18759,7 +19392,7 @@ const _sfc_main$7 = {
                                                 }),
                                                 _: 2
                                               }, _parent7, _scopeId6));
-                                              _push7(ssrRenderComponent(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
                                                     _push8(`${ssrInterpolate(task.project.name)}`);
@@ -18771,7 +19404,7 @@ const _sfc_main$7 = {
                                                 }),
                                                 _: 2
                                               }, _parent7, _scopeId6));
-                                              _push7(ssrRenderComponent(unref(_sfc_main$R), null, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$S), null, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
                                                     _push8(`${ssrInterpolate(formatDate(task.due_date))}`);
@@ -18783,10 +19416,10 @@ const _sfc_main$7 = {
                                                 }),
                                                 _: 2
                                               }, _parent7, _scopeId6));
-                                              _push7(ssrRenderComponent(unref(_sfc_main$R), null, {
+                                              _push7(ssrRenderComponent(unref(_sfc_main$S), null, {
                                                 default: withCtx((_7, _push8, _parent8, _scopeId7) => {
                                                   if (_push8) {
-                                                    _push8(ssrRenderComponent(unref(_sfc_main$N), {
+                                                    _push8(ssrRenderComponent(unref(_sfc_main$O), {
                                                       variant: unref(taskHelper).getPriorityVariant(task.priority),
                                                       class: "berai-font-mono"
                                                     }, {
@@ -18803,7 +19436,7 @@ const _sfc_main$7 = {
                                                     }, _parent8, _scopeId7));
                                                   } else {
                                                     return [
-                                                      createVNode(unref(_sfc_main$N), {
+                                                      createVNode(unref(_sfc_main$O), {
                                                         variant: unref(taskHelper).getPriorityVariant(task.priority),
                                                         class: "berai-font-mono"
                                                       }, {
@@ -18819,9 +19452,9 @@ const _sfc_main$7 = {
                                               }, _parent7, _scopeId6));
                                             } else {
                                               return [
-                                                createVNode(unref(_sfc_main$R), null, {
+                                                createVNode(unref(_sfc_main$S), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$N), {
+                                                    createVNode(unref(_sfc_main$O), {
                                                       variant: unref(taskHelper).getStatusVariant(task.status),
                                                       class: "berai-font-mono"
                                                     }, {
@@ -18833,27 +19466,27 @@ const _sfc_main$7 = {
                                                   ]),
                                                   _: 2
                                                 }, 1024),
-                                                createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                                                createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                                                   default: withCtx(() => [
                                                     createTextVNode(toDisplayString(task.title), 1)
                                                   ]),
                                                   _: 2
                                                 }, 1024),
-                                                createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                                                createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                                   default: withCtx(() => [
                                                     createTextVNode(toDisplayString(task.project.name), 1)
                                                   ]),
                                                   _: 2
                                                 }, 1024),
-                                                createVNode(unref(_sfc_main$R), null, {
+                                                createVNode(unref(_sfc_main$S), null, {
                                                   default: withCtx(() => [
                                                     createTextVNode(toDisplayString(formatDate(task.due_date)), 1)
                                                   ]),
                                                   _: 2
                                                 }, 1024),
-                                                createVNode(unref(_sfc_main$R), null, {
+                                                createVNode(unref(_sfc_main$S), null, {
                                                   default: withCtx(() => [
-                                                    createVNode(unref(_sfc_main$N), {
+                                                    createVNode(unref(_sfc_main$O), {
                                                       variant: unref(taskHelper).getPriorityVariant(task.priority),
                                                       class: "berai-font-mono"
                                                     }, {
@@ -18873,10 +19506,10 @@ const _sfc_main$7 = {
                                       });
                                       _push6(`<!--]-->`);
                                     } else {
-                                      _push6(ssrRenderComponent(unref(_sfc_main$Q), null, {
+                                      _push6(ssrRenderComponent(unref(_sfc_main$R), null, {
                                         default: withCtx((_6, _push7, _parent7, _scopeId6) => {
                                           if (_push7) {
-                                            _push7(ssrRenderComponent(unref(_sfc_main$R), {
+                                            _push7(ssrRenderComponent(unref(_sfc_main$S), {
                                               colspan: "4",
                                               class: "text-center text-muted-foreground py-12"
                                             }, {
@@ -18893,7 +19526,7 @@ const _sfc_main$7 = {
                                             }, _parent7, _scopeId6));
                                           } else {
                                             return [
-                                              createVNode(unref(_sfc_main$R), {
+                                              createVNode(unref(_sfc_main$S), {
                                                 colspan: "4",
                                                 class: "text-center text-muted-foreground py-12"
                                               }, {
@@ -18911,15 +19544,15 @@ const _sfc_main$7 = {
                                   } else {
                                     return [
                                       __props.tasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.tasks, (task) => {
-                                        return openBlock(), createBlock(unref(_sfc_main$Q), {
+                                        return openBlock(), createBlock(unref(_sfc_main$R), {
                                           key: task.id,
                                           class: "hover:bg-muted/90 cursor-pointer",
                                           onClick: ($event) => unref(router).get(`/project/${task.project.id}`)
                                         }, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$R), null, {
+                                            createVNode(unref(_sfc_main$S), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$N), {
+                                                createVNode(unref(_sfc_main$O), {
                                                   variant: unref(taskHelper).getStatusVariant(task.status),
                                                   class: "berai-font-mono"
                                                 }, {
@@ -18931,27 +19564,27 @@ const _sfc_main$7 = {
                                               ]),
                                               _: 2
                                             }, 1024),
-                                            createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                                            createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                                               default: withCtx(() => [
                                                 createTextVNode(toDisplayString(task.title), 1)
                                               ]),
                                               _: 2
                                             }, 1024),
-                                            createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                                            createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                               default: withCtx(() => [
                                                 createTextVNode(toDisplayString(task.project.name), 1)
                                               ]),
                                               _: 2
                                             }, 1024),
-                                            createVNode(unref(_sfc_main$R), null, {
+                                            createVNode(unref(_sfc_main$S), null, {
                                               default: withCtx(() => [
                                                 createTextVNode(toDisplayString(formatDate(task.due_date)), 1)
                                               ]),
                                               _: 2
                                             }, 1024),
-                                            createVNode(unref(_sfc_main$R), null, {
+                                            createVNode(unref(_sfc_main$S), null, {
                                               default: withCtx(() => [
-                                                createVNode(unref(_sfc_main$N), {
+                                                createVNode(unref(_sfc_main$O), {
                                                   variant: unref(taskHelper).getPriorityVariant(task.priority),
                                                   class: "berai-font-mono"
                                                 }, {
@@ -18966,9 +19599,9 @@ const _sfc_main$7 = {
                                           ]),
                                           _: 2
                                         }, 1032, ["onClick"]);
-                                      }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                      }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$R), {
+                                          createVNode(unref(_sfc_main$S), {
                                             colspan: "4",
                                             class: "text-center text-muted-foreground py-12"
                                           }, {
@@ -18987,35 +19620,35 @@ const _sfc_main$7 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(unref(_sfc_main$O), null, {
+                                createVNode(unref(_sfc_main$P), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$Q), null, {
+                                    createVNode(unref(_sfc_main$R), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$P), null, {
+                                        createVNode(unref(_sfc_main$Q), null, {
                                           default: withCtx(() => [
                                             createTextVNode("Status")
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$P), null, {
+                                        createVNode(unref(_sfc_main$Q), null, {
                                           default: withCtx(() => [
                                             createTextVNode("Task")
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$P), null, {
+                                        createVNode(unref(_sfc_main$Q), null, {
                                           default: withCtx(() => [
                                             createTextVNode("Project")
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$P), null, {
+                                        createVNode(unref(_sfc_main$Q), null, {
                                           default: withCtx(() => [
                                             createTextVNode("Due Date")
                                           ]),
                                           _: 1
                                         }),
-                                        createVNode(unref(_sfc_main$P), null, {
+                                        createVNode(unref(_sfc_main$Q), null, {
                                           default: withCtx(() => [
                                             createTextVNode("Priority")
                                           ]),
@@ -19027,18 +19660,18 @@ const _sfc_main$7 = {
                                   ]),
                                   _: 1
                                 }),
-                                createVNode(unref(_sfc_main$S), null, {
+                                createVNode(unref(_sfc_main$T), null, {
                                   default: withCtx(() => [
                                     __props.tasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.tasks, (task) => {
-                                      return openBlock(), createBlock(unref(_sfc_main$Q), {
+                                      return openBlock(), createBlock(unref(_sfc_main$R), {
                                         key: task.id,
                                         class: "hover:bg-muted/90 cursor-pointer",
                                         onClick: ($event) => unref(router).get(`/project/${task.project.id}`)
                                       }, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$R), null, {
+                                          createVNode(unref(_sfc_main$S), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$N), {
+                                              createVNode(unref(_sfc_main$O), {
                                                 variant: unref(taskHelper).getStatusVariant(task.status),
                                                 class: "berai-font-mono"
                                               }, {
@@ -19050,27 +19683,27 @@ const _sfc_main$7 = {
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                                          createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                                             default: withCtx(() => [
                                               createTextVNode(toDisplayString(task.title), 1)
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                                          createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                             default: withCtx(() => [
                                               createTextVNode(toDisplayString(task.project.name), 1)
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$R), null, {
+                                          createVNode(unref(_sfc_main$S), null, {
                                             default: withCtx(() => [
                                               createTextVNode(toDisplayString(formatDate(task.due_date)), 1)
                                             ]),
                                             _: 2
                                           }, 1024),
-                                          createVNode(unref(_sfc_main$R), null, {
+                                          createVNode(unref(_sfc_main$S), null, {
                                             default: withCtx(() => [
-                                              createVNode(unref(_sfc_main$N), {
+                                              createVNode(unref(_sfc_main$O), {
                                                 variant: unref(taskHelper).getPriorityVariant(task.priority),
                                                 class: "berai-font-mono"
                                               }, {
@@ -19085,9 +19718,9 @@ const _sfc_main$7 = {
                                         ]),
                                         _: 2
                                       }, 1032, ["onClick"]);
-                                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                    }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$R), {
+                                        createVNode(unref(_sfc_main$S), {
                                           colspan: "4",
                                           class: "text-center text-muted-foreground py-12"
                                         }, {
@@ -19109,37 +19742,37 @@ const _sfc_main$7 = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$T), null, {
+                          createVNode(unref(_sfc_main$U), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$O), null, {
+                              createVNode(unref(_sfc_main$P), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$Q), null, {
+                                  createVNode(unref(_sfc_main$R), null, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$P), null, {
+                                      createVNode(unref(_sfc_main$Q), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Status")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$P), null, {
+                                      createVNode(unref(_sfc_main$Q), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Task")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$P), null, {
+                                      createVNode(unref(_sfc_main$Q), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Project")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$P), null, {
+                                      createVNode(unref(_sfc_main$Q), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Due Date")
                                         ]),
                                         _: 1
                                       }),
-                                      createVNode(unref(_sfc_main$P), null, {
+                                      createVNode(unref(_sfc_main$Q), null, {
                                         default: withCtx(() => [
                                           createTextVNode("Priority")
                                         ]),
@@ -19151,18 +19784,18 @@ const _sfc_main$7 = {
                                 ]),
                                 _: 1
                               }),
-                              createVNode(unref(_sfc_main$S), null, {
+                              createVNode(unref(_sfc_main$T), null, {
                                 default: withCtx(() => [
                                   __props.tasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.tasks, (task) => {
-                                    return openBlock(), createBlock(unref(_sfc_main$Q), {
+                                    return openBlock(), createBlock(unref(_sfc_main$R), {
                                       key: task.id,
                                       class: "hover:bg-muted/90 cursor-pointer",
                                       onClick: ($event) => unref(router).get(`/project/${task.project.id}`)
                                     }, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$R), null, {
+                                        createVNode(unref(_sfc_main$S), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$N), {
+                                            createVNode(unref(_sfc_main$O), {
                                               variant: unref(taskHelper).getStatusVariant(task.status),
                                               class: "berai-font-mono"
                                             }, {
@@ -19174,27 +19807,27 @@ const _sfc_main$7 = {
                                           ]),
                                           _: 2
                                         }, 1024),
-                                        createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                                        createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                                           default: withCtx(() => [
                                             createTextVNode(toDisplayString(task.title), 1)
                                           ]),
                                           _: 2
                                         }, 1024),
-                                        createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                                        createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                           default: withCtx(() => [
                                             createTextVNode(toDisplayString(task.project.name), 1)
                                           ]),
                                           _: 2
                                         }, 1024),
-                                        createVNode(unref(_sfc_main$R), null, {
+                                        createVNode(unref(_sfc_main$S), null, {
                                           default: withCtx(() => [
                                             createTextVNode(toDisplayString(formatDate(task.due_date)), 1)
                                           ]),
                                           _: 2
                                         }, 1024),
-                                        createVNode(unref(_sfc_main$R), null, {
+                                        createVNode(unref(_sfc_main$S), null, {
                                           default: withCtx(() => [
-                                            createVNode(unref(_sfc_main$N), {
+                                            createVNode(unref(_sfc_main$O), {
                                               variant: unref(taskHelper).getPriorityVariant(task.priority),
                                               class: "berai-font-mono"
                                             }, {
@@ -19209,9 +19842,9 @@ const _sfc_main$7 = {
                                       ]),
                                       _: 2
                                     }, 1032, ["onClick"]);
-                                  }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                  }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$R), {
+                                      createVNode(unref(_sfc_main$S), {
                                         colspan: "4",
                                         class: "text-center text-muted-foreground py-12"
                                       }, {
@@ -19236,9 +19869,9 @@ const _sfc_main$7 = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("All Assigned Tasks")
                           ]),
@@ -19247,39 +19880,39 @@ const _sfc_main$7 = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), null, {
+                    createVNode(unref(_sfc_main$_), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$T), null, {
+                        createVNode(unref(_sfc_main$U), null, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$O), null, {
+                            createVNode(unref(_sfc_main$P), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$Q), null, {
+                                createVNode(unref(_sfc_main$R), null, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$P), null, {
+                                    createVNode(unref(_sfc_main$Q), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Status")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$P), null, {
+                                    createVNode(unref(_sfc_main$Q), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Task")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$P), null, {
+                                    createVNode(unref(_sfc_main$Q), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Project")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$P), null, {
+                                    createVNode(unref(_sfc_main$Q), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Due Date")
                                       ]),
                                       _: 1
                                     }),
-                                    createVNode(unref(_sfc_main$P), null, {
+                                    createVNode(unref(_sfc_main$Q), null, {
                                       default: withCtx(() => [
                                         createTextVNode("Priority")
                                       ]),
@@ -19291,18 +19924,18 @@ const _sfc_main$7 = {
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$S), null, {
+                            createVNode(unref(_sfc_main$T), null, {
                               default: withCtx(() => [
                                 __props.tasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.tasks, (task) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$Q), {
+                                  return openBlock(), createBlock(unref(_sfc_main$R), {
                                     key: task.id,
                                     class: "hover:bg-muted/90 cursor-pointer",
                                     onClick: ($event) => unref(router).get(`/project/${task.project.id}`)
                                   }, {
                                     default: withCtx(() => [
-                                      createVNode(unref(_sfc_main$R), null, {
+                                      createVNode(unref(_sfc_main$S), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$N), {
+                                          createVNode(unref(_sfc_main$O), {
                                             variant: unref(taskHelper).getStatusVariant(task.status),
                                             class: "berai-font-mono"
                                           }, {
@@ -19314,27 +19947,27 @@ const _sfc_main$7 = {
                                         ]),
                                         _: 2
                                       }, 1024),
-                                      createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                                      createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                                         default: withCtx(() => [
                                           createTextVNode(toDisplayString(task.title), 1)
                                         ]),
                                         _: 2
                                       }, 1024),
-                                      createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                                      createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                         default: withCtx(() => [
                                           createTextVNode(toDisplayString(task.project.name), 1)
                                         ]),
                                         _: 2
                                       }, 1024),
-                                      createVNode(unref(_sfc_main$R), null, {
+                                      createVNode(unref(_sfc_main$S), null, {
                                         default: withCtx(() => [
                                           createTextVNode(toDisplayString(formatDate(task.due_date)), 1)
                                         ]),
                                         _: 2
                                       }, 1024),
-                                      createVNode(unref(_sfc_main$R), null, {
+                                      createVNode(unref(_sfc_main$S), null, {
                                         default: withCtx(() => [
-                                          createVNode(unref(_sfc_main$N), {
+                                          createVNode(unref(_sfc_main$O), {
                                             variant: unref(taskHelper).getPriorityVariant(task.priority),
                                             class: "berai-font-mono"
                                           }, {
@@ -19349,9 +19982,9 @@ const _sfc_main$7 = {
                                     ]),
                                     _: 2
                                   }, 1032, ["onClick"]);
-                                }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                                }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$R), {
+                                    createVNode(unref(_sfc_main$S), {
                                       colspan: "4",
                                       class: "text-center text-muted-foreground py-12"
                                     }, {
@@ -19382,37 +20015,37 @@ const _sfc_main$7 = {
               createVNode("div", { class: "flex justify-between items-center mb-6" }, [
                 createVNode("h2", { class: "font-semibold text-xl" }, "My Tasks")
               ]),
-              createVNode(unref(_sfc_main$_), { class: "mb-6" }, {
+              createVNode(unref(_sfc_main$$), { class: "mb-6" }, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$Z), { class: "pt-6" }, {
+                  createVNode(unref(_sfc_main$_), { class: "pt-6" }, {
                     default: withCtx(() => [
                       createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4" }, [
-                        createVNode(unref(_sfc_main$1B), {
+                        createVNode(unref(_sfc_main$1C), {
                           modelValue: filters.search,
                           "onUpdate:modelValue": ($event) => filters.search = $event,
                           placeholder: "Search by task title..."
                         }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                        createVNode(unref(_sfc_main$G), {
+                        createVNode(unref(_sfc_main$H), {
                           modelValue: filters.status,
                           "onUpdate:modelValue": ($event) => filters.status = $event
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$B), null, {
+                            createVNode(unref(_sfc_main$C), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Filter by status" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Filter by status" })
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$F), null, {
+                            createVNode(unref(_sfc_main$G), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                createVNode(unref(_sfc_main$F), { value: "all" }, {
                                   default: withCtx(() => [
                                     createTextVNode("All Statuses")
                                   ]),
                                   _: 1
                                 }),
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskStatuses, (status) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: status.label,
                                     value: status.value
                                   }, {
@@ -19428,27 +20061,27 @@ const _sfc_main$7 = {
                           ]),
                           _: 1
                         }, 8, ["modelValue", "onUpdate:modelValue"]),
-                        createVNode(unref(_sfc_main$G), {
+                        createVNode(unref(_sfc_main$H), {
                           modelValue: filters.priority,
                           "onUpdate:modelValue": ($event) => filters.priority = $event
                         }, {
                           default: withCtx(() => [
-                            createVNode(unref(_sfc_main$B), null, {
+                            createVNode(unref(_sfc_main$C), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$A), { placeholder: "Filter by priority" })
+                                createVNode(unref(_sfc_main$B), { placeholder: "Filter by priority" })
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$F), null, {
+                            createVNode(unref(_sfc_main$G), null, {
                               default: withCtx(() => [
-                                createVNode(unref(_sfc_main$E), { value: "all" }, {
+                                createVNode(unref(_sfc_main$F), { value: "all" }, {
                                   default: withCtx(() => [
                                     createTextVNode("All Priorities")
                                   ]),
                                   _: 1
                                 }),
                                 (openBlock(true), createBlock(Fragment, null, renderList(__props.taskPriorities, (priority) => {
-                                  return openBlock(), createBlock(unref(_sfc_main$E), {
+                                  return openBlock(), createBlock(unref(_sfc_main$F), {
                                     key: priority.label,
                                     value: priority.value
                                   }, {
@@ -19471,11 +20104,11 @@ const _sfc_main$7 = {
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$_), null, {
+              createVNode(unref(_sfc_main$$), null, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$W), null, {
+                  createVNode(unref(_sfc_main$X), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$V), null, {
+                      createVNode(unref(_sfc_main$W), null, {
                         default: withCtx(() => [
                           createTextVNode("All Assigned Tasks")
                         ]),
@@ -19484,39 +20117,39 @@ const _sfc_main$7 = {
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$Z), null, {
+                  createVNode(unref(_sfc_main$_), null, {
                     default: withCtx(() => [
-                      createVNode(unref(_sfc_main$T), null, {
+                      createVNode(unref(_sfc_main$U), null, {
                         default: withCtx(() => [
-                          createVNode(unref(_sfc_main$O), null, {
+                          createVNode(unref(_sfc_main$P), null, {
                             default: withCtx(() => [
-                              createVNode(unref(_sfc_main$Q), null, {
+                              createVNode(unref(_sfc_main$R), null, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$P), null, {
+                                  createVNode(unref(_sfc_main$Q), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Status")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$P), null, {
+                                  createVNode(unref(_sfc_main$Q), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Task")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$P), null, {
+                                  createVNode(unref(_sfc_main$Q), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Project")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$P), null, {
+                                  createVNode(unref(_sfc_main$Q), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Due Date")
                                     ]),
                                     _: 1
                                   }),
-                                  createVNode(unref(_sfc_main$P), null, {
+                                  createVNode(unref(_sfc_main$Q), null, {
                                     default: withCtx(() => [
                                       createTextVNode("Priority")
                                     ]),
@@ -19528,18 +20161,18 @@ const _sfc_main$7 = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$S), null, {
+                          createVNode(unref(_sfc_main$T), null, {
                             default: withCtx(() => [
                               __props.tasks.length > 0 ? (openBlock(true), createBlock(Fragment, { key: 0 }, renderList(__props.tasks, (task) => {
-                                return openBlock(), createBlock(unref(_sfc_main$Q), {
+                                return openBlock(), createBlock(unref(_sfc_main$R), {
                                   key: task.id,
                                   class: "hover:bg-muted/90 cursor-pointer",
                                   onClick: ($event) => unref(router).get(`/project/${task.project.id}`)
                                 }, {
                                   default: withCtx(() => [
-                                    createVNode(unref(_sfc_main$R), null, {
+                                    createVNode(unref(_sfc_main$S), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$N), {
+                                        createVNode(unref(_sfc_main$O), {
                                           variant: unref(taskHelper).getStatusVariant(task.status),
                                           class: "berai-font-mono"
                                         }, {
@@ -19551,27 +20184,27 @@ const _sfc_main$7 = {
                                       ]),
                                       _: 2
                                     }, 1024),
-                                    createVNode(unref(_sfc_main$R), { class: "font-medium" }, {
+                                    createVNode(unref(_sfc_main$S), { class: "font-medium" }, {
                                       default: withCtx(() => [
                                         createTextVNode(toDisplayString(task.title), 1)
                                       ]),
                                       _: 2
                                     }, 1024),
-                                    createVNode(unref(_sfc_main$R), { class: "text-muted-foreground" }, {
+                                    createVNode(unref(_sfc_main$S), { class: "text-muted-foreground" }, {
                                       default: withCtx(() => [
                                         createTextVNode(toDisplayString(task.project.name), 1)
                                       ]),
                                       _: 2
                                     }, 1024),
-                                    createVNode(unref(_sfc_main$R), null, {
+                                    createVNode(unref(_sfc_main$S), null, {
                                       default: withCtx(() => [
                                         createTextVNode(toDisplayString(formatDate(task.due_date)), 1)
                                       ]),
                                       _: 2
                                     }, 1024),
-                                    createVNode(unref(_sfc_main$R), null, {
+                                    createVNode(unref(_sfc_main$S), null, {
                                       default: withCtx(() => [
-                                        createVNode(unref(_sfc_main$N), {
+                                        createVNode(unref(_sfc_main$O), {
                                           variant: unref(taskHelper).getPriorityVariant(task.priority),
                                           class: "berai-font-mono"
                                         }, {
@@ -19586,9 +20219,9 @@ const _sfc_main$7 = {
                                   ]),
                                   _: 2
                                 }, 1032, ["onClick"]);
-                              }), 128)) : (openBlock(), createBlock(unref(_sfc_main$Q), { key: 1 }, {
+                              }), 128)) : (openBlock(), createBlock(unref(_sfc_main$R), { key: 1 }, {
                                 default: withCtx(() => [
-                                  createVNode(unref(_sfc_main$R), {
+                                  createVNode(unref(_sfc_main$S), {
                                     colspan: "4",
                                     class: "text-center text-muted-foreground py-12"
                                   }, {
@@ -19639,17 +20272,17 @@ const _sfc_main$6 = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Welcome!" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$10, { breadcrumbs }, {
+      _push(ssrRenderComponent(_sfc_main$11, { breadcrumbs }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="max-w-3xl mx-auto sm:px-6 lg:px-8 py-12"${_scopeId}>`);
-            _push2(ssrRenderComponent(unref(_sfc_main$_), { class: "text-center" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$$), { class: "text-center" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$W), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$X), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$V), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$W), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(`Welcome to Berai!`);
@@ -19661,7 +20294,7 @@ const _sfc_main$6 = {
                           }),
                           _: 1
                         }, _parent4, _scopeId3));
-                        _push4(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                        _push4(ssrRenderComponent(unref(_sfc_main$Z), null, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
                               _push5(` We&#39;re excited to have you on board. The first step to getting organized is to create your first project. `);
@@ -19675,13 +20308,13 @@ const _sfc_main$6 = {
                         }, _parent4, _scopeId3));
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$V), null, {
+                          createVNode(unref(_sfc_main$W), null, {
                             default: withCtx(() => [
                               createTextVNode("Welcome to Berai!")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$Y), null, {
+                          createVNode(unref(_sfc_main$Z), null, {
                             default: withCtx(() => [
                               createTextVNode(" We're excited to have you on board. The first step to getting organized is to create your first project. ")
                             ]),
@@ -19692,17 +20325,17 @@ const _sfc_main$6 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$_), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(ssrRenderComponent(unref(_sfc_main$1p), {
+                        _push4(ssrRenderComponent(unref(_sfc_main$1q), {
                           size: "lg",
                           "as-child": "",
                           class: "mt-1"
                         }, {
                           default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                             if (_push5) {
-                              _push5(ssrRenderComponent(_sfc_main$1n, { href: "/project/create" }, {
+                              _push5(ssrRenderComponent(_sfc_main$1o, { href: "/project/create" }, {
                                 default: withCtx((_5, _push6, _parent6, _scopeId5) => {
                                   if (_push6) {
                                     _push6(` Create Your First Project `);
@@ -19716,7 +20349,7 @@ const _sfc_main$6 = {
                               }, _parent5, _scopeId4));
                             } else {
                               return [
-                                createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                                createVNode(_sfc_main$1o, { href: "/project/create" }, {
                                   default: withCtx(() => [
                                     createTextVNode(" Create Your First Project ")
                                   ]),
@@ -19728,7 +20361,7 @@ const _sfc_main$6 = {
                           _: 1
                         }, _parent4, _scopeId3));
                         _push4(`<div class="mt-2"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(_sfc_main$1n, {
+                        _push4(ssrRenderComponent(_sfc_main$1o, {
                           href: "/dashboard",
                           class: "text-sm text-muted-foreground hover:text-primary transition-colors"
                         }, {
@@ -19746,13 +20379,13 @@ const _sfc_main$6 = {
                         _push4(`</div>`);
                       } else {
                         return [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             size: "lg",
                             "as-child": "",
                             class: "mt-1"
                           }, {
                             default: withCtx(() => [
-                              createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                              createVNode(_sfc_main$1o, { href: "/project/create" }, {
                                 default: withCtx(() => [
                                   createTextVNode(" Create Your First Project ")
                                 ]),
@@ -19762,7 +20395,7 @@ const _sfc_main$6 = {
                             _: 1
                           }),
                           createVNode("div", { class: "mt-2" }, [
-                            createVNode(_sfc_main$1n, {
+                            createVNode(_sfc_main$1o, {
                               href: "/dashboard",
                               class: "text-sm text-muted-foreground hover:text-primary transition-colors"
                             }, {
@@ -19779,15 +20412,15 @@ const _sfc_main$6 = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Welcome to Berai!")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Y), null, {
+                        createVNode(unref(_sfc_main$Z), null, {
                           default: withCtx(() => [
                             createTextVNode(" We're excited to have you on board. The first step to getting organized is to create your first project. ")
                           ]),
@@ -19796,15 +20429,15 @@ const _sfc_main$6 = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), null, {
+                    createVNode(unref(_sfc_main$_), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           size: "lg",
                           "as-child": "",
                           class: "mt-1"
                         }, {
                           default: withCtx(() => [
-                            createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                            createVNode(_sfc_main$1o, { href: "/project/create" }, {
                               default: withCtx(() => [
                                 createTextVNode(" Create Your First Project ")
                               ]),
@@ -19814,7 +20447,7 @@ const _sfc_main$6 = {
                           _: 1
                         }),
                         createVNode("div", { class: "mt-2" }, [
-                          createVNode(_sfc_main$1n, {
+                          createVNode(_sfc_main$1o, {
                             href: "/dashboard",
                             class: "text-sm text-muted-foreground hover:text-primary transition-colors"
                           }, {
@@ -19836,17 +20469,17 @@ const _sfc_main$6 = {
           } else {
             return [
               createVNode("div", { class: "max-w-3xl mx-auto sm:px-6 lg:px-8 py-12" }, [
-                createVNode(unref(_sfc_main$_), { class: "text-center" }, {
+                createVNode(unref(_sfc_main$$), { class: "text-center" }, {
                   default: withCtx(() => [
-                    createVNode(unref(_sfc_main$W), null, {
+                    createVNode(unref(_sfc_main$X), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$V), null, {
+                        createVNode(unref(_sfc_main$W), null, {
                           default: withCtx(() => [
                             createTextVNode("Welcome to Berai!")
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$Y), null, {
+                        createVNode(unref(_sfc_main$Z), null, {
                           default: withCtx(() => [
                             createTextVNode(" We're excited to have you on board. The first step to getting organized is to create your first project. ")
                           ]),
@@ -19855,15 +20488,15 @@ const _sfc_main$6 = {
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Z), null, {
+                    createVNode(unref(_sfc_main$_), null, {
                       default: withCtx(() => [
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           size: "lg",
                           "as-child": "",
                           class: "mt-1"
                         }, {
                           default: withCtx(() => [
-                            createVNode(_sfc_main$1n, { href: "/project/create" }, {
+                            createVNode(_sfc_main$1o, { href: "/project/create" }, {
                               default: withCtx(() => [
                                 createTextVNode(" Create Your First Project ")
                               ]),
@@ -19873,7 +20506,7 @@ const _sfc_main$6 = {
                           _: 1
                         }),
                         createVNode("div", { class: "mt-2" }, [
-                          createVNode(_sfc_main$1n, {
+                          createVNode(_sfc_main$1o, {
                             href: "/dashboard",
                             class: "text-sm text-muted-foreground hover:text-primary transition-colors"
                           }, {
@@ -19928,13 +20561,13 @@ const _sfc_main$5 = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col gap-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(unref(_sfc_main$_), null, {
+      _push(ssrRenderComponent(unref(_sfc_main$$), null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$W), { class: "text-center" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$X), { class: "text-center" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$V), { class: "text-xl" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$W), { class: "text-xl" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(` Welcome back `);
@@ -19946,7 +20579,7 @@ const _sfc_main$5 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(` Login with your Apple or Google account `);
@@ -19960,13 +20593,13 @@ const _sfc_main$5 = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$V), { class: "text-xl" }, {
+                    createVNode(unref(_sfc_main$W), { class: "text-xl" }, {
                       default: withCtx(() => [
                         createTextVNode(" Welcome back ")
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Y), null, {
+                    createVNode(unref(_sfc_main$Z), null, {
                       default: withCtx(() => [
                         createTextVNode(" Login with your Apple or Google account ")
                       ]),
@@ -19977,11 +20610,11 @@ const _sfc_main$5 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$Z), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`<form${_scopeId2}><div class="grid gap-6"${_scopeId2}><div class="flex flex-col gap-4"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     variant: "outline",
                     class: "w-full"
                   }, {
@@ -20005,7 +20638,7 @@ const _sfc_main$5 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     variant: "outline",
                     class: "w-full"
                   }, {
@@ -20030,7 +20663,7 @@ const _sfc_main$5 = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`</div><div class="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border"${_scopeId2}><span class="relative z-10 bg-background px-2 text-muted-foreground"${_scopeId2}> Or continue with </span></div><div class="grid gap-6"${_scopeId2}><div class="grid gap-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { "html-for": "email" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { "html-for": "email" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Email`);
@@ -20042,7 +20675,7 @@ const _sfc_main$5 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "email",
                     type: "email",
                     placeholder: "test@example.com",
@@ -20051,7 +20684,7 @@ const _sfc_main$5 = {
                     required: ""
                   }, null, _parent3, _scopeId2));
                   _push3(`</div><div class="grid gap-2"${_scopeId2}><div class="flex items-center"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { "html-for": "password" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { "html-for": "password" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Password`);
@@ -20064,7 +20697,7 @@ const _sfc_main$5 = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`<a href="#" class="ml-auto text-sm underline-offset-4 hover:underline"${_scopeId2}> Forgot your password? </a></div>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "password",
                     type: "password",
                     modelValue: unref(form).password,
@@ -20072,7 +20705,7 @@ const _sfc_main$5 = {
                     required: ""
                   }, null, _parent3, _scopeId2));
                   _push3(`</div>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     type: "submit",
                     class: "w-full",
                     disabled: loading.value
@@ -20121,7 +20754,7 @@ const _sfc_main$5 = {
                     }, [
                       createVNode("div", { class: "grid gap-6" }, [
                         createVNode("div", { class: "flex flex-col gap-4" }, [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             variant: "outline",
                             class: "w-full"
                           }, {
@@ -20139,7 +20772,7 @@ const _sfc_main$5 = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             variant: "outline",
                             class: "w-full"
                           }, {
@@ -20163,13 +20796,13 @@ const _sfc_main$5 = {
                         ]),
                         createVNode("div", { class: "grid gap-6" }, [
                           createVNode("div", { class: "grid gap-2" }, [
-                            createVNode(unref(_sfc_main$L), { "html-for": "email" }, {
+                            createVNode(unref(_sfc_main$M), { "html-for": "email" }, {
                               default: withCtx(() => [
                                 createTextVNode("Email")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "email",
                               type: "email",
                               placeholder: "test@example.com",
@@ -20180,7 +20813,7 @@ const _sfc_main$5 = {
                           ]),
                           createVNode("div", { class: "grid gap-2" }, [
                             createVNode("div", { class: "flex items-center" }, [
-                              createVNode(unref(_sfc_main$L), { "html-for": "password" }, {
+                              createVNode(unref(_sfc_main$M), { "html-for": "password" }, {
                                 default: withCtx(() => [
                                   createTextVNode("Password")
                                 ]),
@@ -20191,7 +20824,7 @@ const _sfc_main$5 = {
                                 class: "ml-auto text-sm underline-offset-4 hover:underline"
                               }, " Forgot your password? ")
                             ]),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "password",
                               type: "password",
                               modelValue: unref(form).password,
@@ -20199,7 +20832,7 @@ const _sfc_main$5 = {
                               required: ""
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             type: "submit",
                             class: "w-full",
                             disabled: loading.value
@@ -20235,15 +20868,15 @@ const _sfc_main$5 = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$W), { class: "text-center" }, {
+              createVNode(unref(_sfc_main$X), { class: "text-center" }, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$V), { class: "text-xl" }, {
+                  createVNode(unref(_sfc_main$W), { class: "text-xl" }, {
                     default: withCtx(() => [
                       createTextVNode(" Welcome back ")
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$Y), null, {
+                  createVNode(unref(_sfc_main$Z), null, {
                     default: withCtx(() => [
                       createTextVNode(" Login with your Apple or Google account ")
                     ]),
@@ -20252,14 +20885,14 @@ const _sfc_main$5 = {
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$Z), null, {
+              createVNode(unref(_sfc_main$_), null, {
                 default: withCtx(() => [
                   createVNode("form", {
                     onSubmit: withModifiers(handleLogin, ["prevent"])
                   }, [
                     createVNode("div", { class: "grid gap-6" }, [
                       createVNode("div", { class: "flex flex-col gap-4" }, [
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           variant: "outline",
                           class: "w-full"
                         }, {
@@ -20277,7 +20910,7 @@ const _sfc_main$5 = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           variant: "outline",
                           class: "w-full"
                         }, {
@@ -20301,13 +20934,13 @@ const _sfc_main$5 = {
                       ]),
                       createVNode("div", { class: "grid gap-6" }, [
                         createVNode("div", { class: "grid gap-2" }, [
-                          createVNode(unref(_sfc_main$L), { "html-for": "email" }, {
+                          createVNode(unref(_sfc_main$M), { "html-for": "email" }, {
                             default: withCtx(() => [
                               createTextVNode("Email")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "email",
                             type: "email",
                             placeholder: "test@example.com",
@@ -20318,7 +20951,7 @@ const _sfc_main$5 = {
                         ]),
                         createVNode("div", { class: "grid gap-2" }, [
                           createVNode("div", { class: "flex items-center" }, [
-                            createVNode(unref(_sfc_main$L), { "html-for": "password" }, {
+                            createVNode(unref(_sfc_main$M), { "html-for": "password" }, {
                               default: withCtx(() => [
                                 createTextVNode("Password")
                               ]),
@@ -20329,7 +20962,7 @@ const _sfc_main$5 = {
                               class: "ml-auto text-sm underline-offset-4 hover:underline"
                             }, " Forgot your password? ")
                           ]),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "password",
                             type: "password",
                             modelValue: unref(form).password,
@@ -20337,7 +20970,7 @@ const _sfc_main$5 = {
                             required: ""
                           }, null, 8, ["modelValue", "onUpdate:modelValue"])
                         ]),
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           type: "submit",
                           class: "w-full",
                           disabled: loading.value
@@ -20467,13 +21100,13 @@ const _sfc_main$2 = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col gap-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(unref(_sfc_main$_), null, {
+      _push(ssrRenderComponent(unref(_sfc_main$$), null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(_sfc_main$W), { class: "text-center" }, {
+            _push2(ssrRenderComponent(unref(_sfc_main$X), { class: "text-center" }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(_sfc_main$V), { class: "text-xl" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$W), { class: "text-xl" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(` Welcome back `);
@@ -20485,7 +21118,7 @@ const _sfc_main$2 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$Y), null, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$Z), null, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(` Sign Up with your Apple or Google account `);
@@ -20499,13 +21132,13 @@ const _sfc_main$2 = {
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(_sfc_main$V), { class: "text-xl" }, {
+                    createVNode(unref(_sfc_main$W), { class: "text-xl" }, {
                       default: withCtx(() => [
                         createTextVNode(" Welcome back ")
                       ]),
                       _: 1
                     }),
-                    createVNode(unref(_sfc_main$Y), null, {
+                    createVNode(unref(_sfc_main$Z), null, {
                       default: withCtx(() => [
                         createTextVNode(" Sign Up with your Apple or Google account ")
                       ]),
@@ -20516,11 +21149,11 @@ const _sfc_main$2 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(unref(_sfc_main$Z), null, {
+            _push2(ssrRenderComponent(unref(_sfc_main$_), null, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`<form${_scopeId2}><div class="grid gap-6"${_scopeId2}><div class="flex flex-col gap-4"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     variant: "outline",
                     class: "w-full"
                   }, {
@@ -20544,7 +21177,7 @@ const _sfc_main$2 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     variant: "outline",
                     class: "w-full"
                   }, {
@@ -20569,7 +21202,7 @@ const _sfc_main$2 = {
                     _: 1
                   }, _parent3, _scopeId2));
                   _push3(`</div><div class="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border"${_scopeId2}><span class="relative z-10 bg-background px-2 text-muted-foreground"${_scopeId2}> Or continue with </span></div><div class="grid gap-6"${_scopeId2}><div class="grid gap-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { "html-for": "name" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { "html-for": "name" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Full Name`);
@@ -20581,7 +21214,7 @@ const _sfc_main$2 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "name",
                     type: "text",
                     placeholder: "John Doe",
@@ -20595,7 +21228,7 @@ const _sfc_main$2 = {
                     _push3(`<!---->`);
                   }
                   _push3(`</div><div class="grid gap-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { "html-for": "email" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { "html-for": "email" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Email`);
@@ -20607,7 +21240,7 @@ const _sfc_main$2 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "email",
                     type: "email",
                     placeholder: "test@example.com",
@@ -20621,7 +21254,7 @@ const _sfc_main$2 = {
                     _push3(`<!---->`);
                   }
                   _push3(`</div><div class="grid gap-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { "html-for": "password" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { "html-for": "password" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Password`);
@@ -20633,7 +21266,7 @@ const _sfc_main$2 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "password",
                     type: "password",
                     modelValue: unref(form).password,
@@ -20646,7 +21279,7 @@ const _sfc_main$2 = {
                     _push3(`<!---->`);
                   }
                   _push3(`</div><div class="grid gap-2"${_scopeId2}>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$L), { "html-for": "password" }, {
+                  _push3(ssrRenderComponent(unref(_sfc_main$M), { "html-for": "password" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`Confirm Password`);
@@ -20658,7 +21291,7 @@ const _sfc_main$2 = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(ssrRenderComponent(unref(_sfc_main$1B), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1C), {
                     id: "password_confirmation",
                     type: "password",
                     modelValue: unref(form).password_confirmation,
@@ -20671,7 +21304,7 @@ const _sfc_main$2 = {
                     _push3(`<!---->`);
                   }
                   _push3(`</div>`);
-                  _push3(ssrRenderComponent(unref(_sfc_main$1p), {
+                  _push3(ssrRenderComponent(unref(_sfc_main$1q), {
                     type: "submit",
                     class: "w-full",
                     disabled: loading.value
@@ -20720,7 +21353,7 @@ const _sfc_main$2 = {
                     }, [
                       createVNode("div", { class: "grid gap-6" }, [
                         createVNode("div", { class: "flex flex-col gap-4" }, [
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             variant: "outline",
                             class: "w-full"
                           }, {
@@ -20738,7 +21371,7 @@ const _sfc_main$2 = {
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             variant: "outline",
                             class: "w-full"
                           }, {
@@ -20762,13 +21395,13 @@ const _sfc_main$2 = {
                         ]),
                         createVNode("div", { class: "grid gap-6" }, [
                           createVNode("div", { class: "grid gap-2" }, [
-                            createVNode(unref(_sfc_main$L), { "html-for": "name" }, {
+                            createVNode(unref(_sfc_main$M), { "html-for": "name" }, {
                               default: withCtx(() => [
                                 createTextVNode("Full Name")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "name",
                               type: "text",
                               placeholder: "John Doe",
@@ -20782,13 +21415,13 @@ const _sfc_main$2 = {
                             }, toDisplayString(unref(form).errors.name), 1)) : createCommentVNode("", true)
                           ]),
                           createVNode("div", { class: "grid gap-2" }, [
-                            createVNode(unref(_sfc_main$L), { "html-for": "email" }, {
+                            createVNode(unref(_sfc_main$M), { "html-for": "email" }, {
                               default: withCtx(() => [
                                 createTextVNode("Email")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "email",
                               type: "email",
                               placeholder: "test@example.com",
@@ -20802,13 +21435,13 @@ const _sfc_main$2 = {
                             }, toDisplayString(unref(form).errors.email), 1)) : createCommentVNode("", true)
                           ]),
                           createVNode("div", { class: "grid gap-2" }, [
-                            createVNode(unref(_sfc_main$L), { "html-for": "password" }, {
+                            createVNode(unref(_sfc_main$M), { "html-for": "password" }, {
                               default: withCtx(() => [
                                 createTextVNode("Password")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "password",
                               type: "password",
                               modelValue: unref(form).password,
@@ -20821,13 +21454,13 @@ const _sfc_main$2 = {
                             }, toDisplayString(unref(form).errors.password), 1)) : createCommentVNode("", true)
                           ]),
                           createVNode("div", { class: "grid gap-2" }, [
-                            createVNode(unref(_sfc_main$L), { "html-for": "password" }, {
+                            createVNode(unref(_sfc_main$M), { "html-for": "password" }, {
                               default: withCtx(() => [
                                 createTextVNode("Confirm Password")
                               ]),
                               _: 1
                             }),
-                            createVNode(unref(_sfc_main$1B), {
+                            createVNode(unref(_sfc_main$1C), {
                               id: "password_confirmation",
                               type: "password",
                               modelValue: unref(form).password_confirmation,
@@ -20839,7 +21472,7 @@ const _sfc_main$2 = {
                               class: "text-xs text-red-600 -mt-1.5"
                             }, toDisplayString(unref(form).errors.password_confirmation), 1)) : createCommentVNode("", true)
                           ]),
-                          createVNode(unref(_sfc_main$1p), {
+                          createVNode(unref(_sfc_main$1q), {
                             type: "submit",
                             class: "w-full",
                             disabled: loading.value
@@ -20875,15 +21508,15 @@ const _sfc_main$2 = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(unref(_sfc_main$W), { class: "text-center" }, {
+              createVNode(unref(_sfc_main$X), { class: "text-center" }, {
                 default: withCtx(() => [
-                  createVNode(unref(_sfc_main$V), { class: "text-xl" }, {
+                  createVNode(unref(_sfc_main$W), { class: "text-xl" }, {
                     default: withCtx(() => [
                       createTextVNode(" Welcome back ")
                     ]),
                     _: 1
                   }),
-                  createVNode(unref(_sfc_main$Y), null, {
+                  createVNode(unref(_sfc_main$Z), null, {
                     default: withCtx(() => [
                       createTextVNode(" Sign Up with your Apple or Google account ")
                     ]),
@@ -20892,14 +21525,14 @@ const _sfc_main$2 = {
                 ]),
                 _: 1
               }),
-              createVNode(unref(_sfc_main$Z), null, {
+              createVNode(unref(_sfc_main$_), null, {
                 default: withCtx(() => [
                   createVNode("form", {
                     onSubmit: withModifiers(handleRegister, ["prevent"])
                   }, [
                     createVNode("div", { class: "grid gap-6" }, [
                       createVNode("div", { class: "flex flex-col gap-4" }, [
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           variant: "outline",
                           class: "w-full"
                         }, {
@@ -20917,7 +21550,7 @@ const _sfc_main$2 = {
                           ]),
                           _: 1
                         }),
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           variant: "outline",
                           class: "w-full"
                         }, {
@@ -20941,13 +21574,13 @@ const _sfc_main$2 = {
                       ]),
                       createVNode("div", { class: "grid gap-6" }, [
                         createVNode("div", { class: "grid gap-2" }, [
-                          createVNode(unref(_sfc_main$L), { "html-for": "name" }, {
+                          createVNode(unref(_sfc_main$M), { "html-for": "name" }, {
                             default: withCtx(() => [
                               createTextVNode("Full Name")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "name",
                             type: "text",
                             placeholder: "John Doe",
@@ -20961,13 +21594,13 @@ const _sfc_main$2 = {
                           }, toDisplayString(unref(form).errors.name), 1)) : createCommentVNode("", true)
                         ]),
                         createVNode("div", { class: "grid gap-2" }, [
-                          createVNode(unref(_sfc_main$L), { "html-for": "email" }, {
+                          createVNode(unref(_sfc_main$M), { "html-for": "email" }, {
                             default: withCtx(() => [
                               createTextVNode("Email")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "email",
                             type: "email",
                             placeholder: "test@example.com",
@@ -20981,13 +21614,13 @@ const _sfc_main$2 = {
                           }, toDisplayString(unref(form).errors.email), 1)) : createCommentVNode("", true)
                         ]),
                         createVNode("div", { class: "grid gap-2" }, [
-                          createVNode(unref(_sfc_main$L), { "html-for": "password" }, {
+                          createVNode(unref(_sfc_main$M), { "html-for": "password" }, {
                             default: withCtx(() => [
                               createTextVNode("Password")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "password",
                             type: "password",
                             modelValue: unref(form).password,
@@ -21000,13 +21633,13 @@ const _sfc_main$2 = {
                           }, toDisplayString(unref(form).errors.password), 1)) : createCommentVNode("", true)
                         ]),
                         createVNode("div", { class: "grid gap-2" }, [
-                          createVNode(unref(_sfc_main$L), { "html-for": "password" }, {
+                          createVNode(unref(_sfc_main$M), { "html-for": "password" }, {
                             default: withCtx(() => [
                               createTextVNode("Confirm Password")
                             ]),
                             _: 1
                           }),
-                          createVNode(unref(_sfc_main$1B), {
+                          createVNode(unref(_sfc_main$1C), {
                             id: "password_confirmation",
                             type: "password",
                             modelValue: unref(form).password_confirmation,
@@ -21018,7 +21651,7 @@ const _sfc_main$2 = {
                             class: "text-xs text-red-600 -mt-1.5"
                           }, toDisplayString(unref(form).errors.password_confirmation), 1)) : createCommentVNode("", true)
                         ]),
-                        createVNode(unref(_sfc_main$1p), {
+                        createVNode(unref(_sfc_main$1q), {
                           type: "submit",
                           class: "w-full",
                           disabled: loading.value
