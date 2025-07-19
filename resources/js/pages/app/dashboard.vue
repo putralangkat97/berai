@@ -1,8 +1,9 @@
 <script setup>
 import AppLayout from "@/layouts/app.vue";
-import { Head, Link } from "@inertiajs/vue3";
+import { Head } from "@inertiajs/vue3";
 import { computed } from "vue";
 import DoughnutChart from "@/components/shared/charts/doughnut-chart.vue";
+import AppLink from "@/components/layouts/app-link.vue";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -107,7 +108,7 @@ const chartOptions = {
               </CardContent>
               <CardFooter>
                 <Button as-child variant="secondary" class="w-full">
-                  <Link :href="`/project/${project.id}`">View Project</Link>
+                  <AppLink :href="`/project/${project.id}`">View Project</AppLink>
                 </Button>
               </CardFooter>
             </Card>
@@ -120,7 +121,7 @@ const chartOptions = {
               </CardHeader>
               <CardContent>
                 <Button size="lg" as-child class="mt-1">
-                  <Link href="/project/create"> Create Your First Project </Link>
+                  <AppLink href="/project/create"> Create Your First Project </AppLink>
                 </Button>
               </CardContent>
             </Card>
@@ -154,7 +155,7 @@ const chartOptions = {
               <Table>
                 <TableBody>
                   <template v-if="openTasks.length > 0">
-                    <Link
+                    <AppLink
                       v-for="task in openTasks"
                       :key="task.id"
                       :href="`/project/${task.project.id}`"
@@ -170,7 +171,7 @@ const chartOptions = {
                       <TableCell class="text-right">
                         <Badge variant="destructive">{{ task.due_date || "No due date" }}</Badge>
                       </TableCell>
-                    </Link>
+                    </AppLink>
                   </template>
                   <TableRow v-else>
                     <TableCell class="text-center py-12">
@@ -182,7 +183,7 @@ const chartOptions = {
             </CardContent>
             <CardFooter v-if="openTasks.length > 0">
               <Button as-child variant="outline" class="w-full">
-                <Link href="/task">View All My Tasks</Link>
+                <AppLink href="/task">View All My Tasks</AppLink>
               </Button>
             </CardFooter>
           </Card>

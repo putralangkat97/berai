@@ -1,16 +1,10 @@
 <script setup>
-import { Head, Link } from "@inertiajs/vue3";
+import { Head } from "@inertiajs/vue3";
 import { Button } from "@/components/ui/button";
 import AppLayout from "@/layouts/app.vue";
+import AppLink from "@/components/layouts/app-link.vue";
 
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 const breadcrumbs = [{ label: "Welcome" }];
 </script>
@@ -29,15 +23,15 @@ const breadcrumbs = [{ label: "Welcome" }];
         </CardHeader>
         <CardContent>
           <Button size="lg" as-child class="mt-1">
-            <Link href="/project/create"> Create Your First Project </Link>
+            <AppLink href="/project/create"> Create Your First Project </AppLink>
           </Button>
           <div class="mt-2">
-            <Link
+            <AppLink
               href="/dashboard"
               class="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               I'll do this later, take me to my dashboard
-            </Link>
+            </AppLink>
           </div>
         </CardContent>
       </Card>

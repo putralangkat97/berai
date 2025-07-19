@@ -1,9 +1,10 @@
 <script setup>
 import AppLayout from "@/layouts/app.vue";
-import { Head, Link, router } from "@inertiajs/vue3";
+import { Head, router } from "@inertiajs/vue3";
 import { watch, reactive } from "vue";
 import debounce from "lodash.debounce";
 import { Plus } from "lucide-vue-next";
+import AppLink from "@/components/layouts/app-link.vue";
 
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -51,7 +52,7 @@ watch(
           <Input v-model="filters.search" type="text" placeholder="Search projects..." />
         </div>
         <Button as-child>
-          <Link href="/project/create">Create Project</Link>
+          <AppLink href="/project/create">Create Project</AppLink>
         </Button>
       </div>
     </div>
@@ -73,7 +74,7 @@ watch(
         </CardContent>
         <CardFooter>
           <Button as-child variant="secondary" class="w-full">
-            <Link :href="`/project/${project.id}`">View Project</Link>
+            <AppLink :href="`/project/${project.id}`">View Project</AppLink>
           </Button>
         </CardFooter>
       </Card>
@@ -101,10 +102,10 @@ watch(
         <p class="mt-1 text-sm text-muted-foreground">Get started by creating a new project.</p>
         <div class="mt-6">
           <Button as-child>
-            <Link href="/project/create">
+            <AppLink href="/project/create">
               <Plus class="mr-2 h-4 w-4" />
               Create Project
-            </Link>
+            </AppLink>
           </Button>
         </div>
       </div>
